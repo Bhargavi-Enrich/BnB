@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CampaignTableViewCell" rowHeight="64" id="KGk-i7-Jjw" userLabel="CampaignTableViewCell" customClass="CampaignTableViewCell" customModule="Greenrich" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQa-fc-ok6">
+                        <rect key="frame" x="27" y="11" width="266" height="49.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="24"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lAh-ww-YqD" userLabel="Seprator Line">
+                        <rect key="frame" x="0.0" y="62.5" width="320" height="0.5"/>
+                        <color key="backgroundColor" red="0.87887322206787655" green="0.87887322206787655" blue="0.87887322206787655" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="p7c-vH-5XY"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="TQa-fc-ok6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="12" id="AWf-Lh-TyJ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="TQa-fc-ok6" secondAttribute="trailing" constant="12" id="EXq-ja-HoL"/>
+                    <constraint firstItem="lAh-ww-YqD" firstAttribute="top" secondItem="TQa-fc-ok6" secondAttribute="bottom" constant="2" id="TZk-RO-Gvt"/>
+                    <constraint firstItem="lAh-ww-YqD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="WYy-91-BWp"/>
+                    <constraint firstItem="lAh-ww-YqD" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="gex-at-BvR"/>
+                    <constraint firstItem="TQa-fc-ok6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="k2P-Tw-DcG"/>
+                    <constraint firstAttribute="bottom" secondItem="lAh-ww-YqD" secondAttribute="bottom" constant="1" id="mRZ-EU-2fq"/>
+                    <constraint firstAttribute="trailing" secondItem="lAh-ww-YqD" secondAttribute="trailing" id="q0u-AE-DPV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblTitle" destination="TQa-fc-ok6" id="yiC-pA-3iS"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="161.01949025487258"/>
+        </tableViewCell>
+    </objects>
+</document>

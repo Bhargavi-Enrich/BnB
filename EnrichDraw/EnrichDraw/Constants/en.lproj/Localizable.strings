@@ -1,0 +1,112 @@
+/* 
+  Localizable.strings
+  EnrichDraw
+
+  Modified on 6/21/19.
+  Copyright © 2019 Apple. All rights reserved.
+*/
+
+// // -------------------- OLD STRINGS  --------------------
+// // -------------------- LANDING SCREEN  --------------------
+//"kl_TrialSpin" = "Trial spin";
+//"kl_RewardSpin" = "Reward spin";
+//"kl_UserInfo" = "Latest three spins & service reward points won across all Enrich salons ";
+//"kl_NoOfSpins" = "Number of spins";
+//"kl_TotalRewardsRolled" = "Total rewards rolled";
+//// --------------------
+//
+//// -------------------- TRIAL SCREEN  --------------------
+//"kl_Description" = "Spin the wheel\n& try your luck";
+//"kl_BtnContNextTitle" = "continue to reward spin";
+//"kl_ColorTitle" = "change the wheel";
+//// --------------------
+//
+//// -------------------- POP-UPS/ALERT STRINGS  --------------------
+//"kl_ErrorInSufficiantBalance" = "Spin reward balance not sufficient. Please contact admin.";
+//"kl_ErrorNoSpins" = "You have already availed all the spins.";
+//
+//"kl_WonMsg1" = "You have won ";
+//"kl_WonMsg2" = " on your ";
+//"kl_WonMsg3" = "trial spin.";
+//"kl_WonMsgSpin" = "spin.";
+//"kl_WonMsgPts" = "pts";
+//"kl_WonMsgTotal" = "a total ";
+//
+//"kl_ErrorContactAdmin" = "Please contact to admin for spin rewards. All rewards are availed.";
+//"kl_ErrorExhausted" = "All spins exhausted for this invoice.";
+//"kl_ReadyForNextSpin" = "Ready for the next spin";
+//"kl_RedeemMsg" = " service reward points that you can redeem within the next 45 days at any Enrich Salon";
+//// --------------------
+
+//************************* SCRATCH CARD *********************************
+// -------------------- LANDING SCREEN  --------------------
+"kl_TrialSpin" = "TRIAL";
+"kl_RewardSpin" = "REWARD";
+"kl_UserInfo" = "Last five rides & Greenrich reward points won across all Enrich salons ";
+"kl_NoOfSpins" = "Number of rides";
+"kl_TotalRewardsRolled" = "Total rewards rolled";
+"kl_RewardsMinMaxRange" = "Spin the wheel and get a chance to instantly win 600 to 2500 service reward points!";
+// --------------------
+
+// "\(self)-spin".localized
+// "\(self)-scratchCard".localized
+// "\(self)-dice".localized
+
+// "\(self)-cards".localized
+// "\(self)-casino".localized
+
+
+// -------------------- TRIAL SCREEN  --------------------
+"kl_Description" = "Ride the wheel\n& try your luck!";
+"kl_Description-scratchCard" = "Swipe back and forth\n& try your luck";
+"kl_Description-dice" = "Shake the cup\nspin the dice\n& try your luck";
+"kl_Description-cards" = "Open card\n& try your luck";
+"kl_Description-casino" = "Try your luck\nwith your\nfavourite city ";
+
+"kl_BtnContNextTitle" = "continue to reward";
+"kl_ColorTitle" = "  Select the color  ";
+// --------------------
+
+// -------------------- POP-UPS/ALERT STRINGS  --------------------
+"kl_ErrorInSufficiantBalance" = "Reward balance not sufficient. Please contact admin.";
+"kl_ErrorNoSpins" = "You have already availed all the rewards.";
+"kl_ErrorNoTrials" = "You have already availed all the trials.";
+
+"kl_WonMsg1" = "You have won ";
+"kl_WonMsg2" = " on your ";
+
+"kl_WonMsg3" = "trial ride.";
+
+"kl_WonMsg3-scratchCard" = "trial scratch card.";
+"kl_WonMsg3-dice" = "trial dice.";
+"kl_WonMsg3-cards" = "trial card.";
+"kl_WonMsg3-casino" = "trial slot machine.";
+
+"kl_WonMsgSpin" = "reward ride.";
+"kl_WonMsgSpin-scratchCard" = "scratch card.";
+"kl_WonMsgSpin-dice" = "dice.";
+"kl_WonMsgSpin-cards" = "card.";
+"kl_WonMsgSpin-casino" = "slot machine.";
+
+"kl_WonMsgPts" = " Points";
+"kl_WonMsgTotal" = "a total ";
+"kl_ErrorContactAdmin" = "Please contact to admin for rewards. All rewards are availed.";
+"kl_ErrorExhausted" = "All rewards exhausted for this invoice.";
+
+"kl_ReadyForNextSpin" = "Ready for the next ride";
+
+"kl_RedeemMsg" = " Greenrich reward points which you can redeem at any Enrich Salon on services or products!";
+
+"kl_ChoiceTitle" = "Good Luck!";
+"kl_ChoiceMsg" = "What would you like to play?";
+// --------------------
+
+// -------------------- REWARDS SCREEN  --------------------
+"kl_colorMsg" = "Please select your choice of dice color";
+"kl_colorMsg-scratchCard" = "Please select your choice of Scratch card color";
+"kl_colorMsg-dice" = "Please select your choice of dice color";
+
+"kl_EligibleSpins" = "You are eligible for playing games";
+
+"kl_hashSpins" = "# of chances";
+// --------------------

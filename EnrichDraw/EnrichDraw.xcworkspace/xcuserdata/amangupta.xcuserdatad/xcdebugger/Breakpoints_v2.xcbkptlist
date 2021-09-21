@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "AAD97B24-B1DA-430D-A83D-266ED7ECBA6C"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D5AE478E-6A3C-4245-983A-28672197C5D5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EnrichDraw/ViewControllers/EN_VC_AdminAuthentication.swift"
+            timestampString = "558608433.36397"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "134"
+            endingLineNumber = "134"
+            landmarkName = "dummyData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F8136FDD-FBDA-4D29-B4BA-56D297B7BA60"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EnrichDraw/NetworkClasses/APICallsManagerClass.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "370"
+            endingLineNumber = "370"
+            landmarkName = "refreshToken(isGetRequest:param:urlString:callback:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FEA58981-FAC0-40AD-B0A6-D2BE519E7F72"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EnrichDraw/ViewControllers/EN_VC_AdminAuthentication.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "327"
+            endingLineNumber = "327"
+            landmarkName = "getCampaignDataFromCache()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FEA58981-FAC0-40AD-B0A6-D2BE519E7F72 - 44334a3e50d92b6b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EnrichDraw.EN_VC_AdminAuthentication.getCampaignDataFromCache() -&gt; Swift.Bool"
+                  moduleName = "EnrichDraw"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amangupta/Documents/EnrichBANDB/EnrichDraw/EnrichDraw/ViewControllers/EN_VC_AdminAuthentication.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "327"
+                  endingLineNumber = "327"
+                  offsetFromSymbolStart = "331">
+               </Location>
+               <Location
+                  uuid = "FEA58981-FAC0-40AD-B0A6-D2BE519E7F72 - ffb42e25a55486dd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in EnrichDraw.EN_VC_AdminAuthentication.getCampaignDataFromCache() -&gt; Swift.Bool"
+                  moduleName = "EnrichDraw"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amangupta/Documents/EnrichBANDB/EnrichDraw/EnrichDraw/ViewControllers/EN_VC_AdminAuthentication.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "328"
+                  endingLineNumber = "328"
+                  offsetFromSymbolStart = "127">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8C22EC75-93FF-4C3A-A9B8-425FDD633AA6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EnrichDraw/ViewControllers/EN_VC_LandingScreen.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "682"
+            endingLineNumber = "682"
+            landmarkName = "requestToGetCampaignDetails(campaignID:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B9E27D0C-5A2B-417B-80E4-E6D988DB043A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EnrichDraw/ViewControllers/EN_VC_CutomerOTPVerification .swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "324"
+            endingLineNumber = "324"
+            landmarkName = "callCustomerInfo()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DBF19F9E-AB6A-4092-9DFB-535DCA8DF0C5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EnrichDraw/ViewControllers/EN_VC_CutomerOTPVerification .swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "337"
+            endingLineNumber = "337"
+            landmarkName = "callCustomerInfo()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6715F988-7F56-4D81-B5A5-11B1415D51DE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EnrichDraw/WBServiceClasses/EN_Service_TotalRewards.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "getTotalRewards(invoiceNo:campaignId:callback:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9BD9616D-32D0-4D1C-8E12-160CBA7BEABA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EnrichDraw/NetworkClasses/APICallsManagerClass.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "163"
+            endingLineNumber = "163"
+            landmarkName = "postAPICall(params:isHeader:urlString:callback:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F7B45C1D-29C4-4BCC-8F88-703477A25959"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EnrichDraw/ViewControllers/EN_VC_SpinWheel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "604"
+            endingLineNumber = "604"
+            landmarkName = "updateServerForEachSpin(invoiceNo:amountWon:storeId:campaignRewardId:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D6906A08-5B1B-4AE5-84D7-DDA21691DFD5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EnrichDraw/ViewControllers/EN_VC_SpinWheel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "600"
+            endingLineNumber = "600"
+            landmarkName = "updateServerForEachSpin(invoiceNo:amountWon:storeId:campaignRewardId:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D47C9861-8C5C-4BC6-BF2A-987F7AB79D5E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EnrichDraw/ViewControllers/EN_VC_SpinWheel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "517"
+            endingLineNumber = "517"
+            landmarkName = "generateArrayForRewardsInRewardsSpin()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5452C9C1-4AF3-421B-8155-641719146341"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EnrichDraw/ViewControllers/EN_VC_SpinWheel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "207"
+            endingLineNumber = "207"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B1082D6C-0EFB-46C2-8ACC-C4681368A952"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EnrichDraw/ViewControllers/EN_VC_CampaignList.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A1FA54D6-1B3E-41C1-B8F1-7BA6B0766F4D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EnrichDraw/ViewControllers/EN_VC_SpinWheel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "479"
+            endingLineNumber = "479"
+            landmarkName = "generateArrayForRewardsInRewardsSpin()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A1FA54D6-1B3E-41C1-B8F1-7BA6B0766F4D - 3eccba3e818b76c3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EnrichDraw.EN_VC_SpinWheel.generateArrayForRewardsInRewardsSpin() -&gt; Swift.Int"
+                  moduleName = "EnrichDraw"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amangupta/Documents/EnrichBANDB/EnrichDraw/EnrichDraw/ViewControllers/EN_VC_SpinWheel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "479"
+                  endingLineNumber = "479"
+                  offsetFromSymbolStart = "5496">
+               </Location>
+               <Location
+                  uuid = "A1FA54D6-1B3E-41C1-B8F1-7BA6B0766F4D - 3eccba3e818b76c3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EnrichDraw.EN_VC_SpinWheel.generateArrayForRewardsInRewardsSpin() -&gt; Swift.Int"
+                  moduleName = "EnrichDraw"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amangupta/Documents/EnrichBANDB/EnrichDraw/EnrichDraw/ViewControllers/EN_VC_SpinWheel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "479"
+                  endingLineNumber = "479"
+                  offsetFromSymbolStart = "13632">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3160E06B-1BA7-436B-9ED8-8C4DC2A6B59E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EnrichDraw/ViewControllers/EN_VC_SpinWheel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "653"
+            endingLineNumber = "653"
+            landmarkName = "showSpinWheel()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C23E9789-49D6-4CBE-B7E8-8714397ED912"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EnrichDraw/ViewControllers/EN_VC_SpinWheel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "470"
+            endingLineNumber = "470"
+            landmarkName = "generateArrayForRewardsInRewardsSpin()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BC5C8BF4-F439-41BA-A508-94F21CA11043"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EnrichDraw/ViewControllers/EN_VC_SpinWheel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "487"
+            endingLineNumber = "487"
+            landmarkName = "generateArrayForRewardsInRewardsSpin()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "76F40216-114C-4123-BF87-11B9BA62DE48"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EnrichDraw/ViewControllers/EN_VC_SpinWheel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "661"
+            endingLineNumber = "661"
+            landmarkName = "showSpinWheel()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "76F40216-114C-4123-BF87-11B9BA62DE48 - 7e25b17bd9a5a994"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EnrichDraw.EN_VC_SpinWheel.showSpinWheel() -&gt; ()"
+                  moduleName = "EnrichDraw"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amangupta/Documents/EnrichBANDB/EnrichDraw/EnrichDraw/ViewControllers/EN_VC_SpinWheel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "661"
+                  endingLineNumber = "661"
+                  offsetFromSymbolStart = "5252">
+               </Location>
+               <Location
+                  uuid = "76F40216-114C-4123-BF87-11B9BA62DE48 - 7e25b17bd9a5a994"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "EnrichDraw.EN_VC_SpinWheel.showSpinWheel() -&gt; ()"
+                  moduleName = "EnrichDraw"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/amangupta/Documents/EnrichBANDB/EnrichDraw/EnrichDraw/ViewControllers/EN_VC_SpinWheel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "661"
+                  endingLineNumber = "661"
+                  offsetFromSymbolStart = "20298">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

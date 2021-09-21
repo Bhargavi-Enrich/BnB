@@ -1,0 +1,236 @@
+{
+    "campaignDetails": {
+        "campaignId": 44,
+        "campaignName": "Beauty N Bling",
+        "campaignType": null,
+        "status": "ACTIVE",
+        "startDate": "2018-09-25T06:54:46.000+0000",
+        "endDate": "2018-09-30T06:38:15.000+0000",
+        "campaignThreshold": 2500
+    },
+    "campaignSpinDetailsViews": [
+                                 {
+                                 "campaignMgmtId": 881,
+                                 "campaignId": 44,
+                                 "campaignRewardId": 558,
+                                 "rewardName": "SR5",
+                                 "rewardValue": "1000",
+                                 "type": "SERVICE",
+                                 "count": 8,
+                                 "balance": 8
+                                 },
+                                 {
+                                 "campaignMgmtId": 882,
+                                 "campaignId": 44,
+                                 "campaignRewardId": 552,
+                                 "rewardName": "SR10",
+                                 "rewardValue": "900",
+                                 "type": "SERVICE",
+                                 "count": 1,
+                                 "balance": 1
+                                 },
+                                 {
+                                 "campaignMgmtId": 883,
+                                 "campaignId": 44,
+                                 "campaignRewardId": 555,
+                                 "rewardName": "PR1",
+                                 "rewardValue": "100",
+                                 "type": "PRODUCT",
+                                 "count": 1,
+                                 "balance": 1
+                                 },
+                                 {
+                                 "campaignMgmtId": 884,
+                                 "campaignId": 44,
+                                 "campaignRewardId": 554,
+                                 "rewardName": "PR2",
+                                 "rewardValue": "200",
+                                 "type": "PRODUCT",
+                                 "count": 30,
+                                 "balance": 30
+                                 },
+                                 {
+                                 "campaignMgmtId": 885,
+                                 "campaignId": 44,
+                                 "campaignRewardId": 544,
+                                 "rewardName": "PR10",
+                                 "rewardValue": "800",
+                                 "type": "PRODUCT",
+                                 "count": 1,
+                                 "balance": 1
+                                 },
+                                 {
+                                 "campaignMgmtId": 886,
+                                 "campaignId": 44,
+                                 "campaignRewardId": 556,
+                                 "rewardName": "SR11",
+                                 "rewardValue": "200",
+                                 "type": "SERVICE",
+                                 "count": 1,
+                                 "balance": 1
+                                 },
+                                 {
+                                 "campaignMgmtId": 887,
+                                 "campaignId": 44,
+                                 "campaignRewardId": 561,
+                                 "rewardName": "PR5",
+                                 "rewardValue": "500",
+                                 "type": "PRODUCT",
+                                 "count": 8,
+                                 "balance": 8
+                                 },
+                                 {
+                                 "campaignMgmtId": 888,
+                                 "campaignId": 44,
+                                 "campaignRewardId": 562,
+                                 "rewardName": "PR7",
+                                 "rewardValue": "700",
+                                 "type": "PRODUCT",
+                                 "count": 1,
+                                 "balance": 1
+                                 },
+                                 {
+                                 "campaignMgmtId": 889,
+                                 "campaignId": 44,
+                                 "campaignRewardId": 560,
+                                 "rewardName": "SR9",
+                                 "rewardValue": "300",
+                                 "type": "SERVICE",
+                                 "count": 1,
+                                 "balance": 1
+                                 },
+                                 {
+                                 "campaignMgmtId": 890,
+                                 "campaignId": 44,
+                                 "campaignRewardId": 543,
+                                 "rewardName": "SR8",
+                                 "rewardValue": "600",
+                                 "type": "SERVICE",
+                                 "count": 1,
+                                 "balance": 1
+                                 },
+                                 {
+                                 "campaignMgmtId": 891,
+                                 "campaignId": 44,
+                                 "campaignRewardId": 564,
+                                 "rewardName": "PR4",
+                                 "rewardValue": "400",
+                                 "type": "PRODUCT",
+                                 "count": 20,
+                                 "balance": 20
+                                 },
+                                 {
+                                 "campaignMgmtId": 892,
+                                 "campaignId": 44,
+                                 "campaignRewardId": 545,
+                                 "rewardName": "PR11",
+                                 "rewardValue": "650",
+                                 "type": "PRODUCT",
+                                 "count": 1,
+                                 "balance": 1
+                                 },
+                                 {
+                                 "campaignMgmtId": 893,
+                                 "campaignId": 44,
+                                 "campaignRewardId": 553,
+                                 "rewardName": "SR7",
+                                 "rewardValue": "390",
+                                 "type": "SERVICE",
+                                 "count": 1,
+                                 "balance": 1
+                                 },
+                                 {
+                                 "campaignMgmtId": 894,
+                                 "campaignId": 44,
+                                 "campaignRewardId": 549,
+                                 "rewardName": "SR1",
+                                 "rewardValue": "750",
+                                 "type": "SERVICE",
+                                 "count": 1,
+                                 "balance": 1
+                                 },
+                                 {
+                                 "campaignMgmtId": 895,
+                                 "campaignId": 44,
+                                 "campaignRewardId": 550,
+                                 "rewardName": "PR9",
+                                 "rewardValue": "850",
+                                 "type": "PRODUCT",
+                                 "count": 1,
+                                 "balance": 1
+                                 },
+                                 {
+                                 "campaignMgmtId": 896,
+                                 "campaignId": 44,
+                                 "campaignRewardId": 559,
+                                 "rewardName": "SR6",
+                                 "rewardValue": "550",
+                                 "type": "SERVICE",
+                                 "count": 1,
+                                 "balance": 1
+                                 },
+                                 {
+                                 "campaignMgmtId": 897,
+                                 "campaignId": 44,
+                                 "campaignRewardId": 563,
+                                 "rewardName": "PR3",
+                                 "rewardValue": "300",
+                                 "type": "PRODUCT",
+                                 "count": 35,
+                                 "balance": 35
+                                 },
+                                 {
+                                 "campaignMgmtId": 898,
+                                 "campaignId": 44,
+                                 "campaignRewardId": 551,
+                                 "rewardName": "SR4",
+                                 "rewardValue": "220",
+                                 "type": "SERVICE",
+                                 "count": 20,
+                                 "balance": 20
+                                 },
+                                 {
+                                 "campaignMgmtId": 899,
+                                 "campaignId": 44,
+                                 "campaignRewardId": 557,
+                                 "rewardName": "SR3",
+                                 "rewardValue": "110",
+                                 "type": "SERVICE",
+                                 "count": 35,
+                                 "balance": 35
+                                 },
+                                 {
+                                 "campaignMgmtId": 900,
+                                 "campaignId": 44,
+                                 "campaignRewardId": 546,
+                                 "rewardName": "PR6",
+                                 "rewardValue": "840",
+                                 "type": "PRODUCT",
+                                 "count": 1,
+                                 "balance": 1
+                                 },
+                                 {
+                                 "campaignMgmtId": 901,
+                                 "campaignId": 44,
+                                 "campaignRewardId": 547,
+                                 "rewardName": "PR8",
+                                 "rewardValue": "800",
+                                 "type": "PRODUCT",
+                                 "count": 1,
+                                 "balance": 1
+                                 },
+                                 {
+                                 "campaignMgmtId": 902,
+                                 "campaignId": 44,
+                                 "campaignRewardId": 548,
+                                 "rewardName": "SR2",
+                                 "rewardValue": "600",
+                                 "type": "SERVICE",
+                                 "count": 30,
+                                 "balance": 30
+                                 }
+                                 ],
+    "balanceCount": 200,
+    "minReward": 100,
+    "maxReward": 2500
+}

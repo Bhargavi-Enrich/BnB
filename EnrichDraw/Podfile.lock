@@ -1,0 +1,33 @@
+PODS:
+  - AZSClient (0.2.6)
+  - Crashlytics (3.10.7):
+    - Fabric (~> 1.7.11)
+  - Fabric (1.7.11)
+  - PKHUD (5.1.0)
+  - SRScratchView (0.1.1)
+
+DEPENDENCIES:
+  - AZSClient
+  - Crashlytics
+  - Fabric
+  - PKHUD (~> 5.0)
+  - SRScratchView
+
+SPEC REPOS:
+  trunk:
+    - AZSClient
+    - Crashlytics
+    - Fabric
+    - PKHUD
+    - SRScratchView
+
+SPEC CHECKSUMS:
+  AZSClient: efd576cabf56f97e38cb1b614739f4b0c1906392
+  Crashlytics: 08e50236e4919fd84e089971c8372d46fe83a8ad
+  Fabric: e2bc245c5ad6dd63f36d72410f34bc15309744e0
+  PKHUD: 62ea46a1e88c4def1da784878d199bb54c841e3c
+  SRScratchView: 1188ee5f7fb31eea0c2b4a8a191bfd1397ae18c8
+
+PODFILE CHECKSUM: af65ac652093b2fb2a2325a5d59cb742ef847b6d
+
+COCOAPODS: 1.9.3

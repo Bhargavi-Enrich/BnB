@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Delius-Regular.ttf">
+            <string>Delius-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="147" id="KGk-i7-Jjw" customClass="RecycleItemCell" customModule="Greenrich" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="386" height="147"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="386" height="147"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="p2F-Fm-Sam">
+                        <rect key="frame" x="20" y="5" width="346" height="142"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="17k-xC-bOZ">
+                                <rect key="frame" x="0.0" y="58.5" width="138.5" height="25.5"/>
+                                <fontDescription key="fontDescription" name="Delius-Regular" family="Delius" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FgQ-vf-iQU">
+                                <rect key="frame" x="138.5" y="58.5" width="207.5" height="25.5"/>
+                                <fontDescription key="fontDescription" name="Delius-Regular" family="Delius" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="17k-xC-bOZ" firstAttribute="leading" secondItem="p2F-Fm-Sam" secondAttribute="leading" id="5V2-lY-wfQ"/>
+                            <constraint firstAttribute="trailing" secondItem="FgQ-vf-iQU" secondAttribute="trailing" id="a5O-sY-cod"/>
+                            <constraint firstItem="17k-xC-bOZ" firstAttribute="width" secondItem="p2F-Fm-Sam" secondAttribute="width" multiplier="0.4" id="lBf-z6-zdM"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="p2F-Fm-Sam" secondAttribute="trailing" constant="20" id="4Mg-YT-Kxo"/>
+                    <constraint firstAttribute="bottom" secondItem="p2F-Fm-Sam" secondAttribute="bottom" id="KXi-8V-ps6"/>
+                    <constraint firstItem="p2F-Fm-Sam" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="aED-fc-wgC"/>
+                    <constraint firstItem="p2F-Fm-Sam" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="hF4-77-oGT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblTitle" destination="17k-xC-bOZ" id="nHe-rz-Qjw"/>
+                <outlet property="lblValue" destination="FgQ-vf-iQU" id="6Hc-8V-xZe"/>
+            </connections>
+            <point key="canvasLocation" x="185.50724637681162" y="161.04910714285714"/>
+        </tableViewCell>
+    </objects>
+</document>
