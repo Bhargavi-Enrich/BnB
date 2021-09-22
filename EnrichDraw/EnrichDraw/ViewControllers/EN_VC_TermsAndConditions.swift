@@ -80,7 +80,6 @@ class EN_VC_TermsAndConditions: UIViewController//, UITableViewDataSource, UITab
 //        tblTermsAndConditions.delegate = self
 //        tblTermsAndConditions.dataSource = self
 //        tblTermsAndConditions.backgroundColor = UIColor.clear
-        addGradientToDisAgreeButton()
         
 //        let myVariable = "<font face='Montserrat-Regular' size='6' color= 'black'>%@"
 //        let varObj = String(format: myVariable, (self.campaignDetails.term_condition ?? "<html><body><p>Hello1!</p><div style=\"color:#000000\"></body></html>"))
@@ -88,14 +87,7 @@ class EN_VC_TermsAndConditions: UIViewController//, UITableViewDataSource, UITab
     self.webViewTermsAndCondition.loadHTMLString(self.campaignDetails.term_condition ?? "", baseURL: nil)
         self.webViewTermsAndCondition!.scrollView.backgroundColor = UIColor.clear
     }
-    //MARK: - Add Gradient
-    
-    func addGradientToDisAgreeButton()
-    {
-        self.btnDisagree.layer.cornerRadius = 25
-        self.btnDisagree.backgroundColor = UIColor(red:0.14, green:0.15, blue:0.22, alpha:1)
-    }
-    
+   
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

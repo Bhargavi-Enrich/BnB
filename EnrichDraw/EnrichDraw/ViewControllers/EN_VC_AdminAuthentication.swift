@@ -97,8 +97,13 @@ class EN_VC_AdminAuthentication: UIViewController,UITextFieldDelegate {
 //
 //    }
 //
+    
+    @IBAction func clickToSignIn(_ sender: Any) {
+        pushToNavigate()
+    }
+    
     // MARK: All Click Action
-    @objc func pushToNavigate() {
+    func pushToNavigate() {
         guard let memberNumber = txtFieldStoreID.text, let password = txtFieldPassword.text else { return }
         if !memberNumber.isEmpty && !password.isEmpty {
 //            if EmailValidation.sharedInstance.isValidEmail(testStr: memberNumber) {
