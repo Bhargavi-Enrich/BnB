@@ -13,6 +13,12 @@
         <array key="Delius-Regular.ttf">
             <string>Delius-Regular</string>
         </array>
+        <array key="FuturaPTBook.otf">
+            <string>FuturaPT-Book</string>
+        </array>
+        <array key="FuturaPTMedium.otf">
+            <string>FuturaPT-Medium</string>
+        </array>
         <array key="Montserrat-Light.ttf">
             <string>Montserrat-Light</string>
         </array>
@@ -55,22 +61,10 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="gMo-Ao-WOG">
-                                <rect key="frame" x="379.5" y="264" width="265" height="240"/>
+                                <rect key="frame" x="379.5" y="271" width="265" height="226"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="OFp-6V-IRn">
-                                        <rect key="frame" x="107.5" y="0.0" width="50" height="50"/>
-                                        <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="store" translatesAutoresizingMaskIntoConstraints="NO" id="e99-Vg-wah">
-                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="50" id="NOX-AK-m6e"/>
-                                                    <constraint firstAttribute="width" constant="50" id="b2d-cA-9f2"/>
-                                                </constraints>
-                                            </imageView>
-                                        </subviews>
-                                    </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0WJ-GO-seB">
-                                        <rect key="frame" x="7.5" y="64" width="250" height="50"/>
+                                        <rect key="frame" x="7.5" y="0.0" width="250" height="100"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salon Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ew1-cI-2lr">
                                                 <rect key="frame" x="0.0" y="0.0" width="250" height="50"/>
@@ -78,16 +72,26 @@
                                                     <constraint firstAttribute="width" constant="250" id="5Wm-Gw-hwr"/>
                                                     <constraint firstAttribute="height" constant="50" id="h05-9f-cas"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Delius-Regular" family="Delius" pointSize="40"/>
+                                                <fontDescription key="fontDescription" name="FuturaPT-Medium" family="Futura PT" pointSize="47"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign In Using Store ID" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HxQ-pU-a2A">
+                                                <rect key="frame" x="0.0" y="50" width="250" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="AX7-jL-eCB"/>
+                                                    <constraint firstAttribute="width" constant="250" id="VJx-N4-XCF"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="FuturaPT-Book" family="Futura PT" pointSize="25"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="UWG-Je-RY1">
-                                        <rect key="frame" x="0.0" y="128" width="265" height="112"/>
+                                        <rect key="frame" x="0.0" y="114" width="265" height="112"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9p6-qB-uVD">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="STORE ID" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9p6-qB-uVD">
                                                 <rect key="frame" x="0.0" y="0.0" width="265" height="50"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -100,7 +104,7 @@
                                                     <outlet property="delegate" destination="nwr-Vp-dc2" id="Faw-pm-Vb7"/>
                                                 </connections>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HpB-EM-hOF">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="PASSWORD" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HpB-EM-hOF">
                                                 <rect key="frame" x="0.0" y="62" width="265" height="50"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -109,6 +113,11 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="VCornerRadius">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <outlet property="delegate" destination="nwr-Vp-dc2" id="3pq-zF-St2"/>
                                                 </connections>
@@ -1493,7 +1502,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright ® 2020 Enrich. All Rights Reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ke2-np-6fC">
-                                <rect key="frame" x="378" y="723" width="268" height="15"/>
+                                <rect key="frame" x="388.5" y="724" width="247.5" height="14"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="12"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -1520,7 +1529,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="0hl-Zc-WPD" userLabel="Stack View Beauty And Bling">
-                                <rect key="frame" x="412" y="208.5" width="200" height="48"/>
+                                <rect key="frame" x="412" y="212" width="200" height="48"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spin The Wheel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7AW-8f-h8v">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="30.5"/>
@@ -1540,13 +1549,13 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="9aJ-Qe-nF0">
-                                <rect key="frame" x="312" y="275.5" width="400" height="217"/>
+                                <rect key="frame" x="312" y="279" width="400" height="210.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Sss-nS-SZW" userLabel="Stack View Thank you">
-                                        <rect key="frame" x="109.5" y="0.0" width="181.5" height="50.5"/>
+                                        <rect key="frame" x="108" y="0.0" width="184.5" height="47"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter OTP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VHZ-nu-xOW">
-                                                <rect key="frame" x="0.0" y="0.0" width="181.5" height="50.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="184.5" height="47"/>
                                                 <fontDescription key="fontDescription" name="Delius-Regular" family="Delius" pointSize="40"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -1554,10 +1563,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ac2-C4-Xfl" userLabel="Stack View we have send">
-                                        <rect key="frame" x="0.0" y="65.5" width="400" height="39.5"/>
+                                        <rect key="frame" x="0.0" y="62" width="400" height="37.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6N-ik-mK1">
-                                                <rect key="frame" x="0.0" y="0.0" width="400" height="39.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="400" height="37.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="400" id="Eaa-Xd-CjB"/>
                                                 </constraints>
@@ -1570,7 +1579,7 @@ to your registered mobile number 9822982298</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fLJ-Ht-1Q6">
-                                        <rect key="frame" x="72" y="120" width="256" height="50"/>
+                                        <rect key="frame" x="72" y="114.5" width="256" height="50"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter OTP" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HRd-uE-Tka">
                                                 <rect key="frame" x="0.0" y="0.0" width="256" height="50"/>
@@ -1590,7 +1599,7 @@ to your registered mobile number 9822982298</string>
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HyZ-Ue-0WQ">
-                                        <rect key="frame" x="150.5" y="185" width="99" height="32"/>
+                                        <rect key="frame" x="154.5" y="179.5" width="91" height="31"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                         <state key="normal" title="Resend OTP">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1613,7 +1622,7 @@ to your registered mobile number 9822982298</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIf-71-beZ">
-                                <rect key="frame" x="807" y="11" width="167" height="32"/>
+                                <rect key="frame" x="828" y="11.5" width="146" height="31"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                 <state key="normal" title="Churchgate,Mumbai">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -4942,7 +4951,7 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
         <image name="disagreeButton" width="120" height="50"/>
         <image name="greenPlant" width="32" height="52"/>
         <image name="greenPlantGray" width="38" height="60"/>
-        <image name="greenRichCardBoard" width="819" height="614"/>
+        <image name="greenRichCardBoard" width="1024" height="768"/>
         <image name="greenrichLeftBackground" width="1456" height="3080"/>
         <image name="greenrichLight" width="36" height="51"/>
         <image name="greenrichLogoDate" width="800" height="488"/>

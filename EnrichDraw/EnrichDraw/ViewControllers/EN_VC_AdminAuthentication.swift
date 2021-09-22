@@ -58,7 +58,7 @@ class EN_VC_AdminAuthentication: UIViewController,UITextFieldDelegate {
     {
         self.setLayerToTextField(txtFieldStoreID)
         self.setLayerToTextField(txtFieldPassword)
-        self.setArrowToTextField(txtFieldPassword)
+        //self.setArrowToTextField(txtFieldPassword)
         
         txtFieldStoreID.setLeftPaddingPoints(10)
         txtFieldPassword.setLeftPaddingPoints(10)
@@ -78,25 +78,25 @@ class EN_VC_AdminAuthentication: UIViewController,UITextFieldDelegate {
     // MARK :- Set Layer to Text Field
     func setLayerToTextField(_ textField:UITextField) {
     textField.layer.borderWidth = 1.0
-        textField.layer.borderColor = UIColor(red:0.93, green:0.93, blue:0.93, alpha:1.0).cgColor
-    textField.layer.cornerRadius = textField.frame.size.height / 2
+        textField.layer.borderColor = UIColor.black.cgColor// UIColor(red:0.93, green:0.93, blue:0.93, alpha:1.0).cgColor
+    textField.layer.cornerRadius = 15//textField.frame.size.height / 2
     textField.layer.masksToBounds = true
         
     
     }
-    //MARK :- Set Arrow Image in Textfield
-    func setArrowToTextField(_ textField:UITextField) {
-        textField.rightViewMode = UITextField.ViewMode.always
-        let imageView = UIButton(frame: CGRect(x: 0, y: 0, width: 44, height: 44))
-        imageView.addTarget(self, action: #selector(pushToNavigate), for: UIControl.Event.touchUpInside)
-        let image = UIImage(named: "greenArrow")
-        imageView.setImage(image, for: UIControl.State.normal)
-        textField.rightView = imageView
-        textField.rightView?.frame = CGRect(x: 0, y: 0, width: 50 , height:50)
-
-
-    }
-    
+//    //MARK :- Set Arrow Image in Textfield
+//    func setArrowToTextField(_ textField:UITextField) {
+//        textField.rightViewMode = UITextField.ViewMode.always
+//        let imageView = UIButton(frame: CGRect(x: 0, y: 0, width: 44, height: 44))
+//        imageView.addTarget(self, action: #selector(pushToNavigate), for: UIControl.Event.touchUpInside)
+//        let image = UIImage(named: "greenArrow")
+//        imageView.setImage(image, for: UIControl.State.normal)
+//        textField.rightView = imageView
+//        textField.rightView?.frame = CGRect(x: 0, y: 0, width: 50 , height:50)
+//
+//
+//    }
+//
     // MARK: All Click Action
     @objc func pushToNavigate() {
         guard let memberNumber = txtFieldStoreID.text, let password = txtFieldPassword.text else { return }

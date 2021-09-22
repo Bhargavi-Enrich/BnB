@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07D6C2D426FB4AC70048A3C0 /* FuturaPTDemi.otf in Resources */ = {isa = PBXBuildFile; fileRef = 07D6C2CD26FB4AC70048A3C0 /* FuturaPTDemi.otf */; };
+		07D6C2D526FB4AC70048A3C0 /* FuturaPTExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 07D6C2CE26FB4AC70048A3C0 /* FuturaPTExtraBold.otf */; };
+		07D6C2D626FB4AC70048A3C0 /* FuturaPTBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 07D6C2CF26FB4AC70048A3C0 /* FuturaPTBold.otf */; };
+		07D6C2D726FB4AC70048A3C0 /* FuturaPTBook.otf in Resources */ = {isa = PBXBuildFile; fileRef = 07D6C2D026FB4AC70048A3C0 /* FuturaPTBook.otf */; };
+		07D6C2D826FB4AC70048A3C0 /* FuturaPTLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 07D6C2D126FB4AC70048A3C0 /* FuturaPTLight.otf */; };
+		07D6C2D926FB4AC70048A3C0 /* FuturaPTHeavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 07D6C2D226FB4AC70048A3C0 /* FuturaPTHeavy.otf */; };
+		07D6C2DA26FB4AC70048A3C0 /* FuturaPTMedium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 07D6C2D326FB4AC70048A3C0 /* FuturaPTMedium.otf */; };
 		140D2F8522BCBD6A00F61CC6 /* ConstantStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140D2F8422BCBD6A00F61CC6 /* ConstantStrings.swift */; };
 		1410B89224D96CD400205A2F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1410B89124D96CD400205A2F /* WebKit.framework */; };
 		141C1447214F733400BE8CE4 /* CampaignDetails.json in Resources */ = {isa = PBXBuildFile; fileRef = 141C1445214F733400BE8CE4 /* CampaignDetails.json */; };
@@ -59,7 +66,7 @@
 		18A71004212D0E56001AECE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A71003212D0E56001AECE7 /* AppDelegate.swift */; };
 		18A71007212D0E56001AECE7 /* EnrichDraw.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18A71005212D0E56001AECE7 /* EnrichDraw.xcdatamodeld */; };
 		18A7100E212D0E56001AECE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A7100C212D0E56001AECE7 /* Main.storyboard */; };
-		18A71010212D0E5E001AECE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18A7100F212D0E5E001AECE7 /* Assets.xcassets */; };
+		18A71010212D0E5E001AECE7 /* store.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18A7100F212D0E5E001AECE7 /* store.xcassets */; };
 		18A71013212D0E5E001AECE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A71011212D0E5E001AECE7 /* LaunchScreen.storyboard */; };
 		18A7101E212D0E5F001AECE7 /* EnrichDrawTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A7101D212D0E5F001AECE7 /* EnrichDrawTests.swift */; };
 		18A71029212D0E5F001AECE7 /* EnrichDrawUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A71028212D0E5F001AECE7 /* EnrichDrawUITests.swift */; };
@@ -174,6 +181,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07D6C2CD26FB4AC70048A3C0 /* FuturaPTDemi.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FuturaPTDemi.otf; sourceTree = "<group>"; };
+		07D6C2CE26FB4AC70048A3C0 /* FuturaPTExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FuturaPTExtraBold.otf; sourceTree = "<group>"; };
+		07D6C2CF26FB4AC70048A3C0 /* FuturaPTBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FuturaPTBold.otf; sourceTree = "<group>"; };
+		07D6C2D026FB4AC70048A3C0 /* FuturaPTBook.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FuturaPTBook.otf; sourceTree = "<group>"; };
+		07D6C2D126FB4AC70048A3C0 /* FuturaPTLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FuturaPTLight.otf; sourceTree = "<group>"; };
+		07D6C2D226FB4AC70048A3C0 /* FuturaPTHeavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FuturaPTHeavy.otf; sourceTree = "<group>"; };
+		07D6C2D326FB4AC70048A3C0 /* FuturaPTMedium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FuturaPTMedium.otf; sourceTree = "<group>"; };
 		140D2F8422BCBD6A00F61CC6 /* ConstantStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantStrings.swift; sourceTree = "<group>"; };
 		1410B89124D96CD400205A2F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		141C1445214F733400BE8CE4 /* CampaignDetails.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CampaignDetails.json; sourceTree = "<group>"; };
@@ -228,7 +242,7 @@
 		18A71003212D0E56001AECE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18A71006212D0E56001AECE7 /* EnrichDraw.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EnrichDraw.xcdatamodel; sourceTree = "<group>"; };
 		18A7100D212D0E56001AECE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		18A7100F212D0E5E001AECE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18A7100F212D0E5E001AECE7 /* store.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = store.xcassets; sourceTree = "<group>"; };
 		18A71012212D0E5E001AECE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18A71014212D0E5E001AECE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18A71019212D0E5E001AECE7 /* EnrichDrawTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnrichDrawTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -365,6 +379,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07D6C2CC26FB4AC70048A3C0 /* FuturaPT */ = {
+			isa = PBXGroup;
+			children = (
+				07D6C2CD26FB4AC70048A3C0 /* FuturaPTDemi.otf */,
+				07D6C2CE26FB4AC70048A3C0 /* FuturaPTExtraBold.otf */,
+				07D6C2CF26FB4AC70048A3C0 /* FuturaPTBold.otf */,
+				07D6C2D026FB4AC70048A3C0 /* FuturaPTBook.otf */,
+				07D6C2D126FB4AC70048A3C0 /* FuturaPTLight.otf */,
+				07D6C2D226FB4AC70048A3C0 /* FuturaPTHeavy.otf */,
+				07D6C2D326FB4AC70048A3C0 /* FuturaPTMedium.otf */,
+			);
+			path = FuturaPT;
+			sourceTree = "<group>";
+		};
 		141C1444214F730C00BE8CE4 /* DummyData */ = {
 			isa = PBXGroup;
 			children = (
@@ -531,7 +559,7 @@
 				18A71003212D0E56001AECE7 /* AppDelegate.swift */,
 				14E5ECE821A82C7400068B4A /* Bridging-Header.h */,
 				18A7100C212D0E56001AECE7 /* Main.storyboard */,
-				18A7100F212D0E5E001AECE7 /* Assets.xcassets */,
+				18A7100F212D0E5E001AECE7 /* store.xcassets */,
 				18A71011212D0E5E001AECE7 /* LaunchScreen.storyboard */,
 				18A71014212D0E5E001AECE7 /* Info.plist */,
 				18A71005212D0E56001AECE7 /* EnrichDraw.xcdatamodeld */,
@@ -630,6 +658,7 @@
 		18F33AC12133EE6200F6F7CD /* CustomFonts */ = {
 			isa = PBXGroup;
 			children = (
+				07D6C2CC26FB4AC70048A3C0 /* FuturaPT */,
 				18F33AC22133EE6200F6F7CD /* BEBAS___.ttf */,
 				18F33AC32133EE6200F6F7CD /* Chunkfive.otf */,
 				18F33AC42133EE6200F6F7CD /* Lobster_1.3.otf */,
@@ -869,6 +898,7 @@
 				14AFB51E215A6120006284F5 /* animationsteps2.m4v in Resources */,
 				F852AE2A251B542400446F04 /* Montserrat-Light.ttf in Resources */,
 				F88282D425149585007338C6 /* RecycleItemCell.xib in Resources */,
+				07D6C2D826FB4AC70048A3C0 /* FuturaPTLight.otf in Resources */,
 				F852AE2F251B542400446F04 /* Montserrat-ExtraBoldItalic.ttf in Resources */,
 				18F33AC92133EE6400F6F7CD /* Phosphate.ttc in Resources */,
 				B79F94BB2337560C00F01515 /* RouletteWheel2.mp3 in Resources */,
@@ -880,11 +910,15 @@
 				141C1448214F733400BE8CE4 /* UserAccessToken.json in Resources */,
 				18F33AC62133EE6400F6F7CD /* BEBAS___.ttf in Resources */,
 				F852AE36251B542400446F04 /* Montserrat-SemiBold.ttf in Resources */,
+				07D6C2DA26FB4AC70048A3C0 /* FuturaPTMedium.otf in Resources */,
 				F852AE30251B542400446F04 /* Montserrat-ExtraBold.ttf in Resources */,
 				F86BBF1325309E7C00578ACD /* Assets.xcassets in Resources */,
 				B72A08CC2332C08700B2841A /* Applause-1.mp3 in Resources */,
 				F852AE33251B542400446F04 /* Montserrat-Regular.ttf in Resources */,
+				07D6C2D926FB4AC70048A3C0 /* FuturaPTHeavy.otf in Resources */,
 				18A71013212D0E5E001AECE7 /* LaunchScreen.storyboard in Resources */,
+				07D6C2D426FB4AC70048A3C0 /* FuturaPTDemi.otf in Resources */,
+				07D6C2D626FB4AC70048A3C0 /* FuturaPTBold.otf in Resources */,
 				B74DBCF32337E596001E618B /* RollDice.mp3 in Resources */,
 				14AFB51C215A5627006284F5 /* animationsteps1.m4v in Resources */,
 				18F33AC82133EE6400F6F7CD /* Lobster_1.3.otf in Resources */,
@@ -893,13 +927,15 @@
 				14559F582146A7C10089BEC8 /* landing CTA.gif in Resources */,
 				B7E6B6EE232784B600A4EA2D /* gif2.gif in Resources */,
 				1488014222C3519100D74CDC /* CustomPopUpUserData.xib in Resources */,
-				18A71010212D0E5E001AECE7 /* Assets.xcassets in Resources */,
+				18A71010212D0E5E001AECE7 /* store.xcassets in Resources */,
 				F852AE2D251B542400446F04 /* Montserrat-MediumItalic.ttf in Resources */,
 				F852AE25251B542400446F04 /* Montserrat-LightItalic.ttf in Resources */,
 				B79F94BD2337570C00F01515 /* RouletteWheelEnd.mp3 in Resources */,
 				F852AE32251B542400446F04 /* Montserrat-BoldItalic.ttf in Resources */,
 				18A7100E212D0E56001AECE7 /* Main.storyboard in Resources */,
 				B74DBCF52337E86F001E618B /* Crowd.mp3 in Resources */,
+				07D6C2D726FB4AC70048A3C0 /* FuturaPTBook.otf in Resources */,
+				07D6C2D526FB4AC70048A3C0 /* FuturaPTExtraBold.otf in Resources */,
 				F89D75952524506700DA1562 /* enrichPlant.gif in Resources */,
 				B7018F03232A8B6C00E95C0F /* pop_up.mp3 in Resources */,
 				B7018F01232A8B5500E95C0F /* coins-to-table..wav in Resources */,

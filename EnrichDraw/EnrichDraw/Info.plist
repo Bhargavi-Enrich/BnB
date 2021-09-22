@@ -53,6 +53,20 @@
 		<string>Quicksand-Light.ttf</string>
 		<string>Quicksand-Medium.ttf</string>
 		<string>Quicksand-Regular.ttf</string>
+        <string>FuturaPTBold.otf</string>
+        <string>FuturaPTBoldOblique.otf</string>
+        <string>FuturaPTBook.otf</string>
+        <string>FuturaPTBookOblique.otf</string>
+        <string>FuturaPTDemi.otf</string>
+        <string>FuturaPTDemiOblique.otf</string>
+        <string>FuturaPTExtraBold.otf</string>
+        <string>FuturaPTExtraBoldOblique.otf</string>
+        <string>FuturaPTHeavy.otf</string>
+        <string>FuturaPTHeavyOblique.otf</string>
+        <string>FuturaPTLight.otf</string>
+        <string>FuturaPTLightOblique.otf</string>
+        <string>FuturaPTMedium.otf</string>
+        <string>FuturaPTMediumOblique.otf</string>
 	</array>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
