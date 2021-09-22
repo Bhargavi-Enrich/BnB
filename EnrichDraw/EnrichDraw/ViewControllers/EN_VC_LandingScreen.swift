@@ -27,11 +27,11 @@ class EN_VC_LandingScreen: UIViewController
     @IBOutlet private weak var btnTrialSpin: UIButton!
     @IBOutlet private weak var lblNoOfSpins: UILabel!
     @IBOutlet private weak var lblRewardsRolled: UILabel!
-    
+    @IBOutlet private weak var bannerAdvertise: UIImageView!
+
     @IBOutlet private weak var imgViewBBLogo: UIImageView!
     @IBOutlet private weak var lblName: UILabel!
     @IBOutlet private weak var lblDate: UILabel!
-    @IBOutlet private weak var imageAnimation: UIImageView!
     @IBOutlet private weak var lblDescription: UILabel!
     @IBOutlet private weak var lblCopyRight: UILabel!
     @IBOutlet private weak var btnRewardSpin: UIButton!
@@ -186,9 +186,6 @@ class EN_VC_LandingScreen: UIViewController
     //MARK:- UI Setup
     func setUpScreenUI()
     {
-        //        let jeremyGif = UIImage.gifImageWithName("landing CTA")
-        //        imageAnimation.image = jeremyGif
-        
         self.btnPlace.setTitle("", for:.normal)
        // btnRewardSpin.setTitle("kl_RewardSpin".relatedStrings([]), for: .normal)
         //btnRewardSpin.setTitle("kl_RewardSpin".localized, for: .normal)

@@ -30,8 +30,8 @@
             filePath = "EnrichDraw/ViewControllers/EN_VC_LandingScreen.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "564"
-            endingLineNumber = "564"
+            startingLineNumber = "561"
+            endingLineNumber = "561"
             landmarkName = "openCampaignSeletionView()"
             landmarkType = "7">
          </BreakpointContent>
