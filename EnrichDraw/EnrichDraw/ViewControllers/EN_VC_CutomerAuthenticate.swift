@@ -79,7 +79,7 @@ class EN_VC_CutomerAuthenticate: UIViewController,UITextFieldDelegate {
         }
         
       //  if isTrial {
-            lblInfoMessage.text = "Please enter your registered mobile number"
+            lblInfoMessage.text = "Sign In Using Mobile Number"
             txtFieldInvoiceNumber.isHidden = true
 //        }
 //        else {
@@ -94,14 +94,14 @@ class EN_VC_CutomerAuthenticate: UIViewController,UITextFieldDelegate {
         
         self.setLayerToTextField(txtFieldInvoiceNumber)
         self.setLayerToTextField(txtFieldMobileNumber)
-        self.setArrowToTextField(txtFieldMobileNumber)
+        //self.setArrowToTextField(txtFieldMobileNumber)
     }
     
     // MARK :- Set Layer to Text Field
     func setLayerToTextField(_ textField:UITextField) {
         textField.layer.borderWidth = 1.0
-        textField.layer.borderColor = UIColor(red:0.93, green:0.93, blue:0.93, alpha:1.0).cgColor
-        textField.layer.cornerRadius = textField.frame.size.height / 2
+        textField.layer.borderColor = UIColor.black.cgColor
+        textField.layer.cornerRadius = 15
         textField.layer.masksToBounds = true
     }
     //MARK: - KeyBoard Handling Methods
@@ -114,19 +114,23 @@ class EN_VC_CutomerAuthenticate: UIViewController,UITextFieldDelegate {
         self.view.frame = self.view.frame.offsetBy(dx: 0, dy: movement)
         UIView.commitAnimations()
     }
-    //MARK :- Set Arrow Image in Textfield
-    func setArrowToTextField(_ textField:UITextField) {
-        textField.rightViewMode = UITextField.ViewMode.always
-        let imageView = UIButton(frame: CGRect(x: 0, y: 0, width: 44, height: 44))
-        imageView.addTarget(self, action: #selector(pushToNavigate), for: UIControl.Event.touchUpInside)
-        let image = UIImage(named: "greenArrow")
-        imageView.setImage(image, for: UIControl.State.normal)
-        textField.rightView = imageView
-        textField.rightView?.frame = CGRect(x: 0, y: 0, width: 50 , height:50)
+//    //MARK :- Set Arrow Image in Textfield
+//    func setArrowToTextField(_ textField:UITextField) {
+//        textField.rightViewMode = UITextField.ViewMode.always
+//        let imageView = UIButton(frame: CGRect(x: 0, y: 0, width: 44, height: 44))
+//        imageView.addTarget(self, action: #selector(pushToNavigate), for: UIControl.Event.touchUpInside)
+//        let image = UIImage(named: "greenArrow")
+//        imageView.setImage(image, for: UIControl.State.normal)
+//        textField.rightView = imageView
+//        textField.rightView?.frame = CGRect(x: 0, y: 0, width: 50 , height:50)
+//    }
+    
+    @IBAction func clickToNext(_ sender: Any) {
+        pushToNavigate()
     }
     
     // MARK: All Click Action
-    @objc func pushToNavigate() {
+     func pushToNavigate() {
         self.txtFieldInvoiceNumber.resignFirstResponder()
         self.txtFieldMobileNumber.resignFirstResponder()
         guard let mobileNumber = txtFieldMobileNumber.text else { return }

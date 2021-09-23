@@ -105,7 +105,7 @@ class EN_VC_CutomerOTPVerification : UIViewController,UITextFieldDelegate {
         
         self.txtFieldOTP.delegate = self
         self.setLayerToTextField(txtFieldOTP)
-        self.setArrowToTextField(txtFieldOTP)
+//        self.setArrowToTextField(txtFieldOTP)
         
         let textContent = "Please enter OTP that we sent on your registered mobile number " + self.userEnterMobileNumber!
         let textString = NSMutableAttributedString(string: textContent, attributes: [
@@ -119,24 +119,28 @@ class EN_VC_CutomerOTPVerification : UIViewController,UITextFieldDelegate {
     // MARK :- Set Layer to Text Field
     func setLayerToTextField(_ textField:UITextField) {
         textField.layer.borderWidth = 1.0
-        textField.layer.borderColor = UIColor(red:0.93, green:0.93, blue:0.93, alpha:1.0).cgColor
-        textField.layer.cornerRadius = textField.frame.size.height / 2
+        textField.layer.borderColor = UIColor.black.cgColor
+        textField.layer.cornerRadius = 15
         textField.layer.masksToBounds = true
     }
     
-    //MARK :- Set Arrow Image in Textfield
-    func setArrowToTextField(_ textField:UITextField) {
-        textField.rightViewMode = UITextField.ViewMode.always
-        let imageView = UIButton(frame: CGRect(x: 0, y: 0, width: 44, height: 44))
-        imageView.addTarget(self, action: #selector(pushToNavigate), for: UIControl.Event.touchUpInside)
-        let image = UIImage(named: "greenArrow")
-        imageView.setImage(image, for: UIControl.State.normal)
-        textField.rightView = imageView
-        textField.rightView?.frame = CGRect(x: 0, y: 0, width: 50 , height:50)
-        
+//    //MARK :- Set Arrow Image in Textfield
+//    func setArrowToTextField(_ textField:UITextField) {
+//        textField.rightViewMode = UITextField.ViewMode.always
+//        let imageView = UIButton(frame: CGRect(x: 0, y: 0, width: 44, height: 44))
+//        imageView.addTarget(self, action: #selector(pushToNavigate), for: UIControl.Event.touchUpInside)
+//        let image = UIImage(named: "greenArrow")
+//        imageView.setImage(image, for: UIControl.State.normal)
+//        textField.rightView = imageView
+//        textField.rightView?.frame = CGRect(x: 0, y: 0, width: 50 , height:50)
+//
+//    }
+    
+    @IBAction func clickToConfirm(_ sender: Any) {
+        pushToNavigate()
     }
     // MARK: All Click Action
-    @objc func pushToNavigate() {
+     func pushToNavigate() {
         self.txtFieldOTP.resignFirstResponder()
         guard let otpNumber = txtFieldOTP.text else { return }
         if !otpNumber.isEmpty  {
