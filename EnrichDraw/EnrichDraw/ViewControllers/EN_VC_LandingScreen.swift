@@ -269,23 +269,23 @@ class EN_VC_LandingScreen: UIViewController
             switch index {
             case 0:
                 
-                self.lblPoints1.attributedText  = textString
+                self.lblPoints1.text  = textContent + " " + textSpinCount
                 self.lblPointCount1.text = textSpinCount
             case 1:
                 
-                self.lblPoints2.attributedText  = textString
+                self.lblPoints2.text  = textContent + " " + textSpinCount //textString
                 self.lblPointCount2.text = textSpinCount
             case 2:
                 
-                self.lblPoints3.attributedText  = textString
+                self.lblPoints3.text  = textContent + " " + textSpinCount//textString
                 self.lblPointCount3.text = textSpinCount
             case 3:
                 
-                self.lblPoints4.attributedText  = textString
+                self.lblPoints4.text  = textContent + " " + textSpinCount //textString
                 self.lblPointCount4.text = textSpinCount
             case 4:
                 
-                self.lblPoints5.attributedText  = textString
+                self.lblPoints5.text  = textContent + " " + textSpinCount // textString
                 self.lblCountPoint5.text = textSpinCount
             default: break
             }
@@ -310,20 +310,20 @@ class EN_VC_LandingScreen: UIViewController
                         self.viewTotalRewardsRolled.isHidden = true
                         DispatchQueue.main.async {
 //                            self.lblSpinCount.text = self.getSixDigitData(amountWon: String(format:"%d",self.storeDetails.participationCount))
-                            self.lblSpinCount.text = self.getSixDigitData(amountWon: String(format:"%d",self.storeDetails.no_of_spin_availed))
+                            self.lblSpinCount.text = self.getSixDigitData(amountWon: String(format:"%d",self.storeDetails.no_of_spin_availed)) + " " + self.lblNoOfSpins.text!
 
                         }
                     })
                     
                     UIView.transition(with: self.viewCount, duration: 1.0, options: transitionOptions, animations: {
-                        self.viewCount.isHidden = false
+                        self.viewCount.isHidden = true
                         self.changeLabelsOnFiveSpin(index: -1)
                     })
                     
                     UIView.transition(with: self.viewTotalRewardsRolled, duration: 1.0, options: transitionOptions, animations: {
-                        self.viewTotalRewardsRolled.isHidden = false
+                        self.viewTotalRewardsRolled.isHidden = true
                          DispatchQueue.main.async {
-                            self.lblTotalRewardsRolled.text = self.storeDetails.totalRewardsRolled
+                            self.lblTotalRewardsRolled.text = self.storeDetails.totalRewardsRolled + " " + self.lblRewardsRolled.text!
                         }
                     })
                     
