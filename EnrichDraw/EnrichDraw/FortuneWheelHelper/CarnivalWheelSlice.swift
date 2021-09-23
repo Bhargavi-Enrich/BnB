@@ -48,8 +48,8 @@ public enum Style {
             case .darkRed: return TTUtils.uiColor(from:0xF2574C)
             case .lightRed: return TTUtils.uiColor(from:0xFF928A)
             
-            case .darkYellow: return TTUtils.uiColor(from:0xF5E53B)
-            case .lightYellow: return TTUtils.uiColor(from:0xFBF2B6)
+            case .darkYellow: return TTUtils.uiColor(from:0xEF8B38)
+            case .lightYellow: return TTUtils.uiColor(from:0xF8CC46)
             
             case .darkGreen: return TTUtils.uiColor(from:0x9FDB61)
             case .lightGreen: return TTUtils.uiColor(from:0xD9FFAC)
@@ -106,8 +106,8 @@ public class CarnivalWheelSlice: FortuneWheelSliceProtocol {
         case .darkRed: return TTUtils.uiColor(from:0xF2574C)
         case .lightRed: return TTUtils.uiColor(from:0xFF928A)
             
-        case .darkYellow: return TTUtils.uiColor(from:0xF5E53B)
-        case .lightYellow: return TTUtils.uiColor(from:0xFBF2B6)
+        case .darkYellow: return TTUtils.uiColor(from:0xEF8B38)
+        case .lightYellow: return TTUtils.uiColor(from:0xF8CC46)
             
         case .darkGreen: return TTUtils.uiColor(from:0x9FDB61)
         case .lightGreen: return TTUtils.uiColor(from:0xD9FFAC)

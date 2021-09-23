@@ -905,8 +905,8 @@ class EN_VC_SpinWheel: UIViewController {
         self.imgDiceShow.image = UIImage(named: self.returnDiceColorImage(spinNumber: userSelectedIndex))
         
         //SPIN WHEEL BACKGROUND
-        darkColor = .greenrichDark
-        lightColor = .greenrichLight
+        darkColor = .darkYellow
+        lightColor = .lightYellow
         
         self.spinWheel.image = UIImage(named: "royalbluewheel")
         //        self.btnSpin.setTitleColor(darkColor.backgroundColor, for: UIControlState.normal)

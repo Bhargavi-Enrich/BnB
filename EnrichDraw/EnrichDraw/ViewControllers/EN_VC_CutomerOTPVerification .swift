@@ -109,9 +109,9 @@ class EN_VC_CutomerOTPVerification : UIViewController,UITextFieldDelegate {
         
         let textContent = "Please Enter OTP That We Sent On \n Your Registered Mobile Number " + self.userEnterMobileNumber!
         let textString = NSMutableAttributedString(string: textContent, attributes: [
-            NSAttributedString.Key.font: UIFont(name: FontName.FuturaPTBook, size:27)
+            NSAttributedString.Key.font: UIFont(name: FontName.FuturaPTBook, size:25)
             ])
-        textString.setColorForText(textForAttribute: self.userEnterMobileNumber!, withColor: UIColor.black, withFont: UIFont(name: FontName.FuturaPTDemi, size:27)!)
+        textString.setColorForText(textForAttribute: self.userEnterMobileNumber!, withColor: UIColor.black, withFont: UIFont(name: FontName.FuturaPTDemi, size:25)!)
         self.lblDescription.textColor = UIColor.darkGray
         self.lblDescription.attributedText  = textString
     }
