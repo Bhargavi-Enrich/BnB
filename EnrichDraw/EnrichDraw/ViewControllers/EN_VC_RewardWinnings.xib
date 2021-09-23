@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad10_2" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EN_VC_RewardWinnings" customModule="PaytmiOSSDK" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="h8Z-u5-g5s" id="Kaw-5m-f5k"/>
+                <outlet property="crossButton" destination="Vtw-aG-pKP" id="YdN-Ft-lsa"/>
+                <outlet property="dropShadowView" destination="qR2-ff-Wla" id="8ao-vV-E6T"/>
+                <outlet property="numberOfLeftSpinLabel" destination="ofz-8x-Rjl" id="bWa-ZZ-lay"/>
+                <outlet property="spinAgainButton" destination="HOt-jd-doS" id="nEr-PU-tnX"/>
+                <outlet property="totalWinningsRewardLabel" destination="fgu-Xw-U68" id="jF4-vB-9fL"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="yourTotalWinningsLabel" destination="zam-eo-Ue8" id="Ajl-rg-LEv"/>
+                <outlet property="yourTotalWinningsView" destination="r4a-O0-PhE" id="2bX-C3-ZIe"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="1080" height="810"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JV7-YE-hbd">
+                    <rect key="frame" x="90" y="165" width="900" height="480"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r4a-O0-PhE">
+                            <rect key="frame" x="0.0" y="0.0" width="900" height="45"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Total Winnings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zam-eo-Ue8">
+                                    <rect key="frame" x="0.0" y="0.0" width="900" height="45"/>
+                                    <color key="backgroundColor" name="AccentColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vtw-aG-pKP">
+                                    <rect key="frame" x="872" y="16.5" width="12" height="12"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="12" id="IC2-zH-wnh"/>
+                                        <constraint firstAttribute="height" constant="12" id="n2d-pB-8j6"/>
+                                    </constraints>
+                                    <state key="normal" image="white-cross"/>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="Vtw-aG-pKP" firstAttribute="centerY" secondItem="r4a-O0-PhE" secondAttribute="centerY" id="4Gd-RX-8kv"/>
+                                <constraint firstAttribute="trailing" secondItem="zam-eo-Ue8" secondAttribute="trailing" id="BTP-3v-s60"/>
+                                <constraint firstAttribute="height" constant="45" id="Tpe-hu-2ye"/>
+                                <constraint firstAttribute="trailing" secondItem="Vtw-aG-pKP" secondAttribute="trailing" constant="16" id="XYc-NV-ZrH"/>
+                                <constraint firstItem="zam-eo-Ue8" firstAttribute="top" secondItem="r4a-O0-PhE" secondAttribute="top" id="vCO-Pi-Qow"/>
+                                <constraint firstAttribute="bottom" secondItem="zam-eo-Ue8" secondAttribute="bottom" id="vWK-5a-b0l"/>
+                                <constraint firstItem="zam-eo-Ue8" firstAttribute="leading" secondItem="r4a-O0-PhE" secondAttribute="leading" id="x7B-kS-cOs"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have won a total of 650 Reward Points that can be redeemed against beauty services and products" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgu-Xw-U68">
+                            <rect key="frame" x="24" y="69" width="852" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qR2-ff-Wla">
+                            <rect key="frame" x="130" y="104.5" width="640" height="1"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="640" id="ByE-Xh-OP2"/>
+                                <constraint firstAttribute="height" constant="1" id="rbY-Ow-fED"/>
+                            </constraints>
+                        </view>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="h8Z-u5-g5s">
+                            <rect key="frame" x="60" y="137.5" width="780" height="200"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="200" id="m6J-Gv-IB1"/>
+                            </constraints>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="VY0-Ne-bhP">
+                                <size key="itemSize" width="128" height="128"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="12" minY="10" maxX="10" maxY="10"/>
+                            </collectionViewFlowLayout>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="zrU-38-YrL"/>
+                                <outlet property="delegate" destination="-1" id="CJL-Kq-ePb"/>
+                            </connections>
+                        </collectionView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have 3 more spins left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofz-8x-Rjl">
+                            <rect key="frame" x="24" y="369.5" width="852" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HOt-jd-doS">
+                            <rect key="frame" x="329.5" y="397" width="241" height="62"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="241" id="GgU-vg-5KI"/>
+                                <constraint firstAttribute="height" constant="62" id="ha9-e1-3Qz"/>
+                            </constraints>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="5"/>
+                            <state key="normal" title="SPIN AGAIN  &gt;" backgroundImage="spin-again">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="r4a-O0-PhE" firstAttribute="top" secondItem="JV7-YE-hbd" secondAttribute="top" id="03e-C7-eyo"/>
+                        <constraint firstItem="ofz-8x-Rjl" firstAttribute="leading" secondItem="JV7-YE-hbd" secondAttribute="leading" constant="24" id="D9d-lB-5Hb"/>
+                        <constraint firstItem="fgu-Xw-U68" firstAttribute="leading" secondItem="JV7-YE-hbd" secondAttribute="leading" constant="24" id="DzP-y4-K4V"/>
+                        <constraint firstAttribute="width" constant="900" id="Fth-fr-Mlh"/>
+                        <constraint firstAttribute="trailing" secondItem="h8Z-u5-g5s" secondAttribute="trailing" constant="60" id="Kd0-Sf-exy"/>
+                        <constraint firstAttribute="trailing" secondItem="r4a-O0-PhE" secondAttribute="trailing" id="SQL-pM-6Di"/>
+                        <constraint firstItem="HOt-jd-doS" firstAttribute="centerX" secondItem="ofz-8x-Rjl" secondAttribute="centerX" id="V3N-of-dQe"/>
+                        <constraint firstItem="h8Z-u5-g5s" firstAttribute="leading" secondItem="JV7-YE-hbd" secondAttribute="leading" constant="60" id="XAS-st-iGz"/>
+                        <constraint firstAttribute="height" constant="480" id="atX-XL-QxI"/>
+                        <constraint firstItem="ofz-8x-Rjl" firstAttribute="top" secondItem="h8Z-u5-g5s" secondAttribute="bottom" constant="32" id="bBs-ZP-W4v"/>
+                        <constraint firstItem="r4a-O0-PhE" firstAttribute="leading" secondItem="JV7-YE-hbd" secondAttribute="leading" id="clu-It-dtC"/>
+                        <constraint firstItem="h8Z-u5-g5s" firstAttribute="top" secondItem="qR2-ff-Wla" secondAttribute="bottom" constant="32" id="ehM-Mo-kyU"/>
+                        <constraint firstItem="qR2-ff-Wla" firstAttribute="centerX" secondItem="JV7-YE-hbd" secondAttribute="centerX" id="fbI-9Y-A3C"/>
+                        <constraint firstItem="HOt-jd-doS" firstAttribute="top" secondItem="ofz-8x-Rjl" secondAttribute="bottom" constant="8" id="fz7-wQ-nc3"/>
+                        <constraint firstAttribute="trailing" secondItem="ofz-8x-Rjl" secondAttribute="trailing" constant="24" id="lTu-Mm-VJf"/>
+                        <constraint firstAttribute="trailing" secondItem="fgu-Xw-U68" secondAttribute="trailing" constant="24" id="n9J-TX-ajb"/>
+                        <constraint firstItem="fgu-Xw-U68" firstAttribute="top" secondItem="r4a-O0-PhE" secondAttribute="bottom" constant="24" id="r2S-pT-s80"/>
+                        <constraint firstItem="qR2-ff-Wla" firstAttribute="top" secondItem="fgu-Xw-U68" secondAttribute="bottom" constant="16" id="v8l-7y-R4x"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="JV7-YE-hbd" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="NI4-qs-UdK"/>
+                <constraint firstItem="JV7-YE-hbd" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="NRo-1p-Gsh"/>
+            </constraints>
+            <point key="canvasLocation" x="19.756097560975608" y="79.830508474576277"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="spin-again" width="265" height="62"/>
+        <image name="white-cross" width="22" height="22"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

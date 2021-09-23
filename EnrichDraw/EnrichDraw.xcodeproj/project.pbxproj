@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0748555126FCC5AE00749DD1 /* EN_VC_CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0748554F26FCC5AE00749DD1 /* EN_VC_CollectionViewCell.xib */; };
+		0748555226FCC5AE00749DD1 /* EN_VC_CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0748555026FCC5AE00749DD1 /* EN_VC_CollectionViewCell.swift */; };
+		0748555826FCC5F600749DD1 /* EN_VC_WinBBPopupCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0748555626FCC5F600749DD1 /* EN_VC_WinBBPopupCollectionViewCell.xib */; };
+		0748555926FCC5F600749DD1 /* EN_VC_WinBBPopupCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0748555726FCC5F600749DD1 /* EN_VC_WinBBPopupCollectionViewCell.swift */; };
+		0748555E26FCC62700749DD1 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0748555D26FCC62700749DD1 /* CircularProgressView.swift */; };
+		0748556826FCC64900749DD1 /* EN_VC_RewardWinnings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0748556226FCC64900749DD1 /* EN_VC_RewardWinnings.swift */; };
+		0748556926FCC64900749DD1 /* EN_VC_RewardWinnings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0748556326FCC64900749DD1 /* EN_VC_RewardWinnings.xib */; };
+		0748556A26FCC64900749DD1 /* EN_VC_WinBBPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0748556426FCC64900749DD1 /* EN_VC_WinBBPopupViewController.swift */; };
+		0748556B26FCC64900749DD1 /* EN_VC_WinBigBBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0748556526FCC64900749DD1 /* EN_VC_WinBigBBViewController.swift */; };
+		0748556C26FCC64900749DD1 /* EN_VC_WinBigBBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0748556626FCC64900749DD1 /* EN_VC_WinBigBBViewController.xib */; };
+		0748556D26FCC64900749DD1 /* EN_VC_WinBBPopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0748556726FCC64900749DD1 /* EN_VC_WinBBPopupViewController.xib */; };
 		07D6C2D426FB4AC70048A3C0 /* FuturaPTDemi.otf in Resources */ = {isa = PBXBuildFile; fileRef = 07D6C2CD26FB4AC70048A3C0 /* FuturaPTDemi.otf */; };
 		07D6C2D526FB4AC70048A3C0 /* FuturaPTExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 07D6C2CE26FB4AC70048A3C0 /* FuturaPTExtraBold.otf */; };
 		07D6C2D626FB4AC70048A3C0 /* FuturaPTBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 07D6C2CF26FB4AC70048A3C0 /* FuturaPTBold.otf */; };
@@ -181,6 +192,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0748554F26FCC5AE00749DD1 /* EN_VC_CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EN_VC_CollectionViewCell.xib; sourceTree = "<group>"; };
+		0748555026FCC5AE00749DD1 /* EN_VC_CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EN_VC_CollectionViewCell.swift; sourceTree = "<group>"; };
+		0748555626FCC5F600749DD1 /* EN_VC_WinBBPopupCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EN_VC_WinBBPopupCollectionViewCell.xib; sourceTree = "<group>"; };
+		0748555726FCC5F600749DD1 /* EN_VC_WinBBPopupCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EN_VC_WinBBPopupCollectionViewCell.swift; sourceTree = "<group>"; };
+		0748555D26FCC62700749DD1 /* CircularProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
+		0748556226FCC64900749DD1 /* EN_VC_RewardWinnings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EN_VC_RewardWinnings.swift; sourceTree = "<group>"; };
+		0748556326FCC64900749DD1 /* EN_VC_RewardWinnings.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EN_VC_RewardWinnings.xib; sourceTree = "<group>"; };
+		0748556426FCC64900749DD1 /* EN_VC_WinBBPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EN_VC_WinBBPopupViewController.swift; sourceTree = "<group>"; };
+		0748556526FCC64900749DD1 /* EN_VC_WinBigBBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EN_VC_WinBigBBViewController.swift; sourceTree = "<group>"; };
+		0748556626FCC64900749DD1 /* EN_VC_WinBigBBViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EN_VC_WinBigBBViewController.xib; sourceTree = "<group>"; };
+		0748556726FCC64900749DD1 /* EN_VC_WinBBPopupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EN_VC_WinBBPopupViewController.xib; sourceTree = "<group>"; };
 		07D6C2CD26FB4AC70048A3C0 /* FuturaPTDemi.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FuturaPTDemi.otf; sourceTree = "<group>"; };
 		07D6C2CE26FB4AC70048A3C0 /* FuturaPTExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FuturaPTExtraBold.otf; sourceTree = "<group>"; };
 		07D6C2CF26FB4AC70048A3C0 /* FuturaPTBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FuturaPTBold.otf; sourceTree = "<group>"; };
@@ -482,6 +504,10 @@
 		18417327229668AE00FFDA48 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0748555726FCC5F600749DD1 /* EN_VC_WinBBPopupCollectionViewCell.swift */,
+				0748555626FCC5F600749DD1 /* EN_VC_WinBBPopupCollectionViewCell.xib */,
+				0748555026FCC5AE00749DD1 /* EN_VC_CollectionViewCell.swift */,
+				0748554F26FCC5AE00749DD1 /* EN_VC_CollectionViewCell.xib */,
 				18417328229668AE00FFDA48 /* CampaignTableViewCell.swift */,
 				18417329229668AE00FFDA48 /* CampaignTableViewCell.xib */,
 				1841732A229668AE00FFDA48 /* ImagesVideosCollectionViewCell.swift */,
@@ -588,6 +614,13 @@
 		18A7104D212D0EF4001AECE7 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				0748556226FCC64900749DD1 /* EN_VC_RewardWinnings.swift */,
+				0748556326FCC64900749DD1 /* EN_VC_RewardWinnings.xib */,
+				0748556426FCC64900749DD1 /* EN_VC_WinBBPopupViewController.swift */,
+				0748556726FCC64900749DD1 /* EN_VC_WinBBPopupViewController.xib */,
+				0748556526FCC64900749DD1 /* EN_VC_WinBigBBViewController.swift */,
+				0748556626FCC64900749DD1 /* EN_VC_WinBigBBViewController.xib */,
+				0748555D26FCC62700749DD1 /* CircularProgressView.swift */,
 				147F3DD621AE87DB00672655 /* EN_VC_SlideShow.swift */,
 				67160CBA2140F8DD00D6555D /* EN_VC_TotalRewards.swift */,
 				187276EF2138569800686046 /* EN_VC_RewardSpin.swift */,
@@ -912,16 +945,19 @@
 				F852AE36251B542400446F04 /* Montserrat-SemiBold.ttf in Resources */,
 				07D6C2DA26FB4AC70048A3C0 /* FuturaPTMedium.otf in Resources */,
 				F852AE30251B542400446F04 /* Montserrat-ExtraBold.ttf in Resources */,
+				0748555126FCC5AE00749DD1 /* EN_VC_CollectionViewCell.xib in Resources */,
 				F86BBF1325309E7C00578ACD /* Assets.xcassets in Resources */,
 				B72A08CC2332C08700B2841A /* Applause-1.mp3 in Resources */,
 				F852AE33251B542400446F04 /* Montserrat-Regular.ttf in Resources */,
 				07D6C2D926FB4AC70048A3C0 /* FuturaPTHeavy.otf in Resources */,
 				18A71013212D0E5E001AECE7 /* LaunchScreen.storyboard in Resources */,
+				0748556D26FCC64900749DD1 /* EN_VC_WinBBPopupViewController.xib in Resources */,
 				07D6C2D426FB4AC70048A3C0 /* FuturaPTDemi.otf in Resources */,
 				07D6C2D626FB4AC70048A3C0 /* FuturaPTBold.otf in Resources */,
 				B74DBCF32337E596001E618B /* RollDice.mp3 in Resources */,
 				14AFB51C215A5627006284F5 /* animationsteps1.m4v in Resources */,
 				18F33AC82133EE6400F6F7CD /* Lobster_1.3.otf in Resources */,
+				0748556926FCC64900749DD1 /* EN_VC_RewardWinnings.xib in Resources */,
 				F852AE2B251B542400446F04 /* Montserrat-ExtraLight.ttf in Resources */,
 				F852AE2E251B542400446F04 /* Montserrat-Medium.ttf in Resources */,
 				14559F582146A7C10089BEC8 /* landing CTA.gif in Resources */,
@@ -929,6 +965,7 @@
 				1488014222C3519100D74CDC /* CustomPopUpUserData.xib in Resources */,
 				18A71010212D0E5E001AECE7 /* store.xcassets in Resources */,
 				F852AE2D251B542400446F04 /* Montserrat-MediumItalic.ttf in Resources */,
+				0748555826FCC5F600749DD1 /* EN_VC_WinBBPopupCollectionViewCell.xib in Resources */,
 				F852AE25251B542400446F04 /* Montserrat-LightItalic.ttf in Resources */,
 				B79F94BD2337570C00F01515 /* RouletteWheelEnd.mp3 in Resources */,
 				F852AE32251B542400446F04 /* Montserrat-BoldItalic.ttf in Resources */,
@@ -945,6 +982,7 @@
 				F852AE28251B542400446F04 /* Montserrat-Italic.ttf in Resources */,
 				F852AE26251B542400446F04 /* Montserrat-Thin.ttf in Resources */,
 				B709DF202332A37B00CC677E /* magicBox.mp3 in Resources */,
+				0748556C26FCC64900749DD1 /* EN_VC_WinBigBBViewController.xib in Resources */,
 				F89D759725245A0300DA1562 /* chimes.wav in Resources */,
 				F87BDFED252DE95E003D2B5B /* MyOrderCell.xib in Resources */,
 				F852AE2C251B542400446F04 /* Montserrat-Black.ttf in Resources */,
@@ -1030,6 +1068,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0748556B26FCC64900749DD1 /* EN_VC_WinBigBBViewController.swift in Sources */,
 				F86BBF1625309E7C00578ACD /* FortuneWheelLayer.swift in Sources */,
 				1496BC9F214948B5005BD1E7 /* EN_Service_AdminCampaign.swift in Sources */,
 				14AE6884212D6EBB004E2338 /* EN_VC_AdminAuthentication.swift in Sources */,
@@ -1066,10 +1105,12 @@
 				14AE6883212D6EBB004E2338 /* EN_VC_SpinWheel.swift in Sources */,
 				14B838A1212D7A8A00D0F089 /* StoryBoardManager.swift in Sources */,
 				67160CBB2140F8DE00D6555D /* EN_VC_TotalRewards.swift in Sources */,
+				0748555E26FCC62700749DD1 /* CircularProgressView.swift in Sources */,
 				187276EE2137BCF000686046 /* EN_VC_TrialSpin.swift in Sources */,
 				147F3DD721AE87DC00672655 /* EN_VC_SlideShow.swift in Sources */,
 				F8E32EBC26F1C5980017FF09 /* KeychainItemAccessibility.swift in Sources */,
 				676CEE0C21B018CB0021D1CA /* CustomAVPlayerViewController.swift in Sources */,
+				0748556A26FCC64900749DD1 /* EN_VC_WinBBPopupViewController.swift in Sources */,
 				148DA10E214A388E00609349 /* ModelCampaignDetails.swift in Sources */,
 				67AFB537214BB18C00759D91 /* EN_Service_TotalRewards.swift in Sources */,
 				14B0D15F213FDBAB003809F8 /* EN_VC_KnowMore.swift in Sources */,
@@ -1094,11 +1135,14 @@
 				14B0D15B213FA333003809F8 /* EN_VC_AlertViewController.swift in Sources */,
 				F88282D325149585007338C6 /* RecycleItemCell.swift in Sources */,
 				18D222312142684A0070A991 /* EN_Service_AdminLogin.swift in Sources */,
+				0748556826FCC64900749DD1 /* EN_VC_RewardWinnings.swift in Sources */,
 				F86BBF1825309E7C00578ACD /* SpinningWheelSliceImpl.swift in Sources */,
 				14E5ECEA21A82E3C00068B4A /* EN_Service_AzureBlob.swift in Sources */,
 				F8D1F3D0252EE3FB0077647F /* AnyCodable.swift in Sources */,
 				18F5535E22A8DC0100113631 /* ExtensionBundle.swift in Sources */,
+				0748555926FCC5F600749DD1 /* EN_VC_WinBBPopupCollectionViewCell.swift in Sources */,
 				F87BDFE9252DA080003D2B5B /* ModelOrderDetails.swift in Sources */,
+				0748555226FCC5AE00749DD1 /* EN_VC_CollectionViewCell.swift in Sources */,
 				18A71064212D0EF4001AECE7 /* DetailViewController.swift in Sources */,
 				18417330229668AF00FFDA48 /* SpinImageCollectionViewCell.swift in Sources */,
 				18A71068212D0EF4001AECE7 /* MasterViewController.swift in Sources */,
