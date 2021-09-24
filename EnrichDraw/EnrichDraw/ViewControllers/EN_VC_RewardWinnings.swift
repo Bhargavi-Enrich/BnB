@@ -61,7 +61,7 @@ class EN_VC_RewardWinnings: UIViewController, UICollectionViewDelegate, UICollec
         return 1
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return 6
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
@@ -73,8 +73,8 @@ class EN_VC_RewardWinnings: UIViewController, UICollectionViewDelegate, UICollec
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let size = collectionView.frame.size.width / 5 - 15
-        return CGSize(width: size, height: size + 25)
+        let size = collectionView.frame.size.width / 4 - 15
+        return CGSize(width: size, height: size + 15)
     }
     
     @objc func dismissPopupScreenCrossClick() {

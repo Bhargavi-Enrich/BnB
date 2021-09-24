@@ -9,6 +9,8 @@ import UIKit
 
 class EN_VC_WinBigBBViewController: UIViewController {
 
+    @IBOutlet weak var imageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
