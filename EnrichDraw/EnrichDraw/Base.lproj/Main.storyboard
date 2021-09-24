@@ -4934,46 +4934,46 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="0A9-hz-bPz">
-                                <rect key="frame" x="25" y="625" width="974" height="88"/>
+                                <rect key="frame" x="30" y="625" width="964" height="88"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="C1D-hg-Er5">
-                                        <rect key="frame" x="0.0" y="0.0" width="139" height="88"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="137.5" height="88"/>
                                         <fontDescription key="fontDescription" name="FuturaPT-Medium" family="Futura PT" pointSize="16"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="Orm-sv-yWy">
-                                        <rect key="frame" x="139" y="0.0" width="139.5" height="88"/>
+                                        <rect key="frame" x="137.5" y="0.0" width="138" height="88"/>
                                         <fontDescription key="fontDescription" name="FuturaPT-Medium" family="Futura PT" pointSize="16"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="Bgc-gF-I2t">
-                                        <rect key="frame" x="278.5" y="0.0" width="139" height="88"/>
+                                        <rect key="frame" x="275.5" y="0.0" width="137.5" height="88"/>
                                         <fontDescription key="fontDescription" name="FuturaPT-Medium" family="Futura PT" pointSize="16"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="7OU-fv-Wrw">
-                                        <rect key="frame" x="417.5" y="0.0" width="139" height="88"/>
+                                        <rect key="frame" x="413" y="0.0" width="138" height="88"/>
                                         <fontDescription key="fontDescription" name="FuturaPT-Medium" family="Futura PT" pointSize="16"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="xoA-dJ-FlQ">
-                                        <rect key="frame" x="556.5" y="0.0" width="139" height="88"/>
+                                        <rect key="frame" x="551" y="0.0" width="137.5" height="88"/>
                                         <fontDescription key="fontDescription" name="FuturaPT-Medium" family="Futura PT" pointSize="16"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="L6k-bZ-l4X">
-                                        <rect key="frame" x="695.5" y="0.0" width="139.5" height="88"/>
+                                        <rect key="frame" x="688.5" y="0.0" width="138" height="88"/>
                                         <fontDescription key="fontDescription" name="FuturaPT-Medium" family="Futura PT" pointSize="16"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="6yE-Nr-7HO">
-                                        <rect key="frame" x="835" y="0.0" width="139" height="88"/>
+                                        <rect key="frame" x="826.5" y="0.0" width="137.5" height="88"/>
                                         <fontDescription key="fontDescription" name="FuturaPT-Medium" family="Futura PT" pointSize="16"/>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -5001,7 +5001,7 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                             <constraint firstItem="bup-qe-rTn" firstAttribute="top" secondItem="BDc-hl-soh" secondAttribute="top" id="Mxa-63-TKy"/>
                             <constraint firstItem="bW6-FU-I0B" firstAttribute="bottom" secondItem="ul1-ad-7wP" secondAttribute="bottom" constant="30" id="PJj-SB-Opd"/>
                             <constraint firstItem="90Q-jZ-Tof" firstAttribute="top" secondItem="bW6-FU-I0B" secondAttribute="top" constant="17" id="SGf-EV-1tm"/>
-                            <constraint firstItem="bW6-FU-I0B" firstAttribute="trailing" secondItem="0A9-hz-bPz" secondAttribute="trailing" constant="25" id="Sf5-xI-WIK"/>
+                            <constraint firstItem="bW6-FU-I0B" firstAttribute="trailing" secondItem="0A9-hz-bPz" secondAttribute="trailing" constant="30" id="Sf5-xI-WIK"/>
                             <constraint firstItem="BDc-hl-soh" firstAttribute="centerX" secondItem="p3e-St-UvU" secondAttribute="centerX" id="Snr-kW-dp1"/>
                             <constraint firstItem="weq-pw-s4Z" firstAttribute="centerX" secondItem="p3e-St-UvU" secondAttribute="centerX" id="Tiu-fs-sS4"/>
                             <constraint firstItem="bW6-FU-I0B" firstAttribute="trailing" secondItem="8Iw-OY-4OX" secondAttribute="trailing" constant="20" id="UdI-NH-JWr"/>
@@ -5011,7 +5011,7 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                             <constraint firstItem="QmI-8g-knP" firstAttribute="trailing" secondItem="bW6-FU-I0B" secondAttribute="trailing" id="ag1-WG-bzu"/>
                             <constraint firstItem="90Q-jZ-Tof" firstAttribute="leading" secondItem="x6c-r5-NP6" secondAttribute="trailing" constant="10" id="b37-eL-asL"/>
                             <constraint firstItem="cwb-AE-bGr" firstAttribute="top" secondItem="bW6-FU-I0B" secondAttribute="top" constant="10" id="cIs-dk-aZP"/>
-                            <constraint firstItem="0A9-hz-bPz" firstAttribute="leading" secondItem="bW6-FU-I0B" secondAttribute="leading" constant="25" id="dsv-XP-2Qq"/>
+                            <constraint firstItem="0A9-hz-bPz" firstAttribute="leading" secondItem="bW6-FU-I0B" secondAttribute="leading" constant="30" id="dsv-XP-2Qq"/>
                             <constraint firstItem="uVz-Wk-3Xe" firstAttribute="centerY" secondItem="weq-pw-s4Z" secondAttribute="centerY" id="eFm-g8-UBZ"/>
                             <constraint firstItem="x6c-r5-NP6" firstAttribute="centerY" secondItem="90Q-jZ-Tof" secondAttribute="centerY" id="gL1-k4-TTe"/>
                             <constraint firstItem="bW6-FU-I0B" firstAttribute="trailing" secondItem="90Q-jZ-Tof" secondAttribute="trailing" constant="20" id="gQx-dY-wEF"/>

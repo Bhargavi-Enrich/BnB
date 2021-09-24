@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="ipad9_7" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EN_VC_WinBigBBViewController" customModule="PaytmiOSSDK" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EN_VC_WinBigBBViewController" customModule="Greenrich" customModuleProvider="target">
             <connections>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -19,7 +19,7 @@
             <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background-image" translatesAutoresizingMaskIntoConstraints="NO" id="ipp-9O-yIS">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="landingBackground" translatesAutoresizingMaskIntoConstraints="NO" id="ipp-9O-yIS">
                     <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                 </imageView>
                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Eeh-OG-QMd">
@@ -43,7 +43,7 @@
                         <constraint firstAttribute="width" constant="944" id="elK-5n-PmV"/>
                     </constraints>
                 </stackView>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="BE3-Ld-o0E">
+                <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="BE3-Ld-o0E">
                     <rect key="frame" x="237" y="115" width="550" height="558"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Z1g-Dx-8WH">
@@ -80,6 +80,13 @@
                         <constraint firstAttribute="width" constant="550" id="dnU-Y2-eIk"/>
                     </constraints>
                 </stackView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Layer 1_offer" translatesAutoresizingMaskIntoConstraints="NO" id="lK8-zX-4ik">
+                    <rect key="frame" x="237" y="115" width="550" height="558"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="550" id="Wkj-Mc-0kp"/>
+                        <constraint firstAttribute="height" constant="558" id="hwQ-Zb-udK"/>
+                    </constraints>
+                </imageView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star-icon" translatesAutoresizingMaskIntoConstraints="NO" id="KXH-UW-aY6">
                     <rect key="frame" x="108" y="180" width="87" height="87"/>
                     <constraints>
@@ -116,7 +123,9 @@
                 <constraint firstItem="v8G-y2-7BU" firstAttribute="leading" secondItem="BE3-Ld-o0E" secondAttribute="trailing" constant="40" id="ZWv-9e-U9D"/>
                 <constraint firstItem="ipp-9O-yIS" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="eDV-3d-FhR"/>
                 <constraint firstItem="BE3-Ld-o0E" firstAttribute="leading" secondItem="AzD-Vn-Okd" secondAttribute="trailing" constant="32" id="hQI-Q5-y4c"/>
+                <constraint firstItem="lK8-zX-4ik" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="iQO-cs-1TE"/>
                 <constraint firstItem="BE3-Ld-o0E" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="nRE-Qn-V1A"/>
+                <constraint firstItem="lK8-zX-4ik" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="10" id="odC-Wh-HhK"/>
                 <constraint firstItem="ipp-9O-yIS" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="sam-HK-a94"/>
                 <constraint firstItem="ipp-9O-yIS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="zn9-nB-Et3"/>
             </constraints>
@@ -130,7 +139,7 @@
         <image name="Layer 5_offer" width="193" height="314"/>
         <image name="Layer 6_offer" width="192" height="314"/>
         <image name="Layer-4_offer" width="192" height="314"/>
-        <image name="background-image" width="1024" height="768"/>
+        <image name="landingBackground" width="1024" height="768"/>
         <image name="star-icon" width="86" height="87"/>
         <image name="star-icon(M)" width="71" height="72"/>
         <image name="star-icon(S)" width="56" height="57"/>
