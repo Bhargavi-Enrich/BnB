@@ -48,7 +48,7 @@ extension UIViewController
     }
     
     func getCopyRight()-> String{
-        let copyRightText = String(format: "%@ (%@)","Copyright ® 2021 Enrich. All Rights Reserved.",Bundle.main.buildVersionNumber ?? "")
+        let copyRightText = String(format: "%@","Copyright ® 2021 Enrich. All Rights Reserved.")
         return copyRightText
     }
     

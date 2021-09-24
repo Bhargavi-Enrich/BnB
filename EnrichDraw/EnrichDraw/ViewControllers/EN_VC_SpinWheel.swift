@@ -971,7 +971,7 @@ class EN_VC_SpinWheel: UIViewController {
     //MARK:- **** UPDATE POINTS ON SERVER : Spin Wheel Action ****
     @IBAction func rotateButton(_ sender: Any) {
         
-        if(self.btnSpin.titleLabel?.text == "Start") // Spin Wheel
+        if(self.btnSpin.titleLabel?.text == "Spin It") // Spin Wheel
         {
             
             if(isTrialOrRewardSpin) {// Trial Spin
@@ -1016,7 +1016,7 @@ class EN_VC_SpinWheel: UIViewController {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.0) {
                 self.bombSoundEffect?.fadeOut()
                 self.spinningWheel.startAnimating(fininshIndex: (self.adminSeletedSliceToStop)) { (finished) in
-                    self.btnSpin.setTitle("Start", for: UIControl.State.normal)
+                    self.btnSpin.setTitle("Spin It", for: UIControl.State.normal)
                     self.btnSpinTitle = self.btnSpin.currentTitle!
                     print("Status: \(finished)")
                     if self.spinningWheel.slices.count > self.adminSeletedSliceToStop
@@ -1540,7 +1540,7 @@ extension EN_VC_SpinWheel {
         self.isShowAmount = false
         self.btnTimer.isHidden = false
         self.viewCasinoCities.isHidden = false
-        btnStop.setTitle("Start", for: .normal)
+        btnStop.setTitle("Spin It", for: .normal)
         self.viewCasino.isHidden = false
         var strFinal = self.spinningWheel.slices [self.adminSeletedSliceToStop].rewardValue
         print("strFinal : \(strFinal)")
@@ -1594,7 +1594,7 @@ extension EN_VC_SpinWheel {
         }else if !isStopCol && !isStopCol1 && !isStopCol2 && !isStopCol3 && !isStopCol4 && !isStopCol5 {
             
             btnStop.isEnabled = false
-            btnStop.setTitle("Start", for: .normal)
+            btnStop.setTitle("Spin It", for: .normal)
             DispatchQueue.main.asyncAfter(deadline: .now() + getRandonNumber(range: 0.1...0.2), execute: {
                 self.isStopCol = true
                 _ = self.checkUptoZero()
