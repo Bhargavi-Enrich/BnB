@@ -36,6 +36,7 @@ class EN_VC_RewardSpin: UIViewController {
     @IBOutlet weak var lblHashSpins: UILabel!
     @IBOutlet weak var lblSelctionColorTitle: UILabel!
     @IBOutlet weak var lblCopyRight: UILabel!
+    @IBOutlet private weak var bannerAdvertise: UIImageView!
 
     @IBOutlet weak var btnPlace: UIButton!
     @IBOutlet weak var btnAddColors: UIButton!

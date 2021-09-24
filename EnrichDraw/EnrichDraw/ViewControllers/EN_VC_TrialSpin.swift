@@ -11,7 +11,8 @@ import AVFoundation
 class EN_VC_TrialSpin: UIViewController {
     
     @IBOutlet weak var constraintColorViewHeight: NSLayoutConstraint!
-    
+    @IBOutlet private weak var bannerAdvertise: UIImageView!
+
     @IBOutlet weak var btnPlace: UIButton!
     @IBOutlet weak var imgPlace: UIImageView!
     @IBOutlet weak var lblDescription: UILabel!

@@ -1765,8 +1765,8 @@ Your Registered Mobile Number 99XXXXXX32</string>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="landingBackground" translatesAutoresizingMaskIntoConstraints="NO" id="cf2-7j-Hcr">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="bannerPlaceHolder" translatesAutoresizingMaskIntoConstraints="NO" id="Kk1-h9-rsl">
-                                <rect key="frame" x="144.5" y="0.0" width="735" height="139"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bannerPlaceHolder" translatesAutoresizingMaskIntoConstraints="NO" id="Kk1-h9-rsl">
+                                <rect key="frame" x="144.5" y="17" width="735" height="139"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="735" id="Wng-TP-qrB"/>
                                     <constraint firstAttribute="height" constant="139" id="uHr-jq-nms"/>
@@ -2200,6 +2200,7 @@ Your Registered Mobile Number 99XXXXXX32</string>
                         <viewLayoutGuide key="safeArea" id="GDP-4u-cn0"/>
                         <constraints>
                             <constraint firstItem="Fad-xb-Xa3" firstAttribute="bottom" secondItem="GDP-4u-cn0" secondAttribute="bottom" id="05I-Ay-Dqk"/>
+                            <constraint firstItem="Kk1-h9-rsl" firstAttribute="firstBaseline" secondItem="rTD-mm-EYP" secondAttribute="firstBaseline" id="4Xp-4M-XYD"/>
                             <constraint firstItem="xKe-x3-vHt" firstAttribute="trailing" secondItem="SKj-zX-i8A" secondAttribute="trailing" id="6CH-Fk-EJL"/>
                             <constraint firstItem="b4R-gC-F1s" firstAttribute="top" secondItem="SKj-zX-i8A" secondAttribute="bottom" constant="20" id="6IV-eQ-mys"/>
                             <constraint firstItem="kSK-au-opa" firstAttribute="leading" secondItem="rTD-mm-EYP" secondAttribute="leading" id="6IY-bE-vna"/>
@@ -2228,6 +2229,7 @@ Your Registered Mobile Number 99XXXXXX32</string>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bannerAdvertise" destination="Kk1-h9-rsl" id="gmI-qW-8Is"/>
                         <outlet property="btnAddColors" destination="q3s-a6-Tl9" id="C1H-8j-YuO"/>
                         <outlet property="btnAqua" destination="8fC-qY-lrH" id="rw2-cY-BeI"/>
                         <outlet property="btnBlue" destination="ZSH-Na-pHS" id="xlT-H4-KjA"/>
@@ -2276,8 +2278,8 @@ Your Registered Mobile Number 99XXXXXX32</string>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="landingBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Yeu-V6-v0u">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="bannerPlaceHolder" translatesAutoresizingMaskIntoConstraints="NO" id="oHt-GM-7LF">
-                                <rect key="frame" x="144.5" y="0.0" width="735" height="139"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bannerPlaceHolder" translatesAutoresizingMaskIntoConstraints="NO" id="oHt-GM-7LF">
+                                <rect key="frame" x="144.5" y="17" width="735" height="139"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="735" id="GPS-Bp-B7s"/>
                                     <constraint firstAttribute="height" constant="139" id="x8g-Ve-2i8"/>
@@ -3025,6 +3027,7 @@ Your Registered Mobile Number 99XXXXXX32</string>
                             <constraint firstAttribute="top" secondItem="1Ni-wV-lZq" secondAttribute="top" id="9lg-FZ-VEb"/>
                             <constraint firstItem="x4L-sk-kFJ" firstAttribute="bottom" secondItem="0WH-l7-Bvc" secondAttribute="bottom" id="B6G-qi-2rv"/>
                             <constraint firstItem="A7M-Ol-hJ1" firstAttribute="top" relation="greaterThanOrEqual" secondItem="qSn-QW-Ohx" secondAttribute="bottom" constant="50" id="CFp-Fx-6XH"/>
+                            <constraint firstItem="oHt-GM-7LF" firstAttribute="firstBaseline" secondItem="HhK-0b-84N" secondAttribute="firstBaseline" id="CXj-NV-l2X"/>
                             <constraint firstItem="0WH-l7-Bvc" firstAttribute="bottom" secondItem="A7M-Ol-hJ1" secondAttribute="bottom" constant="25" id="DwB-Pc-ge1"/>
                             <constraint firstItem="uCL-dY-6WT" firstAttribute="leading" secondItem="HhK-0b-84N" secondAttribute="leading" id="Flh-oU-pN6"/>
                             <constraint firstItem="oYF-mU-4EQ" firstAttribute="leading" secondItem="0WH-l7-Bvc" secondAttribute="leading" constant="10" id="GYt-dc-0np"/>
@@ -3033,6 +3036,7 @@ Your Registered Mobile Number 99XXXXXX32</string>
                             <constraint firstItem="qSn-QW-Ohx" firstAttribute="leading" secondItem="0WH-l7-Bvc" secondAttribute="leading" id="Lgh-LA-BRz"/>
                             <constraint firstItem="x4L-sk-kFJ" firstAttribute="top" secondItem="1Ni-wV-lZq" secondAttribute="top" id="NZM-Ok-Ojk"/>
                             <constraint firstItem="qSn-QW-Ohx" firstAttribute="width" secondItem="0WH-l7-Bvc" secondAttribute="width" multiplier="0.35" id="Vvp-IE-HRA"/>
+                            <constraint firstItem="Yeu-V6-v0u" firstAttribute="leading" secondItem="0WH-l7-Bvc" secondAttribute="leading" id="YNx-48-fB6"/>
                             <constraint firstItem="qSn-QW-Ohx" firstAttribute="top" secondItem="HhK-0b-84N" secondAttribute="bottom" constant="30" id="bpP-G3-T12"/>
                             <constraint firstItem="x4L-sk-kFJ" firstAttribute="trailing" secondItem="0WH-l7-Bvc" secondAttribute="trailing" id="c1N-rN-U2S"/>
                             <constraint firstItem="x4L-sk-kFJ" firstAttribute="centerX" secondItem="1Ni-wV-lZq" secondAttribute="centerX" id="kFr-x1-AKP"/>
@@ -3053,6 +3057,7 @@ Your Registered Mobile Number 99XXXXXX32</string>
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="bannerAdvertise" destination="oHt-GM-7LF" id="olu-CC-48X"/>
                         <outlet property="btnAddColors" destination="bAN-cC-nSG" id="dHQ-ks-P26"/>
                         <outlet property="btnAqua" destination="7yR-AQ-Ikh" id="f6p-eX-ch7"/>
                         <outlet property="btnBack" destination="uCL-dY-6WT" id="KIS-NV-1w7"/>
