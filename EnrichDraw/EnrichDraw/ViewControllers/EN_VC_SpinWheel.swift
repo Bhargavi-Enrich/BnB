@@ -1120,13 +1120,13 @@ class EN_VC_SpinWheel: UIViewController {
                         if(winningPrice.isNumber)
                         {
                             let textString = self.returnAttributedStringForAlertPopUp(textContext: String(format: "%@%@%@%@%@","kl_WonMsg1".localized ,winningPrice,"kl_WonMsgPts".relatedStrings(self.isScratchCard) ,"kl_WonMsg2".localized, strMsgWon ), winningPrice: winningPrice)
-                            alertViewController.setAlertValues(congratsMessage: "Congratulations!", imageTrophy:"greenPlant", winningMessage: textString,btnTitle: btnTitle, tipMessage: tipMessage)
+                            alertViewController.setAlertValues(congratsMessage: "Woohoo!", imageTrophy:"greenPlant", winningMessage: textString,btnTitle: btnTitle, tipMessage: tipMessage)
                             
                         }
                         else
                         {
                             let textString = self.returnAttributedStringForAlertPopUp(textContext: String(format: "%@%@%@%@","kl_WonMsg1".localized ,winningPrice ,"kl_WonMsg2".localized,strMsgWon), winningPrice: winningPrice)
-                            alertViewController.setAlertValues(congratsMessage: "Congratulations!", imageTrophy:"greenPlant", winningMessage: textString,btnTitle: btnTitle, tipMessage: tipMessage)
+                            alertViewController.setAlertValues(congratsMessage: "Woohoo!", imageTrophy:"greenPlant", winningMessage: textString,btnTitle: btnTitle, tipMessage: tipMessage)
                             
                         }
                     }
@@ -1152,12 +1152,12 @@ class EN_VC_SpinWheel: UIViewController {
                             {
                                 let textString = self.returnAttributedStringForAlertPopUp(textContext: String(format: "%@%@%@%@%@","kl_WonMsg1".localized ,winningPrice,"kl_WonMsgPts".relatedStrings(self.isScratchCard)  ,"kl_WonMsg2".localized,strMsgWon), winningPrice: winningPrice)
                                 
-                                alertViewController.setAlertValues(congratsMessage: "Congratulations!", imageTrophy:"greenPlant", winningMessage: textString ,btnTitle: btnTitle, tipMessage: tipMessage)
+                                alertViewController.setAlertValues(congratsMessage: "Woohoo!", imageTrophy:"greenPlant", winningMessage: textString ,btnTitle: btnTitle, tipMessage: tipMessage)
                             }
                             else
                             {
                                 let textString = self.returnAttributedStringForAlertPopUp(textContext: String(format: "%@%@%@%@","kl_WonMsg1".localized ,winningPrice ,"kl_WonMsg2".localized,strMsgWon), winningPrice: winningPrice)
-                                alertViewController.setAlertValues(congratsMessage: "Congratulations!", imageTrophy:"greenPlant", winningMessage: textString ,btnTitle: btnTitle, tipMessage: tipMessage)
+                                alertViewController.setAlertValues(congratsMessage: "Woohoo!", imageTrophy:"greenPlant", winningMessage: textString ,btnTitle: btnTitle, tipMessage: tipMessage)
                                 
                             }
                         }

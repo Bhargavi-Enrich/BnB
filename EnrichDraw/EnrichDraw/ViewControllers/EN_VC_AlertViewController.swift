@@ -46,7 +46,7 @@ class EN_VC_AlertViewController: UIViewController {
     }
     
     //MARK:- Set Alert Values
-    func setAlertValues(congratsMessage:String = "Congratulation!",imageTrophy:String = "greenPlant",winningMessage:NSMutableAttributedString?, btnTitle : String = "kl_ReadyForNextSpin".localized, btnBackgoundImage : String = "readyForTheNextSpin", tipMessage: String)
+    func setAlertValues(congratsMessage:String = "Woohoo!",imageTrophy:String = "greenPlant",winningMessage:NSMutableAttributedString?, btnTitle : String = "kl_ReadyForNextSpin".localized, btnBackgoundImage : String = "readyForTheNextSpin", tipMessage: String)
     {
         
         self.imageTrophy.image = UIImage(named: imageTrophy)
