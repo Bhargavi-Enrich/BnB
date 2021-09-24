@@ -240,6 +240,12 @@ class EN_VC_RewardSpin: UIViewController {
 //        self.present(alert, animated: true, completion: nil)
         self.navigationController?.popViewController(animated: true)
     }
+    //MARK:- Actions
+    @IBAction func actionMyReward(_ sender: Any) {
+    }
+    //MARK:- Actions
+    @IBAction func actionWinBigThisSeason(_ sender: Any) {
+    }
     
     @IBAction func actionToSelectColorFromBigRoundRightPane(_ sender: Any) {
         

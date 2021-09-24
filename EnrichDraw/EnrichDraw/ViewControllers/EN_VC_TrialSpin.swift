@@ -244,6 +244,13 @@ class EN_VC_TrialSpin: UIViewController {
         //self.popupAction()
     }
     
+    //MARK:- Actions
+    @IBAction func actionMyReward(_ sender: Any) {
+    }
+    //MARK:- Actions
+    @IBAction func actionWinBigThisSeason(_ sender: Any) {
+    }
+    
     @IBAction func actionBtnContinue(_ sender: Any) {
         
         // *********** NETWORK CONNECTION

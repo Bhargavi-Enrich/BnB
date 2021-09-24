@@ -1994,10 +1994,10 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greenrichLogoDate" translatesAutoresizingMaskIntoConstraints="NO" id="rTD-mm-EYP">
-                                <rect key="frame" x="0.0" y="17" width="200" height="100"/>
+                                <rect key="frame" x="0.0" y="17" width="150" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="LpI-Cv-gL3"/>
-                                    <constraint firstAttribute="width" constant="200" id="nmv-ET-5Ny"/>
+                                    <constraint firstAttribute="width" constant="150" id="nmv-ET-5Ny"/>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="SKj-zX-i8A">
@@ -2190,16 +2190,36 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kSK-au-opa">
-                                <rect key="frame" x="0.0" y="17" width="200" height="100"/>
+                                <rect key="frame" x="0.0" y="17" width="150" height="100"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="actionBackBtn:" destination="qCw-ES-el5" eventType="touchUpInside" id="lF6-py-oc3"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="jlv-2u-Oxn">
+                                <rect key="frame" x="820" y="120" width="130" height="94"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Usy-os-ZIq" userLabel="My Reward">
+                                        <rect key="frame" x="0.0" y="0.0" width="130" height="42"/>
+                                        <state key="normal" image="myRewards"/>
+                                        <connections>
+                                            <action selector="actionMyReward:" destination="qCw-ES-el5" eventType="touchUpInside" id="p57-kM-5cb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ra-Wm-fiF" userLabel="My Big Season">
+                                        <rect key="frame" x="0.0" y="52" width="130" height="42"/>
+                                        <state key="normal" image="winBigSeason"/>
+                                        <connections>
+                                            <action selector="actionWinBigThisSeason:" destination="qCw-ES-el5" eventType="touchUpInside" id="dpR-d6-14a"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="GDP-4u-cn0"/>
                         <constraints>
                             <constraint firstItem="Fad-xb-Xa3" firstAttribute="bottom" secondItem="GDP-4u-cn0" secondAttribute="bottom" id="05I-Ay-Dqk"/>
+                            <constraint firstItem="GDP-4u-cn0" firstAttribute="trailing" secondItem="jlv-2u-Oxn" secondAttribute="trailing" constant="74" id="08f-hH-nxf"/>
                             <constraint firstItem="Kk1-h9-rsl" firstAttribute="firstBaseline" secondItem="rTD-mm-EYP" secondAttribute="firstBaseline" id="4Xp-4M-XYD"/>
                             <constraint firstItem="xKe-x3-vHt" firstAttribute="trailing" secondItem="SKj-zX-i8A" secondAttribute="trailing" id="6CH-Fk-EJL"/>
                             <constraint firstItem="b4R-gC-F1s" firstAttribute="top" secondItem="SKj-zX-i8A" secondAttribute="bottom" constant="20" id="6IV-eQ-mys"/>
@@ -2212,6 +2232,7 @@ Your Registered Mobile Number 99XXXXXX32</string>
                             <constraint firstItem="xKe-x3-vHt" firstAttribute="leading" secondItem="SKj-zX-i8A" secondAttribute="leading" id="Lm3-Xr-cBG"/>
                             <constraint firstItem="rTD-mm-EYP" firstAttribute="leading" secondItem="GDP-4u-cn0" secondAttribute="leading" id="OuO-RR-w7R"/>
                             <constraint firstItem="Fad-xb-Xa3" firstAttribute="leading" secondItem="b4R-gC-F1s" secondAttribute="trailing" constant="102" id="PVG-Tv-8aV"/>
+                            <constraint firstItem="jlv-2u-Oxn" firstAttribute="top" secondItem="GDP-4u-cn0" secondAttribute="top" constant="120" id="SML-bf-9oz"/>
                             <constraint firstItem="GDP-4u-cn0" firstAttribute="trailing" secondItem="Fad-xb-Xa3" secondAttribute="trailing" constant="16" id="TU6-Fl-ZZY"/>
                             <constraint firstItem="GDP-4u-cn0" firstAttribute="trailing" secondItem="cf2-7j-Hcr" secondAttribute="trailing" id="U0V-8z-4ho"/>
                             <constraint firstItem="Fad-xb-Xa3" firstAttribute="trailing" secondItem="GDP-4u-cn0" secondAttribute="trailing" constant="-16" id="WJv-gs-GV7"/>
@@ -2760,10 +2781,10 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greenrichLogoDate" translatesAutoresizingMaskIntoConstraints="NO" id="HhK-0b-84N">
-                                <rect key="frame" x="0.0" y="17" width="200" height="100"/>
+                                <rect key="frame" x="0.0" y="17" width="150" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="Ld9-X9-YJC"/>
-                                    <constraint firstAttribute="width" constant="200" id="kfM-p6-gWJ"/>
+                                    <constraint firstAttribute="width" constant="150" id="kfM-p6-gWJ"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qSn-QW-Ohx">
@@ -2997,7 +3018,7 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uCL-dY-6WT">
-                                <rect key="frame" x="0.0" y="17" width="200" height="100"/>
+                                <rect key="frame" x="0.0" y="17" width="150" height="100"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <state key="normal">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -3015,6 +3036,25 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                         <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="iTn-Pc-fme">
+                                <rect key="frame" x="820" y="170" width="130" height="94"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YfW-Wo-94X" userLabel="My Reward">
+                                        <rect key="frame" x="0.0" y="0.0" width="130" height="42"/>
+                                        <state key="normal" image="myRewards"/>
+                                        <connections>
+                                            <action selector="actionMyReward:" destination="uf8-fu-Xnr" eventType="touchUpInside" id="Aka-CF-b2T"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ie-7u-90w" userLabel="My Big Season">
+                                        <rect key="frame" x="0.0" y="52" width="130" height="42"/>
+                                        <state key="normal" image="winBigSeason"/>
+                                        <connections>
+                                            <action selector="actionWinBigThisSeason:" destination="uf8-fu-Xnr" eventType="touchUpInside" id="Tqj-Dl-tJJ"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -3037,9 +3077,11 @@ Your Registered Mobile Number 99XXXXXX32</string>
                             <constraint firstItem="x4L-sk-kFJ" firstAttribute="top" secondItem="1Ni-wV-lZq" secondAttribute="top" id="NZM-Ok-Ojk"/>
                             <constraint firstItem="qSn-QW-Ohx" firstAttribute="width" secondItem="0WH-l7-Bvc" secondAttribute="width" multiplier="0.35" id="Vvp-IE-HRA"/>
                             <constraint firstItem="Yeu-V6-v0u" firstAttribute="leading" secondItem="0WH-l7-Bvc" secondAttribute="leading" id="YNx-48-fB6"/>
+                            <constraint firstItem="iTn-Pc-fme" firstAttribute="top" secondItem="0WH-l7-Bvc" secondAttribute="top" constant="170" id="a08-ZT-HFA"/>
                             <constraint firstItem="qSn-QW-Ohx" firstAttribute="top" secondItem="HhK-0b-84N" secondAttribute="bottom" constant="30" id="bpP-G3-T12"/>
                             <constraint firstItem="x4L-sk-kFJ" firstAttribute="trailing" secondItem="0WH-l7-Bvc" secondAttribute="trailing" id="c1N-rN-U2S"/>
                             <constraint firstItem="x4L-sk-kFJ" firstAttribute="centerX" secondItem="1Ni-wV-lZq" secondAttribute="centerX" id="kFr-x1-AKP"/>
+                            <constraint firstItem="0WH-l7-Bvc" firstAttribute="trailing" secondItem="iTn-Pc-fme" secondAttribute="trailing" constant="74" id="kuk-GT-H5K"/>
                             <constraint firstItem="HhK-0b-84N" firstAttribute="top" secondItem="0WH-l7-Bvc" secondAttribute="top" constant="17" id="mfh-ao-WLx"/>
                             <constraint firstItem="HhK-0b-84N" firstAttribute="leading" secondItem="0WH-l7-Bvc" secondAttribute="leading" id="nzX-eT-5Yc"/>
                             <constraint firstItem="Yeu-V6-v0u" firstAttribute="bottom" secondItem="1Ni-wV-lZq" secondAttribute="bottom" id="rdf-71-aqf"/>
@@ -5021,6 +5063,7 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
         <image name="knowMoreBackgroundUpdated" width="1024" height="768"/>
         <image name="landingBackground" width="1024" height="768"/>
         <image name="logo" width="99" height="27"/>
+        <image name="myRewards" width="130" height="42"/>
         <image name="myRewardsKnowMore" width="180" height="50"/>
         <image name="plantWithBackgound" width="205" height="201"/>
         <image name="readyForTheNextSpin" width="180" height="50"/>
@@ -5032,6 +5075,7 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
         <image name="store" width="20" height="20"/>
         <image name="storeGray" width="20" height="20"/>
         <image name="whiteBoxBG" width="575" height="437"/>
+        <image name="winBigSeason" width="130" height="42"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
