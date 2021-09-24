@@ -10,6 +10,7 @@ import UIKit
 class EN_VC_WinBBPopupViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
     @IBOutlet weak var crossButton: UIButton!
+    @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {

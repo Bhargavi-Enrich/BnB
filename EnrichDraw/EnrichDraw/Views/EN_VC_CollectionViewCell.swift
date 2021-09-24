@@ -19,6 +19,7 @@ class EN_VC_CollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var midSpinProgressView: CircularProgressView!
     @IBOutlet weak var progressCurrentValueLabel: UILabel!
     @IBOutlet weak var midProgressCurrentValueLabel: UILabel!
+    @IBOutlet weak var midNumberOfSpinLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

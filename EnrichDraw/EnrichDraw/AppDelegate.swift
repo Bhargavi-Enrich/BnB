@@ -124,7 +124,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
                    // if true
                   {
             //            NavigationControllerLandingScreen
-                         let spinWheelController = EN_VC_LandingScreen.instantiate(fromAppStoryboard: .Main)
+                         let spinWheelController = EN_VC_TrialSpin.instantiate(fromAppStoryboard: .Main)
                         let nvc: UINavigationController = UINavigationController(rootViewController: spinWheelController)
                         nvc.isNavigationBarHidden = true
                         self.window?.rootViewController = nvc

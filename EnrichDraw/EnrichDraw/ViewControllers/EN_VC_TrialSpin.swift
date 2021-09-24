@@ -241,14 +241,21 @@ class EN_VC_TrialSpin: UIViewController {
     
     //MARK:- Actions
     @IBAction func actionBtnPlace(_ sender: Any) {
-        //self.popupAction()
+        
+        
     }
     
     //MARK:- Actions
     @IBAction func actionMyReward(_ sender: Any) {
+        let destination = EN_VC_RewardWinnings(nibName: "EN_VC_RewardWinnings", bundle: nil)
+        destination.modalPresentationStyle = .overCurrentContext
+        self.present(destination, animated: false, completion: nil)
     }
     //MARK:- Actions
     @IBAction func actionWinBigThisSeason(_ sender: Any) {
+        let destination = EN_VC_WinBBPopupViewController(nibName: "EN_VC_WinBBPopupViewController", bundle: nil)
+        destination.modalPresentationStyle = .overCurrentContext
+        self.present(destination, animated: false, completion: nil)
     }
     
     @IBAction func actionBtnContinue(_ sender: Any) {
