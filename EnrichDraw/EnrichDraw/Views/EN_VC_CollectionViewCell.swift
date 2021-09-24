@@ -24,13 +24,7 @@ class EN_VC_CollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        
-        self.startSpinView.layer.borderWidth = 1.0
-        self.startSpinView.layer.borderColor = UIColor(rgb: 0x7118B0).cgColor
-        self.dropShadowView.backgroundColor = UIColor(rgb: 0x55068D)
-
         self.showProgressValue()
-        
     }
     
     //configure data struct value data
@@ -39,38 +33,39 @@ class EN_VC_CollectionViewCell: UICollectionViewCell {
         self.numberOfSpinLabel.text = "1st Spin"
         
         if indexPath.row == 0{
-            self.midSpinView.backgroundColor = UIColor(rgb: 0x7118B0)
             self.startSpinView.isHidden = true
             self.midSpinView.isHidden = false
             self.completedSpinView.isHidden = true
             
             self.percentageOfTreatedPatient = 250
+            
+            self.setProgresValue(0.25)
         }
         else if(indexPath.row == 1){
-            self.startSpinView.backgroundColor = UIColor(rgb: 0x7118B03B)
+            self.startSpinView.isHidden = true
+            self.midSpinView.isHidden = true
+            self.completedSpinView.isHidden = false
+            
+            self.percentageOfTreatedPatient = 350
+            
+            self.setProgresValue(0.35)
+        }
+        else if (indexPath.row == 2){
+            self.startSpinView.isHidden = true
+            self.midSpinView.isHidden = true
+            self.completedSpinView.isHidden = false
+            
+            self.percentageOfTreatedPatient = 320
+            
+            self.setProgresValue(0.32)
+            
+        }
+        else {
             self.startSpinView.isHidden = false
             self.midSpinView.isHidden = true
             self.completedSpinView.isHidden = true
             
-            self.startSpinLabel.text = "You Have \n 1 More Spin Left"
-        }
-        else if (indexPath.row == 2){
-            self.completedSpinView.backgroundColor = UIColor(rgb: 0xDAB145)
-            self.startSpinView.isHidden = true
-            self.midSpinView.isHidden = true
-            self.completedSpinView.isHidden = false
-            
-            self.percentageOfTreatedPatient = 300
-            
-        }
-        else {
-            self.completedSpinView.backgroundColor = UIColor(rgb: 0xDAB145)
-            self.startSpinView.isHidden = true
-            self.midSpinView.isHidden = true
-            self.completedSpinView.isHidden = false
-            
-            self.percentageOfTreatedPatient = 650
-            
+            self.startSpinLabel.text = "You Have \n1 More Spin Left"
         }
         
     }
@@ -78,18 +73,21 @@ class EN_VC_CollectionViewCell: UICollectionViewCell {
     var timer = Timer()
     var percentageOfTreatedPatient = 0
     func showProgressValue() {
-        self.progressCurrentValueLabel.text = String(percentageOfTreatedPatient)
-        self.progressView.createCircularPath(value: Double(percentageOfTreatedPatient))
-        self.progressView.progressAnimation(0.1, 0.5)
-        
-        self.midSpinProgressView.createCircularPath(value: Double(percentageOfTreatedPatient))
-        self.midSpinProgressView.progressAnimation(0.1, 0.5)
         
         self.progressValue = 0.0
         self.timer = Timer.scheduledTimer(withTimeInterval: 0.02 , repeats: true, block: { (_) in
             self.progressValue = self.progressValue + 0.1 //0.01
         })
         
+    }
+    
+    func setProgresValue(_ value:Float){
+        self.progressCurrentValueLabel.text = String(percentageOfTreatedPatient)
+        self.progressView.createCircularPath(value: Double(percentageOfTreatedPatient))
+        self.progressView.progressAnimation(0.1, value)
+        
+        self.midSpinProgressView.createCircularPath(value: Double(percentageOfTreatedPatient))
+        self.midSpinProgressView.progressAnimation(0.1, value)
     }
     
     //ProgressView Animation

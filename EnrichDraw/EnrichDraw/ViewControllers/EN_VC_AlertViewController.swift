@@ -18,6 +18,9 @@ class EN_VC_AlertViewController: UIViewController {
     @IBOutlet weak var lblTipsMessage: UILabel!
     @IBOutlet weak var btnReadyForNextSpin: UIButton!
     @IBOutlet weak var alertViewSmall: UIView!
+    @IBOutlet weak var spinLeftStackView: UIStackView!
+    @IBOutlet weak var spinLeftLabel: UILabel!
+    @IBOutlet weak var btnClosed: UIButton!
     
     var parentObj : UIViewController?
     var isTrialOrRewardSpin:Bool = false
@@ -26,14 +29,36 @@ class EN_VC_AlertViewController: UIViewController {
     var bombSoundEffect: AVAudioPlayer?
     var gifWithImageView: UIImageView?
     
+    let spinLeftText = "3 more spins"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        self.alertViewSmall.layer.cornerRadius = 8
+        self.alertViewSmall.layer.cornerRadius = 20
         self.alertViewSmall.backgroundColor = UIColor.white
         
+        self.spinLeftStackView.isHidden = true
+        
+        let normalText = "You have "
+        let boldText = self.spinLeftText
+        let normalTextEnd = " left"
+        let attributedString = NSMutableAttributedString(string:normalText)
+        let attributedStringEnd = NSMutableAttributedString(string:normalTextEnd)
+        let attrs = [NSAttributedString.Key.font : UIFont.init(name: FontName.FuturaPTMedium, size: 18)]
+        let boldString = NSMutableAttributedString(string: boldText, attributes:attrs)
+        attributedString.append(boldString)
+        attributedString.append(attributedStringEnd)
+        self.spinLeftLabel.attributedText = attributedString
+        
+        self.btnReadyForNextSpin.setBackgroundImage(UIImage(named: "spinAgain-button"), for: .normal)
+        self.btnReadyForNextSpin.setTitle("SPIN AGAIN  >", for: .normal)
+        //self.btnReadyForNextSpin.setBackgroundImage(UIImage(named: "enableButton"), for: .normal)
+        //self.btnReadyForNextSpin.setTitle("CLOSE  >", for: .normal)
+        
+        
     }
+    
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
@@ -51,7 +76,7 @@ class EN_VC_AlertViewController: UIViewController {
         
         self.imageTrophy.image = UIImage(named: imageTrophy)
         self.lblCongratulations.text = congratsMessage
-        self.lblPrizeWonMessage.attributedText = winningMessage
+        self.lblPrizeWonMessage.text = winningMessage?.string
         self.btnReadyForNextSpin.setTitle(btnTitle, for: UIControl.State.normal)
         self.lblTipsMessage.text = tipMessage
         self.btnReadyForNextSpin.setBackgroundImage(UIImage(named: btnBackgoundImage), for: UIControl.State.normal)
@@ -65,6 +90,8 @@ class EN_VC_AlertViewController: UIViewController {
             self.removeGIF()
         }
     }
+    
+    
     
     //MARK:- Actions
     @IBAction func actionReadyForNextSpin(_ sender: Any) {
