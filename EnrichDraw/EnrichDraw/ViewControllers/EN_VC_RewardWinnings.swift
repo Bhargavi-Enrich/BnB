@@ -10,7 +10,9 @@ import UIKit
 import Foundation
 
 protocol EN_VC_RewardWinningsDelegate:AnyObject {
-    func myVCDidFinish(_ controller: EN_VC_RewardWinnings, text: String)
+    func actionCloseClick()
+    func actionSpinAgain()
+
 }
 
 class EN_VC_RewardWinnings: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -49,8 +51,8 @@ class EN_VC_RewardWinnings: UIViewController, UICollectionViewDelegate, UICollec
         self.numberOfLeftSpinLabel.text = self.totalSpinLeftString
         
         self.collectionView.register(UINib(nibName: "EN_VC_CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "EN_VC_CollectionViewCell")
-        self.crossButton.addTarget(self, action: #selector(self.dismissPopupScreen), for: .touchUpInside)
-        self.spinAgainButton.addTarget(self, action: #selector(self.dismissPopupScreen), for: .touchUpInside)
+        self.crossButton.addTarget(self, action: #selector(self.dismissPopupScreenCrossClick), for: .touchUpInside)
+        self.spinAgainButton.addTarget(self, action: #selector(self.dismissPopupScreenSpinAgainOrClose), for: .touchUpInside)
         
         
     }
@@ -75,10 +77,17 @@ class EN_VC_RewardWinnings: UIViewController, UICollectionViewDelegate, UICollec
         return CGSize(width: size, height: size + 25)
     }
     
-    @objc func dismissPopupScreen() {
-        self.dismiss(animated: false, completion: nil)
+    @objc func dismissPopupScreenCrossClick() {
+        self.dismiss(animated: false) {
+            self.delegate?.actionCloseClick()
+        }
     }
     
+    @objc func dismissPopupScreenSpinAgainOrClose() {
+        self.dismiss(animated: false) {
+            self.delegate?.actionSpinAgain()
+        }
+    }
     
 }
 
