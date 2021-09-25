@@ -1289,7 +1289,6 @@ class EN_VC_SpinWheel: UIViewController {
                             if let obj1 = self.controller as? EN_VC_RewardSpin
                             {
                                 if (obj1.currentSpinNumber == self.dictRewardsArray.count)  && self.totalEligibleSpinCountsAgainstAllInvoices <= 0
-
                                 {
                                     btnTitle = "Show All Rewards"
                                 }
@@ -1380,6 +1379,16 @@ class EN_VC_SpinWheel: UIViewController {
         else  {
             let obj:EN_VC_RewardSpin = self.controller as! EN_VC_RewardSpin
             obj.currentSpinNumber = self.currentSpinNumber
+            
+            obj.updateSpinLeft(leftSpins: self.totalEligibleSpinCountsAgainstAllInvoices - self.currentSpinNumber)
+            if (obj.currentSpinNumber == self.dictRewardsArray.count)
+            {
+            self.totalEligibleSpinCountsAgainstAllInvoices = self.totalEligibleSpinCountsAgainstAllInvoices - self.customerDetails.remainingSpins
+                if self.totalEligibleSpinCountsAgainstAllInvoices <= 0
+                {
+                    obj.btnBack.isUserInteractionEnabled = true
+                }
+            }
             if(currentSpinNumber != 0 && isTimerActive)
             {
                 var spinData = self.dictRewardsArray[currentSpinNumber]
@@ -1389,14 +1398,8 @@ class EN_VC_SpinWheel: UIViewController {
                 obj.remainingLocalRideCount = obj.remainingLocalRideCount - 1
                 obj.refreshCollection()
             }
-            if (obj.currentSpinNumber == self.dictRewardsArray.count)
-            {
-            self.totalEligibleSpinCountsAgainstAllInvoices = self.totalEligibleSpinCountsAgainstAllInvoices - self.customerDetails.remainingSpins
-                if self.totalEligibleSpinCountsAgainstAllInvoices <= 0
-                {
-                    obj.btnBack.isUserInteractionEnabled = true
-                }
-            }
+            
+           
             obj.btnPlace.isUserInteractionEnabled = true
             //obj.btnBack.isUserInteractionEnabled = true
             obj.unhideColorsSelectionOptions()

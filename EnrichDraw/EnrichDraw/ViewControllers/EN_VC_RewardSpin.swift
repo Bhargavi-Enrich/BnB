@@ -139,6 +139,8 @@ class EN_VC_RewardSpin: UIViewController {
         //self.initialSetUp()
        // openPopUpForSelection()
         lblRecycleInfo.text = campaignDetails.recycle_message ?? ""
+        
+        self.updateSpinLeft(leftSpins: totalEligibleSpinCountsAgainstAllInvoices)
     }
     
     
@@ -253,6 +255,11 @@ class EN_VC_RewardSpin: UIViewController {
             self.viewSelectColors.isHidden = true
             self.viewSpinWheel.sendSubviewToBack(viewSelectColors)
         }
+    }
+    
+    func updateSpinLeft(leftSpins:Int)  {
+        self.lblNumberOfSpinYouHave.isHidden = leftSpins <= 0 
+        self.lblNumberOfSpinYouHave.text =  "You Have \(leftSpins) Spins. Click On The Pointer To Spin The Wheel"
     }
     
     //MARK:- Hide and UnHide ColorSelection Options . When Spin is Rotating
