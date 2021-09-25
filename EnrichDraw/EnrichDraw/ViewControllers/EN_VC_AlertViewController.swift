@@ -96,61 +96,65 @@ class EN_VC_AlertViewController: UIViewController {
     //MARK:- Actions
     @IBAction func actionReadyForNextSpin(_ sender: Any) {
         
-        if(self.isTrialOrRewardSpin == false)
-        {
-            if let obj:EN_VC_SpinWheel = self.parentObj as? EN_VC_SpinWheel
-            {
-                if let obj1 = obj.controller as? EN_VC_RewardSpin
-                {
-                    if (obj1.currentSpinNumber >= dictRewardsArray.count)
-                    {
-                        DispatchQueue.main.async {
-                            let totalRewards = EN_VC_TotalRewards.instantiate(fromAppStoryboard: .Main)
-                            totalRewards.storeDetails = obj1.storeDetails
-                            totalRewards.dictRewardsArray = self.dictRewardsArray
-                            totalRewards.customerDetails = obj1.customerDetails
-                            totalRewards.isTrial = false
-                            totalRewards.campaignDetails = obj1.campaignDetails
-                            self.parentObj!.navigationController?.pushViewController(totalRewards, animated: true)
-                        }
-                        
-                    }else{
-                        obj.alertOkButton();
-                    }
-                }
-            }
-            
-        }else{
-            if let obj: EN_VC_SpinWheel = self.parentObj as? EN_VC_SpinWheel {
-                
-                if let obj1 = obj.controller as? EN_VC_TrialSpin
-                {
-                    if (obj1.currentSpinNumber >= dictRewardsArray.count)
-                    {
-                        DispatchQueue.main.async {
-                            let totalRewards = EN_VC_TotalRewards.instantiate(fromAppStoryboard: .Main)
-                            totalRewards.storeDetails = obj1.storeDetails
-                            totalRewards.dictRewardsArray = self.dictRewardsArray
-                            totalRewards.customerDetails = obj1.customerDetails
-                            totalRewards.isTrial = true
-                            totalRewards.campaignDetails = obj1.campaignDetails
-                            self.parentObj!.navigationController?.pushViewController(totalRewards, animated: true)
-                        }
-                        
-                    }else{
-                        obj.alertOkButton();
-                    }
-                }
-                
-            }
-        }
-        
         
         
         self.dismiss(animated: false) {
+            if(self.isTrialOrRewardSpin == false)
+            {
+                if let obj:EN_VC_SpinWheel = self.parentObj as? EN_VC_SpinWheel
+                {
+                    if let obj1 = obj.controller as? EN_VC_RewardSpin
+                    {
+                        if (obj1.currentSpinNumber >= self.dictRewardsArray.count)
+                        {
+                            obj.alertOkButton();
+
+                            /*DispatchQueue.main.async {
+                                let totalRewards = EN_VC_TotalRewards.instantiate(fromAppStoryboard: .Main)
+                                totalRewards.storeDetails = obj1.storeDetails
+                                totalRewards.dictRewardsArray = self.dictRewardsArray
+                                totalRewards.customerDetails = obj1.customerDetails
+                                totalRewards.isTrial = false
+                                totalRewards.campaignDetails = obj1.campaignDetails
+                                self.parentObj!.navigationController?.pushViewController(totalRewards, animated: true)
+                            }*/
+                            
+                        }else{
+                            obj.alertOkButton();
+                        }
+                    }
+                }
+                
+            }else{
+                if let obj: EN_VC_SpinWheel = self.parentObj as? EN_VC_SpinWheel {
+                    
+                    if let obj1 = obj.controller as? EN_VC_TrialSpin
+                    {
+                        if (obj1.currentSpinNumber >= self.dictRewardsArray.count)
+                        {
+                            DispatchQueue.main.async {
+                                let totalRewards = EN_VC_TotalRewards.instantiate(fromAppStoryboard: .Main)
+                                totalRewards.storeDetails = obj1.storeDetails
+                                totalRewards.dictRewardsArray = self.dictRewardsArray
+                                totalRewards.customerDetails = obj1.customerDetails
+                                totalRewards.isTrial = true
+                                totalRewards.campaignDetails = obj1.campaignDetails
+                                self.parentObj!.navigationController?.pushViewController(totalRewards, animated: true)
+                            }
+                            
+                        }else{
+                            obj.alertOkButton();
+                        }
+                    }
+                    
+                }
+            }
+            
             
         }
+            
     }
+    
 }
 
 

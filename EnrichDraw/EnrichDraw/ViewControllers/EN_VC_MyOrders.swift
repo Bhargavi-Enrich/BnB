@@ -20,13 +20,11 @@ class EN_VC_MyOrders: UIViewController {
     
     var campaignDetails = ModelRunningCampaignListData()
     var accessToken = ""
-    
+    var storeDetails = StoreDetails()
+
     var pageNo = 1
     var totalRecords:Int64 = 0
-    
     var customerDetails = CustomerDetails()
-    var storeDetails = StoreDetails()
-    
     var records = [MyProductOrdersModuleModel.GetMyOrders.Orders]()
     
     override func viewDidLoad() {

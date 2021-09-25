@@ -42,7 +42,8 @@ class EN_VC_SpinWheel: UIViewController {
     var storeDetails = StoreDetails()
     var campaignDetails = ModelRunningCampaignListData()
     var customerDetails = CustomerDetails()
-    
+    var totalEligibleSpinCountsAgainstAllInvoices = 0
+
     var btnSpinTitle:String = "Spin"
     
     
@@ -199,6 +200,34 @@ class EN_VC_SpinWheel: UIViewController {
     @IBOutlet weak var btnDiceSpin: UIButton!
     // ---------------------------
     
+    @IBOutlet weak var spinwheelWidthCons: NSLayoutConstraint!
+    @IBOutlet weak var spinwheelHeightCons: NSLayoutConstraint!
+    
+    @IBOutlet weak var spinwheelImageWidthCons: NSLayoutConstraint!
+    @IBOutlet weak var spinwheelImageHeightCons: NSLayoutConstraint!
+    
+    @IBOutlet weak var spinwheelBorderWidthCons: NSLayoutConstraint!
+    @IBOutlet weak var spinwheelBorderHeightCons: NSLayoutConstraint!
+    
+    var simulator = "Simulator "
+    let iPad12Width:CGFloat = 600
+    let iPad12Height:CGFloat = 600
+    
+    let iPad11Width:CGFloat = 450
+    let iPad11Height:CGFloat = 450
+    
+    let iPadProWidth:CGFloat = 400
+    let iPadProHeight:CGFloat = 400
+    
+    let iPadMiniWidth:CGFloat = 430
+    let iPadMiniHeight:CGFloat = 430
+    
+    let iPadAirWidth:CGFloat = 420
+    let iPadAirHeight:CGFloat = 420
+    
+    let iPadWidth:CGFloat = 410
+    let iPadHeight:CGFloat = 410
+    
     
     // MARK:- View Life Cycle Methods
     override func viewDidLoad() {
@@ -206,6 +235,124 @@ class EN_VC_SpinWheel: UIViewController {
         
         halfWidth = Int(view.frame.height)
         self.showSpinWheel()
+        
+        if Platform.isSimulator {
+            print("Running on Simulator")
+            self.simulator = "Simulator "
+        }else{
+            self.simulator = ""
+        }
+        
+        self.checkiPadModelName()
+        
+    }
+    
+    func checkiPadModelName(){
+        let modelName = UIDevice.modelName
+        if (modelName == simulator + "iPad Pro (12.9-inch) (5th generation)"){
+            self.setWidthHeightCons(iPad12Width, iPad12Height)
+        }
+        else if (modelName == simulator + "iPad Pro (12.9-inch) (4th generation)"){
+            self.setWidthHeightCons(iPad12Width, iPad12Height)
+        }
+        else if (modelName == simulator + "iPad Pro (12.9-inch) (3rd generation)"){
+            self.setWidthHeightCons(iPad12Width, iPad12Height)
+        }
+        else if (modelName == simulator + "iPad Pro (12.9-inch) (2nd generation)"){
+            self.setWidthHeightCons(iPad12Width, iPad12Height)
+        }
+        else if (modelName == simulator + "iPad Pro (12.9-inch) (1st generation)"){
+            self.setWidthHeightCons(iPad12Width, iPad12Height)
+        }
+        else if (modelName == simulator + "iPad Pro (11-inch) (3rd generation)"){
+            self.setWidthHeightCons(iPad11Width, iPad11Height)
+        }
+        else if (modelName == simulator + "iPad Pro (11-inch) (2nd generation)"){
+            self.setWidthHeightCons(iPad11Width, iPad11Height)
+        }
+        else if (modelName == simulator + "iPad Pro (11-inch) (1st generation)"){
+            self.setWidthHeightCons(iPad11Width, iPad11Height)
+        }
+        else if (modelName == simulator + "iPad Pro (10.5-inch)"){
+            self.setWidthHeightCons(iPadProWidth, iPadProHeight)
+        }
+        else if (modelName == simulator + "iPad Pro (9.7-inch)"){
+            self.setWidthHeightCons(iPadProWidth, iPadProHeight)
+        }
+        else if (modelName == simulator + "iPad mini (6th generation)"){
+            self.setWidthHeightCons(iPadMiniWidth, iPadMiniHeight)
+        }
+        else if (modelName == simulator + "iPad mini (5th generation)"){
+            self.setWidthHeightCons(iPadMiniWidth, iPadMiniHeight)
+        }
+        else if (modelName == simulator + "iPad mini 4"){
+            self.setWidthHeightCons(iPadMiniWidth, iPadMiniHeight)
+        }
+        else if (modelName == simulator + "iPad mini 3"){
+            self.setWidthHeightCons(iPadMiniWidth, iPadMiniHeight)
+        }
+        else if (modelName == simulator + "iPad mini 2"){
+            self.setWidthHeightCons(iPadMiniWidth, iPadMiniHeight)
+        }
+        else if (modelName == simulator + "iPad mini"){
+            self.setWidthHeightCons(iPadMiniWidth, iPadMiniHeight)
+        }
+        else if (modelName == simulator + "iPad Air (4th generation)"){
+            self.setWidthHeightCons(iPadAirWidth, iPadAirHeight)
+        }
+        else if (modelName == simulator + "iPad Air (4th generation)"){
+            self.setWidthHeightCons(iPadAirWidth, iPadAirHeight)
+        }
+        else if (modelName == simulator + "iPad Air (3rd generation)"){
+            self.setWidthHeightCons(iPadAirWidth, iPadAirHeight)
+        }
+        else if (modelName == simulator + "iPad Air 2"){
+            self.setWidthHeightCons(iPadAirWidth, iPadAirHeight)
+        }
+        else if (modelName == simulator + "iPad Air"){
+            self.setWidthHeightCons(iPadAirWidth, iPadAirHeight)
+        }
+        else if (modelName == simulator + "iPad (9th generation)"){
+            self.setWidthHeightCons(iPadWidth, iPadHeight)
+        }
+        else if (modelName == simulator + "iPad (8th generation)"){
+            self.setWidthHeightCons(iPadWidth, iPadHeight)
+        }
+        else if (modelName == simulator + "iPad (7th generation)"){
+            self.setWidthHeightCons(iPadWidth, iPadHeight)
+        }
+        else if (modelName == simulator + "iPad (6th generation)"){
+            self.setWidthHeightCons(iPadWidth, iPadHeight)
+        }
+        else if (modelName == simulator + "iPad (5th generation)"){
+            self.setWidthHeightCons(iPadWidth, iPadHeight)
+        }
+        else if (modelName == simulator + "iPad (4th generation)"){
+            self.setWidthHeightCons(iPadWidth, iPadHeight)
+        }
+        else if (modelName == simulator + "iPad (3rd generation)"){
+            self.setWidthHeightCons(iPadWidth, iPadHeight)
+        }
+        else if (modelName == simulator + "iPad 2"){
+            self.setWidthHeightCons(iPadWidth, iPadHeight)
+        }
+        else{
+            self.setWidthHeightCons(450, 450)
+        }
+    }
+    
+    func setWidthHeightCons(_ width:CGFloat, _ height:CGFloat){
+        self.spinwheelWidthCons.constant = width
+        self.spinwheelHeightCons.constant = height
+        
+        self.spinwheelImageWidthCons.constant = width
+        self.spinwheelImageHeightCons.constant = height
+        
+        self.spinwheelBorderWidthCons.constant = width + 4
+        self.spinwheelBorderHeightCons.constant = height + 4
+        
+        self.updateViewConstraints()
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -592,6 +739,7 @@ class EN_VC_SpinWheel: UIViewController {
             }
             
             if let obj = self.controller as? EN_VC_RewardSpin {
+                
                 self.updateServerForEachSpin(invoiceNo:obj.customerDetails.invoiceNo!, amountWon: String(format:"%@",selectedObject.rewardValue), storeId: obj.storeDetails.storeId, campaignRewardId: selectedObject.campaignRewardId, isTrial: isTrial)
             }
             
@@ -1111,8 +1259,7 @@ class EN_VC_SpinWheel: UIViewController {
                         
                         if let obj1 = self.controller as? EN_VC_TrialSpin
                         {
-                            if (obj1.currentSpinNumber == self.dictRewardsArray.count)
-                            {
+                            if (obj1.currentSpinNumber == self.dictRewardsArray.count)                             {
                                 btnTitle = "Show All Rewards"
                             }
                         }
@@ -1141,7 +1288,8 @@ class EN_VC_SpinWheel: UIViewController {
                             
                             if let obj1 = self.controller as? EN_VC_RewardSpin
                             {
-                                if (obj1.currentSpinNumber == self.dictRewardsArray.count)
+                                if (obj1.currentSpinNumber == self.dictRewardsArray.count)  && self.totalEligibleSpinCountsAgainstAllInvoices <= 0
+
                                 {
                                     btnTitle = "Show All Rewards"
                                 }
@@ -1241,7 +1389,14 @@ class EN_VC_SpinWheel: UIViewController {
                 obj.remainingLocalRideCount = obj.remainingLocalRideCount - 1
                 obj.refreshCollection()
             }
-            
+            if (obj.currentSpinNumber == self.dictRewardsArray.count)
+            {
+            self.totalEligibleSpinCountsAgainstAllInvoices = self.totalEligibleSpinCountsAgainstAllInvoices - self.customerDetails.remainingSpins
+                if self.totalEligibleSpinCountsAgainstAllInvoices <= 0
+                {
+                    obj.btnBack.isUserInteractionEnabled = true
+                }
+            }
             obj.btnPlace.isUserInteractionEnabled = true
             //obj.btnBack.isUserInteractionEnabled = true
             obj.unhideColorsSelectionOptions()
@@ -2655,3 +2810,4 @@ extension EN_VC_SpinWheel {
     }
     
 }
+

@@ -87,12 +87,37 @@ class EN_VC_RewardSpin: UIViewController {
     
     @IBOutlet private weak var lblRecycleInfo: UILabel!
     
+    @IBOutlet private weak var lblSpinCount: UILabel!
+        @IBOutlet private weak var lblTotalRewardsRolled: UILabel!
+        @IBOutlet private weak var lblPoints1: UILabel!
+        @IBOutlet private weak var lblPoints2: UILabel!
+        @IBOutlet private weak var lblPoints3: UILabel!
+        @IBOutlet private weak var lblPoints4: UILabel!
+        @IBOutlet private weak var lblPoints5: UILabel!
+        @IBOutlet private weak var lblNumberOfSpinYouHave: UILabel!
+        
+        private var arrLastFiveSpinDetails = [CustomerSpin]()
+        private var isViewInBackground = false
+        private var isViewVisible = false
+        
+        let appd:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+    
+    
 
     var remainingLocalRideCount = 0
     var totalCount = 0
     
     var previousColorIndex = 1
     var customerDetails = CustomerDetails()
+    
+    
+    var pageNo = 1
+    var totalRecords:Int64 = 0
+    var records = [MyProductOrdersModuleModel.GetMyOrders.Orders]()
+    var accessToken: String = ""
+    var selectedIndexFromRecordsArray = 0
+    var totalEligibleSpinCountsAgainstAllInvoices = 0
+    
     var dictRewardsArray = [Int : SpinDetails]()
     var currentSpinNumber:Int = 0
     var storeDetails = StoreDetails()
@@ -104,6 +129,8 @@ class EN_VC_RewardSpin: UIViewController {
     //MARK:- Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.arrLastFiveSpinDetails = appd.arrLastFiveSpinDetails
+        self.changeLastFiveSpinData()
         self.viewSelectColors.isHidden = true
         self.viewForColorSelection.isHidden = true
         self.lblCopyRight.text = self.getCopyRight()
@@ -113,6 +140,55 @@ class EN_VC_RewardSpin: UIViewController {
        // openPopUpForSelection()
         lblRecycleInfo.text = campaignDetails.recycle_message ?? ""
     }
+    
+    
+    //MARK:- Functionality
+        func changeLabelsOnFiveSpin()
+        {
+            DispatchQueue.main.async {
+                if(self.arrLastFiveSpinDetails.count > 0){
+                    let textCount = self.getSixDigitData(amountWon: self.arrLastFiveSpinDetails[0].id)
+                    self.lblPoints1.text = self.arrLastFiveSpinDetails[0].amountWon + " Points " + textCount
+                }
+                if (self.arrLastFiveSpinDetails.count > 1){
+                    let textCount = self.getSixDigitData(amountWon: self.arrLastFiveSpinDetails[1].id)
+                    self.lblPoints2.text = self.arrLastFiveSpinDetails[1].amountWon + " Points " + textCount
+                }
+                if (self.arrLastFiveSpinDetails.count > 2){
+                    let textCount = self.getSixDigitData(amountWon: self.arrLastFiveSpinDetails[2].id)
+                    self.lblPoints3.text = self.arrLastFiveSpinDetails[2].amountWon + " Points " + textCount
+                }
+                if (self.arrLastFiveSpinDetails.count > 3){
+                    let textCount = self.getSixDigitData(amountWon: self.arrLastFiveSpinDetails[3].id)
+                    self.lblPoints4.text = self.arrLastFiveSpinDetails[3].amountWon + " Points " + textCount
+                }
+                if (self.arrLastFiveSpinDetails.count > 4){
+                    let textCount = self.getSixDigitData(amountWon: self.arrLastFiveSpinDetails[4].id)
+                    self.lblPoints5.text = self.arrLastFiveSpinDetails[4].amountWon + " Points " + textCount
+                }
+            }
+        }
+        
+        func changeLastFiveSpinData()
+        {
+            print("self.storeDetails.no_of_spin_availed=\(self.storeDetails)")
+            self.lblSpinCount.text = self.getSixDigitData(amountWon: String(format:"%d",appd.no_of_spin_availed)) + " " + "kl_NoOfSpins".localized
+            
+            self.changeLabelsOnFiveSpin()
+            
+            self.lblTotalRewardsRolled.text = appd.totalRewardsRolled + " " + "kl_TotalRewardsRolled".localized
+        }
+        
+        func getSixDigitData(amountWon : String) -> String
+        {
+            var strFinal = amountWon
+            let intObj = (6 - amountWon.count) > 0 ? (6 - amountWon.count) : 0
+            for _ in 0..<intObj
+            {
+                strFinal = "0" + strFinal
+            }
+            return strFinal
+        }
     
     func openPopUpForSelection(){
         if let objPopUp = CustomPopUpUserData.loadFromNibNamed(nibNamed: "CustomPopUpUserData") as? CustomPopUpUserData {
@@ -205,6 +281,7 @@ class EN_VC_RewardSpin: UIViewController {
         spinWheelController.dictRewardsArray = self.dictRewardsArray
         spinWheelController.currentSpinNumber = self.currentSpinNumber
         spinWheelController.view.frame = self.viewSpinWheel.bounds
+        spinWheelController.totalEligibleSpinCountsAgainstAllInvoices = self.totalEligibleSpinCountsAgainstAllInvoices
         spinWheelController.willMove(toParent: self)
         self.viewSpinWheel.addSubview(spinWheelController.view)
         if viewSelectColors != nil{
@@ -230,15 +307,16 @@ class EN_VC_RewardSpin: UIViewController {
     //MARK:- Actions
     @IBAction func actionBtnBack(_ sender: Any) {
 
-//        let alert = UIAlertController(title: "Shall we redirect to home page?", message: "Please confirm", preferredStyle: UIAlertController.Style.alert)
-//        alert.addAction(UIAlertAction(title: "Yes", style: UIAlertAction.Style.cancel, handler: { (action) in
-//            self.appDelegate.appLaunch()
-//        }))
-//        alert.addAction(UIAlertAction(title: "No", style: .default, handler: { (action) in
-//            // Do nothing
-//        }))
-//        self.present(alert, animated: true, completion: nil)
-        self.navigationController?.popViewController(animated: true)
+        let alert = UIAlertController(title:"", message: "", preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "Home", style: UIAlertAction.Style.cancel, handler: { (action) in
+            self.appDelegate.appLaunch()
+        }))
+        alert.addAction(UIAlertAction(title: "Go Back", style: .default, handler: { (action) in
+            // Do nothing
+            self.navigationController?.popViewController(animated: true)
+
+        }))
+        self.present(alert, animated: true, completion: nil)
     }
     //MARK:- Actions
     @IBAction func actionMyReward(_ sender: Any) {
@@ -388,6 +466,31 @@ class EN_VC_RewardSpin: UIViewController {
     }
     
     func callNextSpinView(tag : Int) {
+        if (self.currentSpinNumber == self.dictRewardsArray.count) // All Spin Done for Selected Invoice
+        {
+            self.currentSpinNumber  = 0
+            self.selectedIndexFromRecordsArray = 0
+            self.totalEligibleSpinCountsAgainstAllInvoices = self.totalEligibleSpinCountsAgainstAllInvoices - self.customerDetails.remainingSpins
+            records.removeAll(where: {$0.greenrich?.invoice_number == self.customerDetails.invoiceNo})
+            if !records.isEmpty
+            {
+                actionPlaySpinGame(indexPath:IndexPath.init(row: self.selectedIndexFromRecordsArray, section: 0))
+            }
+            else
+            {
+                actionMyReward(self)
+            }
+            //getOrdersData(pageNo: self.pageNo, accessToken: accessToken)
+        }
+        else
+        {
+            updateSpinAfterDone(tag: tag)
+        }
+        
+    }
+    
+    func updateSpinAfterDone(tag : Int)
+    {
         removeSpinWheel()
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.0) {
            // self.openPopUpForSelection()
@@ -574,7 +677,7 @@ extension EN_VC_RewardSpin
 //            self.updateImage(imageView: self.imgViewBBLogo, imageData: self.campaignDetails.campaignLogo ?? Data(), defaultImageName: "")
 //            self.updateImage(imageView: self.imgLeftBackground, imageData: self.campaignDetails.campaignLeftBackground ?? Data(), defaultImageName: "LeftBackImg.png")
             
-            if let logoDetails = self.campaignDetails.campaign_left_background_image, let urlObj = logoDetails.url {
+            /*if let logoDetails = self.campaignDetails.campaign_left_background_image, let urlObj = logoDetails.url {
                 
                 DispatchQueue.global().async { [weak self] in
                     if let data = try? Data(contentsOf: URL(string: urlObj)!) {
@@ -585,7 +688,7 @@ extension EN_VC_RewardSpin
                         }
                     }
                 }
-            }
+            }*/
             
             if let logoDetails = self.campaignDetails.campaign_right_background_image, let urlObj = logoDetails.url {
                 
@@ -672,3 +775,143 @@ extension EN_VC_RewardSpin : CustomPopUpUserDataDelegate {
     }
 }
 
+
+
+extension EN_VC_RewardSpin
+{
+    
+    func getOrdersData(pageNo: Int, accessToken: String) {
+        self.selectedIndexFromRecordsArray = 0
+
+        guard let userDetailsObj = UserDefaultUtility.shared.getModelObjectFromSharedPreference(strKey: UserDefaultKeys.modelAdminProfile) as? ModelAdminProfile, let storeIdObj = userDetailsObj.salon_id, !storeIdObj.isEmpty else {
+            return
+        }
+        
+        
+        let params : [String: Any] = [
+            "limit" : 100,
+            "is_bnb" : true,
+            "salon_id" : storeIdObj,
+            "page" : pageNo,
+            "is_custom" : true
+        ]
+        
+        EN_Service_Customer.sharedInstance.getMyOrders(params, accessToken: accessToken) { (errorCode, errorMsg, dictData) in
+            if errorCode != 0
+            {
+                // HANDLE ERROR
+                if let msg = errorMsg
+                {
+                    print("ErrorMessage: \(msg)")
+                    HUD.hide()
+                    self.showAlert(alertTitle: "ServerError", alertMessage: msg)
+                }
+            }
+            else
+            {
+                HUD.hide()
+                if let status = (dictData?["status"] as? Bool),
+                    status == false,
+                    let message = dictData?["message"] as? String
+                {
+                    self.showAlert(alertTitle: "Alert!", alertMessage: message)
+                    return
+                }
+                            
+                if let jsonData = dictData?["data"] as? [String:Any] {
+                    do {
+                        let object = try DictionaryDecoder().decode(MyProductOrdersModuleModel.GetMyOrders.MyOrdersData.self, from: jsonData)
+                        self.configureData(model: object)
+                        
+                    } catch let e {
+                        print("ERROR: \(e)")
+                    }
+                }
+            }
+        }
+    }
+    
+    func configureData(model: MyProductOrdersModuleModel.GetMyOrders.MyOrdersData) {
+        if pageNo == 1 {
+            records.removeAll()
+        }
+        totalRecords = model.total_number ?? 0
+        
+        //records.append(contentsOf: model.orders ?? [])
+        records.append(contentsOf: finalFilteredRecords(model: model))
+        if !records.isEmpty
+        {
+            actionPlaySpinGame(indexPath:IndexPath.init(row: self.selectedIndexFromRecordsArray, section: 0))
+        }
+        else
+        {
+            actionMyReward(self)
+        }
+    }
+    
+    func finalFilteredRecords(model: MyProductOrdersModuleModel.GetMyOrders.MyOrdersData) -> [MyProductOrdersModuleModel.GetMyOrders.Orders]
+    {
+        var recordsNew = [MyProductOrdersModuleModel.GetMyOrders.Orders]()
+
+        if let orders = model.orders, !orders.isEmpty {
+            recordsNew.removeAll()
+            for element in orders
+            {
+               if  let spinDetails =  element.greenrich?.spin_details, !spinDetails.isEmpty, let spinFirst = spinDetails.first, let spinCount = spinFirst.remaining_spins, spinCount > 0 {
+                    recordsNew.append(element)
+            }
+            
+        }
+    
+    }
+        return recordsNew
+    }
+    func actionPlaySpinGame(indexPath: IndexPath) {
+        if !self.records.isEmpty{
+        let model = self.records[indexPath.row]
+        
+        let selectedCampaign = model.greenrich?.applicable_campaigns?.first {
+            $0.entity_id == campaignDetails.entity_id
+        }
+        
+        if selectedCampaign != nil,
+           let spinDetails = model.greenrich?.spin_details,
+            !spinDetails.isEmpty,
+            let customerData = spinDetails.first {
+            print("Done")
+            self.configureCustomerData(customerData: customerData)
+            updateSpinAfterDone(tag: previousColorIndex - 1)
+        }else {
+            self.showAlert(alertTitle: "Alert!", alertMessage: "Selected campaign is not applicable for current invoice. Please selected another campaign")
+            return
+        }
+        }
+    }
+    
+    func configureCustomerData(customerData: MyProductOrdersModuleModel.GetMyOrders.SpinDetails) {
+        
+        if let id = customerData.customer_id,
+            let customerId = id.description.toInt() {
+            self.customerDetails = CustomerDetails.init(
+            customerName: customerData.customer_name ?? "",
+            customerId: customerId,
+            invoiceNo: customerData.invoice_number ?? "",
+            amount: customerData.amount,
+            noOfSpins: customerData.no_of_spins,
+            invoiceType: "",
+            remainingSpins: customerData.remaining_spins ?? 0,
+            remaining_invoice_amount: customerData.remaining_invoice_amount ?? 0,
+            remaining_trials: customerData.remaining_trials ?? 0,
+            trial_display_name: customerData.trial_display_name ?? "Trial",
+            no_of_trials: customerData.no_of_trials ?? 0,
+            trial_reward_points: customerData.trial_reward_points ?? 0)
+            
+        }
+        else {
+            self.showAlert(alertTitle: "Alert!", alertMessage: "Customer id is missing")
+        }
+        
+    }
+    
+    
+}

@@ -780,6 +780,10 @@ extension EN_VC_LandingScreen
                     }
                     
                     DispatchQueue.main.async {
+                        let appd : AppDelegate = UIApplication.shared.delegate as!AppDelegate
+                                                appd.arrLastFiveSpinDetails = self.arrLastFiveSpinDetails
+                                                appd.no_of_spin_availed = self.storeDetails.no_of_spin_availed
+                                                appd.totalRewardsRolled = self.storeDetails.totalRewardsRolled
                         self.changeLastFiveSpinData()
                     }
 

@@ -48,6 +48,15 @@ class EN_VC_CutomerOTPVerification : UIViewController,UITextFieldDelegate {
     
     var isTrial = true
 
+    
+    var pageNo = 1
+    var totalRecords:Int64 = 0
+    var records = [MyProductOrdersModuleModel.GetMyOrders.Orders]()
+    var selectedIndexFromRecordsArray = 0
+    var accessTOKEN: String = ""
+    var totalEligibleSpinCountsAgainstAllInvoices = 0
+
+    
     // MARK: View Life Cycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -373,11 +382,16 @@ extension EN_VC_CutomerOTPVerification
     }
     
     func gotoMyorderScreen(accessToken: String) {
-        let vc = EN_VC_MyOrders.instantiate(fromAppStoryboard: .Main)
-        vc.accessToken = accessToken
-        vc.campaignDetails = self.campaignDetails
-        vc.storeDetails = self.storeDetails
-        self.navigationController?.pushViewController(vc, animated: true)
+//        let vc = EN_VC_MyOrders.instantiate(fromAppStoryboard: .Main)
+//        vc.accessToken = accessToken
+//        vc.campaignDetails = self.campaignDetails
+//        vc.storeDetails = self.storeDetails
+//        self.navigationController?.pushViewController(vc, animated: true)
+        pageNo = 1
+        totalRecords = 0
+        accessTOKEN = accessToken
+        getOrdersData(pageNo: pageNo, accessToken: accessToken)
+    
     }
     
     //MARK: - authenticateCustomer
@@ -426,6 +440,7 @@ extension EN_VC_CutomerOTPVerification
                 }else {
                     if let data = dictData!["data"] as? [String: Any], let accessToken = data["access_token"] as? String {
                         self.gotoMyorderScreen(accessToken: accessToken)
+                        return
                     }
                     else {
                         HUD.hide()
@@ -457,6 +472,10 @@ extension EN_VC_CutomerOTPVerification
             spinWheelController.storeDetails = self.storeDetails
             spinWheelController.isScratchCard = .spinWheel
             spinWheelController.campaignDetails = self.campaignDetails
+            spinWheelController.records = self.records
+            spinWheelController.accessToken = self.accessTOKEN
+            spinWheelController.selectedIndexFromRecordsArray = self.selectedIndexFromRecordsArray
+            spinWheelController.totalEligibleSpinCountsAgainstAllInvoices = self.totalEligibleSpinCountsAgainstAllInvoices
             self.navigationController?.pushViewController(spinWheelController, animated: true)
             
         }else{
@@ -466,6 +485,11 @@ extension EN_VC_CutomerOTPVerification
             spinWheelController.storeDetails = self.storeDetails
 //            spinWheelController.isScratchCard = selectedGame
             spinWheelController.campaignDetails = self.campaignDetails
+            spinWheelController.records = self.records
+            spinWheelController.accessToken = self.accessTOKEN
+            spinWheelController.selectedIndexFromRecordsArray = self.selectedIndexFromRecordsArray
+            spinWheelController.totalEligibleSpinCountsAgainstAllInvoices = self.totalEligibleSpinCountsAgainstAllInvoices
+
             self.navigationController?.pushViewController(spinWheelController, animated: true)
 
 //            if let objPopUp = CustomPopUpUserData.loadFromNibNamed(nibNamed: "CustomPopUpUserData") as? CustomPopUpUserData {
@@ -484,7 +508,170 @@ extension EN_VC_CutomerOTPVerification : CustomPopUpUserDataDelegate {
         spinWheelController.storeDetails = self.storeDetails
         spinWheelController.isScratchCard = selectedGame
         spinWheelController.campaignDetails = self.campaignDetails
+        spinWheelController.records = self.records
+        spinWheelController.accessToken = self.accessTOKEN
+        spinWheelController.selectedIndexFromRecordsArray = self.selectedIndexFromRecordsArray
+        spinWheelController.totalEligibleSpinCountsAgainstAllInvoices = self.totalEligibleSpinCountsAgainstAllInvoices
+
         self.navigationController?.pushViewController(spinWheelController, animated: true)
     }
 }
 
+//MARK : My Orders Function
+extension EN_VC_CutomerOTPVerification
+{
+    
+    func getOrdersData(pageNo: Int, accessToken: String) {
+        
+        self.selectedIndexFromRecordsArray = 0
+        guard let userDetailsObj = UserDefaultUtility.shared.getModelObjectFromSharedPreference(strKey: UserDefaultKeys.modelAdminProfile) as? ModelAdminProfile, let storeIdObj = userDetailsObj.salon_id, !storeIdObj.isEmpty else {
+            return
+        }
+        
+        HUD.show(.labeledProgress(title: "", subtitle: "Please wait."), onView: self.view)
+        
+        let params : [String: Any] = [
+            "limit" : 500,
+            "is_bnb" : true,
+            "salon_id" : storeIdObj,
+            "page" : pageNo,
+            "is_custom" : true
+        ]
+        
+        EN_Service_Customer.sharedInstance.getMyOrders(params, accessToken: accessToken) { (errorCode, errorMsg, dictData) in
+            if errorCode != 0
+            {
+                // HANDLE ERROR
+                if let msg = errorMsg
+                {
+                    print("ErrorMessage: \(msg)")
+                    HUD.hide()
+                    self.showAlert(alertTitle: "ServerError", alertMessage: msg)
+                }
+            }
+            else
+            {
+                HUD.hide()
+                if let status = (dictData?["status"] as? Bool),
+                    status == false,
+                    let message = dictData?["message"] as? String
+                {
+                    self.showAlert(alertTitle: "Alert!", alertMessage: message)
+                    return
+                }
+                            
+                if let jsonData = dictData?["data"] as? [String:Any] {
+                    do {
+                        let object = try DictionaryDecoder().decode(MyProductOrdersModuleModel.GetMyOrders.MyOrdersData.self, from: jsonData)
+                        self.configureData(model: object)
+                        
+                    } catch let e {
+                        print("ERROR: \(e)")
+                    }
+                }
+            }
+        }
+    }
+    
+    func configureData(model: MyProductOrdersModuleModel.GetMyOrders.MyOrdersData) {
+        if pageNo == 1 {
+            records.removeAll()
+        }
+        totalRecords = model.total_number ?? 0
+        
+        //records.append(contentsOf: model.orders ?? [])
+        records.append(contentsOf: finalFilteredRecords(model: model))
+        if !records.isEmpty
+        {
+            actionPlaySpinGame(indexPath:IndexPath.init(row: self.selectedIndexFromRecordsArray, section: 0))
+        }
+        else
+        {
+            self.showAlert(alertTitle: "Alert!", alertMessage: "Sorry, you dont have any spins to play. Please do spend more and win more spins.")
+            
+            
+        }
+    }
+    
+    func finalFilteredRecords(model: MyProductOrdersModuleModel.GetMyOrders.MyOrdersData) -> [MyProductOrdersModuleModel.GetMyOrders.Orders]
+    {
+        var recordsNew = [MyProductOrdersModuleModel.GetMyOrders.Orders]()
+        totalEligibleSpinCountsAgainstAllInvoices = 0
+        if let orders = model.orders, !orders.isEmpty {
+            recordsNew.removeAll()
+            for element in orders
+            {
+               if  let spinDetails =  element.greenrich?.spin_details, !spinDetails.isEmpty, let spinFirst = spinDetails.first, let spinCount = spinFirst.remaining_spins, spinCount > 0 {
+                    totalEligibleSpinCountsAgainstAllInvoices = totalEligibleSpinCountsAgainstAllInvoices + spinCount
+                    recordsNew.append(element)
+            }
+            
+        }
+    
+    }
+        return recordsNew
+    }
+    
+    
+    func actionPlaySpinGame(indexPath: IndexPath) {
+        let model = records[indexPath.row]
+        
+        let selectedCampaign = model.greenrich?.applicable_campaigns?.first {
+            $0.entity_id == campaignDetails.entity_id
+        }
+        
+        if selectedCampaign != nil,
+            let spinDetails = model.greenrich?.spin_details,
+            !spinDetails.isEmpty,
+            let customerData = spinDetails.first {
+            print("Done")
+            self.configureCustomerData(customerData: customerData)
+        }else {
+            self.showAlert(alertTitle: "Alert!", alertMessage: "Selected campaign is not applicable for current invoice. Please selected another campaign")
+            return
+        }
+    }
+    
+    func configureCustomerData(customerData: MyProductOrdersModuleModel.GetMyOrders.SpinDetails) {
+        
+        if let id = customerData.customer_id,
+            let customerId = id.description.toInt() {
+            self.customerDetails = CustomerDetails.init(
+            customerName: customerData.customer_name ?? "",
+            customerId: customerId,
+            invoiceNo: customerData.invoice_number ?? "",
+            amount: customerData.amount,
+            noOfSpins: customerData.no_of_spins,
+            invoiceType: "",
+            remainingSpins: customerData.remaining_spins ?? 0,
+            remaining_invoice_amount: customerData.remaining_invoice_amount ?? 0,
+            remaining_trials: customerData.remaining_trials ?? 0,
+            trial_display_name: customerData.trial_display_name ?? "Trial",
+            no_of_trials: customerData.no_of_trials ?? 0,
+            trial_reward_points: customerData.trial_reward_points ?? 0)
+
+            openRewardSpinScreen()
+            
+        }
+        else {
+            self.showAlert(alertTitle: "Alert!", alertMessage: "Customer id is missing")
+        }
+        
+    }
+    
+    func openRewardSpinScreen() {
+        let spinWheelController = EN_VC_RewardSpin.instantiate(fromAppStoryboard: .Main)
+        spinWheelController.customerDetails = self.customerDetails
+        spinWheelController.storeDetails = self.storeDetails
+        spinWheelController.isScratchCard = .spinWheel
+        spinWheelController.campaignDetails = self.campaignDetails
+        spinWheelController.records = self.records
+        spinWheelController.accessToken = self.accessTOKEN
+        spinWheelController.selectedIndexFromRecordsArray = self.selectedIndexFromRecordsArray
+        spinWheelController.totalEligibleSpinCountsAgainstAllInvoices = self.totalEligibleSpinCountsAgainstAllInvoices
+
+        self.navigationController?.pushViewController(spinWheelController, animated: true)
+    }
+    
+    
+}

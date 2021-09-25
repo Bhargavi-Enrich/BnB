@@ -31,6 +31,7 @@ class EN_VC_TrialSpin: UIViewController {
     @IBOutlet weak var btnContinue: UIButton!
     @IBOutlet weak var lblCopyRight: UILabel!
     @IBOutlet weak var btnAddColors: UIButton!
+    
     var isScratchCard:SelectedGame = .spinWheel
     
     // Color Buttons
@@ -43,6 +44,19 @@ class EN_VC_TrialSpin: UIViewController {
     @IBOutlet weak var btnAqua: UIButton!
     @IBOutlet weak var btnOrange: UIButton!
     @IBOutlet weak var btnIndigo: UIButton!
+    
+    @IBOutlet private weak var lblSpinCount: UILabel!
+    @IBOutlet private weak var lblTotalRewardsRolled: UILabel!
+    @IBOutlet private weak var lblPoints1: UILabel!
+    @IBOutlet private weak var lblPoints2: UILabel!
+    @IBOutlet private weak var lblPoints3: UILabel!
+    @IBOutlet private weak var lblPoints4: UILabel!
+    @IBOutlet private weak var lblPoints5: UILabel!
+    @IBOutlet private weak var lblNumberOfSpinYouHave: UILabel!
+    
+    private var arrLastFiveSpinDetails = [CustomerSpin]()
+    private var isViewInBackground = false
+    private var isViewVisible = false
     
     //@IBOutlet weak var lblBillNo: UILabel!
     @IBOutlet weak var lblCustomerName: UILabel!
@@ -69,7 +83,8 @@ class EN_VC_TrialSpin: UIViewController {
     
     var remainingLocalTrialCount = 0
     var totalCount = 0
-    
+    let appd:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+
     override func viewDidLoad() {
         super.viewDidLoad()
         hideColorSection()
@@ -80,10 +95,58 @@ class EN_VC_TrialSpin: UIViewController {
         // Do any additional setup after loading the view.
         lblRecyclingInfo.text = campaignDetails.recycle_message ?? ""
         self.initialialize()
+        
+        self.arrLastFiveSpinDetails = appd.arrLastFiveSpinDetails
+        self.changeLastFiveSpinData()
+        
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    //MARK:- Functionality
+    func changeLabelsOnFiveSpin()
+    {
+        DispatchQueue.main.async {
+            if(self.arrLastFiveSpinDetails.count > 0){
+                let textCount = self.getSixDigitData(amountWon: self.arrLastFiveSpinDetails[0].id)
+                self.lblPoints1.text = self.arrLastFiveSpinDetails[0].amountWon + " Points " + textCount
+            }
+            if (self.arrLastFiveSpinDetails.count > 1){
+                let textCount = self.getSixDigitData(amountWon: self.arrLastFiveSpinDetails[1].id)
+                self.lblPoints2.text = self.arrLastFiveSpinDetails[1].amountWon + " Points " + textCount
+            }
+            if (self.arrLastFiveSpinDetails.count > 2){
+                let textCount = self.getSixDigitData(amountWon: self.arrLastFiveSpinDetails[2].id)
+                self.lblPoints3.text = self.arrLastFiveSpinDetails[2].amountWon + " Points " + textCount
+            }
+            if (self.arrLastFiveSpinDetails.count > 3){
+                let textCount = self.getSixDigitData(amountWon: self.arrLastFiveSpinDetails[3].id)
+                self.lblPoints4.text = self.arrLastFiveSpinDetails[3].amountWon + " Points " + textCount
+            }
+            if (self.arrLastFiveSpinDetails.count > 4){
+                let textCount = self.getSixDigitData(amountWon: self.arrLastFiveSpinDetails[4].id)
+                self.lblPoints5.text = self.arrLastFiveSpinDetails[4].amountWon + " Points " + textCount
+            }
+        }
+    }
+    
+    func changeLastFiveSpinData()
+    {
+        print("self.storeDetails.no_of_spin_availed=\(self.storeDetails)")
+        self.lblSpinCount.text = self.getSixDigitData(amountWon: String(format:"%d",appd.no_of_spin_availed)) + " " + "kl_NoOfSpins".localized
+        
+        self.changeLabelsOnFiveSpin()
+        
+        self.lblTotalRewardsRolled.text = appd.totalRewardsRolled + " " + "kl_TotalRewardsRolled".localized
+    }
+    
+    func getSixDigitData(amountWon : String) -> String
+    {
+        var strFinal = amountWon
+        let intObj = (6 - amountWon.count) > 0 ? (6 - amountWon.count) : 0
+        for _ in 0..<intObj
+        {
+            strFinal = "0" + strFinal
+        }
+        return strFinal
     }
     
     func openPopUpForSelection(){
@@ -174,7 +237,7 @@ class EN_VC_TrialSpin: UIViewController {
         self.lblRemainingTrials.isHidden = false
         self.lblRemainingTrialsCount.isHidden = false
         let takenCount = self.totalCount - self.remainingLocalTrialCount
-        self.lblRemainingTrialsCount.text = "\(takenCount)"        
+        self.lblRemainingTrialsCount.text = "\(takenCount)"
         
         self.btnPlace.setTitle(self.storeDetails.storeName ?? "", for: .normal)
         
@@ -539,3 +602,4 @@ extension EN_VC_TrialSpin : UICollectionViewDataSource, UICollectionViewDelegate
         }
     }
 }
+
