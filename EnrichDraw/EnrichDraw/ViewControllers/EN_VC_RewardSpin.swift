@@ -912,7 +912,11 @@ extension EN_VC_RewardSpin
             trial_display_name: customerData.trial_display_name ?? "Trial",
             no_of_trials: customerData.no_of_trials ?? 0,
             trial_reward_points: customerData.trial_reward_points ?? 0)
-            
+            self.dictRewardsArray.removeAll()
+            for index in 0..<( self.customerDetails.remainingSpins )
+            {
+                self.dictRewardsArray[index] = SpinDetails.init(clrSelected: GlobalFunctions.shared.getRandonColor() , amountSelected: "", spinNo: index, invoiceNo:self.customerDetails.invoiceNo ?? "" )
+            }
         }
         else {
             self.showAlert(alertTitle: "Alert!", alertMessage: "Customer id is missing")
