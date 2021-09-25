@@ -314,7 +314,7 @@ class EN_VC_RewardSpin: UIViewController {
     //MARK:- Actions
     @IBAction func actionBtnBack(_ sender: Any) {
 
-        let alert = UIAlertController(title:"", message: "", preferredStyle: UIAlertController.Style.alert)
+        let alert = UIAlertController(title:"", message: "Do you want to go home or back?", preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: "Home", style: UIAlertAction.Style.cancel, handler: { (action) in
             self.appDelegate.appLaunch()
         }))
