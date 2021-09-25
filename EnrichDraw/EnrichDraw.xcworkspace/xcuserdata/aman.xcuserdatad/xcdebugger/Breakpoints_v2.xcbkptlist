@@ -78,8 +78,8 @@
             filePath = "EnrichDraw/ViewControllers/EN_VC_RewardSpin.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "476"
-            endingLineNumber = "476"
+            startingLineNumber = "477"
+            endingLineNumber = "477"
             landmarkName = "callNextSpinView(tag:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -94,8 +94,8 @@
             filePath = "EnrichDraw/ViewControllers/EN_VC_RewardSpin.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "877"
-            endingLineNumber = "877"
+            startingLineNumber = "878"
+            endingLineNumber = "878"
             landmarkName = "actionPlaySpinGame(indexPath:)"
             landmarkType = "7">
          </BreakpointContent>

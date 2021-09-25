@@ -28,34 +28,44 @@ class EN_VC_RewardWinnings: UIViewController, UICollectionViewDelegate, UICollec
     
     weak var delegate: EN_VC_RewardWinningsDelegate?
     
-    let totalRewardsPoints = "650 Reward Points"
-    let totalSpinLeftString = "You have 3 more spins left" //"All your Reward Points have been added to your Enrich Wallet"
+    var totalRewardsPoints = 0
+    var totalSpinLeftString = 0
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        self.yourTotalWinningsLabel.text = "Your Total Winnings"
-        
-        let normalText = "You have won a total of "
-        let boldText = self.totalRewardsPoints
-        let normalTextEnd = " that can be redeemed against beauty services and products"
-        let attributedString = NSMutableAttributedString(string:normalText)
-        let attributedStringEnd = NSMutableAttributedString(string:normalTextEnd)
-        let attrs = [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 15)]
-        let boldString = NSMutableAttributedString(string: boldText, attributes:attrs)
-        attributedString.append(boldString)
-        attributedString.append(attributedStringEnd)
-        self.totalWinningsRewardLabel.attributedText = attributedString
-        
-        self.dropShadowView.backgroundColor = UIColor(rgb: 0x707070).withAlphaComponent(0.50)
-        self.numberOfLeftSpinLabel.text = self.totalSpinLeftString
-        
-        self.collectionView.register(UINib(nibName: "EN_VC_CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "EN_VC_CollectionViewCell")
-        self.crossButton.addTarget(self, action: #selector(self.dismissPopupScreenCrossClick), for: .touchUpInside)
-        self.spinAgainButton.addTarget(self, action: #selector(self.dismissPopupScreenSpinAgainOrClose), for: .touchUpInside)
-        
-        
-    }
+            super.viewDidLoad()
+            
+            self.yourTotalWinningsLabel.text = "Your Total Winnings"
+            
+            let normalText = "You have won a total of "
+            let boldText = "\(self.totalRewardsPoints)"
+            let normalTextEnd = " Reward Points that can be redeemed against beauty services and products"
+            let attributedString = NSMutableAttributedString(string:normalText)
+            let attributedStringEnd = NSMutableAttributedString(string:normalTextEnd)
+            let attrs = [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 15)]
+            let boldString = NSMutableAttributedString(string: boldText, attributes:attrs)
+            attributedString.append(boldString)
+            attributedString.append(attributedStringEnd)
+            self.totalWinningsRewardLabel.attributedText = attributedString
+            
+            self.dropShadowView.backgroundColor = UIColor(rgb: 0x707070).withAlphaComponent(0.50)
+            self.spinAgainButton.setBackgroundImage(UIImage(named: "enableButton"), for: .normal)
+            if(self.totalSpinLeftString > 0){
+                self.numberOfLeftSpinLabel.text = "You have \(self.totalSpinLeftString) more spins left"
+                
+                self.spinAgainButton.setTitle("SPIN AGAIN  >", for: .normal)
+            }else{
+                self.numberOfLeftSpinLabel.text = "All your Reward Points have been added to your Enrich Wallet"
+                
+                self.spinAgainButton.setTitle("CLOSE  >", for: .normal)
+            }
+            
+            
+            self.collectionView.register(UINib(nibName: "EN_VC_CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "EN_VC_CollectionViewCell")
+            self.crossButton.addTarget(self, action: #selector(self.dismissPopupScreenCrossClick), for: .touchUpInside)
+            self.spinAgainButton.addTarget(self, action: #selector(self.dismissPopupScreenSpinAgainOrClose), for: .touchUpInside)
+            
+            
+        }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1

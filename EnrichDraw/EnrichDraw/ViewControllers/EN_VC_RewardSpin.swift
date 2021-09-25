@@ -328,6 +328,7 @@ class EN_VC_RewardSpin: UIViewController {
     //MARK:- Actions
     @IBAction func actionMyReward(_ sender: Any) {
         let destination = EN_VC_RewardWinnings(nibName: "EN_VC_RewardWinnings", bundle: nil)
+        destination.totalSpinLeftString = self.totalEligibleSpinCountsAgainstAllInvoices - self.currentSpinNumber
         destination.modalPresentationStyle = .overCurrentContext
         self.present(destination, animated: false, completion: nil)
     }
