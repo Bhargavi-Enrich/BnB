@@ -36,6 +36,8 @@ class EN_VC_WinBigBBViewController: UIViewController {
 
     }
     
+   
+    
     @objc func tapImage(){
             openRewardSpinScreen()
         }
@@ -57,3 +59,4 @@ class EN_VC_WinBigBBViewController: UIViewController {
     }
 
 }
+

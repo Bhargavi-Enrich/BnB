@@ -531,11 +531,13 @@ extension EN_VC_CutomerOTPVerification
         HUD.show(.labeledProgress(title: "", subtitle: "Please wait."), onView: self.view)
         
         let params : [String: Any] = [
-            "limit" : 100,
+            "limit" : 50,
             "is_bnb" : true,
             "salon_id" : storeIdObj,
             "page" : pageNo,
-            "is_custom" : true
+            "is_custom" : true,
+            "campaign_start_date" : "\(campaignDetails.start_date ?? "00:00:00")" + " 00:00:00",
+            "campaign_end_date" : "\(campaignDetails.end_date ?? "00:00:00")" + " 00:00:00"
         ]
         
         EN_Service_Customer.sharedInstance.getMyOrders(params, accessToken: accessToken) { (errorCode, errorMsg, dictData) in

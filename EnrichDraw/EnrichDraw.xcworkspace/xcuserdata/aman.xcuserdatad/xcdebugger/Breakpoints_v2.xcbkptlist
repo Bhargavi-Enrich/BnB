@@ -62,8 +62,8 @@
             filePath = "EnrichDraw/ViewControllers/EN_VC_RewardSpin.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "480"
-            endingLineNumber = "480"
+            startingLineNumber = "482"
+            endingLineNumber = "482"
             landmarkName = "callNextSpinView(tag:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -78,13 +78,13 @@
             filePath = "EnrichDraw/ViewControllers/EN_VC_RewardSpin.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "881"
-            endingLineNumber = "881"
+            startingLineNumber = "893"
+            endingLineNumber = "893"
             landmarkName = "actionPlaySpinGame(indexPath:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "90867280-2F67-4F53-97FC-F5CB3DF750F6 - f33fea0cde1b574a"
+                  uuid = "90867280-2F67-4F53-97FC-F5CB3DF750F6 - f33fea0cde1b49de"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -94,12 +94,12 @@
                   urlString = "file:///Users/aman/Documents/Enrich_Spin_Wheel/EnrichDraw/EnrichDraw/ViewControllers/EN_VC_RewardSpin.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "881"
-                  endingLineNumber = "881"
+                  startingLineNumber = "893"
+                  endingLineNumber = "893"
                   offsetFromSymbolStart = "4096">
                </Location>
                <Location
-                  uuid = "90867280-2F67-4F53-97FC-F5CB3DF750F6 - 41f8043d3babacd7"
+                  uuid = "90867280-2F67-4F53-97FC-F5CB3DF750F6 - 41f8043d3babb243"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -109,8 +109,8 @@
                   urlString = "file:///Users/aman/Documents/Enrich_Spin_Wheel/EnrichDraw/EnrichDraw/ViewControllers/EN_VC_RewardSpin.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "882"
-                  endingLineNumber = "882"
+                  startingLineNumber = "894"
+                  endingLineNumber = "894"
                   offsetFromSymbolStart = "60">
                </Location>
             </Locations>
@@ -151,16 +151,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "11FDDF28-5A34-4D59-8A7E-9257EFDF4F13"
+            uuid = "63242619-9B39-409A-A583-4DE5D98E61A8"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "EnrichDraw/ViewControllers/EN_VC_RewardWinnings.swift"
+            filePath = "EnrichDraw/WBServiceClasses/EN_Service_TotalRewards.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "getTotalRewards(userData:callback:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -224,6 +224,18 @@ class EN_VC_TrialSpin: UIViewController {
             }
         }
         
+        if let logoDetails = self.campaignDetails.campaign_image, let urlObj = logoDetails.url {
+            DispatchQueue.global().async { [weak self] in
+                if let data = try? Data(contentsOf: URL(string: urlObj)!) {
+                    if let image = UIImage(data: data) {
+                        DispatchQueue.main.async {
+                            self?.bannerAdvertise.image = image
+                        }
+                    }
+                }
+            }
+        }
+        
        // self.lblBillNo.text = self.customerDetails.invoiceNo ?? ""
         self.lblCustomerName.text = self.customerDetails.customerName ?? ""
         //self.lblBillAmount.text = "₹ \(String(format: "%2.0f",self.customerDetails.amount ?? 0.0))"
@@ -311,6 +323,8 @@ class EN_VC_TrialSpin: UIViewController {
     //MARK:- Actions
     @IBAction func actionMyReward(_ sender: Any) {
         let destination = EN_VC_RewardWinnings(nibName: "EN_VC_RewardWinnings", bundle: nil)
+        destination.campaignDetails = self.campaignDetails
+        destination.customerDetails = self.customerDetails
         destination.modalPresentationStyle = .overCurrentContext
         self.present(destination, animated: false, completion: nil)
     }

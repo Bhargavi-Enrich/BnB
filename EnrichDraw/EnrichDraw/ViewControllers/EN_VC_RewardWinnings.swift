@@ -8,6 +8,7 @@
 
 import UIKit
 import Foundation
+import PKHUD
 
 protocol EN_VC_RewardWinningsDelegate:AnyObject {
     func actionCloseClick()
@@ -25,7 +26,9 @@ class EN_VC_RewardWinnings: UIViewController, UICollectionViewDelegate, UICollec
     @IBOutlet weak var spinAgainButton: UIButton!
     @IBOutlet weak var crossButton: UIButton!
     @IBOutlet weak var collectionView: UICollectionView!
-    
+    var customerDetails = CustomerDetails()
+    var campaignDetails = ModelRunningCampaignListData()
+
     weak var delegate: EN_VC_RewardWinningsDelegate?
     
     var totalRewardsPoints = 0
@@ -66,6 +69,11 @@ class EN_VC_RewardWinnings: UIViewController, UICollectionViewDelegate, UICollec
             
             
         }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        getTotalRewards()
+    }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -117,4 +125,121 @@ extension UIColor {
            blue: rgb & 0xFF
        )
    }
+}
+
+extension EN_VC_RewardWinnings {
+    
+    func getTotalRewards()
+    {
+        let params : [String: Any] = [
+//            "invoiceNo" : customerDetails.invoiceNo ?? "",
+            "customerId" : customerDetails.customerId ?? "",
+            "campaignId": campaignDetails.entity_id ?? "",
+            "campaign_start_date" : "\(campaignDetails.start_date ?? "00:00:00")",
+            "is_custom" : true]
+        
+        HUD.show(.labeledProgress(title: "", subtitle: "Please wait."), onView: self.view)
+        
+        EN_Service_TotalRewards.sharedInstance.getTotalRewards(
+            userData: params, callback: { (errorCode, errorMsg, dictData) in
+                if errorCode != 0
+                {
+                    // HANDLE ERROR
+                    if let msg = errorMsg
+                    {
+                        print(msg)
+                        self.showAlert(alertTitle: "Error", alertMessage: "\(msg)")
+                    }
+                }else
+                {
+                    self.setData(dict: dictData)
+                    print(dictData ?? "Data available")
+                }
+                HUD.hide()
+        })
+    }
+    
+    func setData(dict : Dictionary<String, Any>?)
+    {
+        /*var arrCustomer = [CustomerSpin]()
+        self.totalRewardsCount = 0.0
+        // Total Rewards
+        if let value:String = dict?["totalRewards"] as? String
+        {
+            self.totalRewardsCount = Double(value)!
+        }
+        
+        // Customer spin data
+        if let dictData = dict, let dataDataObj = dictData["data"] as? [String : Any] {
+            if let dictionary = dataDataObj["customerSpinDetails"] as? [Dictionary<String,Any>]
+            {
+                if let arrCustomerSpinDetails = dictionary as? Array<[String : Any]>{
+                    for (index,dictObj) in arrCustomerSpinDetails.enumerated()
+                    {
+                        if let value:String = dictObj["amountWon"] as? String
+                        {
+                            if(value.isNumber)
+                            {
+                                self.totalRewardsCount = self.totalRewardsCount + Double(value)! //Old code
+                            }
+                        }
+                        
+                        arrCustomer.append(CustomerSpin.init(id: dictObj["customer_id"] as? String ?? "", amountWon: String(dictObj["amount_won"] as? String ?? "") , createdDate: dictObj["created_at"] as? String ?? "", invoiceId: (dictObj["invoiceId"] as? String) ?? ""))
+                        
+                        if(dictRewardsArray[index] != nil)
+                        {
+                            let spinData = dictRewardsArray[index]
+                            self.dictRewardsArray[index] = SpinDetails.init(clrSelected: (spinData?.clrSelected)! , amountSelected: String(dictObj["amountWon"] as? String ?? ""), spinNo: index, invoiceNo:(dictObj["invoiceId"] as? String) ?? "" )
+                        }else{
+                            self.dictRewardsArray[index] = SpinDetails.init(clrSelected: GlobalFunctions.shared.getRandonColor() , amountSelected: String(dictObj["amountWon"] as? String ?? ""), spinNo: index, invoiceNo:(dictObj["invoiceId"] as? String) ?? "" )
+                        }
+                        
+                    }
+                }
+            }
+        }
+        
+        
+        
+        totalData = TotalRewards.init(customerSpin: arrCustomer, totalRewards: String(format:"%.0f",self.totalRewardsCount))
+        
+        // Show on UI
+        DispatchQueue.main.async {
+            
+            self.setUpScreenUI()
+            
+            let textContent = String(format:"%.0f",self.totalRewardsCount)
+            let textString = NSMutableAttributedString(string: textContent, attributes: [
+                NSAttributedString.Key.font: UIFont(name: "Montserrat-Regular", size: 16)!
+            ])
+            textString.setColorForText(textForAttribute:String(format:"%.0f",self.totalRewardsCount) , withColor: UIColor.white , withFont: UIFont(name: "Montserrat-Semibold", size: 34)!)
+            self.lblAmount.attributedText = textString
+            
+            self.collectionTotalRewards.reloadData()
+            self.collectionTotalRewards.performBatchUpdates(nil, completion: {
+                (result) in
+                // ready
+                self.totalRewardsCount = 0.0
+                for (_,model)in self.dictRewardsArray.enumerated()
+                {
+                    if(model.value.amountSelected.isNumber)
+                    {
+                        self.totalRewardsCount = self.totalRewardsCount + Double(model.value.amountSelected)!
+                    }
+                    
+                    print("self.totalRewardsCount : ",self.totalRewardsCount)
+                    
+                    self.setUpScreenUI()
+                    
+                    
+                }
+                let textContent = String(format:"%.0f",self.totalRewardsCount)
+                let textString = NSMutableAttributedString(string: textContent, attributes: [
+                    NSAttributedString.Key.font: UIFont(name: "Montserrat-Regular", size: 16)!
+                ])
+                textString.setColorForText(textForAttribute:String(format:"%.0f",self.totalRewardsCount) , withColor: UIColor.white , withFont: UIFont(name: "Montserrat-Semibold", size: 34)!)
+                self.lblAmount.attributedText = textString
+            })
+        }*/
+    }
 }
