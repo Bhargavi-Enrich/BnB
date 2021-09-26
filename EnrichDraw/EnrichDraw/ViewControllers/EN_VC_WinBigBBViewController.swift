@@ -22,8 +22,6 @@ class EN_VC_WinBigBBViewController: UIViewController {
     var totalEligibleSpinCountsAgainstAllInvoices = 0
     var isScratchCard:SelectedGame = .spinWheel
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.lblCopyRight.text = self.getCopyRight()

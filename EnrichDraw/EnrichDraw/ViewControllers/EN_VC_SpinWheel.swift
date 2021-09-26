@@ -213,20 +213,20 @@ class EN_VC_SpinWheel: UIViewController {
     let iPad12Width:CGFloat = 600
     let iPad12Height:CGFloat = 600
     
-    let iPad11Width:CGFloat = 450
-    let iPad11Height:CGFloat = 450
+    let iPad11Width:CGFloat = 440
+    let iPad11Height:CGFloat = 440
     
-    let iPadProWidth:CGFloat = 400
-    let iPadProHeight:CGFloat = 400
+    let iPadProWidth:CGFloat = 390
+    let iPadProHeight:CGFloat = 390
     
-    let iPadMiniWidth:CGFloat = 430
-    let iPadMiniHeight:CGFloat = 430
+    let iPadMiniWidth:CGFloat = 420
+    let iPadMiniHeight:CGFloat = 420
     
-    let iPadAirWidth:CGFloat = 420
-    let iPadAirHeight:CGFloat = 420
+    let iPadAirWidth:CGFloat = 410
+    let iPadAirHeight:CGFloat = 410
     
-    let iPadWidth:CGFloat = 410
-    let iPadHeight:CGFloat = 410
+    let iPadWidth:CGFloat = 400
+    let iPadHeight:CGFloat = 400
     
     
     // MARK:- View Life Cycle Methods

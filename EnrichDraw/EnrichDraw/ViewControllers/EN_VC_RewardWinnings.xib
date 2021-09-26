@@ -123,7 +123,6 @@
                                 <constraint firstAttribute="height" constant="62" id="ha9-e1-3Qz"/>
                             </constraints>
                             <fontDescription key="fontDescription" name="FuturaPT-Book" family="Futura PT" pointSize="16"/>
-                            <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="5"/>
                             <state key="normal" title="SPIN AGAIN  &gt;" backgroundImage="enableButton">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
@@ -172,7 +171,7 @@
     </objects>
     <resources>
         <image name="Rectangle-header-Gradient" width="736" height="45"/>
-        <image name="enableButton" width="393" height="86"/>
+        <image name="enableButton" width="363" height="57"/>
         <image name="white-cross" width="22" height="22"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
