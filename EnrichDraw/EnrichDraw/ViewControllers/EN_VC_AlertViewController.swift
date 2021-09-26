@@ -56,7 +56,6 @@ class EN_VC_AlertViewController: UIViewController {
         //self.btnReadyForNextSpin.setBackgroundImage(UIImage(named: "enableButton"), for: .normal)
         //self.btnReadyForNextSpin.setTitle("CLOSE  >", for: .normal)
         
-        
     }
     
     
@@ -82,7 +81,6 @@ class EN_VC_AlertViewController: UIViewController {
         self.btnReadyForNextSpin.setBackgroundImage(UIImage(named: btnBackgoundImage), for: UIControl.State.normal)
         
         self.playSound(strSoundName:"chimes.wav" , numberOfLoops: 0)
-    
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             self.showGif()
         }
@@ -179,9 +177,10 @@ extension EN_VC_AlertViewController {
     
     func showGif() {
         gifView.isHidden = false
-        let x = (gifView.frame.size.width / 2) - 50
-        let y = (gifView.frame.size.height / 2) - 75
-        if let confettiImgView2 = UIImageView.fromGif(frame: CGRect(x: x, y: y, width: 100, height: 150), resourceName: "gif1"), gifWithImageView == nil {
+        let x = (gifView.frame.size.width / 2)  - 150
+        let y = (gifView.frame.size.height / 2)  - 130 //width: 100, height: 150),
+        
+        if let confettiImgView2 = UIImageView.fromGif(frame: CGRect(x: x, y: y, width: 300, height: 280), resourceName: "gif1"), gifWithImageView == nil {
             self.gifWithImageView = confettiImgView2
             gifWithImageView!.alpha = 1
             gifView.addSubview(gifWithImageView!)

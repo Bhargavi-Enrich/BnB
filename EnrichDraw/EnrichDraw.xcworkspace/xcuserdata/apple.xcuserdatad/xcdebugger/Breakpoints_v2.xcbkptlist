@@ -19,6 +19,98 @@
             endingLineNumber = "47"
             landmarkName = "EN_VC_TrialSpin"
             landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "F9E523EF-F3E3-435F-AF48-81B78238F37D - e7c9e916ba19291f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Greenrich.EN_VC_TrialSpin.lblSpinCount.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "Greenrich"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Downloads/Enrich_Spin_Wheel/EnrichDraw/EnrichDraw/ViewControllers/EN_VC_TrialSpin.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "F9E523EF-F3E3-435F-AF48-81B78238F37D - 5a305884a11f25eb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Greenrich.EN_VC_TrialSpin.lblSpinCount.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "Greenrich"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Downloads/Enrich_Spin_Wheel/EnrichDraw/EnrichDraw/ViewControllers/EN_VC_TrialSpin.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "155">
+               </Location>
+               <Location
+                  uuid = "F9E523EF-F3E3-435F-AF48-81B78238F37D - efc64a011de3b24a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Greenrich.EN_VC_TrialSpin.lblSpinCount.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "Greenrich"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Downloads/Enrich_Spin_Wheel/EnrichDraw/EnrichDraw/ViewControllers/EN_VC_TrialSpin.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "F9E523EF-F3E3-435F-AF48-81B78238F37D - 8b83153cadcedfcb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Greenrich.EN_VC_TrialSpin.lblSpinCount.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Greenrich"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Downloads/Enrich_Spin_Wheel/EnrichDraw/EnrichDraw/ViewControllers/EN_VC_TrialSpin.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  uuid = "F9E523EF-F3E3-435F-AF48-81B78238F37D - ca4711c758c02f3c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Greenrich.EN_VC_TrialSpin.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Greenrich.EN_VC_TrialSpin"
+                  moduleName = "Greenrich"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Downloads/Enrich_Spin_Wheel/EnrichDraw/EnrichDraw/ViewControllers/EN_VC_TrialSpin.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "3192">
+               </Location>
+               <Location
+                  uuid = "F9E523EF-F3E3-435F-AF48-81B78238F37D - 402e015cdecb3e8f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Greenrich.EN_VC_TrialSpin.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Greenrich.EN_VC_TrialSpin&gt;"
+                  moduleName = "Greenrich"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Downloads/Enrich_Spin_Wheel/EnrichDraw/EnrichDraw/ViewControllers/EN_VC_TrialSpin.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "3124">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -55,68 +147,94 @@
             landmarkType = "3">
             <Locations>
                <Location
-                  uuid = "9EF0F014-48C5-4C6B-9D11-4D50BBCA9C61 - c5151caa59f64841"
+                  uuid = "9EF0F014-48C5-4C6B-9D11-4D50BBCA9C61 - 2ea60d9024e0cfdd"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "EnrichDraw.EN_VC_RewardSpin.imgPlace.getter : weak Swift.Optional&lt;__C.UIImageView&gt;"
-                  moduleName = "EnrichDraw"
+                  symbolName = "Greenrich.EN_VC_RewardSpin.lblSelctionColorTitle.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "Greenrich"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/apple/Documents/EnrichBNB/EnrichDraw/EnrichDraw/ViewControllers/EN_VC_RewardSpin.swift"
-                  timestampString = "581532868.38615"
+                  urlString = "file:///Users/apple/Downloads/Enrich_Spin_Wheel/EnrichDraw/EnrichDraw/ViewControllers/EN_VC_RewardSpin.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "37"
                   endingLineNumber = "37"
-                  offsetFromSymbolStart = "86">
+                  offsetFromSymbolStart = "88">
                </Location>
                <Location
-                  uuid = "9EF0F014-48C5-4C6B-9D11-4D50BBCA9C61 - a86ffb850c784d"
+                  uuid = "9EF0F014-48C5-4C6B-9D11-4D50BBCA9C61 - c7b2f9798a1aa3c1"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "EnrichDraw.EN_VC_RewardSpin.imgPlace.setter : weak Swift.Optional&lt;__C.UIImageView&gt;"
-                  moduleName = "EnrichDraw"
+                  symbolName = "Greenrich.EN_VC_RewardSpin.lblSelctionColorTitle.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "Greenrich"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/apple/Documents/EnrichBNB/EnrichDraw/EnrichDraw/ViewControllers/EN_VC_RewardSpin.swift"
-                  timestampString = "581532868.39"
+                  urlString = "file:///Users/apple/Downloads/Enrich_Spin_Wheel/EnrichDraw/EnrichDraw/ViewControllers/EN_VC_RewardSpin.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "37"
                   endingLineNumber = "37"
-                  offsetFromSymbolStart = "106">
+                  offsetFromSymbolStart = "155">
                </Location>
                <Location
-                  uuid = "9EF0F014-48C5-4C6B-9D11-4D50BBCA9C61 - 209f72a21786f132"
+                  uuid = "9EF0F014-48C5-4C6B-9D11-4D50BBCA9C61 - 68105011b086a415"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "EnrichDraw.EN_VC_RewardSpin.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; EnrichDraw.EN_VC_RewardSpin"
-                  moduleName = "EnrichDraw"
+                  symbolName = "Greenrich.EN_VC_RewardSpin.lblSelctionColorTitle.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "Greenrich"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/apple/Documents/EnrichBNB/EnrichDraw/EnrichDraw/ViewControllers/EN_VC_RewardSpin.swift"
-                  timestampString = "581532868.393548"
+                  urlString = "file:///Users/apple/Downloads/Enrich_Spin_Wheel/EnrichDraw/EnrichDraw/ViewControllers/EN_VC_RewardSpin.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "37"
-                  endingLineNumber = "37"
-                  offsetFromSymbolStart = "213">
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "44">
                </Location>
                <Location
-                  uuid = "9EF0F014-48C5-4C6B-9D11-4D50BBCA9C61 - d682f41f76fffe9c"
+                  uuid = "9EF0F014-48C5-4C6B-9D11-4D50BBCA9C61 - 6364c53b25f90b1d"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "EnrichDraw.EN_VC_RewardSpin.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;EnrichDraw.EN_VC_RewardSpin&gt;"
-                  moduleName = "EnrichDraw"
+                  symbolName = "Greenrich.EN_VC_RewardSpin.lblSelctionColorTitle.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Greenrich"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/apple/Documents/EnrichBNB/EnrichDraw/EnrichDraw/ViewControllers/EN_VC_RewardSpin.swift"
-                  timestampString = "581532868.397025"
+                  urlString = "file:///Users/apple/Downloads/Enrich_Spin_Wheel/EnrichDraw/EnrichDraw/ViewControllers/EN_VC_RewardSpin.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "37"
                   endingLineNumber = "37"
-                  offsetFromSymbolStart = "178">
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  uuid = "9EF0F014-48C5-4C6B-9D11-4D50BBCA9C61 - 5472a277d638dd03"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Greenrich.EN_VC_RewardSpin.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Greenrich.EN_VC_RewardSpin"
+                  moduleName = "Greenrich"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Downloads/Enrich_Spin_Wheel/EnrichDraw/EnrichDraw/ViewControllers/EN_VC_RewardSpin.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "1949">
+               </Location>
+               <Location
+                  uuid = "9EF0F014-48C5-4C6B-9D11-4D50BBCA9C61 - 7e2ff297ab669da6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Greenrich.EN_VC_RewardSpin.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Greenrich.EN_VC_RewardSpin&gt;"
+                  moduleName = "Greenrich"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Downloads/Enrich_Spin_Wheel/EnrichDraw/EnrichDraw/ViewControllers/EN_VC_RewardSpin.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "1881">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -138,68 +256,94 @@
             landmarkType = "3">
             <Locations>
                <Location
-                  uuid = "AD64BDF5-ED86-44AA-9D91-FE6D23DBF94A - a4ee6e542662f8b8"
+                  uuid = "AD64BDF5-ED86-44AA-9D91-FE6D23DBF94A - c0da397dc63b250c"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "EnrichDraw.EN_VC_RewardSpin.btnBack.getter : weak Swift.Optional&lt;__C.UIButton&gt;"
-                  moduleName = "EnrichDraw"
+                  symbolName = "Greenrich.EN_VC_RewardSpin.btnAqua.getter : Swift.Optional&lt;__C.UIButton&gt;"
+                  moduleName = "Greenrich"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/apple/Documents/EnrichBNB/EnrichDraw/EnrichDraw/ViewControllers/EN_VC_RewardSpin.swift"
-                  timestampString = "581532868.417755"
+                  urlString = "file:///Users/apple/Downloads/Enrich_Spin_Wheel/EnrichDraw/EnrichDraw/ViewControllers/EN_VC_RewardSpin.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "59"
                   endingLineNumber = "59"
-                  offsetFromSymbolStart = "86">
+                  offsetFromSymbolStart = "88">
                </Location>
                <Location
-                  uuid = "AD64BDF5-ED86-44AA-9D91-FE6D23DBF94A - db44806074d5ecac"
+                  uuid = "AD64BDF5-ED86-44AA-9D91-FE6D23DBF94A - a369625831615918"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "EnrichDraw.EN_VC_RewardSpin.btnBack.setter : weak Swift.Optional&lt;__C.UIButton&gt;"
-                  moduleName = "EnrichDraw"
+                  symbolName = "Greenrich.EN_VC_RewardSpin.btnAqua.setter : Swift.Optional&lt;__C.UIButton&gt;"
+                  moduleName = "Greenrich"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/apple/Documents/EnrichBNB/EnrichDraw/EnrichDraw/ViewControllers/EN_VC_RewardSpin.swift"
-                  timestampString = "581532868.421582"
+                  urlString = "file:///Users/apple/Downloads/Enrich_Spin_Wheel/EnrichDraw/EnrichDraw/ViewControllers/EN_VC_RewardSpin.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "59"
                   endingLineNumber = "59"
-                  offsetFromSymbolStart = "106">
+                  offsetFromSymbolStart = "155">
                </Location>
                <Location
-                  uuid = "AD64BDF5-ED86-44AA-9D91-FE6D23DBF94A - 209f72a21786ec44"
+                  uuid = "AD64BDF5-ED86-44AA-9D91-FE6D23DBF94A - 199c743498b43bf4"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "EnrichDraw.EN_VC_RewardSpin.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; EnrichDraw.EN_VC_RewardSpin"
-                  moduleName = "EnrichDraw"
+                  symbolName = "Greenrich.EN_VC_RewardSpin.btnAqua.modify : Swift.Optional&lt;__C.UIButton&gt;"
+                  moduleName = "Greenrich"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/apple/Documents/EnrichBNB/EnrichDraw/EnrichDraw/ViewControllers/EN_VC_RewardSpin.swift"
-                  timestampString = "581532868.425318"
+                  urlString = "file:///Users/apple/Downloads/Enrich_Spin_Wheel/EnrichDraw/EnrichDraw/ViewControllers/EN_VC_RewardSpin.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "59"
-                  endingLineNumber = "59"
-                  offsetFromSymbolStart = "1998">
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "44">
                </Location>
                <Location
-                  uuid = "AD64BDF5-ED86-44AA-9D91-FE6D23DBF94A - d682f41f76ffe3ea"
+                  uuid = "AD64BDF5-ED86-44AA-9D91-FE6D23DBF94A - d2ea188bee62618a"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "EnrichDraw.EN_VC_RewardSpin.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;EnrichDraw.EN_VC_RewardSpin&gt;"
-                  moduleName = "EnrichDraw"
+                  symbolName = "Greenrich.EN_VC_RewardSpin.btnAqua.modify : Swift.Optional&lt;__C.UIButton&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Greenrich"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/apple/Documents/EnrichBNB/EnrichDraw/EnrichDraw/ViewControllers/EN_VC_RewardSpin.swift"
-                  timestampString = "581532868.428872"
+                  urlString = "file:///Users/apple/Downloads/Enrich_Spin_Wheel/EnrichDraw/EnrichDraw/ViewControllers/EN_VC_RewardSpin.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "59"
                   endingLineNumber = "59"
-                  offsetFromSymbolStart = "1963">
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  uuid = "AD64BDF5-ED86-44AA-9D91-FE6D23DBF94A - 5472a277d638a03d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Greenrich.EN_VC_RewardSpin.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Greenrich.EN_VC_RewardSpin"
+                  moduleName = "Greenrich"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Downloads/Enrich_Spin_Wheel/EnrichDraw/EnrichDraw/ViewControllers/EN_VC_RewardSpin.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "3071">
+               </Location>
+               <Location
+                  uuid = "AD64BDF5-ED86-44AA-9D91-FE6D23DBF94A - 7e2ff297ab66e098"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Greenrich.EN_VC_RewardSpin.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Greenrich.EN_VC_RewardSpin&gt;"
+                  moduleName = "Greenrich"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Downloads/Enrich_Spin_Wheel/EnrichDraw/EnrichDraw/ViewControllers/EN_VC_RewardSpin.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "3003">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -338,40 +482,6 @@
             endingLineNumber = "369"
             landmarkName = "setData(dict:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "7C449315-7921-4650-B696-150D0A5C393A - 3cdfdc72e2d5ba98"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "EnrichDraw.EN_VC_TotalRewards.setData(dict: Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;) -&gt; ()"
-                  moduleName = "EnrichDraw"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/apple/Documents/EnrichBNB/EnrichDraw/EnrichDraw/ViewControllers/EN_VC_TotalRewards.swift"
-                  timestampString = "581532868.633783"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "369"
-                  endingLineNumber = "369"
-                  offsetFromSymbolStart = "10923">
-               </Location>
-               <Location
-                  uuid = "7C449315-7921-4650-B696-150D0A5C393A - 35ea76cc6a1043f9"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in EnrichDraw.EN_VC_TotalRewards.setData(dict: Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;) -&gt; ()"
-                  moduleName = "EnrichDraw"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/apple/Documents/EnrichBNB/EnrichDraw/EnrichDraw/ViewControllers/EN_VC_TotalRewards.swift"
-                  timestampString = "581532868.639501"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "371"
-                  endingLineNumber = "371"
-                  offsetFromSymbolStart = "32">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -389,6 +499,98 @@
             endingLineNumber = "73"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3F6FB5CE-6BFA-48EB-A849-9A89EACF9FD2 - cda72782535d273d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Greenrich.EN_VC_TotalRewards.storeDetails.getter : Greenrich.StoreDetails"
+                  moduleName = "Greenrich"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Downloads/Enrich_Spin_Wheel/EnrichDraw/EnrichDraw/ViewControllers/EN_VC_TotalRewards.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "74"
+                  endingLineNumber = "74"
+                  offsetFromSymbolStart = "209">
+               </Location>
+               <Location
+                  uuid = "3F6FB5CE-6BFA-48EB-A849-9A89EACF9FD2 - 7e28a5d28283a731"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Greenrich.EN_VC_TotalRewards.storeDetails.setter : Greenrich.StoreDetails"
+                  moduleName = "Greenrich"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Downloads/Enrich_Spin_Wheel/EnrichDraw/EnrichDraw/ViewControllers/EN_VC_TotalRewards.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "74"
+                  endingLineNumber = "74"
+                  offsetFromSymbolStart = "224">
+               </Location>
+               <Location
+                  uuid = "3F6FB5CE-6BFA-48EB-A849-9A89EACF9FD2 - 99a90502749b59ce"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Greenrich.EN_VC_TotalRewards.storeDetails.modify : Greenrich.StoreDetails"
+                  moduleName = "Greenrich"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Downloads/Enrich_Spin_Wheel/EnrichDraw/EnrichDraw/ViewControllers/EN_VC_TotalRewards.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  uuid = "3F6FB5CE-6BFA-48EB-A849-9A89EACF9FD2 - 8f8dcecaf5b2ac65"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Greenrich.EN_VC_TotalRewards.storeDetails.modify : Greenrich.StoreDetails with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Greenrich"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Downloads/Enrich_Spin_Wheel/EnrichDraw/EnrichDraw/ViewControllers/EN_VC_TotalRewards.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "74"
+                  endingLineNumber = "74"
+                  offsetFromSymbolStart = "8">
+               </Location>
+               <Location
+                  uuid = "3F6FB5CE-6BFA-48EB-A849-9A89EACF9FD2 - 283690bc0812f3ec"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Greenrich.EN_VC_TotalRewards.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Greenrich.EN_VC_TotalRewards"
+                  moduleName = "Greenrich"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Downloads/Enrich_Spin_Wheel/EnrichDraw/EnrichDraw/ViewControllers/EN_VC_TotalRewards.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "74"
+                  endingLineNumber = "74"
+                  offsetFromSymbolStart = "2358">
+               </Location>
+               <Location
+                  uuid = "3F6FB5CE-6BFA-48EB-A849-9A89EACF9FD2 - 96e2e34e49d6fdab"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Greenrich.EN_VC_TotalRewards.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Greenrich.EN_VC_TotalRewards&gt;"
+                  moduleName = "Greenrich"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/apple/Downloads/Enrich_Spin_Wheel/EnrichDraw/EnrichDraw/ViewControllers/EN_VC_TotalRewards.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "74"
+                  endingLineNumber = "74"
+                  offsetFromSymbolStart = "2309">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -542,73 +744,21 @@
             endingLineNumber = "612"
             landmarkName = "requestToGetCampaignDetails(campaignID:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "113115B7-6036-4078-93E4-008928A4D3AE - f7d877b7fe7e4c55"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "EnrichDraw.EN_VC_LandingScreen.requestToGetCampaignDetails(campaignID: Swift.Int64) -&gt; ()"
-                  moduleName = "EnrichDraw"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/apple/Documents/EnrichBNB/EnrichDraw/EnrichDraw/ViewControllers/EN_VC_LandingScreen.swift"
-                  timestampString = "581532868.735485"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "612"
-                  endingLineNumber = "612"
-                  offsetFromSymbolStart = "38">
-               </Location>
-               <Location
-                  uuid = "113115B7-6036-4078-93E4-008928A4D3AE - 397be0fb1bb3a5c3"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Int, Swift.Optional&lt;Swift.String&gt;, Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;) -&gt; () in EnrichDraw.EN_VC_LandingScreen.requestToGetCampaignDetails(campaignID: Swift.Int64) -&gt; ()"
-                  moduleName = "EnrichDraw"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/apple/Documents/EnrichBNB/EnrichDraw/EnrichDraw/ViewControllers/EN_VC_LandingScreen.swift"
-                  timestampString = "581532868.74078"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "613"
-                  endingLineNumber = "613"
-                  offsetFromSymbolStart = "74">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "FB814C09-C1D8-44CC-A2C9-5A6DE944F2F6"
+            uuid = "FD9C1949-13D4-47F4-BC73-138DE2AC0CA2"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "EnrichDraw/Utility/ExtensionAttrString.swift"
-            timestampString = "581533184.964131"
+            filePath = "EnrichDraw/ViewControllers/EN_VC_AlertViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "maxLength(length:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "A4233B9F-454B-41D9-B026-4079ACEC0E78"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "EnrichDraw/Utility/ExtensionAttrString.swift"
-            timestampString = "581533184.964196"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
-            landmarkName = "maxLength(length:)"
+            startingLineNumber = "180"
+            endingLineNumber = "180"
+            landmarkName = "showGif()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
