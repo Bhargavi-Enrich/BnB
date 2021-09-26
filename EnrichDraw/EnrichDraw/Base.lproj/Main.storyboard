@@ -408,7 +408,7 @@
                             <constraint firstItem="d35-az-ShX" firstAttribute="leading" secondItem="QRV-Qg-iom" secondAttribute="trailing" constant="8" id="2Qr-ZQ-j7C"/>
                             <constraint firstItem="Y8M-vk-bhg" firstAttribute="leading" secondItem="C3P-W3-27G" secondAttribute="leading" constant="17" id="5Tg-Z4-A5j"/>
                             <constraint firstItem="C3P-W3-27G" firstAttribute="trailing" secondItem="d35-az-ShX" secondAttribute="trailing" constant="20" id="7Wl-37-QM6"/>
-                            <constraint firstItem="4Fz-nP-PUv" firstAttribute="bottom" secondItem="C3P-W3-27G" secondAttribute="bottom" id="7xx-hg-pKI"/>
+                            <constraint firstItem="4Fz-nP-PUv" firstAttribute="bottom" secondItem="3Ip-xT-bPu" secondAttribute="bottom" id="7xx-hg-pKI"/>
                             <constraint firstItem="d35-az-ShX" firstAttribute="top" secondItem="C3P-W3-27G" secondAttribute="top" constant="17" id="9HZ-v2-Gfg"/>
                             <constraint firstItem="S8V-H3-po7" firstAttribute="width" secondItem="v7b-qm-DIl" secondAttribute="width" multiplier="0.75" id="BrT-B7-1sN"/>
                             <constraint firstItem="Y8M-vk-bhg" firstAttribute="top" secondItem="C3P-W3-27G" secondAttribute="top" constant="17" id="CSH-6K-8Jf"/>
@@ -661,7 +661,7 @@ Your Registered Mobile Number 99XXXXXX32</string>
                             <constraint firstItem="zpy-S9-WkN" firstAttribute="bottom" secondItem="ke2-np-6fC" secondAttribute="bottom" constant="30" id="BSd-wC-gvX"/>
                             <constraint firstItem="Fut-JT-nIF" firstAttribute="leading" secondItem="zpy-S9-WkN" secondAttribute="leading" constant="20" id="BT8-a4-JQo"/>
                             <constraint firstItem="9aJ-Qe-nF0" firstAttribute="leading" secondItem="8En-mU-Uek" secondAttribute="leading" id="DbZ-x6-s0S"/>
-                            <constraint firstItem="Hkn-JG-tzX" firstAttribute="bottom" secondItem="zpy-S9-WkN" secondAttribute="bottom" id="Faf-EB-cVw"/>
+                            <constraint firstItem="Hkn-JG-tzX" firstAttribute="bottom" secondItem="lG7-C8-Bps" secondAttribute="bottom" id="Faf-EB-cVw"/>
                             <constraint firstItem="8En-mU-Uek" firstAttribute="centerY" secondItem="lG7-C8-Bps" secondAttribute="centerY" constant="84" id="H4H-AW-Ijy"/>
                             <constraint firstItem="0hl-Zc-WPD" firstAttribute="centerX" secondItem="lG7-C8-Bps" secondAttribute="centerX" id="IKJ-hC-kGM"/>
                             <constraint firstItem="O3d-gB-3qh" firstAttribute="top" secondItem="zpy-S9-WkN" secondAttribute="top" constant="10" id="Jd0-FA-Hsp"/>
@@ -2577,7 +2577,7 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                         <viewLayoutGuide key="safeArea" id="bW6-FU-I0B"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="QmI-8g-knP" firstAttribute="bottom" secondItem="bW6-FU-I0B" secondAttribute="bottom" id="0jq-xU-ySh"/>
+                            <constraint firstItem="QmI-8g-knP" firstAttribute="bottom" secondItem="p3e-St-UvU" secondAttribute="bottom" id="0jq-xU-ySh"/>
                             <constraint firstItem="a1M-aW-rxx" firstAttribute="centerX" secondItem="p3e-St-UvU" secondAttribute="centerX" id="1Cn-hU-r10"/>
                             <constraint firstItem="a1M-aW-rxx" firstAttribute="centerX" secondItem="p3e-St-UvU" secondAttribute="centerX" id="2Ql-Dh-bi7"/>
                             <constraint firstItem="fsF-us-1i7" firstAttribute="centerX" secondItem="p3e-St-UvU" secondAttribute="centerX" id="9Dx-3J-hMW"/>

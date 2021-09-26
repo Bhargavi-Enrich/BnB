@@ -181,7 +181,7 @@ extension EN_VC_AlertViewController {
         gifView.isHidden = false
         let x = (gifView.frame.size.width / 2) - 50
         let y = (gifView.frame.size.height / 2) - 75
-        if let confettiImgView2 = UIImageView.fromGif(frame: CGRect(x: x, y: y, width: 100, height: 150), resourceName: "enrichPlant"), gifWithImageView == nil {
+        if let confettiImgView2 = UIImageView.fromGif(frame: CGRect(x: x, y: y, width: 100, height: 150), resourceName: "gif1"), gifWithImageView == nil {
             self.gifWithImageView = confettiImgView2
             gifWithImageView!.alpha = 1
             gifView.addSubview(gifWithImageView!)
