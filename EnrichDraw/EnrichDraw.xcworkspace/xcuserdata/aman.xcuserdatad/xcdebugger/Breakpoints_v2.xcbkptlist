@@ -55,22 +55,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "CE2BA267-BF0B-4B62-BABF-948B88A18164"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "EnrichDraw/ViewControllers/EN_VC_CutomerOTPVerification .swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "639"
-            endingLineNumber = "639"
-            landmarkName = "configureCustomerData(customerData:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "C5B53F0D-989C-49CD-BD10-28AE3FB54140"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -78,8 +62,8 @@
             filePath = "EnrichDraw/ViewControllers/EN_VC_RewardSpin.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "477"
-            endingLineNumber = "477"
+            startingLineNumber = "480"
+            endingLineNumber = "480"
             landmarkName = "callNextSpinView(tag:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -94,10 +78,42 @@
             filePath = "EnrichDraw/ViewControllers/EN_VC_RewardSpin.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "878"
-            endingLineNumber = "878"
+            startingLineNumber = "881"
+            endingLineNumber = "881"
             landmarkName = "actionPlaySpinGame(indexPath:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "90867280-2F67-4F53-97FC-F5CB3DF750F6 - f33fea0cde1b574a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Greenrich.EN_VC_RewardSpin.actionPlaySpinGame(indexPath: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "Greenrich"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aman/Documents/Enrich_Spin_Wheel/EnrichDraw/EnrichDraw/ViewControllers/EN_VC_RewardSpin.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "881"
+                  endingLineNumber = "881"
+                  offsetFromSymbolStart = "4096">
+               </Location>
+               <Location
+                  uuid = "90867280-2F67-4F53-97FC-F5CB3DF750F6 - 41f8043d3babacd7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Greenrich.ModelRunningCampaignListData) -&gt; Swift.Bool in Greenrich.EN_VC_RewardSpin.actionPlaySpinGame(indexPath: Foundation.IndexPath) -&gt; ()"
+                  moduleName = "Greenrich"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aman/Documents/Enrich_Spin_Wheel/EnrichDraw/EnrichDraw/ViewControllers/EN_VC_RewardSpin.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "882"
+                  endingLineNumber = "882"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -129,6 +145,22 @@
             startingLineNumber = "1392"
             endingLineNumber = "1392"
             landmarkName = "unhideColorOptionsWhenSpinIsRotating()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "11FDDF28-5A34-4D59-8A7E-9257EFDF4F13"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EnrichDraw/ViewControllers/EN_VC_RewardWinnings.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

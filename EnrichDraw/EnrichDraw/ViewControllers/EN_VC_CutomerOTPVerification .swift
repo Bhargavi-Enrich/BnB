@@ -382,11 +382,11 @@ extension EN_VC_CutomerOTPVerification
     }
     
     func gotoMyorderScreen(accessToken: String) {
-//        let vc = EN_VC_MyOrders.instantiate(fromAppStoryboard: .Main)
-//        vc.accessToken = accessToken
-//        vc.campaignDetails = self.campaignDetails
-//        vc.storeDetails = self.storeDetails
-//        self.navigationController?.pushViewController(vc, animated: true)
+       /* let vc = EN_VC_MyOrders.instantiate(fromAppStoryboard: .Main)
+        vc.accessToken = accessToken
+        vc.campaignDetails = self.campaignDetails
+        vc.storeDetails = self.storeDetails
+        self.navigationController?.pushViewController(vc, animated: true)*/
         pageNo = 1
         totalRecords = 0
         accessTOKEN = accessToken
@@ -531,7 +531,7 @@ extension EN_VC_CutomerOTPVerification
         HUD.show(.labeledProgress(title: "", subtitle: "Please wait."), onView: self.view)
         
         let params : [String: Any] = [
-            "limit" : 500,
+            "limit" : 100,
             "is_bnb" : true,
             "salon_id" : storeIdObj,
             "page" : pageNo,
@@ -650,7 +650,7 @@ extension EN_VC_CutomerOTPVerification
             no_of_trials: customerData.no_of_trials ?? 0,
             trial_reward_points: customerData.trial_reward_points ?? 0)
 
-            openRewardSpinScreen()
+            openWinBigScreen()
             
         }
         else {
@@ -659,18 +659,18 @@ extension EN_VC_CutomerOTPVerification
         
     }
     
-    func openRewardSpinScreen() {
-        let spinWheelController = EN_VC_RewardSpin.instantiate(fromAppStoryboard: .Main)
-        spinWheelController.customerDetails = self.customerDetails
-        spinWheelController.storeDetails = self.storeDetails
-        spinWheelController.isScratchCard = .spinWheel
-        spinWheelController.campaignDetails = self.campaignDetails
-        spinWheelController.records = self.records
-        spinWheelController.accessToken = self.accessTOKEN
-        spinWheelController.selectedIndexFromRecordsArray = self.selectedIndexFromRecordsArray
-        spinWheelController.totalEligibleSpinCountsAgainstAllInvoices = self.totalEligibleSpinCountsAgainstAllInvoices
-
-        self.navigationController?.pushViewController(spinWheelController, animated: true)
+    
+    func openWinBigScreen() {
+        let destination = EN_VC_WinBigBBViewController(nibName: "EN_VC_WinBigBBViewController", bundle: nil)
+        destination.customerDetails = self.customerDetails
+        destination.storeDetails = self.storeDetails
+        destination.isScratchCard = .spinWheel
+        destination.campaignDetails = self.campaignDetails
+        destination.records = self.records
+        destination.accessTOKEN = self.accessTOKEN
+        destination.selectedIndexFromRecordsArray = self.selectedIndexFromRecordsArray
+        destination.totalEligibleSpinCountsAgainstAllInvoices = self.totalEligibleSpinCountsAgainstAllInvoices
+        self.navigationController?.pushViewController(destination, animated: true)
     }
     
     
