@@ -148,7 +148,7 @@ class EN_VC_LandingScreen: UIViewController
         
         lblMinMaxRange.text = "Ride the Virtuous Cycle and get a change to instantly win upto 10 times your spend!"//"Spin the wheel and get a chance to instantly win \(campaignDetails.min_range ?? 0) to \(campaignDetails.max_range ?? 0) service reward points!"
         
-        if let dictData = UserDefaultUtility.shared.getModelObjectFromSharedPreference(strKey: UserDefaultKeys.modeStoreData) as? Dictionary<String, Any>, dictData.count > 0 {#imageLiteral(resourceName: "simulator_screenshot_76889DC7-215E-460A-BB04-71C7604CBE74.png")
+        if let dictData = UserDefaultUtility.shared.getModelObjectFromSharedPreference(strKey: UserDefaultKeys.modeStoreData) as? Dictionary<String, Any>, dictData.count > 0 {
             
             let people_participated = dictData["people_participated"] as? Int
             let store_id = dictData["store_id"] as? Int
