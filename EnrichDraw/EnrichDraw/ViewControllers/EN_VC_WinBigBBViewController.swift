@@ -17,6 +17,7 @@ class EN_VC_WinBigBBViewController: UIViewController {
     var storeDetails = StoreDetails()
     var campaignDetails = ModelRunningCampaignListData()
     var records = [MyProductOrdersModuleModel.GetMyOrders.Orders]()
+    var originalRecords = [MyProductOrdersModuleModel.GetMyOrders.Orders]()
     var accessTOKEN: String = ""
     var selectedIndexFromRecordsArray = 0
     var totalEligibleSpinCountsAgainstAllInvoices = 0
@@ -34,8 +35,24 @@ class EN_VC_WinBigBBViewController: UIViewController {
         let tapGestureLogo = UITapGestureRecognizer(target: self, action: #selector(self.tapLogo))
         self.imgEnrichLogo.addGestureRecognizer(tapGestureLogo)
 
+        
+        if let logoDetails = self.campaignDetails.campaign_win_bnb_big_image, let urlObj = logoDetails.url {
+            DispatchQueue.global().async { [weak self] in
+                if let data = try? Data(contentsOf: URL(string: urlObj)!) {
+                    if let image = UIImage(data: data) {
+                        DispatchQueue.main.async {
+                            self?.imageView.image = image
+                        }
+                    }
+                }
+            }
+        }
+        
+        
+        
     }
     
+        
     @objc func tapImage(){
             openRewardSpinScreen()
         }
@@ -57,3 +74,4 @@ class EN_VC_WinBigBBViewController: UIViewController {
     }
 
 }
+

@@ -52,6 +52,7 @@ class EN_VC_CutomerOTPVerification : UIViewController,UITextFieldDelegate {
     var pageNo = 1
     var totalRecords:Int64 = 0
     var records = [MyProductOrdersModuleModel.GetMyOrders.Orders]()
+    var originalRecords = [MyProductOrdersModuleModel.GetMyOrders.Orders]()
     var selectedIndexFromRecordsArray = 0
     var accessTOKEN: String = ""
     var totalEligibleSpinCountsAgainstAllInvoices = 0
@@ -473,6 +474,7 @@ extension EN_VC_CutomerOTPVerification
             spinWheelController.isScratchCard = .spinWheel
             spinWheelController.campaignDetails = self.campaignDetails
             spinWheelController.records = self.records
+            spinWheelController.originalRecords = self.originalRecords
             spinWheelController.accessToken = self.accessTOKEN
             spinWheelController.selectedIndexFromRecordsArray = self.selectedIndexFromRecordsArray
             spinWheelController.totalEligibleSpinCountsAgainstAllInvoices = self.totalEligibleSpinCountsAgainstAllInvoices
@@ -486,6 +488,7 @@ extension EN_VC_CutomerOTPVerification
 //            spinWheelController.isScratchCard = selectedGame
             spinWheelController.campaignDetails = self.campaignDetails
             spinWheelController.records = self.records
+            spinWheelController.originalRecords = self.originalRecords
             spinWheelController.accessToken = self.accessTOKEN
             spinWheelController.selectedIndexFromRecordsArray = self.selectedIndexFromRecordsArray
             spinWheelController.totalEligibleSpinCountsAgainstAllInvoices = self.totalEligibleSpinCountsAgainstAllInvoices
@@ -509,6 +512,7 @@ extension EN_VC_CutomerOTPVerification : CustomPopUpUserDataDelegate {
         spinWheelController.isScratchCard = selectedGame
         spinWheelController.campaignDetails = self.campaignDetails
         spinWheelController.records = self.records
+        spinWheelController.originalRecords = self.originalRecords
         spinWheelController.accessToken = self.accessTOKEN
         spinWheelController.selectedIndexFromRecordsArray = self.selectedIndexFromRecordsArray
         spinWheelController.totalEligibleSpinCountsAgainstAllInvoices = self.totalEligibleSpinCountsAgainstAllInvoices
@@ -531,11 +535,13 @@ extension EN_VC_CutomerOTPVerification
         HUD.show(.labeledProgress(title: "", subtitle: "Please wait."), onView: self.view)
         
         let params : [String: Any] = [
-            "limit" : 100,
+            "limit" : 50,
             "is_bnb" : true,
             "salon_id" : storeIdObj,
             "page" : pageNo,
-            "is_custom" : true
+            "is_custom" : true,
+            "campaign_start_date" : "\(campaignDetails.start_date ?? "00:00:00")" + " 00:00:00",
+            "campaign_end_date" : "\(campaignDetails.end_date ?? "00:00:00")" + " 00:00:00"
         ]
         
         EN_Service_Customer.sharedInstance.getMyOrders(params, accessToken: accessToken) { (errorCode, errorMsg, dictData) in
@@ -581,6 +587,7 @@ extension EN_VC_CutomerOTPVerification
         
         //records.append(contentsOf: model.orders ?? [])
         records.append(contentsOf: finalFilteredRecords(model: model))
+        originalRecords.append(contentsOf: finalFilteredRecords(model: model))
         if !records.isEmpty
         {
             actionPlaySpinGame(indexPath:IndexPath.init(row: self.selectedIndexFromRecordsArray, section: 0))
@@ -667,6 +674,7 @@ extension EN_VC_CutomerOTPVerification
         destination.isScratchCard = .spinWheel
         destination.campaignDetails = self.campaignDetails
         destination.records = self.records
+        destination.originalRecords = self.originalRecords
         destination.accessTOKEN = self.accessTOKEN
         destination.selectedIndexFromRecordsArray = self.selectedIndexFromRecordsArray
         destination.totalEligibleSpinCountsAgainstAllInvoices = self.totalEligibleSpinCountsAgainstAllInvoices

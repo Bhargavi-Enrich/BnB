@@ -32,6 +32,9 @@ struct ModelRunningCampaignListData: Codable {
     var campaign_background_image : Model_campaign_logo?
     var campaign_left_background_image : Model_campaign_logo?
     var campaign_right_background_image : Model_campaign_logo?
+    var campaign_image : Model_campaign_logo?
+    var campaign_win_bnb_big_image: Model_campaign_logo?
+    var campaign_win_bnb_small_image: Model_campaign_logo?
     var term_condition : String?
     var created_at : String?
     var updated_at : String?

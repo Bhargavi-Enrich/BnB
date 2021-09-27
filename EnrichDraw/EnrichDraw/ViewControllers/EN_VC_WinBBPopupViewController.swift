@@ -12,12 +12,26 @@ class EN_VC_WinBBPopupViewController: UIViewController, UICollectionViewDelegate
     @IBOutlet weak var crossButton: UIButton!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var collectionView: UICollectionView!
+    var campaignDetails = ModelRunningCampaignListData()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.collectionView.register(UINib(nibName: "EN_VC_WinBBPopupCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "EN_VC_WinBBPopupCollectionViewCell")
         self.crossButton.addTarget(self, action: #selector(self.dismissPopupScreen), for: .touchUpInside)
+        
+        
+        if let logoDetails = self.campaignDetails.campaign_win_bnb_small_image, let urlObj = logoDetails.url {
+            DispatchQueue.global().async { [weak self] in
+                if let data = try? Data(contentsOf: URL(string: urlObj)!) {
+                    if let image = UIImage(data: data) {
+                        DispatchQueue.main.async {
+                            self?.imageView.image = image
+                        }
+                    }
+                }
+            }
+        }
         
     }
     

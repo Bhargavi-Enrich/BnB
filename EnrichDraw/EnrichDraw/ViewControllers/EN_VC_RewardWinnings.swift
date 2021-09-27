@@ -8,6 +8,20 @@
 
 import UIKit
 import Foundation
+import PKHUD
+
+enum TypeOfCell{
+    static let gold = "GOLD"
+    static let blue = "BLUE"
+    static let lock = "LOCK"
+}
+
+struct TotalWonRewardSpin
+{
+    var amountWon : String = ""
+    var invoiceId : String = ""
+    var cellType = TypeOfCell.lock
+}
 
 protocol EN_VC_RewardWinningsDelegate:AnyObject {
     func actionCloseClick()
@@ -25,28 +39,26 @@ class EN_VC_RewardWinnings: UIViewController, UICollectionViewDelegate, UICollec
     @IBOutlet weak var spinAgainButton: UIButton!
     @IBOutlet weak var crossButton: UIButton!
     @IBOutlet weak var collectionView: UICollectionView!
+    var customerDetails = CustomerDetails()
+    var campaignDetails = ModelRunningCampaignListData()
     
+    var originalRecords = [MyProductOrdersModuleModel.GetMyOrders.Orders]()
+
     weak var delegate: EN_VC_RewardWinningsDelegate?
     
-    var totalRewardsPoints = 0
     var totalSpinLeftString = 0
+    var totalNumberOfSpins = 0
+    
+    private var totalRewardsCount : Double = 0.0
+    var arrCustomer = [TotalWonRewardSpin]()
+
     
     override func viewDidLoad() {
             super.viewDidLoad()
             
             self.yourTotalWinningsLabel.text = "Your Total Winnings"
             
-            let normalText = "You have won a total of "
-            let boldText = "\(self.totalRewardsPoints)"
-            let normalTextEnd = " Reward Points that can be redeemed against beauty services and products"
-            let attributedString = NSMutableAttributedString(string:normalText)
-            let attributedStringEnd = NSMutableAttributedString(string:normalTextEnd)
-            let attrs = [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 15)]
-            let boldString = NSMutableAttributedString(string: boldText, attributes:attrs)
-            attributedString.append(boldString)
-            attributedString.append(attributedStringEnd)
-            self.totalWinningsRewardLabel.attributedText = attributedString
-            
+           
             self.dropShadowView.backgroundColor = UIColor(rgb: 0x707070).withAlphaComponent(0.50)
             self.spinAgainButton.setBackgroundImage(UIImage(named: "enableButton"), for: .normal)
             if(self.totalSpinLeftString > 0){
@@ -67,17 +79,36 @@ class EN_VC_RewardWinnings: UIViewController, UICollectionViewDelegate, UICollec
             
         }
     
+    func setTotalRewardPOintsValue(totalRewardsCount: Double){
+        let normalText = "You have won a total of "
+        let boldText = "\(totalRewardsCount)"
+        let normalTextEnd = " Reward Points that can be redeemed against beauty services and products"
+        let attributedString = NSMutableAttributedString(string:normalText)
+        let attributedStringEnd = NSMutableAttributedString(string:normalTextEnd)
+        let attrs = [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 15)]
+        let boldString = NSMutableAttributedString(string: boldText, attributes:attrs)
+        attributedString.append(boldString)
+        attributedString.append(attributedStringEnd)
+        self.totalWinningsRewardLabel.attributedText = attributedString
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        getTotalRewards()
+    }
+    
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 6
+        return self.arrCustomer.count
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "EN_VC_CollectionViewCell", for: indexPath) as! EN_VC_CollectionViewCell
         
-        cell.configureData(indexPath)
+        cell.configureData(indexPath, self.arrCustomer, self.totalRewardsCount)
         
         return cell
     }
@@ -117,4 +148,92 @@ extension UIColor {
            blue: rgb & 0xFF
        )
    }
+}
+
+extension EN_VC_RewardWinnings {
+    
+    func getTotalRewards()
+    {
+        let params : [String: Any] = [
+//            "invoiceNo" : customerDetails.invoiceNo ?? "",
+            "customerId" : customerDetails.customerId ?? "",
+            "campaignId": campaignDetails.entity_id ?? "",
+            "campaign_start_date" : "\(campaignDetails.start_date ?? "00:00:00")",
+            "is_custom" : true]
+        
+        HUD.show(.labeledProgress(title: "", subtitle: "Please wait."), onView: self.view)
+        
+        EN_Service_TotalRewards.sharedInstance.getTotalRewards(
+            userData: params, callback: { (errorCode, errorMsg, dictData) in
+                if errorCode != 0
+                {
+                    // HANDLE ERROR
+                    if let msg = errorMsg
+                    {
+                        print(msg)
+                        self.showAlert(alertTitle: "Error", alertMessage: "\(msg)")
+                    }
+                }else
+                {
+                    self.setData(dict: dictData)
+                    print(dictData ?? "Data available")
+                }
+                HUD.hide()
+        })
+    }
+        
+    func numberOfTotalSpins() -> Int{
+        var totalRecordd = 0
+        for element in originalRecords
+        {
+           if  let spinDetails =  element.greenrich?.spin_details, !spinDetails.isEmpty, let spinFirst = spinDetails.first, let spinCount = spinFirst.remaining_spins, spinCount > 0 {
+            totalRecordd = totalRecordd + spinCount
+        }
+        }
+        return totalRecordd
+    }
+    
+    func setData(dict : Dictionary<String, Any>?)
+    {
+        
+        self.arrCustomer.removeAll()
+        // Customer spin data
+        if let dictData = dict, let dataDataObj = dictData["data"] as? [String : Any] {
+            if let dictionary = dataDataObj["customerSpinDetails"] as? [Dictionary<String,Any>]
+            {
+                if let arrCustomerSpinDetails = dictionary as? Array<[String : Any]>{
+                    for dictObj in arrCustomerSpinDetails
+                    {
+                        if let value:String = dictObj["amountWon"] as? String
+                        {
+                            if(value.isNumber)
+                            {
+                                self.totalRewardsCount = self.totalRewardsCount + Double(value)! //Old code
+                            }
+                        }
+                        
+                        
+                        self.arrCustomer.append(TotalWonRewardSpin.init(amountWon: String(dictObj["amount_won"] as? String ?? ""), invoiceId: String(dictObj["invoiceId"] as? String ?? ""), cellType: TypeOfCell.lock))
+                    }
+                    
+                
+                    let totalRecords = self.numberOfTotalSpins()
+                    
+                    if(Int(self.totalRewardsCount) != totalRecords){
+                        for _:Int in 0 ..< totalRecords - Int(self.totalRewardsCount){
+                            self.arrCustomer.append(TotalWonRewardSpin.init(amountWon: "", invoiceId: "", cellType: TypeOfCell.lock))
+                        }
+                    }
+                    
+                    self.setTotalRewardPOintsValue(totalRewardsCount: self.totalRewardsCount)
+                    
+                    self.collectionView.reloadData()
+                    
+                    
+                }
+            }
+        }
+    }
+    
+    
 }

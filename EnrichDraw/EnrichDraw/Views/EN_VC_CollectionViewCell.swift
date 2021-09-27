@@ -21,6 +21,9 @@ class EN_VC_CollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var midProgressCurrentValueLabel: UILabel!
     @IBOutlet weak var midNumberOfSpinLabel: UILabel!
     
+    var arrCustomer = [TotalWonRewardSpin]()
+    private var totalRewardsCount : Double = 0.0
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -28,11 +31,51 @@ class EN_VC_CollectionViewCell: UICollectionViewCell {
     }
     
     //configure data struct value data
-    func configureData(_ indexPath:IndexPath){
+    func configureData(_ indexPath:IndexPath, _ arrCustomer1 : [TotalWonRewardSpin],_ totalRewardsCount : Double){
         
-        self.numberOfSpinLabel.text = "1st Spin"
+        let keyMaxElement = arrCustomer1.max(by: { (a, b) -> Bool in
+            return a.amountWon < b.amountWon
+        })
         
-        if indexPath.row == 0{
+        for index in 0 ..< arrCustomer1.count{
+            if arrCustomer1[index].amountWon == keyMaxElement?.amountWon {
+                arrCustomer[index].cellType = TypeOfCell.gold
+            }
+        }
+        
+        if(arrCustomer[indexPath.row].amountWon.isEmpty){
+            
+            self.startSpinView.isHidden = false
+            self.midSpinView.isHidden = true
+            self.completedSpinView.isHidden = true
+            
+            self.startSpinLabel.text = "You Have 1\n More Spin Left"
+            
+        }
+        else if (arrCustomer[indexPath.row].cellType == TypeOfCell.gold){
+            self.startSpinView.isHidden = true
+            self.midSpinView.isHidden = true
+            self.completedSpinView.isHidden = false
+            
+            self.percentageOfTreatedPatient = Int(arrCustomer[indexPath.row].amountWon)!
+            
+            let percentage:Float = Float(indexPath.row) / Float(arrCustomer.count)
+            self.setProgresValue(percentage)
+            
+        }
+        else{
+            self.progressCurrentValueLabel.text = self.arrCustomer[indexPath.row].amountWon
+            self.numberOfSpinLabel.text = "\(indexPath.row.ordinal) Spin"
+            
+            let percentage:Float = Float(indexPath.row) / Float(arrCustomer.count)
+            self.setProgresValue(percentage)
+            
+            self.percentageOfTreatedPatient = Int(arrCustomer[indexPath.row].amountWon)!
+        }
+        
+        
+        /* self.numberOfSpinLabel.text = "1st Spin"
+         if indexPath.row == 0{
             self.startSpinView.isHidden = true
             self.midSpinView.isHidden = false
             self.completedSpinView.isHidden = true
@@ -66,7 +109,7 @@ class EN_VC_CollectionViewCell: UICollectionViewCell {
             self.completedSpinView.isHidden = true
             
             self.startSpinLabel.text = "You Have \n1 More Spin Left"
-        }
+        }*/
         
     }
     
@@ -100,4 +143,26 @@ class EN_VC_CollectionViewCell: UICollectionViewCell {
         }
     }
     
+}
+
+extension Int {
+
+    var ordinal: String {
+        var suffix: String
+        let ones: Int = self % 10
+        let tens: Int = (self/10) % 10
+        if tens == 1 {
+            suffix = "th"
+        } else if ones == 1 {
+            suffix = "st"
+        } else if ones == 2 {
+            suffix = "nd"
+        } else if ones == 3 {
+            suffix = "rd"
+        } else {
+            suffix = "th"
+        }
+        return "\(self)\(suffix)"
+    }
+
 }
