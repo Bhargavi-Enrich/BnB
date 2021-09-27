@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import MarqueeLabel
 class EN_VC_TrialSpin: UIViewController {
     
     @IBOutlet weak var constraintColorViewHeight: NSLayoutConstraint!
@@ -69,7 +70,7 @@ class EN_VC_TrialSpin: UIViewController {
     @IBOutlet weak var lblRemainingTrialsCount: UILabel!
     
     @IBOutlet weak var lblRecyclingInfo: UILabel!
-    
+    @IBOutlet private weak var animatedUIView: UIStackView!
     var dictRewardsArray = [Int : SpinDetails]()
     var currentSpinNumber:Int = 0
     
@@ -84,6 +85,8 @@ class EN_VC_TrialSpin: UIViewController {
     var totalCount = 0
     let appd:AppDelegate = UIApplication.shared.delegate as! AppDelegate
     var totalEligibleSpinCountsAgainstAllInvoices = 0
+    @IBOutlet weak var lblAnimation: MarqueeLabel!
+    let labelSpace = "   "
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -102,7 +105,7 @@ class EN_VC_TrialSpin: UIViewController {
         self.appd.totalEligibleSpinCountsAgainstAllInvoices = self.customerDetails.remaining_trials
         totalEligibleSpinCountsAgainstAllInvoices = self.customerDetails.remaining_trials
         self.updateSpinLeft(leftSpins: totalEligibleSpinCountsAgainstAllInvoices)
-        
+        self.animatedUIView.isHidden = true
     }
     
     //MARK:- Functionality
@@ -129,17 +132,29 @@ class EN_VC_TrialSpin: UIViewController {
                 let textCount = self.getSixDigitData(amountWon: self.arrLastFiveSpinDetails[4].id)
                 self.lblPoints5.text = self.arrLastFiveSpinDetails[4].amountWon + " Points " + textCount
             }
+            
+            
+            if (!self.lblSpinCount.text!.isEmpty || !self.lblPoints1.text!.isEmpty || !self.lblPoints2.text!.isEmpty || !self.lblPoints3.text!.isEmpty || !self.lblPoints4.text!.isEmpty || !self.lblPoints5.text!.isEmpty || !self.lblTotalRewardsRolled.text!.isEmpty){
+                
+                self.lblAnimation.speed = .duration(10.0)
+                self.lblAnimation.type = .continuous
+                let text1 = self.lblSpinCount.text! + self.labelSpace + self.lblPoints1.text!
+                let text2 = self.labelSpace + self.lblPoints2.text! + self.labelSpace
+                let text3 = self.lblPoints3.text! + self.labelSpace + self.lblPoints4.text! + self.labelSpace
+                let text4 = self.lblPoints5.text! + self.labelSpace + self.lblTotalRewardsRolled.text! + self.labelSpace
+                self.lblAnimation.text = text1 + text2 + text3 + text4
+            }
+            
         }
     }
     
     func changeLastFiveSpinData()
     {
-        print("self.storeDetails.no_of_spin_availed=\(self.storeDetails)")
         self.lblSpinCount.text = self.getSixDigitData(amountWon: String(format:"%d",appd.no_of_spin_availed)) + " " + "kl_NoOfSpins".localized
         
-        self.changeLabelsOnFiveSpin()
-        
         self.lblTotalRewardsRolled.text = appd.totalRewardsRolled + " " + "kl_TotalRewardsRolled".localized
+        
+        self.changeLabelsOnFiveSpin()
     }
     
     func getSixDigitData(amountWon : String) -> String
@@ -204,7 +219,7 @@ class EN_VC_TrialSpin: UIViewController {
             }
         }
         
-        if let logoDetails = self.campaignDetails.campaign_logo, let urlObj = logoDetails.url {
+        /*if let logoDetails = self.campaignDetails.campaign_logo, let urlObj = logoDetails.url {
             DispatchQueue.global().async { [weak self] in
                 if let data = try? Data(contentsOf: URL(string: urlObj)!) {
                     if let image = UIImage(data: data) {
@@ -214,7 +229,7 @@ class EN_VC_TrialSpin: UIViewController {
                     }
                 }
             }
-        }
+        }*/
         
         if let logoDetails = self.campaignDetails.campaign_image, let urlObj = logoDetails.url {
             DispatchQueue.global().async { [weak self] in

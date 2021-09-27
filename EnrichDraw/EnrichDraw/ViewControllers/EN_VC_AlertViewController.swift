@@ -77,7 +77,7 @@ class EN_VC_AlertViewController: UIViewController {
         self.lblCongratulations.text = congratsMessage
         self.lblPrizeWonMessage.text = winningMessage?.string
         self.btnReadyForNextSpin.setTitle(btnTitle, for: UIControl.State.normal)
-        self.lblTipsMessage.text = tipMessage
+        //self.lblTipsMessage.text = tipMessage
         self.btnReadyForNextSpin.setBackgroundImage(UIImage(named: btnBackgoundImage), for: UIControl.State.normal)
         
         self.playSound(strSoundName:"chimes.wav" , numberOfLoops: 0)
@@ -130,7 +130,7 @@ class EN_VC_AlertViewController: UIViewController {
                     {
                         if (obj1.currentSpinNumber >= self.dictRewardsArray.count)
                         {
-                            DispatchQueue.main.async {
+                            /*DispatchQueue.main.async {
                                 let totalRewards = EN_VC_TotalRewards.instantiate(fromAppStoryboard: .Main)
                                 totalRewards.storeDetails = obj1.storeDetails
                                 totalRewards.dictRewardsArray = self.dictRewardsArray
@@ -138,7 +138,16 @@ class EN_VC_AlertViewController: UIViewController {
                                 totalRewards.isTrial = true
                                 totalRewards.campaignDetails = obj1.campaignDetails
                                 self.parentObj!.navigationController?.pushViewController(totalRewards, animated: true)
-                            }
+                            }*/
+                                
+                            let alert = UIAlertController(title:"Alert!", message: "You have already availed all the trials.", preferredStyle: UIAlertController.Style.alert)
+                            
+                            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) in
+                                // Do nothing
+                                self.navigationController?.popToViewController(ofClass: EN_VC_LandingScreen.self, animated: false)
+
+                            }))
+                            self.parentObj?.present(alert, animated: true, completion: nil)
                             
                         }else{
                             obj.alertOkButton();

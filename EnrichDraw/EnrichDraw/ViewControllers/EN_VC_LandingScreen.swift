@@ -9,6 +9,7 @@
 import UIKit
 import PKHUD
 import AVFoundation
+import MarqueeLabel
 
 struct StoreDetails {
     var participationCount : Int = 0
@@ -50,6 +51,7 @@ class EN_VC_LandingScreen: UIViewController
     @IBOutlet private weak var lblSpinCursor: UILabel!
     @IBOutlet private weak var lblTotalRewardsRolled: UILabel!
     
+    @IBOutlet weak var lblAnimation: MarqueeLabel!
     @IBOutlet private weak var lblDescriptionSpinCount: UILabel!
     @IBOutlet private weak var view1: UIView!
     @IBOutlet private weak var view2: UIView!
@@ -60,7 +62,9 @@ class EN_VC_LandingScreen: UIViewController
     @IBOutlet private weak var viewTotalRewardsRolled: UIView!
     @IBOutlet private weak var lblMinMaxRange: UILabel!
     
-    
+    @IBOutlet private weak var animatedUIView: UIStackView!
+    @IBOutlet private weak var viewForAllSpins: UIStackView!
+
     private var bombSoundEffect: AVAudioPlayer?
     private var arrLastFiveSpinDetails = [CustomerSpin]()
     private var isViewInBackground = false
@@ -79,7 +83,8 @@ class EN_VC_LandingScreen: UIViewController
     // Public
     var storeDetails = StoreDetails()
     var campaignDetails = ModelRunningCampaignListData()
-
+    let labelSpace = "   "
+    
     //MARK:- Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -87,6 +92,9 @@ class EN_VC_LandingScreen: UIViewController
         setUpScreenUI()
         reposStoreSalonServiceCategory = LocalJSONStore(storageType: .cache, filename:CacheFileNameKeys.k_file_name_Campaign.rawValue, folderName: CacheFolderNameKeys.k_folder_name_Campaign.rawValue)
         self.appDelegate.downloadImagesVideos()
+                
+        self.animatedUIView.isHidden = true
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -95,7 +103,7 @@ class EN_VC_LandingScreen: UIViewController
         isViewVisible  = true
         resetIdleTimer()
         self.hideLandingScreen()
-
+        viewForAllSpins.isHidden = true
         // API CALL
         campaignAndStoreDetails()
         getStoreDetails()
@@ -302,6 +310,20 @@ class EN_VC_LandingScreen: UIViewController
                 self.lblCountPoint5.text = textSpinCount
             default: break
             }
+            
+            if (!self.lblSpinCount.text!.isEmpty || !self.lblPoints1.text!.isEmpty || !self.lblPoints2.text!.isEmpty || !self.lblPoints3.text!.isEmpty || !self.lblPoints4.text!.isEmpty || !self.lblPoints5.text!.isEmpty || !self.lblTotalRewardsRolled.text!.isEmpty){
+                
+                self.lblAnimation.speed = .duration(10.0)
+                                self.lblAnimation.type = .continuous
+                                let text1 = self.lblSpinCount.text! + self.labelSpace + self.lblPoints1.text!
+                                let text2 = self.labelSpace + self.lblPoints2.text! + self.labelSpace
+                                let text3 = self.lblPoints3.text! + self.labelSpace + self.lblPoints4.text! + self.labelSpace
+                                let text4 = self.lblPoints5.text! + self.labelSpace + self.lblTotalRewardsRolled.text! + self.labelSpace
+                                self.lblAnimation.text = text1 + text2 + text3 + text4
+                
+                self.viewForAllSpins.isHidden = false
+            }
+            
         }
     }
     
@@ -797,6 +819,7 @@ extension EN_VC_LandingScreen
                                                 appd.arrLastFiveSpinDetails = self.arrLastFiveSpinDetails
                                                 appd.no_of_spin_availed = self.storeDetails.no_of_spin_availed
                                                 appd.totalRewardsRolled = self.storeDetails.totalRewardsRolled
+                        
                         self.changeLastFiveSpinData()
                     }
 

@@ -10,4 +10,5 @@ pod 'Fabric'
 pod 'Crashlytics'
 pod 'AZSClient'
 pod 'SRScratchView'
+pod 'MarqueeLabel'
 end
