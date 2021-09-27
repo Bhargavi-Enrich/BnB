@@ -540,6 +540,7 @@ extension EN_VC_CutomerOTPVerification
             "salon_id" : storeIdObj,
             "page" : pageNo,
             "is_custom" : true,
+            "campaign_id" : campaignDetails.entity_id ?? "0",
             "campaign_start_date" : "\(campaignDetails.start_date ?? "00:00:00")" + " 00:00:00",
             "campaign_end_date" : "\(campaignDetails.end_date ?? "00:00:00")" + " 00:00:00"
         ]

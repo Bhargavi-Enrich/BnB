@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
     
     var arrLastFiveSpinDetails = [CustomerSpin]()
         var no_of_spin_availed = 0
+    var totalEligibleSpinCountsAgainstAllInvoices = 0
         var totalRewardsRolled = "0"
     var window: UIWindow?
     var avBackgroundMusic: AVAudioPlayer?

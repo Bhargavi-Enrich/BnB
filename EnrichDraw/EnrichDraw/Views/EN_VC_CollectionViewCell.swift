@@ -21,108 +21,69 @@ class EN_VC_CollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var midProgressCurrentValueLabel: UILabel!
     @IBOutlet weak var midNumberOfSpinLabel: UILabel!
     
-    var arrCustomer = [TotalWonRewardSpin]()
     private var totalRewardsCount : Double = 0.0
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        self.showProgressValue()
+        //self.showProgressValue()
+       
     }
     
+    
     //configure data struct value data
-    func configureData(_ indexPath:IndexPath, _ arrCustomer1 : [TotalWonRewardSpin],_ totalRewardsCount : Double){
+    func configureDataNew( model :TotalWonRewardSpin,_ indexPath:IndexPath, totalNumberOfRecords: Int ){
         
-        let keyMaxElement = arrCustomer1.max(by: { (a, b) -> Bool in
-            return a.amountWon < b.amountWon
-        })
+        self.startSpinView.isHidden = true
+        self.midSpinView.isHidden = true
+        self.completedSpinView.isHidden = true
         
-        for index in 0 ..< arrCustomer1.count{
-            if arrCustomer1[index].amountWon == keyMaxElement?.amountWon {
-                arrCustomer[index].cellType = TypeOfCell.gold
-            }
-        }
-        
-        if(arrCustomer[indexPath.row].amountWon.isEmpty){
+        let spinNumber = indexPath.row + 1
+        if(model.cellType == TypeOfCell.lock){
             
             self.startSpinView.isHidden = false
             self.midSpinView.isHidden = true
             self.completedSpinView.isHidden = true
-            
             self.startSpinLabel.text = "You Have 1\n More Spin Left"
             
         }
-        else if (arrCustomer[indexPath.row].cellType == TypeOfCell.gold){
+        else if (model.cellType == TypeOfCell.gold){
+            //self.progressCurrentValueLabel.text = String(model.amountWon)
+
             self.startSpinView.isHidden = true
             self.midSpinView.isHidden = true
             self.completedSpinView.isHidden = false
             
-            self.percentageOfTreatedPatient = Int(arrCustomer[indexPath.row].amountWon)!
-            
-            let percentage:Float = Float(indexPath.row) / Float(arrCustomer.count)
-            self.setProgresValue(percentage)
-            
+            self.percentageOfTreatedPatient = Int(model.amountWon)!
+            self.setProgresValue(model.circularProgress)
+            self.progressCurrentValueLabel.text = String(percentageOfTreatedPatient)
+            self.numberOfSpinLabel.text = "\(spinNumber.ordinal) Spin"
         }
-        else{
-            self.progressCurrentValueLabel.text = self.arrCustomer[indexPath.row].amountWon
-            self.numberOfSpinLabel.text = "\(indexPath.row.ordinal) Spin"
+        else if (model.cellType == TypeOfCell.blue) {
             
-            let percentage:Float = Float(indexPath.row) / Float(arrCustomer.count)
-            self.setProgresValue(percentage)
-            
-            self.percentageOfTreatedPatient = Int(arrCustomer[indexPath.row].amountWon)!
-        }
-        
-        
-        /* self.numberOfSpinLabel.text = "1st Spin"
-         if indexPath.row == 0{
             self.startSpinView.isHidden = true
             self.midSpinView.isHidden = false
             self.completedSpinView.isHidden = true
-            
-            self.percentageOfTreatedPatient = 250
-            
-            self.setProgresValue(0.25)
+            //self.progressCurrentValueLabel.text = model.amountWon
+            self.percentageOfTreatedPatient = Int(model.amountWon)!
+            self.setProgresValue(model.circularProgress)
+            self.midProgressCurrentValueLabel.text = String(percentageOfTreatedPatient)
+            self.midNumberOfSpinLabel.text = "\(spinNumber.ordinal) Spin"
         }
-        else if(indexPath.row == 1){
-            self.startSpinView.isHidden = true
-            self.midSpinView.isHidden = true
-            self.completedSpinView.isHidden = false
-            
-            self.percentageOfTreatedPatient = 350
-            
-            self.setProgresValue(0.35)
-        }
-        else if (indexPath.row == 2){
-            self.startSpinView.isHidden = true
-            self.midSpinView.isHidden = true
-            self.completedSpinView.isHidden = false
-            
-            self.percentageOfTreatedPatient = 320
-            
-            self.setProgresValue(0.32)
-            
-        }
-        else {
-            self.startSpinView.isHidden = false
-            self.midSpinView.isHidden = true
-            self.completedSpinView.isHidden = true
-            
-            self.startSpinLabel.text = "You Have \n1 More Spin Left"
-        }*/
+        
         
     }
     
     var timer = Timer()
     var percentageOfTreatedPatient = 0
-    func showProgressValue() {
-        
-        self.progressValue = 0.0
-        self.timer = Timer.scheduledTimer(withTimeInterval: 0.02 , repeats: true, block: { (_) in
-            self.progressValue = self.progressValue + 0.1 //0.01
-        })
-        
-    }
+//    func showProgressValue() {
+//
+//        self.progressValue = 0.0
+//        self.timer = Timer.scheduledTimer(withTimeInterval: 0.02 , repeats: true, block: { (_) in
+//            self.progressValue = self.progressValue + 0.1 //0.01
+//        })
+//
+//    }
     
     func setProgresValue(_ value:Float){
         self.progressCurrentValueLabel.text = String(percentageOfTreatedPatient)
@@ -133,7 +94,7 @@ class EN_VC_CollectionViewCell: UICollectionViewCell {
         self.midSpinProgressView.progressAnimation(0.1, value)
     }
     
-    //ProgressView Animation
+  /*  //ProgressView Animation
     open var progressValue: Double = 0.0 {
         didSet {
             let progressPercentage = progressValue * 100
@@ -141,7 +102,7 @@ class EN_VC_CollectionViewCell: UICollectionViewCell {
             self.progressCurrentValueLabel.text = "\(percentageValueInInt)" // + "%"
             self.midProgressCurrentValueLabel.text = "\(percentageValueInInt)" // + "%"
         }
-    }
+    }*/
     
 }
 

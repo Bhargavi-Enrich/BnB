@@ -21,6 +21,10 @@ struct TotalWonRewardSpin
     var amountWon : String = ""
     var invoiceId : String = ""
     var cellType = TypeOfCell.lock
+    var isMax: Bool = false
+    var circularProgress: Float = 0.0
+    var amountWonNumeric : Double = 0.0
+
 }
 
 protocol EN_VC_RewardWinningsDelegate:AnyObject {
@@ -108,8 +112,9 @@ class EN_VC_RewardWinnings: UIViewController, UICollectionViewDelegate, UICollec
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "EN_VC_CollectionViewCell", for: indexPath) as! EN_VC_CollectionViewCell
         
-        cell.configureData(indexPath, self.arrCustomer, self.totalRewardsCount)
-        
+        //cell.configureData(indexPath, self.arrCustomer, self.totalRewardsCount)
+        let model = arrCustomer[indexPath.row]
+        cell.configureDataNew(model: model, indexPath,totalNumberOfRecords: arrCustomer.count)
         return cell
     }
     
@@ -175,6 +180,7 @@ extension EN_VC_RewardWinnings {
                     }
                 }else
                 {
+                    HUD.hide()
                     self.setData(dict: dictData)
                     print(dictData ?? "Data available")
                 }
@@ -195,8 +201,9 @@ extension EN_VC_RewardWinnings {
     
     func setData(dict : Dictionary<String, Any>?)
     {
-        
         self.arrCustomer.removeAll()
+        self.totalRewardsCount = 0.0
+        var numberAlreadyAvailedSpinCount: Int = 0
         // Customer spin data
         if let dictData = dict, let dataDataObj = dictData["data"] as? [String : Any] {
             if let dictionary = dataDataObj["customerSpinDetails"] as? [Dictionary<String,Any>]
@@ -209,31 +216,57 @@ extension EN_VC_RewardWinnings {
                             if(value.isNumber)
                             {
                                 self.totalRewardsCount = self.totalRewardsCount + Double(value)! //Old code
+                                
+                                numberAlreadyAvailedSpinCount =  numberAlreadyAvailedSpinCount + 1
                             }
                         }
                         
                         
-                        self.arrCustomer.append(TotalWonRewardSpin.init(amountWon: String(dictObj["amount_won"] as? String ?? ""), invoiceId: String(dictObj["invoiceId"] as? String ?? ""), cellType: TypeOfCell.lock))
+                        self.arrCustomer.append(TotalWonRewardSpin.init(amountWon: String(dictObj["amountWon"] as? String ?? ""), invoiceId: String(dictObj["invoiceId"] as? String ?? ""), cellType: TypeOfCell.blue, isMax: false,amountWonNumeric: (String(dictObj["amountWon"] as? String ?? "0")).toDouble() ?? 0))
                     }
-                    
-                
-                    let totalRecords = self.numberOfTotalSpins()
-                    
-                    if(Int(self.totalRewardsCount) != totalRecords){
-                        for _:Int in 0 ..< totalRecords - Int(self.totalRewardsCount){
-                            self.arrCustomer.append(TotalWonRewardSpin.init(amountWon: "", invoiceId: "", cellType: TypeOfCell.lock))
-                        }
-                    }
-                    
-                    self.setTotalRewardPOintsValue(totalRewardsCount: self.totalRewardsCount)
-                    
-                    self.collectionView.reloadData()
-                    
                     
                 }
             }
         }
+        
+        // Show on UI
+        DispatchQueue.main.async {
+        
+            let totalRecords =  self.totalSpinLeftString //self.numberOfTotalSpins()
+            
+                for _:Int in 0 ..< totalRecords{
+                    self.arrCustomer.append(TotalWonRewardSpin.init(amountWon: "", invoiceId: "", cellType: TypeOfCell.lock, isMax: false,amountWonNumeric: 0))
+                }
+            self.setTotalRewardPOintsValue(totalRewardsCount: self.totalRewardsCount)
+            
+            self.arrCustomer = self.getFinalArray()
+            
+            self.collectionView.reloadData()
+        }
+    }
+    
+    func getFinalArray() -> [TotalWonRewardSpin]
+    {
+        let keyMaxElement = arrCustomer.max(by: { (a, b) -> Bool in
+            return a.amountWonNumeric < b.amountWonNumeric
+        })
+        var finalArray = [TotalWonRewardSpin]()
+
+        finalArray = arrCustomer
+        
+        for (index, element) in arrCustomer.enumerated()
+        {
+            let percentage:Float = Float(index) / Float(arrCustomer.count)
+            finalArray[index].circularProgress = percentage
+            if element.amountWonNumeric == keyMaxElement?.amountWonNumeric {
+                
+            finalArray[index].cellType = TypeOfCell.gold
+            }
+        }
+        
+        return finalArray
     }
     
     
 }
+

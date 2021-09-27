@@ -99,6 +99,7 @@ class EN_VC_TrialSpin: UIViewController {
         self.arrLastFiveSpinDetails = appd.arrLastFiveSpinDetails
         self.changeLastFiveSpinData()
         
+        self.appd.totalEligibleSpinCountsAgainstAllInvoices = self.customerDetails.remaining_trials
         totalEligibleSpinCountsAgainstAllInvoices = self.customerDetails.remaining_trials
         self.updateSpinLeft(leftSpins: totalEligibleSpinCountsAgainstAllInvoices)
         

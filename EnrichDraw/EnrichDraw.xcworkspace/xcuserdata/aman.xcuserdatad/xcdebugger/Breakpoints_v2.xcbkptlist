@@ -39,22 +39,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "42EC18F6-51FC-4C44-8695-D9D0DC63CAF1"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "EnrichDraw/ViewControllers/EN_VC_MyOrders.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "185"
-            endingLineNumber = "185"
-            landmarkName = "openRewardSpinScreen()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "C5B53F0D-989C-49CD-BD10-28AE3FB54140"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -64,8 +48,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "482"
             endingLineNumber = "482"
-            landmarkName = "callNextSpinView(tag:)"
-            landmarkType = "7">
+            landmarkName = "EN_VC_RewardSpin"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -80,40 +64,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "893"
             endingLineNumber = "893"
-            landmarkName = "actionPlaySpinGame(indexPath:)"
+            landmarkName = "finalFilteredRecords(model:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "90867280-2F67-4F53-97FC-F5CB3DF750F6 - f33fea0cde1b49de"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Greenrich.EN_VC_RewardSpin.actionPlaySpinGame(indexPath: Foundation.IndexPath) -&gt; ()"
-                  moduleName = "Greenrich"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/aman/Documents/Enrich_Spin_Wheel/EnrichDraw/EnrichDraw/ViewControllers/EN_VC_RewardSpin.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "893"
-                  endingLineNumber = "893"
-                  offsetFromSymbolStart = "4096">
-               </Location>
-               <Location
-                  uuid = "90867280-2F67-4F53-97FC-F5CB3DF750F6 - 41f8043d3babb243"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Greenrich.ModelRunningCampaignListData) -&gt; Swift.Bool in Greenrich.EN_VC_RewardSpin.actionPlaySpinGame(indexPath: Foundation.IndexPath) -&gt; ()"
-                  moduleName = "Greenrich"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/aman/Documents/Enrich_Spin_Wheel/EnrichDraw/EnrichDraw/ViewControllers/EN_VC_RewardSpin.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "894"
-                  endingLineNumber = "894"
-                  offsetFromSymbolStart = "60">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -151,16 +103,96 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "63242619-9B39-409A-A583-4DE5D98E61A8"
+            uuid = "9B1DA574-4CD9-4A56-98FE-5E66C974B63C"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "EnrichDraw/WBServiceClasses/EN_Service_TotalRewards.swift"
+            filePath = "EnrichDraw/ViewControllers/EN_VC_RewardSpin.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
-            landmarkName = "getTotalRewards(userData:callback:)"
+            startingLineNumber = "145"
+            endingLineNumber = "145"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "798E62FA-790F-4ADD-9B28-8A13125DB98C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EnrichDraw/ViewControllers/EN_VC_WinBigBBViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "openRewardSpinScreen()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "836D1FF1-A0DB-4834-9378-309CB0E7E867"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EnrichDraw/ViewControllers/EN_VC_CutomerOTPVerification .swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "681"
+            endingLineNumber = "681"
+            landmarkName = "openWinBigScreen()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5D8298ED-D1EF-433A-8F72-0D7C4902D64B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EnrichDraw/ViewControllers/EN_VC_CutomerOTPVerification .swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "607"
+            endingLineNumber = "607"
+            landmarkName = "finalFilteredRecords(model:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "03F13910-2FF2-4CD6-9079-A04A2E6882D0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EnrichDraw/ViewControllers/EN_VC_TrialSpin.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "333"
+            endingLineNumber = "333"
+            landmarkName = "updateSpinLeft(leftSpins:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3E50681D-BB2E-4D2E-9CE0-3929EC5F5450"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "EnrichDraw/ViewControllers/EN_VC_TrialSpin.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "288"
+            endingLineNumber = "288"
+            landmarkName = "addSpinWheel(selectedColor:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

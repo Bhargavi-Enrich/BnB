@@ -66,6 +66,7 @@ class EN_VC_WinBigBBViewController: UIViewController {
         spinWheelController.isScratchCard = .spinWheel
         spinWheelController.campaignDetails = self.campaignDetails
         spinWheelController.records = self.records
+        spinWheelController.originalRecords = self.originalRecords
         spinWheelController.accessToken = self.accessTOKEN
         spinWheelController.selectedIndexFromRecordsArray = self.selectedIndexFromRecordsArray
         spinWheelController.totalEligibleSpinCountsAgainstAllInvoices = self.totalEligibleSpinCountsAgainstAllInvoices

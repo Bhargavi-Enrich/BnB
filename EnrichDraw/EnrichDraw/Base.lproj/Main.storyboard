@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CNc-Mj-PkQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CNc-Mj-PkQ">
     <device id="ipad9_7" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -496,7 +496,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright ® 2021 Enrich. All Rights Reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ke2-np-6fC">
-                                <rect key="frame" x="387.5" y="725" width="249" height="18"/>
+                                <rect key="frame" x="367.5" y="726.5" width="289" height="16.5"/>
                                 <fontDescription key="fontDescription" name="FuturaPT-Book" family="Futura PT" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -523,7 +523,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="0hl-Zc-WPD" userLabel="Stack View Beauty And Bling">
-                                <rect key="frame" x="412" y="230" width="200" height="48"/>
+                                <rect key="frame" x="412" y="236" width="200" height="48"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spin The Wheel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7AW-8f-h8v">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="30.5"/>
@@ -543,19 +543,19 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9aJ-Qe-nF0">
-                                <rect key="frame" x="224.5" y="297" width="575" height="342"/>
+                                <rect key="frame" x="224.5" y="303" width="575" height="330.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Sss-nS-SZW" userLabel="Stack View Thank you">
-                                        <rect key="frame" x="63" y="0.0" width="449" height="223"/>
+                                        <rect key="frame" x="32" y="0.0" width="511" height="212.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter OTP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VHZ-nu-xOW">
-                                                <rect key="frame" x="0.0" y="0.0" width="449" height="51.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="511" height="47"/>
                                                 <fontDescription key="fontDescription" name="FuturaPT-Demi" family="Futura PT" pointSize="40"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6N-ik-mK1">
-                                                <rect key="frame" x="0.0" y="71.5" width="449" height="64.5"/>
+                                                <rect key="frame" x="0.0" y="67" width="511" height="58.5"/>
                                                 <string key="text">Please Enter OTP That We Sent On
 Your Registered Mobile Number 99XXXXXX32</string>
                                                 <fontDescription key="fontDescription" name="FuturaPT-Book" family="Futura PT" pointSize="25"/>
@@ -563,10 +563,10 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fLJ-Ht-1Q6">
-                                                <rect key="frame" x="0.0" y="156" width="449" height="67"/>
+                                                <rect key="frame" x="0.0" y="145.5" width="511" height="67"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ENTER OTP" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HRd-uE-Tka">
-                                                        <rect key="frame" x="0.0" y="0.0" width="449" height="67"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="511" height="67"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="67" id="UCc-c2-Bk3"/>
                                                         </constraints>
@@ -584,7 +584,7 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZs-B1-DDy">
-                                        <rect key="frame" x="60" y="233" width="455" height="67"/>
+                                        <rect key="frame" x="60" y="222.5" width="455" height="67"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="67" id="ho8-8v-DQP"/>
                                         </constraints>
@@ -596,7 +596,7 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HyZ-Ue-0WQ">
-                                        <rect key="frame" x="238" y="310" width="99" height="32"/>
+                                        <rect key="frame" x="242" y="299.5" width="91" height="31"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                         <state key="normal" title="Resend OTP">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -623,7 +623,7 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIf-71-beZ">
-                                <rect key="frame" x="854" y="14.5" width="113" height="30"/>
+                                <rect key="frame" x="839" y="15" width="128" height="29"/>
                                 <fontDescription key="fontDescription" name="FuturaPT-Book" family="Futura PT" pointSize="14"/>
                                 <state key="normal" title="Churchgate,Mumbai">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -633,7 +633,7 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2dc-56-t2C">
-                                <rect key="frame" x="462.5" y="636" width="99" height="2"/>
+                                <rect key="frame" x="466.5" y="630.5" width="91" height="2"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="2" id="oHu-Tm-ZD9"/>
@@ -712,10 +712,10 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tGd-3d-6Nm" userLabel="ViewAlert">
-                                <rect key="frame" x="312" y="191" width="400" height="386"/>
+                                <rect key="frame" x="312" y="180" width="400" height="408.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jUU-Zy-BDM">
-                                        <rect key="frame" x="-60" y="-67" width="520" height="520"/>
+                                        <rect key="frame" x="-60" y="-56" width="520" height="520"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ribbon-pieces" translatesAutoresizingMaskIntoConstraints="NO" id="efc-hW-QIj">
                                                 <rect key="frame" x="0.0" y="0.0" width="520" height="520"/>
@@ -727,7 +727,7 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="LIh-7q-ULt">
-                                        <rect key="frame" x="50" y="35" width="300" height="316"/>
+                                        <rect key="frame" x="50" y="35" width="300" height="338.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NsW-Wy-T9W" userLabel="Stack View Image">
                                                 <rect key="frame" x="150" y="0.0" width="0.0" height="0.0"/>
@@ -738,22 +738,22 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="GE3-F9-mTT" userLabel="Stack View Congrats and Message">
-                                                <rect key="frame" x="0.0" y="15" width="300" height="196.5"/>
+                                                <rect key="frame" x="0.0" y="15" width="300" height="221.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratulations!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WKE-h4-hFF">
-                                                        <rect key="frame" x="0.0" y="0.0" width="300" height="46.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="300" height="42"/>
                                                         <fontDescription key="fontDescription" name="FuturaPT-Bold" family="Futura PT" pointSize="36"/>
                                                         <color key="textColor" red="0.92549019607843142" green="0.21176470588235294" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have won ₹ 350 on your first spin" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXP-il-dWi">
-                                                        <rect key="frame" x="0.0" y="54.5" width="300" height="64.5"/>
+                                                        <rect key="frame" x="0.0" y="50" width="300" height="58.5"/>
                                                         <fontDescription key="fontDescription" name="FuturaPT-Demi" family="Futura PT" pointSize="25"/>
                                                         <color key="textColor" red="0.098039215686274508" green="0.090196078431372548" blue="0.090196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tkx-qL-fER">
-                                                        <rect key="frame" x="0.0" y="127" width="300" height="69.5"/>
+                                                        <rect key="frame" x="0.0" y="116.5" width="300" height="105"/>
                                                         <string key="text">Join the virtuous cycle of giving back!
 Get us your old items to earn extra bonus points on your visit to Enrich Salon.</string>
                                                         <fontDescription key="fontDescription" name="FuturaPT-Book" family="Futura PT" pointSize="18"/>
@@ -771,7 +771,7 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ucm-x4-Kvz" userLabel="Stack View Image">
-                                                <rect key="frame" x="30" y="226.5" width="240" height="24.5"/>
+                                                <rect key="frame" x="30" y="251.5" width="240" height="22"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cfp-C0-1ME">
                                                         <rect key="frame" x="0.0" y="0.0" width="240" height="1"/>
@@ -781,7 +781,7 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                                                         </constraints>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ds8-Yt-vc3">
-                                                        <rect key="frame" x="0.0" y="1" width="240" height="23.5"/>
+                                                        <rect key="frame" x="0.0" y="1" width="240" height="21"/>
                                                         <fontDescription key="fontDescription" name="FuturaPT-Book" family="Futura PT" pointSize="18"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -789,7 +789,7 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="HVc-Yc-jD9" userLabel="Stack View Button">
-                                                <rect key="frame" x="40" y="266" width="220" height="50"/>
+                                                <rect key="frame" x="40" y="288.5" width="220" height="50"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbg-39-BfP">
                                                         <rect key="frame" x="0.0" y="0.0" width="220" height="50"/>
@@ -812,7 +812,7 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                                         </constraints>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dSg-f6-YgH">
-                                        <rect key="frame" x="50" y="35" width="300" height="316"/>
+                                        <rect key="frame" x="50" y="35" width="300" height="338.5"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ribbon-vertical" translatesAutoresizingMaskIntoConstraints="NO" id="woI-8q-va2">
@@ -1333,7 +1333,7 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright ® 2021 Enrich. All Rights Reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YCX-9E-5dU">
-                                <rect key="frame" x="387.5" y="729" width="249" height="18"/>
+                                <rect key="frame" x="367.5" y="730" width="289" height="16.5"/>
                                 <fontDescription key="fontDescription" name="FuturaPT-Book" family="Futura PT" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -1391,7 +1391,7 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YBh-Tw-ypx">
-                                                    <rect key="frame" x="220" y="69" width="544" height="20"/>
+                                                    <rect key="frame" x="220" y="69.5" width="544" height="19"/>
                                                     <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>

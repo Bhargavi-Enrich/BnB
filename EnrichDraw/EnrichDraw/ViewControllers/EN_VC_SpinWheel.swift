@@ -228,6 +228,7 @@ class EN_VC_SpinWheel: UIViewController {
     let iPadWidth:CGFloat = 400
     let iPadHeight:CGFloat = 400
     
+    let appd:AppDelegate = UIApplication.shared.delegate as! AppDelegate
     
     // MARK:- View Life Cycle Methods
     override func viewDidLoad() {
@@ -1362,8 +1363,11 @@ class EN_VC_SpinWheel: UIViewController {
             let obj:EN_VC_TrialSpin = self.controller as! EN_VC_TrialSpin
             
             obj.currentSpinNumber = self.currentSpinNumber
-            self.totalEligibleSpinCountsAgainstAllInvoices = self.totalEligibleSpinCountsAgainstAllInvoices - 1
-            obj.updateSpinLeft(leftSpins: self.totalEligibleSpinCountsAgainstAllInvoices)
+            
+            self.appd.totalEligibleSpinCountsAgainstAllInvoices = self.appd.totalEligibleSpinCountsAgainstAllInvoices - 1
+            obj.updateSpinLeft(leftSpins: self.appd.totalEligibleSpinCountsAgainstAllInvoices)
+            
+            self.totalEligibleSpinCountsAgainstAllInvoices = self.totalEligibleSpinCountsAgainstAllInvoices - self.currentSpinNumber
             if(currentSpinNumber != 0 && isTimerActive)
             {
                 var spinData = self.dictRewardsArray[currentSpinNumber]

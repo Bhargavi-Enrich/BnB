@@ -337,8 +337,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "73"
             endingLineNumber = "73"
-            landmarkName = "recycleRewards"
-            landmarkType = "24">
+            landmarkName = "EN_VC_TotalRewards"
+            landmarkType = "3">
             <Locations>
                <Location
                   uuid = "3F6FB5CE-6BFA-48EB-A849-9A89EACF9FD2 - cda72782535d273d"
@@ -581,22 +581,6 @@
             startingLineNumber = "612"
             endingLineNumber = "612"
             landmarkName = "nextResponder()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "CA842830-C043-4D2B-AFF4-BD39FE91764A"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "EnrichDraw/ViewControllers/EN_VC_TrialSpin.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "333"
-            endingLineNumber = "333"
-            landmarkName = "updateSpinLeft(leftSpins:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
