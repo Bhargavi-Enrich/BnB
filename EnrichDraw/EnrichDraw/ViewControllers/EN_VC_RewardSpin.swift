@@ -322,7 +322,7 @@ class EN_VC_RewardSpin: UIViewController {
         }))
         alert.addAction(UIAlertAction(title: "Go Back", style: .default, handler: { (action) in
             // Do nothing
-            self.navigationController?.popViewController(animated: true)
+            self.navigationController?.popToViewController(ofClass: EN_VC_CutomerOTPVerification.self, animated: false)
 
         }))
         self.present(alert, animated: true, completion: nil)
