@@ -114,6 +114,8 @@ class EN_VC_RewardSpin: UIViewController {
     var pageNo = 1
     var totalRecords:Int64 = 0
     var records = [MyProductOrdersModuleModel.GetMyOrders.Orders]()
+    var originalRecords = [MyProductOrdersModuleModel.GetMyOrders.Orders]()
+
     var accessToken: String = ""
     var selectedIndexFromRecordsArray = 0
     var totalEligibleSpinCountsAgainstAllInvoices = 0
@@ -320,7 +322,7 @@ class EN_VC_RewardSpin: UIViewController {
         }))
         alert.addAction(UIAlertAction(title: "Go Back", style: .default, handler: { (action) in
             // Do nothing
-            self.navigationController?.popViewController(animated: true)
+            self.navigationController?.popToViewController(ofClass: EN_VC_CutomerOTPVerification.self, animated: false)
 
         }))
         self.present(alert, animated: true, completion: nil)
@@ -331,12 +333,14 @@ class EN_VC_RewardSpin: UIViewController {
         destination.campaignDetails = self.campaignDetails
         destination.customerDetails = self.customerDetails
         destination.totalSpinLeftString = self.totalEligibleSpinCountsAgainstAllInvoices - self.currentSpinNumber
+        destination.originalRecords = self.originalRecords
         destination.modalPresentationStyle = .overCurrentContext
         self.present(destination, animated: false, completion: nil)
     }
     //MARK:- Actions
     @IBAction func actionWinBigThisSeason(_ sender: Any) {
         let destination = EN_VC_WinBBPopupViewController(nibName: "EN_VC_WinBBPopupViewController", bundle: nil)
+        destination.campaignDetails = self.campaignDetails
         destination.modalPresentationStyle = .overCurrentContext
         self.present(destination, animated: false, completion: nil)
     }

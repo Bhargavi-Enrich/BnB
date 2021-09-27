@@ -42,7 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
 
        let strData =  [["id" : "1","title": "Test Video","url": "https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_480_1_5MG.mp4"],
                        ["id" : "2","title": "Test Video 2","url": "https://file-examples-com.github.io/uploads/2017/04/file_example_MP4_480_1_5MG.mp4"]]
-
+        
         UserDefaults.standard.set(strData, forKey: gUDKeyImagesVideosData)
         
 //        let spinWheelController = EN_VC_Setting.instantiate(fromAppStoryboard: .Main)
@@ -140,6 +140,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
                         self.window?.rootViewController = nvc
                     }
 
+            
         }
     
     }

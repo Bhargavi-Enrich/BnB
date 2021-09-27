@@ -20,7 +20,6 @@ class EN_VC_TrialSpin: UIViewController {
     @IBOutlet weak var lblDate: UILabel!
     @IBOutlet weak var lblMainTitle: UILabel!
    // @IBOutlet weak var imgViewBBLogo: UIImageView!
-    @IBOutlet private weak var imgLeftBackground: UIImageView!
     @IBOutlet private weak var imgRightBackground: UIImageView!
     @IBOutlet weak var imgEnrich: UIImageView!
     
@@ -84,7 +83,8 @@ class EN_VC_TrialSpin: UIViewController {
     var remainingLocalTrialCount = 0
     var totalCount = 0
     let appd:AppDelegate = UIApplication.shared.delegate as! AppDelegate
-
+    var totalEligibleSpinCountsAgainstAllInvoices = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         hideColorSection()
@@ -98,6 +98,9 @@ class EN_VC_TrialSpin: UIViewController {
         
         self.arrLastFiveSpinDetails = appd.arrLastFiveSpinDetails
         self.changeLastFiveSpinData()
+        
+        totalEligibleSpinCountsAgainstAllInvoices = self.customerDetails.remaining_trials
+        self.updateSpinLeft(leftSpins: totalEligibleSpinCountsAgainstAllInvoices)
         
     }
     
@@ -186,18 +189,6 @@ class EN_VC_TrialSpin: UIViewController {
     
     // MARK :- Initial SetUp Before View Load
     func initialialize() {
-        if let logoDetails = self.campaignDetails.campaign_left_background_image, let urlObj = logoDetails.url {
-            
-            DispatchQueue.global().async { [weak self] in
-                if let data = try? Data(contentsOf: URL(string: urlObj)!) {
-                    if let image = UIImage(data: data) {
-                        DispatchQueue.main.async {
-                            self?.imgLeftBackground.image = image
-                        }
-                    }
-                }
-            }
-        }
         
         if let logoDetails = self.campaignDetails.campaign_right_background_image, let urlObj = logoDetails.url {
             
@@ -294,6 +285,7 @@ class EN_VC_TrialSpin: UIViewController {
         spinWheelController.isTrialOrRewardSpin = true
         spinWheelController.controller = self
         spinWheelController.dictRewardsArray = self.dictRewardsArray
+        spinWheelController.totalEligibleSpinCountsAgainstAllInvoices = self.totalEligibleSpinCountsAgainstAllInvoices
         spinWheelController.currentSpinNumber = self.currentSpinNumber
         spinWheelController.view.frame = self.viewSpinWheel.bounds
         spinWheelController.willMove(toParent: self)
@@ -325,14 +317,21 @@ class EN_VC_TrialSpin: UIViewController {
         let destination = EN_VC_RewardWinnings(nibName: "EN_VC_RewardWinnings", bundle: nil)
         destination.campaignDetails = self.campaignDetails
         destination.customerDetails = self.customerDetails
+        
         destination.modalPresentationStyle = .overCurrentContext
         self.present(destination, animated: false, completion: nil)
     }
     //MARK:- Actions
     @IBAction func actionWinBigThisSeason(_ sender: Any) {
         let destination = EN_VC_WinBBPopupViewController(nibName: "EN_VC_WinBBPopupViewController", bundle: nil)
+        destination.campaignDetails = self.campaignDetails
         destination.modalPresentationStyle = .overCurrentContext
         self.present(destination, animated: false, completion: nil)
+    }
+    
+    func updateSpinLeft(leftSpins:Int)  {
+        self.lblNumberOfSpinYouHave.isHidden = leftSpins <= 0
+        self.lblNumberOfSpinYouHave.text =  "You Have \(leftSpins) Spins. Click On The Pointer To Spin The Wheel"
     }
     
     @IBAction func actionBtnContinue(_ sender: Any) {

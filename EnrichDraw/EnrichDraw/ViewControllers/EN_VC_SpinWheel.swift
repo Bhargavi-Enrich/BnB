@@ -1362,6 +1362,8 @@ class EN_VC_SpinWheel: UIViewController {
             let obj:EN_VC_TrialSpin = self.controller as! EN_VC_TrialSpin
             
             obj.currentSpinNumber = self.currentSpinNumber
+            self.totalEligibleSpinCountsAgainstAllInvoices = self.totalEligibleSpinCountsAgainstAllInvoices - 1
+            obj.updateSpinLeft(leftSpins: self.totalEligibleSpinCountsAgainstAllInvoices)
             if(currentSpinNumber != 0 && isTimerActive)
             {
                 var spinData = self.dictRewardsArray[currentSpinNumber]
