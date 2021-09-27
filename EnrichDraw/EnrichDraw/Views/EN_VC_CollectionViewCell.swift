@@ -61,6 +61,7 @@ class EN_VC_CollectionViewCell: UICollectionViewCell {
         }
         else if (model.cellType == TypeOfCell.blue) {
             
+            
             self.startSpinView.isHidden = true
             self.midSpinView.isHidden = false
             self.completedSpinView.isHidden = true
@@ -71,6 +72,43 @@ class EN_VC_CollectionViewCell: UICollectionViewCell {
             self.midNumberOfSpinLabel.text = "\(spinNumber.ordinal) Spin"
         }
         
+        
+        /* self.numberOfSpinLabel.text = "1st Spin"
+         if indexPath.row == 0{
+            self.startSpinView.isHidden = true
+            self.midSpinView.isHidden = false
+            self.completedSpinView.isHidden = true
+            
+            self.percentageOfTreatedPatient = 250
+            
+            self.setProgresValue(0.25)
+        }
+        else if(indexPath.row == 1){
+            self.startSpinView.isHidden = true
+            self.midSpinView.isHidden = true
+            self.completedSpinView.isHidden = false
+            
+            self.percentageOfTreatedPatient = 350
+            
+            self.setProgresValue(0.35)
+        }
+        else if (indexPath.row == 2){
+            self.startSpinView.isHidden = true
+            self.midSpinView.isHidden = true
+            self.completedSpinView.isHidden = false
+            
+            self.percentageOfTreatedPatient = 320
+            
+            self.setProgresValue(0.32)
+            
+        }
+        else {
+            self.startSpinView.isHidden = false
+            self.midSpinView.isHidden = true
+            self.completedSpinView.isHidden = true
+            
+            self.startSpinLabel.text = "You Have \n1 More Spin Left"
+        }*/
         
     }
     
