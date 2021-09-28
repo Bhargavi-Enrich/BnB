@@ -43,7 +43,7 @@
 "kl_TrialSpin" = "TRIAL";
 "kl_RewardSpin" = "REWARD";
 "kl_UserInfo" = "Last five rides & Greenrich reward points won across all Enrich salons ";
-"kl_NoOfSpins" = "Number of rides";
+"kl_NoOfSpins" = "Total Spins";
 "kl_TotalRewardsRolled" = "Total rewards rolled";
 "kl_RewardsMinMaxRange" = "Spin the wheel and get a chance to instantly win 600 to 2500 service reward points!";
 // --------------------

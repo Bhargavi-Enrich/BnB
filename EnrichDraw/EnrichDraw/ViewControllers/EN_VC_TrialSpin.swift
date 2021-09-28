@@ -86,8 +86,8 @@ class EN_VC_TrialSpin: UIViewController {
     let appd:AppDelegate = UIApplication.shared.delegate as! AppDelegate
     var totalEligibleSpinCountsAgainstAllInvoices = 0
     @IBOutlet weak var lblAnimation: MarqueeLabel!
-    let labelSpace = "   "
-    
+    let labelSpace = "      "
+
     override func viewDidLoad() {
         super.viewDidLoad()
         hideColorSection()

@@ -83,7 +83,7 @@ class EN_VC_LandingScreen: UIViewController
     // Public
     var storeDetails = StoreDetails()
     var campaignDetails = ModelRunningCampaignListData()
-    let labelSpace = "   "
+    let labelSpace = "      "
     
     //MARK:- Lifecycle
     override func viewDidLoad() {

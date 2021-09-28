@@ -1281,10 +1281,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: ENRICH HAIR AND SKIN SOLUTIONS PRIVATE LIMITED";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3B26WTCHRP;
+				DEVELOPMENT_TEAM = L6TGGG3EH2;
 				INFOPLIST_FILE = EnrichDraw/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1293,9 +1293,9 @@
 				);
 				MARKETING_VERSION = 1.16;
 				OTHER_SWIFT_FLAGS = "-DSTAGE -D COCOAPODS";
-				PRODUCT_BUNDLE_IDENTIFIER = com.EnrichSalon.GreenRichSpinWheel;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codon.masterpiece;
 				PRODUCT_NAME = Greenrich;
-				PROVISIONING_PROFILE_SPECIFIER = EnrichSpinWheelGreenRich_InHouse;
+				PROVISIONING_PROFILE_SPECIFIER = "masterpiece development profile";
 				SWIFT_OBJC_BRIDGING_HEADER = "EnrichDraw/Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -1468,10 +1468,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: ENRICH HAIR AND SKIN SOLUTIONS PRIVATE LIMITED";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3B26WTCHRP;
+				DEVELOPMENT_TEAM = L6TGGG3EH2;
 				INFOPLIST_FILE = EnrichDraw/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1479,9 +1479,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.16;
-				PRODUCT_BUNDLE_IDENTIFIER = com.EnrichSalon.GreenRichSpinWheel;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codon.masterpiece;
 				PRODUCT_NAME = Greenrich;
-				PROVISIONING_PROFILE_SPECIFIER = EnrichSpinWheelGreenRich_InHouse;
+				PROVISIONING_PROFILE_SPECIFIER = "masterpiece development profile";
 				SWIFT_OBJC_BRIDGING_HEADER = "EnrichDraw/Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -1494,10 +1494,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: ENRICH HAIR AND SKIN SOLUTIONS PRIVATE LIMITED";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3B26WTCHRP;
+				DEVELOPMENT_TEAM = L6TGGG3EH2;
 				INFOPLIST_FILE = EnrichDraw/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1505,10 +1505,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.16;
-				PRODUCT_BUNDLE_IDENTIFIER = com.EnrichSalon.GreenRichSpinWheel;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codon.masterpiece;
 				PRODUCT_NAME = Greenrich;
 				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = EnrichSpinWheelGreenRich_InHouse;
+				PROVISIONING_PROFILE_SPECIFIER = "masterpiece development profile";
 				SWIFT_OBJC_BRIDGING_HEADER = "EnrichDraw/Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 2;

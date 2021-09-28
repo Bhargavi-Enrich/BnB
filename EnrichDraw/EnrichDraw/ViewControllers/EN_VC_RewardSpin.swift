@@ -128,8 +128,8 @@ class EN_VC_RewardSpin: UIViewController {
 
     var bombSoundEffect: AVAudioPlayer?
     var isScratchCard:SelectedGame = .spinWheel
-    let labelSpace = "   "
-    
+    let labelSpace = "      "
+
     //MARK:- Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
