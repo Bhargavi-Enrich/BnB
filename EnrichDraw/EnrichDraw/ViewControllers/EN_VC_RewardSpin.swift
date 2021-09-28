@@ -10,7 +10,7 @@
 import UIKit
 import PKHUD
 import AVFoundation
-
+import MarqueeLabel
 enum SpinColors : String{
     case clrRoyalBlue = "RoyalBluewheelthumb"
     case clrYellow = "YellowWheelthumb"
@@ -95,14 +95,15 @@ class EN_VC_RewardSpin: UIViewController {
         @IBOutlet private weak var lblPoints4: UILabel!
         @IBOutlet private weak var lblPoints5: UILabel!
         @IBOutlet private weak var lblNumberOfSpinYouHave: UILabel!
-        
+    @IBOutlet private weak var animatedUIView: UIStackView!
         private var arrLastFiveSpinDetails = [CustomerSpin]()
         private var isViewInBackground = false
         private var isViewVisible = false
         
         let appd:AppDelegate = UIApplication.shared.delegate as! AppDelegate
     
-    
+    @IBOutlet weak var lblAnimation: MarqueeLabel!
+
 
     var remainingLocalRideCount = 0
     var totalCount = 0
@@ -127,7 +128,8 @@ class EN_VC_RewardSpin: UIViewController {
 
     var bombSoundEffect: AVAudioPlayer?
     var isScratchCard:SelectedGame = .spinWheel
-    
+    let labelSpace = "      "
+
     //MARK:- Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -141,8 +143,8 @@ class EN_VC_RewardSpin: UIViewController {
         //self.initialSetUp()
        // openPopUpForSelection()
         lblRecycleInfo.text = campaignDetails.recycle_message ?? ""
-        
         self.updateSpinLeft(leftSpins: totalEligibleSpinCountsAgainstAllInvoices)
+        self.animatedUIView.isHidden = true
     }
     
     
@@ -170,6 +172,21 @@ class EN_VC_RewardSpin: UIViewController {
                     let textCount = self.getSixDigitData(amountWon: self.arrLastFiveSpinDetails[4].id)
                     self.lblPoints5.text = self.arrLastFiveSpinDetails[4].amountWon + " Points " + textCount
                 }
+                
+                if (!self.lblSpinCount.text!.isEmpty || !self.lblPoints1.text!.isEmpty || !self.lblPoints2.text!.isEmpty || !self.lblPoints3.text!.isEmpty || !self.lblPoints4.text!.isEmpty || !self.lblPoints5.text!.isEmpty || !self.lblTotalRewardsRolled.text!.isEmpty){
+                    
+                    self.lblAnimation.speed = .duration(10.0)
+                    self.lblAnimation.type = .continuous
+                    
+                    let text1 = self.lblSpinCount.text! + self.labelSpace + self.lblPoints1.text!
+                    let text2 = self.labelSpace + self.lblPoints2.text! + self.labelSpace
+                    let text3 = self.lblPoints3.text! + self.labelSpace + self.lblPoints4.text! + self.labelSpace
+                    let text4 = self.lblPoints5.text! + self.labelSpace + self.lblTotalRewardsRolled.text! + self.labelSpace
+                    self.lblAnimation.text = text1 + text2 + text3 + text4
+                    
+                }
+                
+                
             }
         }
         
@@ -177,10 +194,11 @@ class EN_VC_RewardSpin: UIViewController {
         {
             print("self.storeDetails.no_of_spin_availed=\(self.storeDetails)")
             self.lblSpinCount.text = self.getSixDigitData(amountWon: String(format:"%d",appd.no_of_spin_availed)) + " " + "kl_NoOfSpins".localized
+                        
+            self.lblTotalRewardsRolled.text = appd.totalRewardsRolled + " " + "kl_TotalRewardsRolled".localized
             
             self.changeLabelsOnFiveSpin()
-            
-            self.lblTotalRewardsRolled.text = appd.totalRewardsRolled + " " + "kl_TotalRewardsRolled".localized
+
         }
         
         func getSixDigitData(amountWon : String) -> String
@@ -717,7 +735,7 @@ extension EN_VC_RewardSpin
                 }
             }
             
-            if let logoDetails = self.campaignDetails.campaign_logo, let urlObj = logoDetails.url {
+            /*if let logoDetails = self.campaignDetails.campaign_logo, let urlObj = logoDetails.url {
                 DispatchQueue.global().async { [weak self] in
                     if let data = try? Data(contentsOf: URL(string: urlObj)!) {
                         if let image = UIImage(data: data) {
@@ -727,8 +745,8 @@ extension EN_VC_RewardSpin
                         }
                     }
                 }
-            }
-
+            }*/
+            
             if let logoDetails = self.campaignDetails.campaign_image, let urlObj = logoDetails.url {
                 DispatchQueue.global().async { [weak self] in
                     if let data = try? Data(contentsOf: URL(string: urlObj)!) {

@@ -50,7 +50,7 @@ class EN_VC_TermsAndConditions: UIViewController//, UITableViewDataSource, UITab
 //        self.updateImage(imageView: self.imgbackground, imageData: self.campaignDetails.backgroundImage ?? Data(), defaultImageName: "appBackground.png")
 //        self.updateImage(imageView: self.imgViewBBLogo, imageData: self.campaignDetails.campaignLogo ?? Data(), defaultImageName: "")
         
-        if let logoDetails = self.campaignDetails.campaign_background_image, let urlObj = logoDetails.url {
+        if let logoDetails = self.campaignDetails.campaign_left_background_image, let urlObj = logoDetails.url {
             
             DispatchQueue.global().async { [weak self] in
                 if let data = try? Data(contentsOf: URL(string: urlObj)!) {

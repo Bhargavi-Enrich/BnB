@@ -214,19 +214,19 @@ class EN_VC_SpinWheel: UIViewController {
     let iPad12Height:CGFloat = 600
     
     let iPad11Width:CGFloat = 440
-    let iPad11Height:CGFloat = 440
+    let iPad11Height:CGFloat = 440//Checked
     
-    let iPadProWidth:CGFloat = 390
-    let iPadProHeight:CGFloat = 390
+    let iPadProWidth:CGFloat = 380
+    let iPadProHeight:CGFloat = 380  //Checked
     
-    let iPadMiniWidth:CGFloat = 420
-    let iPadMiniHeight:CGFloat = 420
+    let iPadMiniWidth:CGFloat = 380
+    let iPadMiniHeight:CGFloat = 380  //Checked
     
-    let iPadAirWidth:CGFloat = 410
-    let iPadAirHeight:CGFloat = 410
+    let iPadAirWidth:CGFloat = 400
+    let iPadAirHeight:CGFloat = 400  //Checked
     
     let iPadWidth:CGFloat = 400
-    let iPadHeight:CGFloat = 400
+    let iPadHeight:CGFloat = 400 //Checked
     
     let appd:AppDelegate = UIApplication.shared.delegate as! AppDelegate
     
@@ -250,6 +250,7 @@ class EN_VC_SpinWheel: UIViewController {
     
     func checkiPadModelName(){
         let modelName = UIDevice.modelName
+        print("modelName=\(modelName)")
         if (modelName == simulator + "iPad Pro (12.9-inch) (5th generation)"){
             self.setWidthHeightCons(iPad12Width, iPad12Height)
         }

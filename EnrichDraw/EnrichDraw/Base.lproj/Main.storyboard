@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CNc-Mj-PkQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CNc-Mj-PkQ">
     <device id="ipad9_7" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -496,7 +495,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright ® 2021 Enrich. All Rights Reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ke2-np-6fC">
-                                <rect key="frame" x="367.5" y="726.5" width="289" height="16.5"/>
+                                <rect key="frame" x="387.5" y="725" width="249" height="18"/>
                                 <fontDescription key="fontDescription" name="FuturaPT-Book" family="Futura PT" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -523,7 +522,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="0hl-Zc-WPD" userLabel="Stack View Beauty And Bling">
-                                <rect key="frame" x="412" y="236" width="200" height="48"/>
+                                <rect key="frame" x="412" y="230" width="200" height="48"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spin The Wheel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7AW-8f-h8v">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="30.5"/>
@@ -543,19 +542,19 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9aJ-Qe-nF0">
-                                <rect key="frame" x="224.5" y="303" width="575" height="330.5"/>
+                                <rect key="frame" x="224.5" y="297" width="575" height="342"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Sss-nS-SZW" userLabel="Stack View Thank you">
-                                        <rect key="frame" x="32" y="0.0" width="511" height="212.5"/>
+                                        <rect key="frame" x="63" y="0.0" width="449" height="223"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter OTP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VHZ-nu-xOW">
-                                                <rect key="frame" x="0.0" y="0.0" width="511" height="47"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="449" height="51.5"/>
                                                 <fontDescription key="fontDescription" name="FuturaPT-Demi" family="Futura PT" pointSize="40"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6N-ik-mK1">
-                                                <rect key="frame" x="0.0" y="67" width="511" height="58.5"/>
+                                                <rect key="frame" x="0.0" y="71.5" width="449" height="64.5"/>
                                                 <string key="text">Please Enter OTP That We Sent On
 Your Registered Mobile Number 99XXXXXX32</string>
                                                 <fontDescription key="fontDescription" name="FuturaPT-Book" family="Futura PT" pointSize="25"/>
@@ -563,10 +562,10 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fLJ-Ht-1Q6">
-                                                <rect key="frame" x="0.0" y="145.5" width="511" height="67"/>
+                                                <rect key="frame" x="0.0" y="156" width="449" height="67"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ENTER OTP" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HRd-uE-Tka">
-                                                        <rect key="frame" x="0.0" y="0.0" width="511" height="67"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="449" height="67"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="67" id="UCc-c2-Bk3"/>
                                                         </constraints>
@@ -584,7 +583,7 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZs-B1-DDy">
-                                        <rect key="frame" x="60" y="222.5" width="455" height="67"/>
+                                        <rect key="frame" x="60" y="233" width="455" height="67"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="67" id="ho8-8v-DQP"/>
                                         </constraints>
@@ -596,7 +595,7 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HyZ-Ue-0WQ">
-                                        <rect key="frame" x="242" y="299.5" width="91" height="31"/>
+                                        <rect key="frame" x="238" y="310" width="99" height="32"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                         <state key="normal" title="Resend OTP">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -623,7 +622,7 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIf-71-beZ">
-                                <rect key="frame" x="839" y="15" width="128" height="29"/>
+                                <rect key="frame" x="854" y="14.5" width="113" height="30"/>
                                 <fontDescription key="fontDescription" name="FuturaPT-Book" family="Futura PT" pointSize="14"/>
                                 <state key="normal" title="Churchgate,Mumbai">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -633,7 +632,7 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2dc-56-t2C">
-                                <rect key="frame" x="466.5" y="630.5" width="91" height="2"/>
+                                <rect key="frame" x="462.5" y="636" width="99" height="2"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="2" id="oHu-Tm-ZD9"/>
@@ -712,22 +711,22 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tGd-3d-6Nm" userLabel="ViewAlert">
-                                <rect key="frame" x="312" y="180" width="400" height="408.5"/>
+                                <rect key="frame" x="312" y="232.5" width="400" height="303.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jUU-Zy-BDM">
-                                        <rect key="frame" x="-60" y="-56" width="520" height="520"/>
+                                        <rect key="frame" x="-50" y="-88.5" width="500" height="480"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ribbon-pieces" translatesAutoresizingMaskIntoConstraints="NO" id="efc-hW-QIj">
-                                                <rect key="frame" x="0.0" y="0.0" width="520" height="520"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="500" height="480"/>
                                             </imageView>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="520" id="Gic-gG-lM5"/>
-                                            <constraint firstAttribute="width" constant="520" id="rsJ-uh-aAL"/>
+                                            <constraint firstAttribute="height" constant="480" id="Gic-gG-lM5"/>
+                                            <constraint firstAttribute="width" constant="500" id="rsJ-uh-aAL"/>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="LIh-7q-ULt">
-                                        <rect key="frame" x="50" y="35" width="300" height="338.5"/>
+                                        <rect key="frame" x="50" y="35" width="300" height="233.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NsW-Wy-T9W" userLabel="Stack View Image">
                                                 <rect key="frame" x="150" y="0.0" width="0.0" height="0.0"/>
@@ -738,7 +737,7 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="GE3-F9-mTT" userLabel="Stack View Congrats and Message">
-                                                <rect key="frame" x="0.0" y="15" width="300" height="221.5"/>
+                                                <rect key="frame" x="0.0" y="15" width="300" height="116.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congratulations!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WKE-h4-hFF">
                                                         <rect key="frame" x="0.0" y="0.0" width="300" height="42"/>
@@ -752,10 +751,8 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                                         <color key="textColor" red="0.098039215686274508" green="0.090196078431372548" blue="0.090196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tkx-qL-fER">
-                                                        <rect key="frame" x="0.0" y="116.5" width="300" height="105"/>
-                                                        <string key="text">Join the virtuous cycle of giving back!
-Get us your old items to earn extra bonus points on your visit to Enrich Salon.</string>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tkx-qL-fER">
+                                                        <rect key="frame" x="0.0" y="116.5" width="300" height="0.0"/>
                                                         <fontDescription key="fontDescription" name="FuturaPT-Book" family="Futura PT" pointSize="18"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -771,7 +768,7 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ucm-x4-Kvz" userLabel="Stack View Image">
-                                                <rect key="frame" x="30" y="251.5" width="240" height="22"/>
+                                                <rect key="frame" x="30" y="146.5" width="240" height="22"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cfp-C0-1ME">
                                                         <rect key="frame" x="0.0" y="0.0" width="240" height="1"/>
@@ -789,7 +786,7 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="HVc-Yc-jD9" userLabel="Stack View Button">
-                                                <rect key="frame" x="40" y="288.5" width="220" height="50"/>
+                                                <rect key="frame" x="40" y="183.5" width="220" height="50"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbg-39-BfP">
                                                         <rect key="frame" x="0.0" y="0.0" width="220" height="50"/>
@@ -812,8 +809,8 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                                         </constraints>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dSg-f6-YgH">
-                                        <rect key="frame" x="50" y="35" width="300" height="338.5"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <rect key="frame" x="50" y="35" width="300" height="233.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ribbon-vertical" translatesAutoresizingMaskIntoConstraints="NO" id="woI-8q-va2">
                                         <rect key="frame" x="355" y="46" width="45" height="140"/>
@@ -823,7 +820,7 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ribbon-horizontal" translatesAutoresizingMaskIntoConstraints="NO" id="d63-CI-To1">
-                                        <rect key="frame" x="-40" y="320" width="120" height="100"/>
+                                        <rect key="frame" x="-40" y="260" width="120" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="120" id="C8e-de-Vwk"/>
                                             <constraint firstAttribute="height" constant="100" id="oJ9-a1-coC"/>
@@ -856,7 +853,7 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                                     <constraint firstAttribute="trailing" secondItem="woI-8q-va2" secondAttribute="trailing" id="UrP-jr-7k0"/>
                                     <constraint firstItem="woI-8q-va2" firstAttribute="top" secondItem="Gem-ud-KS4" secondAttribute="bottom" constant="8" id="X6f-Ip-yRG"/>
                                     <constraint firstItem="jUU-Zy-BDM" firstAttribute="centerY" secondItem="tGd-3d-6Nm" secondAttribute="centerY" id="cjm-ni-jrD"/>
-                                    <constraint firstItem="d63-CI-To1" firstAttribute="top" secondItem="tGd-3d-6Nm" secondAttribute="top" constant="320" id="grp-TK-RLi"/>
+                                    <constraint firstItem="d63-CI-To1" firstAttribute="top" secondItem="tGd-3d-6Nm" secondAttribute="top" constant="260" id="grp-TK-RLi"/>
                                     <constraint firstItem="LIh-7q-ULt" firstAttribute="top" secondItem="tGd-3d-6Nm" secondAttribute="top" constant="35" id="hLq-d5-vIP"/>
                                     <constraint firstItem="LIh-7q-ULt" firstAttribute="leading" secondItem="tGd-3d-6Nm" secondAttribute="leading" constant="50" id="owt-gj-Q3E"/>
                                     <constraint firstAttribute="width" constant="400" id="pn3-LF-iS4"/>
@@ -918,25 +915,25 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright ® 2019 Enrich, All Rights Reserved. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mgn-Ck-qdz">
-                                <rect key="frame" x="386.5" y="729" width="251" height="14"/>
+                                <rect key="frame" x="378" y="728" width="268" height="15"/>
                                 <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="12"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KPMG ® Process Advisors and Evaluators for this contest " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iKc-DD-KqL">
-                                <rect key="frame" x="558" y="726" width="446" height="20"/>
+                                <rect key="frame" x="558" y="725.5" width="446" height="20"/>
                                 <fontDescription key="fontDescription" name="Quicksand-Light" family="Quicksand" pointSize="17"/>
                                 <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms and Conditions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nim-bA-JOG">
-                                <rect key="frame" x="90" y="206" width="273.5" height="33"/>
+                                <rect key="frame" x="90" y="203" width="238.5" height="36"/>
                                 <fontDescription key="fontDescription" name="FuturaPT-Medium" family="Futura PT" pointSize="28"/>
                                 <color key="textColor" red="0.62352941176470589" green="0.10980392156862745" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <wkWebView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WTv-VP-eIi">
-                                <rect key="frame" x="95" y="264" width="849" height="358"/>
+                                <rect key="frame" x="95" y="264" width="849" height="357"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -944,7 +941,7 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                                 </wkWebViewConfiguration>
                             </wkWebView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x3n-Cc-kUp">
-                                <rect key="frame" x="110" y="642" width="203" height="60"/>
+                                <rect key="frame" x="110" y="641" width="203" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="203" id="wNg-J5-rQj"/>
                                 </constraints>
@@ -957,7 +954,7 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bJ-IC-69w">
-                                <rect key="frame" x="323" y="642" width="203" height="57"/>
+                                <rect key="frame" x="323" y="641" width="203" height="57"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="203" id="aUZ-aD-Eqd"/>
@@ -971,7 +968,7 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bef-oB-3ay">
-                                <rect key="frame" x="833" y="15" width="136" height="29"/>
+                                <rect key="frame" x="849" y="14.5" width="120" height="30"/>
                                 <fontDescription key="fontDescription" name="FuturaPT-Book" family="Futura PT" pointSize="14"/>
                                 <state key="normal" title="Churchgate, Mumbai ">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1333,7 +1330,7 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright ® 2021 Enrich. All Rights Reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YCX-9E-5dU">
-                                <rect key="frame" x="367.5" y="730" width="289" height="16.5"/>
+                                <rect key="frame" x="387.5" y="729" width="249" height="18"/>
                                 <fontDescription key="fontDescription" name="FuturaPT-Book" family="Futura PT" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -1391,7 +1388,7 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YBh-Tw-ypx">
-                                                    <rect key="frame" x="220" y="69.5" width="544" height="19"/>
+                                                    <rect key="frame" x="220" y="69" width="544" height="20"/>
                                                     <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -2605,6 +2602,18 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                                     <constraint firstAttribute="height" constant="75" id="VvE-YT-Rna"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nG9-cb-Cyi" customClass="MarqueeLabel" customModule="MarqueeLabel">
+                                <rect key="frame" x="30" y="638" width="964" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="oGn-bc-Z51"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="FuturaPT-Medium" family="Futura PT" pointSize="22"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="forceScrolling" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bW6-FU-I0B"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -2618,11 +2627,13 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                             <constraint firstItem="4uw-g5-MVV" firstAttribute="centerY" secondItem="weq-pw-s4Z" secondAttribute="centerY" id="FhZ-fq-qg7"/>
                             <constraint firstItem="KO0-M2-rKm" firstAttribute="leading" secondItem="bW6-FU-I0B" secondAttribute="leading" constant="17" id="Fp5-qQ-a5M"/>
                             <constraint firstItem="KO0-M2-rKm" firstAttribute="top" secondItem="bW6-FU-I0B" secondAttribute="top" constant="17" id="HJI-jO-UmK"/>
+                            <constraint firstItem="ul1-ad-7wP" firstAttribute="top" secondItem="nG9-cb-Cyi" secondAttribute="bottom" constant="5" id="Hfe-jg-82W"/>
                             <constraint firstItem="a1M-aW-rxx" firstAttribute="centerY" secondItem="p3e-St-UvU" secondAttribute="centerY" multiplier="0.9" constant="139.89999999999998" id="K6H-Vs-Oj3"/>
                             <constraint firstItem="a1M-aW-rxx" firstAttribute="top" secondItem="BDc-hl-soh" secondAttribute="bottom" constant="160" id="LaH-oc-5i4"/>
                             <constraint firstItem="bup-qe-rTn" firstAttribute="top" secondItem="BDc-hl-soh" secondAttribute="top" id="Mxa-63-TKy"/>
                             <constraint firstItem="bW6-FU-I0B" firstAttribute="bottom" secondItem="ul1-ad-7wP" secondAttribute="bottom" constant="30" id="PJj-SB-Opd"/>
                             <constraint firstItem="90Q-jZ-Tof" firstAttribute="top" secondItem="bW6-FU-I0B" secondAttribute="top" constant="17" id="SGf-EV-1tm"/>
+                            <constraint firstItem="bW6-FU-I0B" firstAttribute="trailing" secondItem="nG9-cb-Cyi" secondAttribute="trailing" constant="30" id="SSv-A3-qkS"/>
                             <constraint firstItem="bW6-FU-I0B" firstAttribute="trailing" secondItem="0A9-hz-bPz" secondAttribute="trailing" constant="30" id="Sf5-xI-WIK"/>
                             <constraint firstItem="BDc-hl-soh" firstAttribute="centerX" secondItem="p3e-St-UvU" secondAttribute="centerX" id="Snr-kW-dp1"/>
                             <constraint firstItem="weq-pw-s4Z" firstAttribute="centerX" secondItem="p3e-St-UvU" secondAttribute="centerX" id="Tiu-fs-sS4"/>
@@ -2635,6 +2646,7 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                             <constraint firstItem="cwb-AE-bGr" firstAttribute="top" secondItem="bW6-FU-I0B" secondAttribute="top" constant="10" id="cIs-dk-aZP"/>
                             <constraint firstItem="0A9-hz-bPz" firstAttribute="leading" secondItem="bW6-FU-I0B" secondAttribute="leading" constant="30" id="dsv-XP-2Qq"/>
                             <constraint firstItem="uVz-Wk-3Xe" firstAttribute="centerY" secondItem="weq-pw-s4Z" secondAttribute="centerY" id="eFm-g8-UBZ"/>
+                            <constraint firstItem="nG9-cb-Cyi" firstAttribute="leading" secondItem="bW6-FU-I0B" secondAttribute="leading" constant="30" id="g00-EN-ebK"/>
                             <constraint firstItem="x6c-r5-NP6" firstAttribute="centerY" secondItem="90Q-jZ-Tof" secondAttribute="centerY" id="gL1-k4-TTe"/>
                             <constraint firstItem="bW6-FU-I0B" firstAttribute="trailing" secondItem="90Q-jZ-Tof" secondAttribute="trailing" constant="20" id="gQx-dY-wEF"/>
                             <constraint firstItem="sJl-UO-YbK" firstAttribute="leading" secondItem="weq-pw-s4Z" secondAttribute="trailing" constant="7.5" id="j3m-wI-kWI"/>
@@ -2655,6 +2667,7 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                     </view>
                     <navigationItem key="navigationItem" id="9x2-36-Mwl"/>
                     <connections>
+                        <outlet property="animatedUIView" destination="0A9-hz-bPz" id="xTr-AB-Vmc"/>
                         <outlet property="bannerAdvertise" destination="bup-qe-rTn" id="m1i-RK-TyR"/>
                         <outlet property="btnPlace" destination="x6c-r5-NP6" id="9St-uw-eb3"/>
                         <outlet property="btnRewardSpin" destination="jPa-OD-goR" id="qHR-Xd-vbn"/>
@@ -2662,6 +2675,7 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                         <outlet property="imgEnrichLogo" destination="KO0-M2-rKm" id="YNK-RJ-s3E"/>
                         <outlet property="imgViewBBLogo" destination="cwb-AE-bGr" id="BAJ-9i-Z5Q"/>
                         <outlet property="imgbackground" destination="QmI-8g-knP" id="hCO-gD-YTf"/>
+                        <outlet property="lblAnimation" destination="nG9-cb-Cyi" id="3lZ-8W-muZ"/>
                         <outlet property="lblCopyRight" destination="gfQ-8f-2xZ" id="qab-w6-SqA"/>
                         <outlet property="lblCountPoint5" destination="iPa-5v-gbe" id="ILM-hI-Az3"/>
                         <outlet property="lblDate" destination="BDc-hl-soh" id="lC4-fy-2ju"/>
@@ -2689,6 +2703,7 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                         <outlet property="view4" destination="5th-10-uNP" id="wYe-hP-gjf"/>
                         <outlet property="view5" destination="VFd-KN-eJ9" id="ylh-kE-Z7h"/>
                         <outlet property="viewCount" destination="4uw-g5-MVV" id="Wal-NY-lUo"/>
+                        <outlet property="viewForAllSpins" destination="8Iw-OY-4OX" id="hnY-Qw-Js0"/>
                         <outlet property="viewTotalRewardsRolled" destination="sJl-UO-YbK" id="oeP-kW-7BU"/>
                     </connections>
                 </viewController>
@@ -3628,6 +3643,7 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                                             <constraint firstAttribute="height" constant="150" id="vzx-2B-rRP"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="FuturaPT-Demi" family="Futura PT" pointSize="30"/>
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="20"/>
                                         <state key="normal" title="Spin It" backgroundImage="StartBackground">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -3775,10 +3791,17 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bannerPlaceHolder" translatesAutoresizingMaskIntoConstraints="NO" id="u6V-st-uim">
-                                <rect key="frame" x="144.5" y="17" width="735" height="139"/>
+                                <rect key="frame" x="124.5" y="60" width="735" height="139"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="139" id="Bmx-Zl-w0b"/>
                                     <constraint firstAttribute="width" constant="735" id="aD2-zX-p5j"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="B&amp;BLogo" translatesAutoresizingMaskIntoConstraints="NO" id="yuT-nf-NSU">
+                                <rect key="frame" x="17" y="17" width="87" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="AnJ-3S-0Gy"/>
+                                    <constraint firstAttribute="width" constant="87" id="g3b-Oi-y97"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6am-Er-cQQ">
@@ -3791,8 +3814,8 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                                             <constraint firstAttribute="width" constant="27" id="YEE-g1-kuT"/>
                                         </constraints>
                                     </imageView>
-                                    <button opaque="NO" tag="111" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1LL-Ds-8DT">
-                                        <rect key="frame" x="816" y="40" width="30" height="18"/>
+                                    <button opaque="NO" tag="111" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1LL-Ds-8DT">
+                                        <rect key="frame" x="742" y="40" width="104" height="18"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="18" id="sXZ-eM-KM3"/>
                                         </constraints>
@@ -3815,14 +3838,14 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                                                 <rect key="frame" x="149.5" y="606" width="489" height="0.0"/>
                                                 <subviews>
                                                     <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greenrichLight" translatesAutoresizingMaskIntoConstraints="NO" id="raR-cs-O7v">
-                                                        <rect key="frame" x="0.0" y="-16.5" width="32" height="51"/>
+                                                        <rect key="frame" x="0.0" y="-17" width="32" height="51"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="51" id="cOc-xL-yaY"/>
                                                             <constraint firstAttribute="width" constant="32" id="z9o-A4-i6S"/>
                                                         </constraints>
                                                     </imageView>
                                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2cb-9h-Teg">
-                                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="17.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="16.5"/>
                                                         <string key="text">Information about recycling cardboard materials. Lorem ipsum dolor sit amet. Information about recycling cardboard materials. Lorem ipsum dolor sit amet.</string>
                                                         <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="14"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -4003,13 +4026,6 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                                     <constraint firstItem="JQY-wS-ee5" firstAttribute="leading" secondItem="1LL-Ds-8DT" secondAttribute="trailing" constant="10" id="ygQ-N8-EPY"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="B&amp;BLogo" translatesAutoresizingMaskIntoConstraints="NO" id="yuT-nf-NSU">
-                                <rect key="frame" x="17" y="17" width="87" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="AnJ-3S-0Gy"/>
-                                    <constraint firstAttribute="width" constant="87" id="g3b-Oi-y97"/>
-                                </constraints>
-                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Yk4-xw-PSB">
                                 <rect key="frame" x="18" y="73" width="0.0" height="40"/>
                                 <subviews>
@@ -4021,13 +4037,13 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="82i-xl-WwK">
                                         <subviews>
                                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Great!" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Me8-cw-HiH">
-                                                <rect key="frame" x="0.0" y="0.0" width="222" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="198" height="0.0"/>
                                                 <fontDescription key="fontDescription" name="Delius-Regular" family="Delius" pointSize="24"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are eligible for trial ride." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vt3-jx-tP4">
-                                                <rect key="frame" x="0.0" y="0.0" width="222" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="198" height="0.0"/>
                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -4038,13 +4054,13 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                                         <rect key="frame" x="0.0" y="20" width="0.0" height="0.0"/>
                                         <subviews>
                                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Customer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GKs-fw-M1v">
-                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="20"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="19"/>
                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JHr-oe-7Pz">
-                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="20"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="19"/>
                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -4057,13 +4073,13 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Xwl-H4-nn0">
                                                 <subviews>
                                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No. of trial(s) you have won" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aK9-WS-kMJ">
-                                                        <rect key="frame" x="0.0" y="9" width="0.0" height="20"/>
+                                                        <rect key="frame" x="0.0" y="8" width="0.0" height="19"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgG-G4-3Fb">
-                                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="38"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="35"/>
                                                         <fontDescription key="fontDescription" name="Delius-Regular" family="Delius" pointSize="30"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -4076,13 +4092,13 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="c9f-qe-mOu">
                                                 <subviews>
                                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No. of trial(s) you have taken" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AlI-JG-BDF">
-                                                        <rect key="frame" x="0.0" y="9" width="0.0" height="20"/>
+                                                        <rect key="frame" x="0.0" y="8" width="0.0" height="19"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnf-0P-I1g">
-                                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="38"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="35"/>
                                                         <fontDescription key="fontDescription" name="Delius-Regular" family="Delius" pointSize="30"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -4187,7 +4203,7 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                                 </connections>
                             </button>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright ® 2021 Enrich. All Rights Reserved." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ooy-Bc-8PH">
-                                <rect key="frame" x="389.5" y="725" width="249" height="18"/>
+                                <rect key="frame" x="369.5" y="726.5" width="289" height="16.5"/>
                                 <fontDescription key="fontDescription" name="FuturaPT-Book" family="Futura PT" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -4268,13 +4284,13 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Have &lt;X&gt; Spins. Click On The &quot;Pointer&quot; To Spin The Wheel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kPY-9I-bUQ">
-                                <rect key="frame" x="30" y="636.5" width="964" height="23.5"/>
+                                <rect key="frame" x="30" y="639" width="964" height="21"/>
                                 <fontDescription key="fontDescription" name="FuturaPT-Book" family="Futura PT" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="yY6-nJ-pdU">
-                                <rect key="frame" x="749.5" y="170" width="130" height="94"/>
+                                <rect key="frame" x="729.5" y="210" width="130" height="94"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMB-Pe-bqZ" userLabel="My Reward">
                                         <rect key="frame" x="0.0" y="0.0" width="130" height="42"/>
@@ -4292,6 +4308,18 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hzd-ch-7vc" customClass="MarqueeLabel" customModule="MarqueeLabel">
+                                <rect key="frame" x="30" y="668" width="964" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="QO9-W7-9Lb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="FuturaPT-Medium" family="Futura PT" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="forceScrolling" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7lc-12-S1b"/>
                         <constraints>
@@ -4306,7 +4334,6 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                             <constraint firstItem="yY6-nJ-pdU" firstAttribute="trailing" secondItem="u6V-st-uim" secondAttribute="trailing" id="ELe-AK-Jwx"/>
                             <constraint firstItem="Z4V-BR-8Vn" firstAttribute="top" secondItem="PCN-FC-KUj" secondAttribute="top" id="FN6-9B-iW6"/>
                             <constraint firstItem="7lc-12-S1b" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="yvg-TA-PaO" secondAttribute="bottom" constant="20" id="H9Z-72-jdB"/>
-                            <constraint firstItem="u6V-st-uim" firstAttribute="firstBaseline" secondItem="yuT-nf-NSU" secondAttribute="firstBaseline" id="JPR-vD-2AE"/>
                             <constraint firstItem="75Y-Jn-lv5" firstAttribute="leading" secondItem="Yk4-xw-PSB" secondAttribute="leading" id="JXW-uM-m1K"/>
                             <constraint firstItem="4Il-cf-5A1" firstAttribute="leading" secondItem="7lc-12-S1b" secondAttribute="leading" constant="20" id="Miw-fs-KK5"/>
                             <constraint firstItem="75Y-Jn-lv5" firstAttribute="trailing" secondItem="Yk4-xw-PSB" secondAttribute="trailing" id="Nvb-tV-IG6"/>
@@ -4316,9 +4343,12 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                             <constraint firstItem="6am-Er-cQQ" firstAttribute="trailing" secondItem="7lc-12-S1b" secondAttribute="trailing" constant="-16" id="Twq-mm-O15"/>
                             <constraint firstItem="7lc-12-S1b" firstAttribute="trailing" secondItem="Z4V-BR-8Vn" secondAttribute="trailing" id="WVe-Sx-Icf"/>
                             <constraint firstItem="kPY-9I-bUQ" firstAttribute="leading" secondItem="7lc-12-S1b" secondAttribute="leading" constant="30" id="Y1p-D7-DUr"/>
+                            <constraint firstItem="u6V-st-uim" firstAttribute="top" secondItem="7lc-12-S1b" secondAttribute="top" constant="60" id="YqY-c4-VAM"/>
                             <constraint firstItem="6am-Er-cQQ" firstAttribute="leading" secondItem="yvg-TA-PaO" secondAttribute="trailing" constant="102" id="Z5E-dJ-glK"/>
                             <constraint firstItem="Yk4-xw-PSB" firstAttribute="top" secondItem="yuT-nf-NSU" secondAttribute="bottom" constant="20" id="b8v-6z-ETF"/>
                             <constraint firstItem="yuT-nf-NSU" firstAttribute="top" secondItem="7lc-12-S1b" secondAttribute="top" constant="17" id="biM-iS-JDt"/>
+                            <constraint firstItem="7lc-12-S1b" firstAttribute="bottom" secondItem="Hzd-ch-7vc" secondAttribute="bottom" constant="25" id="fVo-2c-TUc"/>
+                            <constraint firstItem="7lc-12-S1b" firstAttribute="trailing" secondItem="Hzd-ch-7vc" secondAttribute="trailing" constant="30" id="gCf-jl-w26"/>
                             <constraint firstItem="7lc-12-S1b" firstAttribute="trailing" secondItem="4Il-cf-5A1" secondAttribute="trailing" constant="20" id="gSb-SA-BFG"/>
                             <constraint firstItem="7lc-12-S1b" firstAttribute="bottom" secondItem="4Il-cf-5A1" secondAttribute="bottom" constant="25" id="gWh-Ya-H5z"/>
                             <constraint firstItem="yuT-nf-NSU" firstAttribute="leading" secondItem="7lc-12-S1b" secondAttribute="leading" constant="17" id="gs9-po-9Cc"/>
@@ -4326,16 +4356,18 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                             <constraint firstItem="xFv-up-LBM" firstAttribute="top" secondItem="yuT-nf-NSU" secondAttribute="top" id="jw6-AJ-1tu"/>
                             <constraint firstItem="xFv-up-LBM" firstAttribute="leading" secondItem="yuT-nf-NSU" secondAttribute="leading" id="kex-cc-gUp"/>
                             <constraint firstItem="75Y-Jn-lv5" firstAttribute="top" secondItem="qZ6-XU-BNw" secondAttribute="top" constant="-7" id="mvC-Cd-ojp"/>
+                            <constraint firstItem="Hzd-ch-7vc" firstAttribute="leading" secondItem="7lc-12-S1b" secondAttribute="leading" constant="30" id="nfy-8F-G77"/>
                             <constraint firstItem="7lc-12-S1b" firstAttribute="trailing" secondItem="6am-Er-cQQ" secondAttribute="trailing" constant="16" id="rsB-dJ-cl9"/>
                             <constraint firstItem="Yk4-xw-PSB" firstAttribute="leading" secondItem="7lc-12-S1b" secondAttribute="leading" constant="18" id="s0e-GN-0Fz"/>
                             <constraint firstItem="7lc-12-S1b" firstAttribute="trailing" secondItem="kPY-9I-bUQ" secondAttribute="trailing" constant="30" id="tBA-dt-y1v"/>
-                            <constraint firstItem="yY6-nJ-pdU" firstAttribute="top" secondItem="7lc-12-S1b" secondAttribute="top" constant="170" id="u0i-4e-Tg1"/>
-                            <constraint firstItem="u6V-st-uim" firstAttribute="centerX" secondItem="PCN-FC-KUj" secondAttribute="centerX" id="uba-6G-Zb9"/>
+                            <constraint firstItem="yY6-nJ-pdU" firstAttribute="top" secondItem="7lc-12-S1b" secondAttribute="top" constant="210" id="u0i-4e-Tg1"/>
+                            <constraint firstItem="u6V-st-uim" firstAttribute="centerX" secondItem="PCN-FC-KUj" secondAttribute="centerX" constant="-20" id="uba-6G-Zb9"/>
                             <constraint firstItem="ooy-Bc-8PH" firstAttribute="centerX" secondItem="jTt-pq-ge1" secondAttribute="centerX" id="z3v-eN-iWa"/>
                             <constraint firstItem="yvg-TA-PaO" firstAttribute="centerX" secondItem="Yk4-xw-PSB" secondAttribute="centerX" id="zio-ld-kxJ"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="animatedUIView" destination="3bN-n2-a9u" id="4uO-Pj-uhv"/>
                         <outlet property="bannerAdvertise" destination="u6V-st-uim" id="aW6-ca-EXl"/>
                         <outlet property="btnAddColors" destination="j9m-o0-nYM" id="wQx-UQ-f3f"/>
                         <outlet property="btnAqua" destination="isY-z0-e3a" id="UuW-lP-85F"/>
@@ -4354,6 +4386,7 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                         <outlet property="imgEnrich" destination="yuT-nf-NSU" id="JD4-fN-JDu"/>
                         <outlet property="imgPlace" destination="JQY-wS-ee5" id="xcq-UL-2v3"/>
                         <outlet property="imgRightBackground" destination="Z4V-BR-8Vn" id="OiV-rp-Nsc"/>
+                        <outlet property="lblAnimation" destination="Hzd-ch-7vc" id="Qli-cy-VPS"/>
                         <outlet property="lblCopyRight" destination="ooy-Bc-8PH" id="Mpn-7D-tvW"/>
                         <outlet property="lblCustomerName" destination="JHr-oe-7Pz" id="Fvv-Kp-IKJ"/>
                         <outlet property="lblDate" destination="dO8-aQ-3G0" id="z9d-VT-SIP"/>
@@ -4394,7 +4427,7 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bannerPlaceHolder" translatesAutoresizingMaskIntoConstraints="NO" id="9QJ-M5-QiD">
-                                <rect key="frame" x="144.5" y="17" width="735" height="139"/>
+                                <rect key="frame" x="124.5" y="60" width="735" height="139"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="735" id="1cx-h1-dxJ"/>
                                     <constraint firstAttribute="height" constant="139" id="bdY-d1-3iL"/>
@@ -4411,7 +4444,7 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" tag="111" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KGy-pK-eJT">
-                                        <rect key="frame" x="937" y="37.5" width="30" height="30"/>
+                                        <rect key="frame" x="937" y="38" width="30" height="29"/>
                                         <fontDescription key="fontDescription" name="FuturaPT-Book" family="Futura PT" pointSize="14"/>
                                         <state key="normal">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -4421,10 +4454,10 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RuM-TV-tjH">
-                                        <rect key="frame" x="0.0" y="157.5" width="1024" height="610.5"/>
+                                        <rect key="frame" x="0.0" y="157" width="1024" height="611"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Fc-jS-aMO" userLabel="SpinWheel">
-                                                <rect key="frame" x="0.0" y="0.0" width="1024" height="610.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="1024" height="611"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gtu-lA-Qc0" userLabel="SelectColorOptions">
                                                         <rect key="frame" x="0.0" y="30" width="1024" height="779"/>
@@ -4682,17 +4715,17 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                                                 </constraints>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="50P-nK-qal">
-                                                <rect key="frame" x="512" y="610.5" width="0.0" height="0.0"/>
+                                                <rect key="frame" x="512" y="611" width="0.0" height="0.0"/>
                                                 <subviews>
                                                     <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greenrichLight" translatesAutoresizingMaskIntoConstraints="NO" id="ugx-jQ-BSI">
-                                                        <rect key="frame" x="0.0" y="-16.5" width="31.5" height="51"/>
+                                                        <rect key="frame" x="0.0" y="-17" width="31.5" height="51"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="31.5" id="Lns-qN-yzS"/>
                                                             <constraint firstAttribute="height" constant="51" id="ajt-2m-4j6"/>
                                                         </constraints>
                                                     </imageView>
                                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6MN-RJ-is0">
-                                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="17.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="16.5"/>
                                                         <string key="text">Information about recycling cardboard materials. Lorem ipsum dolor sit amet. Information about recycling cardboard materials. Lorem ipsum dolor sit amet.</string>
                                                         <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="14"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -4701,7 +4734,7 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                                                 </subviews>
                                             </stackView>
                                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ceu-3Y-HKE">
-                                                <rect key="frame" x="0.0" y="610.5" width="1024" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="611" width="1024" height="0.0"/>
                                                 <subviews>
                                                     <button opaque="NO" tag="222" contentMode="scaleAspectFit" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Fk-xu-hwU">
                                                         <rect key="frame" x="5" y="-70" width="180" height="50"/>
@@ -5106,13 +5139,13 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                                 </constraints>
                             </view>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright ® 2021 Enrich. All Rights Reserved." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47W-jQ-LOz">
-                                <rect key="frame" x="387.5" y="725" width="249" height="18"/>
+                                <rect key="frame" x="367.5" y="726.5" width="289" height="16.5"/>
                                 <fontDescription key="fontDescription" name="FuturaPT-Book" family="Futura PT" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Have &lt;X&gt; Spins. Click On The &quot;Pointer&quot; To Spin The Wheel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YuO-Q2-5I1">
-                                <rect key="frame" x="30" y="626.5" width="964" height="23.5"/>
+                                <rect key="frame" x="30" y="639" width="964" height="21"/>
                                 <fontDescription key="fontDescription" name="FuturaPT-Book" family="Futura PT" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -5139,7 +5172,7 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pks-p7-lRd">
-                                <rect key="frame" x="749.5" y="170" width="130" height="94"/>
+                                <rect key="frame" x="729.5" y="210" width="130" height="94"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQt-1t-sYA" userLabel="My Reward">
                                         <rect key="frame" x="0.0" y="0.0" width="130" height="42"/>
@@ -5158,7 +5191,7 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p6F-n9-fMv">
-                                <rect key="frame" x="20" y="658" width="984" height="75"/>
+                                <rect key="frame" x="20" y="668" width="984" height="75"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yellow-stripe" translatesAutoresizingMaskIntoConstraints="NO" id="AA3-bu-LK6">
                                         <rect key="frame" x="0.0" y="0.0" width="984" height="75"/>
@@ -5169,7 +5202,7 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="wOT-FE-sQH">
-                                <rect key="frame" x="30" y="658" width="964" height="75"/>
+                                <rect key="frame" x="30" y="668" width="964" height="75"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="VOk-lS-wVR">
                                         <rect key="frame" x="0.0" y="0.0" width="137.5" height="75"/>
@@ -5218,6 +5251,18 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                                     <constraint firstAttribute="height" constant="75" id="IYU-Er-CDV"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kIi-Nw-ZdD" customClass="MarqueeLabel" customModule="MarqueeLabel">
+                                <rect key="frame" x="30" y="668" width="964" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="u8P-CA-v1S"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="FuturaPT-Medium" family="Futura PT" pointSize="22"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="forceScrolling" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0Co-46-6ES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -5229,9 +5274,10 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                             <constraint firstItem="lFQ-G4-jCG" firstAttribute="top" secondItem="ZGZ-Xd-BTy" secondAttribute="top" id="4Qx-51-KHe"/>
                             <constraint firstItem="47W-jQ-LOz" firstAttribute="centerX" secondItem="0Co-46-6ES" secondAttribute="centerX" id="4ft-3o-ARq"/>
                             <constraint firstItem="YuO-Q2-5I1" firstAttribute="leading" secondItem="0Co-46-6ES" secondAttribute="leading" constant="30" id="4r6-Cl-BFC"/>
-                            <constraint firstItem="9QJ-M5-QiD" firstAttribute="centerX" secondItem="ZGZ-Xd-BTy" secondAttribute="centerX" id="7jd-RC-HFt"/>
+                            <constraint firstItem="9QJ-M5-QiD" firstAttribute="centerX" secondItem="ZGZ-Xd-BTy" secondAttribute="centerX" constant="-20" id="7jd-RC-HFt"/>
                             <constraint firstItem="LUP-Ud-f29" firstAttribute="top" secondItem="ZGZ-Xd-BTy" secondAttribute="top" id="8Cd-ac-b8r"/>
                             <constraint firstItem="Xj6-iM-YaL" firstAttribute="width" secondItem="0Co-46-6ES" secondAttribute="width" multiplier="0.35" id="9ka-1K-sMp"/>
+                            <constraint firstItem="0Co-46-6ES" firstAttribute="trailing" secondItem="kIi-Nw-ZdD" secondAttribute="trailing" constant="30" id="D5F-85-UPI"/>
                             <constraint firstItem="p6F-n9-fMv" firstAttribute="leading" secondItem="0Co-46-6ES" secondAttribute="leading" constant="20" id="FWF-S2-EpA"/>
                             <constraint firstItem="lFQ-G4-jCG" firstAttribute="centerX" secondItem="ZGZ-Xd-BTy" secondAttribute="centerX" id="HRW-xN-6ea"/>
                             <constraint firstItem="lFQ-G4-jCG" firstAttribute="trailing" secondItem="0Co-46-6ES" secondAttribute="trailing" id="HYT-Zc-ACy"/>
@@ -5247,19 +5293,21 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                             <constraint firstAttribute="bottom" secondItem="0Co-46-6ES" secondAttribute="bottom" id="aoC-HU-a7s"/>
                             <constraint firstItem="dSI-I7-bk5" firstAttribute="top" secondItem="GRW-Jl-R7z" secondAttribute="top" id="b3F-IY-cQb"/>
                             <constraint firstItem="Xj6-iM-YaL" firstAttribute="leading" secondItem="0Co-46-6ES" secondAttribute="leading" id="bD4-1Y-9EO"/>
-                            <constraint firstItem="0Co-46-6ES" firstAttribute="bottom" secondItem="p6F-n9-fMv" secondAttribute="bottom" constant="35" id="cf5-am-hPB"/>
-                            <constraint firstItem="9QJ-M5-QiD" firstAttribute="firstBaseline" secondItem="GRW-Jl-R7z" secondAttribute="firstBaseline" id="dZ7-uk-TCJ"/>
+                            <constraint firstItem="9QJ-M5-QiD" firstAttribute="top" secondItem="0Co-46-6ES" secondAttribute="top" constant="60" id="cF5-Eg-ICr"/>
+                            <constraint firstItem="0Co-46-6ES" firstAttribute="bottom" secondItem="p6F-n9-fMv" secondAttribute="bottom" constant="25" id="cf5-am-hPB"/>
                             <constraint firstAttribute="leading" secondItem="0Co-46-6ES" secondAttribute="leading" id="eCx-KD-icO"/>
                             <constraint firstItem="Jsw-xo-wjx" firstAttribute="leading" secondItem="0Co-46-6ES" secondAttribute="leading" constant="10" id="ehh-wM-BaA"/>
                             <constraint firstItem="Jsw-xo-wjx" firstAttribute="centerX" secondItem="Xj6-iM-YaL" secondAttribute="centerX" id="hPR-JN-Msf"/>
                             <constraint firstItem="Xj6-iM-YaL" firstAttribute="top" secondItem="GRW-Jl-R7z" secondAttribute="bottom" constant="30" id="hPb-Fj-qew"/>
-                            <constraint firstItem="0Co-46-6ES" firstAttribute="bottom" secondItem="wOT-FE-sQH" secondAttribute="bottom" constant="35" id="i2y-Zx-qXL"/>
-                            <constraint firstItem="pks-p7-lRd" firstAttribute="top" secondItem="0Co-46-6ES" secondAttribute="top" constant="170" id="iC6-bS-roR"/>
+                            <constraint firstItem="0Co-46-6ES" firstAttribute="bottom" secondItem="wOT-FE-sQH" secondAttribute="bottom" constant="25" id="i2y-Zx-qXL"/>
+                            <constraint firstItem="pks-p7-lRd" firstAttribute="top" secondItem="0Co-46-6ES" secondAttribute="top" constant="210" id="iC6-bS-roR"/>
                             <constraint firstItem="0Co-46-6ES" firstAttribute="bottom" secondItem="47W-jQ-LOz" secondAttribute="bottom" constant="25" id="l2e-eG-FR2"/>
                             <constraint firstItem="47W-jQ-LOz" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Xj6-iM-YaL" secondAttribute="bottom" constant="50" id="lR3-BB-des"/>
                             <constraint firstItem="LUP-Ud-f29" firstAttribute="leading" secondItem="0Co-46-6ES" secondAttribute="leading" id="ncu-tZ-RpD"/>
                             <constraint firstItem="p6F-n9-fMv" firstAttribute="top" secondItem="YuO-Q2-5I1" secondAttribute="bottom" constant="8" id="wjU-Np-dsk"/>
+                            <constraint firstItem="0Co-46-6ES" firstAttribute="bottom" secondItem="kIi-Nw-ZdD" secondAttribute="bottom" constant="25" id="x65-l8-Rs5"/>
                             <constraint firstItem="lFQ-G4-jCG" firstAttribute="bottom" secondItem="0Co-46-6ES" secondAttribute="bottom" id="x7k-RE-goQ"/>
+                            <constraint firstItem="kIi-Nw-ZdD" firstAttribute="leading" secondItem="0Co-46-6ES" secondAttribute="leading" constant="30" id="zdP-u0-FIK"/>
                             <constraint firstItem="GRW-Jl-R7z" firstAttribute="top" secondItem="0Co-46-6ES" secondAttribute="top" constant="17" id="zdv-M0-OD4"/>
                         </constraints>
                         <variation key="default">
@@ -5269,6 +5317,7 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="animatedUIView" destination="wOT-FE-sQH" id="SaX-2E-jVm"/>
                         <outlet property="bannerAdvertise" destination="9QJ-M5-QiD" id="UKW-ax-YhT"/>
                         <outlet property="btnAddColors" destination="9Fk-xu-hwU" id="fk9-4B-zaF"/>
                         <outlet property="btnAqua" destination="3VJ-fH-P3I" id="r9R-pD-xUc"/>
@@ -5295,6 +5344,7 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
                         <outlet property="imgEnrich" destination="GRW-Jl-R7z" id="xNk-ml-EsC"/>
                         <outlet property="imgPlace" destination="YoM-Pj-X4a" id="geu-bZ-eiy"/>
                         <outlet property="imgRightBackground" destination="LUP-Ud-f29" id="qhh-dq-7iu"/>
+                        <outlet property="lblAnimation" destination="kIi-Nw-ZdD" id="zIA-1Q-vsF"/>
                         <outlet property="lblBillAmount" destination="F9O-mA-7oU" id="KHH-cg-uE6"/>
                         <outlet property="lblBillNo" destination="TeG-nP-c99" id="kBW-Uo-Bas"/>
                         <outlet property="lblCopyRight" destination="47W-jQ-LOz" id="u43-w7-Xy1"/>
@@ -5329,6 +5379,11 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
         <designable name="3Xi-Lp-IwG">
             <size key="intrinsicContentSize" width="193.5" height="193.5"/>
         </designable>
+        <designable name="Hzd-ch-7vc">
+            <size key="intrinsicContentSize" width="54" height="26"/>
+        </designable>
+        <designable name="kIi-Nw-ZdD"/>
+        <designable name="nG9-cb-Cyi"/>
     </designables>
     <resources>
         <image name="B&amp;BLogo" width="87" height="36"/>
@@ -5399,8 +5454,5 @@ Get us your old items to earn extra bonus points on your visit to Enrich Salon.<
         <image name="whiteBoxBG" width="575" height="437"/>
         <image name="winBigSeason" width="130" height="42"/>
         <image name="yellow-stripe" width="752" height="56"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>
