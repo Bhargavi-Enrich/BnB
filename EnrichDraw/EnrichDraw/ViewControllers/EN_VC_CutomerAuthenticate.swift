@@ -34,7 +34,8 @@ class EN_VC_CutomerAuthenticate: UIViewController,UITextFieldDelegate {
         self.lblCopyRight.text = self.getCopyRight()
 
         // Do any additional setup after loading the view, typically from a nib.
-        
+        txtFieldMobileNumber.attributedPlaceholder = NSAttributedString(string: "MOBILE NUMBER",
+                                                                        attributes: [NSAttributedString.Key.foregroundColor: UIColor(rgb: 0x373737)])
         self.initialSetUp()
     }
     

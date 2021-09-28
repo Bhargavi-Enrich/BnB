@@ -142,8 +142,8 @@
             filePath = "EnrichDraw/ViewControllers/EN_VC_CutomerOTPVerification .swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "681"
-            endingLineNumber = "681"
+            startingLineNumber = "684"
+            endingLineNumber = "684"
             landmarkName = "openWinBigScreen()"
             landmarkType = "7">
          </BreakpointContent>
@@ -158,8 +158,8 @@
             filePath = "EnrichDraw/ViewControllers/EN_VC_CutomerOTPVerification .swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "607"
-            endingLineNumber = "607"
+            startingLineNumber = "610"
+            endingLineNumber = "610"
             landmarkName = "finalFilteredRecords(model:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -192,7 +192,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "288"
             endingLineNumber = "288"
-            landmarkName = "hideColorSection()"
+            landmarkName = "showColorSection()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
