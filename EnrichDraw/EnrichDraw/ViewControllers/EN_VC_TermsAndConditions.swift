@@ -87,13 +87,11 @@ class EN_VC_TermsAndConditions: UIViewController//, UITableViewDataSource, UITab
     self.webViewTermsAndCondition.loadHTMLString(self.campaignDetails.term_condition ?? "", baseURL: nil)
         self.webViewTermsAndCondition!.scrollView.backgroundColor = UIColor.clear
     }
-   
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
     
     @IBAction func actionBtnBack(_ sender: Any) {
         self.appDelegate.appLaunch()

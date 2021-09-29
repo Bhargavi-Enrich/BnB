@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CNc-Mj-PkQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CNc-Mj-PkQ">
     <device id="ipad9_7" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -332,7 +331,6 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="67" id="TIa-7e-Ytl"/>
                                                 </constraints>
-                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="FuturaPT-Demi" family="Futura PT" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
@@ -572,7 +570,7 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                                             <constraint firstAttribute="height" constant="67" id="UCc-c2-Bk3"/>
                                                         </constraints>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <fontDescription key="fontDescription" name="FuturaPT-Demi" family="Futura PT" pointSize="14"/>
+                                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
@@ -716,15 +714,15 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                 <rect key="frame" x="312" y="232.5" width="400" height="303.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jUU-Zy-BDM">
-                                        <rect key="frame" x="-60" y="-108.5" width="520" height="520"/>
+                                        <rect key="frame" x="-50" y="-88.5" width="500" height="480"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ribbon-pieces" translatesAutoresizingMaskIntoConstraints="NO" id="efc-hW-QIj">
-                                                <rect key="frame" x="0.0" y="0.0" width="520" height="520"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="500" height="480"/>
                                             </imageView>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="520" id="Gic-gG-lM5"/>
-                                            <constraint firstAttribute="width" constant="520" id="rsJ-uh-aAL"/>
+                                            <constraint firstAttribute="height" constant="480" id="Gic-gG-lM5"/>
+                                            <constraint firstAttribute="width" constant="500" id="rsJ-uh-aAL"/>
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="LIh-7q-ULt">
@@ -812,7 +810,7 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dSg-f6-YgH">
                                         <rect key="frame" x="50" y="35" width="300" height="233.5"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ribbon-vertical" translatesAutoresizingMaskIntoConstraints="NO" id="woI-8q-va2">
                                         <rect key="frame" x="355" y="46" width="45" height="140"/>
@@ -822,7 +820,7 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ribbon-horizontal" translatesAutoresizingMaskIntoConstraints="NO" id="d63-CI-To1">
-                                        <rect key="frame" x="-40" y="320" width="120" height="100"/>
+                                        <rect key="frame" x="-40" y="260" width="120" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="120" id="C8e-de-Vwk"/>
                                             <constraint firstAttribute="height" constant="100" id="oJ9-a1-coC"/>
@@ -855,7 +853,7 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                     <constraint firstAttribute="trailing" secondItem="woI-8q-va2" secondAttribute="trailing" id="UrP-jr-7k0"/>
                                     <constraint firstItem="woI-8q-va2" firstAttribute="top" secondItem="Gem-ud-KS4" secondAttribute="bottom" constant="8" id="X6f-Ip-yRG"/>
                                     <constraint firstItem="jUU-Zy-BDM" firstAttribute="centerY" secondItem="tGd-3d-6Nm" secondAttribute="centerY" id="cjm-ni-jrD"/>
-                                    <constraint firstItem="d63-CI-To1" firstAttribute="top" secondItem="tGd-3d-6Nm" secondAttribute="top" constant="320" id="grp-TK-RLi"/>
+                                    <constraint firstItem="d63-CI-To1" firstAttribute="top" secondItem="tGd-3d-6Nm" secondAttribute="top" constant="260" id="grp-TK-RLi"/>
                                     <constraint firstItem="LIh-7q-ULt" firstAttribute="top" secondItem="tGd-3d-6Nm" secondAttribute="top" constant="35" id="hLq-d5-vIP"/>
                                     <constraint firstItem="LIh-7q-ULt" firstAttribute="leading" secondItem="tGd-3d-6Nm" secondAttribute="leading" constant="50" id="owt-gj-Q3E"/>
                                     <constraint firstAttribute="width" constant="400" id="pn3-LF-iS4"/>
@@ -2119,10 +2117,10 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="TJE-dJ-aku" userLabel="Stack View 1">
-                                <rect key="frame" x="367.5" y="726.5" width="289" height="16.5"/>
+                                <rect key="frame" x="387.5" y="725" width="249" height="18"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright ® 2021 Enrich. All Rights Reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfQ-8f-2xZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="289" height="16.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="249" height="18"/>
                                         <fontDescription key="fontDescription" name="FuturaPT-Book" family="Futura PT" pointSize="14"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -2193,7 +2191,7 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleAspectFit" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x6c-r5-NP6">
-                                <rect key="frame" x="831" y="15" width="136" height="29"/>
+                                <rect key="frame" x="847" y="14.5" width="120" height="30"/>
                                 <fontDescription key="fontDescription" name="FuturaPT-Book" family="Futura PT" pointSize="14"/>
                                 <state key="normal" title="Churchgate, Mumbai ">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2219,7 +2217,7 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                         <rect key="frame" x="0.0" y="0.0" width="488" height="26"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last three rides &amp; Service reward points won across all Enrich salons" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nFc-Vc-4x4">
-                                                <rect key="frame" x="6" y="5" width="476" height="16.5"/>
+                                                <rect key="frame" x="6" y="4.5" width="476" height="17.5"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2242,10 +2240,10 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                 </subviews>
                             </stackView>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4uw-g5-MVV" userLabel="View Count parent">
-                                <rect key="frame" x="41" y="621" width="131" height="88"/>
+                                <rect key="frame" x="25" y="621" width="147" height="88"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UmT-2f-MSa" userLabel="View 1">
-                                        <rect key="frame" x="0.0" y="0.0" width="131" height="88"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="147" height="88"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="VCornerRadius">
@@ -2254,19 +2252,19 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="htr-60-onf">
-                                        <rect key="frame" x="20" y="21.5" width="91" height="45"/>
+                                        <rect key="frame" x="20" y="21" width="107" height="46.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="FaQ-4U-8NG">
-                                                <rect key="frame" x="0.0" y="0.0" width="91" height="28"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="107" height="28"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vr8-Q9-uKU">
-                                                        <rect key="frame" x="0.0" y="0.0" width="87" height="28"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="103" height="28"/>
                                                         <fontDescription key="fontDescription" name="Delius-Regular" family="Delius" pointSize="26"/>
                                                         <color key="textColor" red="0.0" green="0.57647058819999997" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gGe-eU-cqu">
-                                                        <rect key="frame" x="89" y="0.0" width="2" height="28"/>
+                                                        <rect key="frame" x="105" y="0.0" width="2" height="28"/>
                                                         <color key="backgroundColor" red="0.68627450980000004" green="0.47450980390000003" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="2" id="fnW-vQ-gep"/>
@@ -2279,7 +2277,7 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                                 </subviews>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of rides" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hXi-HW-41N">
-                                                <rect key="frame" x="0.0" y="31" width="91" height="14"/>
+                                                <rect key="frame" x="0.0" y="31" width="107" height="15.5"/>
                                                 <fontDescription key="fontDescription" name="Delius-Regular" family="Delius" pointSize="12"/>
                                                 <color key="textColor" red="0.68627450980000004" green="0.47450980390000003" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -2306,10 +2304,10 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sJl-UO-YbK">
-                                <rect key="frame" x="852" y="621" width="144.5" height="88"/>
+                                <rect key="frame" x="852" y="621" width="157.5" height="88"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0mN-Rv-BPF">
-                                        <rect key="frame" x="0.0" y="0.0" width="144.5" height="88"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="157.5" height="88"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="VCornerRadius">
@@ -2318,16 +2316,16 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="uVz-Wk-3Xe">
-                                        <rect key="frame" x="20" y="20.5" width="104.5" height="47.5"/>
+                                        <rect key="frame" x="20" y="18.5" width="117.5" height="51"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JaR-1F-IOF">
-                                                <rect key="frame" x="0.0" y="0.0" width="104.5" height="30.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="117.5" height="33"/>
                                                 <fontDescription key="fontDescription" name="Delius-Regular" family="Delius" pointSize="26"/>
                                                 <color key="textColor" red="0.0" green="0.57647058819999997" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total rewards rolled" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ERZ-SN-Mna">
-                                                <rect key="frame" x="0.0" y="33.5" width="104.5" height="14"/>
+                                                <rect key="frame" x="0.0" y="36" width="117.5" height="15"/>
                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
                                                 <color key="textColor" red="0.68627450980000004" green="0.47450980390000003" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -2368,7 +2366,7 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mjM-JO-YAv">
-                                                <rect key="frame" x="39" y="46.5" width="47" height="16.5"/>
+                                                <rect key="frame" x="34.5" y="46.5" width="56" height="17.5"/>
                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
                                                 <color key="textColor" red="0.68627450980000004" green="0.47450980390000003" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -2404,7 +2402,7 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g0R-Lf-TMh">
-                                                <rect key="frame" x="39" y="46.5" width="47" height="16.5"/>
+                                                <rect key="frame" x="34.5" y="46.5" width="56" height="17.5"/>
                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
                                                 <color key="textColor" red="0.68627450980000004" green="0.47450980390000003" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -2439,7 +2437,7 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G5O-Nu-rmm">
-                                                <rect key="frame" x="39" y="46.5" width="47" height="16.5"/>
+                                                <rect key="frame" x="34.5" y="46.5" width="56" height="17.5"/>
                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
                                                 <color key="textColor" red="0.68627450980000004" green="0.47450980390000003" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -2474,7 +2472,7 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yr4-9a-FgY">
-                                                <rect key="frame" x="39" y="46.5" width="47" height="18"/>
+                                                <rect key="frame" x="34.5" y="46.5" width="56" height="18"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="18" id="LAZ-1W-Rt5"/>
                                                 </constraints>
@@ -2512,7 +2510,7 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="000000" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPa-5v-gbe">
-                                                <rect key="frame" x="39" y="46.5" width="47" height="16.5"/>
+                                                <rect key="frame" x="34.5" y="46.5" width="56" height="17.5"/>
                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
                                                 <color key="textColor" red="0.68627450980000004" green="0.47450980390000003" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -3200,7 +3198,7 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                         </constraints>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ftz-d6-Hge">
-                                        <rect key="frame" x="372" y="10" width="300" height="32"/>
+                                        <rect key="frame" x="372" y="10" width="300" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="Hyn-s0-kdI"/>
                                             <constraint firstAttribute="width" constant="300" id="Ny6-k4-aEi"/>
@@ -3410,16 +3408,16 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                                         <rect key="frame" x="0.0" y="0.0" width="380" height="380"/>
                                                     </imageView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ge9-vd-nuj">
-                                                        <rect key="frame" x="130" y="45" width="120.5" height="85.5"/>
+                                                        <rect key="frame" x="130.5" y="45" width="119" height="90.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOU WON" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yo3-pO-auT">
-                                                                <rect key="frame" x="0.0" y="0.0" width="120.5" height="29.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="119" height="31.5"/>
                                                                 <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="25"/>
                                                                 <color key="textColor" red="1" green="0.78823529410000004" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R3h-vd-8aE">
-                                                                <rect key="frame" x="0.0" y="44.5" width="120.5" height="41"/>
+                                                                <rect key="frame" x="0.0" y="46.5" width="119" height="44"/>
                                                                 <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="35"/>
                                                                 <color key="textColor" red="0.27058823529999998" green="0.1647058824" blue="0.77647058820000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -3462,16 +3460,16 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                                         </constraints>
                                                     </imageView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="daH-5g-WKN">
-                                                        <rect key="frame" x="40" y="148" width="300" height="84"/>
+                                                        <rect key="frame" x="40" y="145.5" width="300" height="89"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Won" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RBj-bQ-1Ee">
-                                                                <rect key="frame" x="102.5" y="0.0" width="95" height="28"/>
+                                                                <rect key="frame" x="100" y="0.0" width="100.5" height="30"/>
                                                                 <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="24"/>
                                                                 <color key="textColor" red="1" green="0.78823529410000004" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="100000" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddV-Em-NqM">
-                                                                <rect key="frame" x="91.5" y="43" width="117" height="41"/>
+                                                                <rect key="frame" x="90" y="45" width="120.5" height="44"/>
                                                                 <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="35"/>
                                                                 <color key="textColor" red="0.27058823529999998" green="0.1647058824" blue="0.77647058820000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
@@ -3524,7 +3522,7 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                                         </constraints>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You won" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8XF-yG-JQg">
-                                                        <rect key="frame" x="132.5" y="249" width="115" height="25"/>
+                                                        <rect key="frame" x="130" y="246" width="120.5" height="25"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="25" id="2pM-dA-AzG"/>
                                                         </constraints>
@@ -3533,13 +3531,13 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100000" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ybz-er-UQl">
-                                                        <rect key="frame" x="131.5" y="299" width="117" height="41"/>
+                                                        <rect key="frame" x="130" y="296" width="120.5" height="44"/>
                                                         <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="35"/>
                                                         <color key="textColor" red="0.27058823529999998" green="0.1647058824" blue="0.77647058820000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q7Y-Ex-Gjd">
-                                                        <rect key="frame" x="121.5" y="318.5" width="0.0" height="0.0"/>
+                                                        <rect key="frame" x="120" y="317" width="0.0" height="0.0"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -3585,7 +3583,7 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe back and forth to see what you won!!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ql-78-9RA">
-                                        <rect key="frame" x="367" y="85.5" width="290" height="58.5"/>
+                                        <rect key="frame" x="367" y="81.5" width="290" height="62.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="290" id="hFg-JH-j7W"/>
                                         </constraints>
@@ -3645,7 +3643,7 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                             <constraint firstAttribute="height" constant="150" id="vzx-2B-rRP"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="FuturaPT-Demi" family="Futura PT" pointSize="30"/>
-                                        <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="20"/>
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="25"/>
                                         <state key="normal" title="Spin It" backgroundImage="StartBackground">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -3793,10 +3791,17 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bannerPlaceHolder" translatesAutoresizingMaskIntoConstraints="NO" id="u6V-st-uim">
-                                <rect key="frame" x="124.5" y="17" width="735" height="139"/>
+                                <rect key="frame" x="124.5" y="60" width="735" height="139"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="139" id="Bmx-Zl-w0b"/>
                                     <constraint firstAttribute="width" constant="735" id="aD2-zX-p5j"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="B&amp;BLogo" translatesAutoresizingMaskIntoConstraints="NO" id="yuT-nf-NSU">
+                                <rect key="frame" x="17" y="17" width="87" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="AnJ-3S-0Gy"/>
+                                    <constraint firstAttribute="width" constant="87" id="g3b-Oi-y97"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6am-Er-cQQ">
@@ -3809,8 +3814,8 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                             <constraint firstAttribute="width" constant="27" id="YEE-g1-kuT"/>
                                         </constraints>
                                     </imageView>
-                                    <button opaque="NO" tag="111" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1LL-Ds-8DT">
-                                        <rect key="frame" x="816" y="40" width="30" height="18"/>
+                                    <button opaque="NO" tag="111" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1LL-Ds-8DT">
+                                        <rect key="frame" x="742" y="40" width="104" height="18"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="18" id="sXZ-eM-KM3"/>
                                         </constraints>
@@ -3833,14 +3838,14 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                                 <rect key="frame" x="149.5" y="606" width="489" height="0.0"/>
                                                 <subviews>
                                                     <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greenrichLight" translatesAutoresizingMaskIntoConstraints="NO" id="raR-cs-O7v">
-                                                        <rect key="frame" x="0.0" y="-17" width="32" height="51"/>
+                                                        <rect key="frame" x="0.0" y="-16.5" width="32" height="51"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="51" id="cOc-xL-yaY"/>
                                                             <constraint firstAttribute="width" constant="32" id="z9o-A4-i6S"/>
                                                         </constraints>
                                                     </imageView>
                                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2cb-9h-Teg">
-                                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="16.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="17.5"/>
                                                         <string key="text">Information about recycling cardboard materials. Lorem ipsum dolor sit amet. Information about recycling cardboard materials. Lorem ipsum dolor sit amet.</string>
                                                         <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="14"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -4021,13 +4026,6 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                     <constraint firstItem="JQY-wS-ee5" firstAttribute="leading" secondItem="1LL-Ds-8DT" secondAttribute="trailing" constant="10" id="ygQ-N8-EPY"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="B&amp;BLogo" translatesAutoresizingMaskIntoConstraints="NO" id="yuT-nf-NSU">
-                                <rect key="frame" x="17" y="17" width="87" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="AnJ-3S-0Gy"/>
-                                    <constraint firstAttribute="width" constant="87" id="g3b-Oi-y97"/>
-                                </constraints>
-                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Yk4-xw-PSB">
                                 <rect key="frame" x="18" y="73" width="0.0" height="40"/>
                                 <subviews>
@@ -4039,13 +4037,13 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="82i-xl-WwK">
                                         <subviews>
                                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Great!" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Me8-cw-HiH">
-                                                <rect key="frame" x="0.0" y="0.0" width="198" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="222" height="0.0"/>
                                                 <fontDescription key="fontDescription" name="Delius-Regular" family="Delius" pointSize="24"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are eligible for trial ride." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vt3-jx-tP4">
-                                                <rect key="frame" x="0.0" y="0.0" width="198" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="222" height="0.0"/>
                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -4056,13 +4054,13 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                         <rect key="frame" x="0.0" y="20" width="0.0" height="0.0"/>
                                         <subviews>
                                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Customer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GKs-fw-M1v">
-                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="19"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="20"/>
                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JHr-oe-7Pz">
-                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="19"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="20"/>
                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -4075,13 +4073,13 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Xwl-H4-nn0">
                                                 <subviews>
                                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No. of trial(s) you have won" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aK9-WS-kMJ">
-                                                        <rect key="frame" x="0.0" y="8" width="0.0" height="19"/>
+                                                        <rect key="frame" x="0.0" y="9" width="0.0" height="20"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rgG-G4-3Fb">
-                                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="35"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="38"/>
                                                         <fontDescription key="fontDescription" name="Delius-Regular" family="Delius" pointSize="30"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -4094,13 +4092,13 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="c9f-qe-mOu">
                                                 <subviews>
                                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No. of trial(s) you have taken" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AlI-JG-BDF">
-                                                        <rect key="frame" x="0.0" y="8" width="0.0" height="19"/>
+                                                        <rect key="frame" x="0.0" y="9" width="0.0" height="20"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnf-0P-I1g">
-                                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="35"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="38"/>
                                                         <fontDescription key="fontDescription" name="Delius-Regular" family="Delius" pointSize="30"/>
                                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -4205,7 +4203,7 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                 </connections>
                             </button>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright ® 2021 Enrich. All Rights Reserved." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ooy-Bc-8PH">
-                                <rect key="frame" x="369.5" y="726.5" width="289" height="16.5"/>
+                                <rect key="frame" x="389.5" y="725" width="249" height="18"/>
                                 <fontDescription key="fontDescription" name="FuturaPT-Book" family="Futura PT" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -4286,13 +4284,13 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Have &lt;X&gt; Spins. Click On The &quot;Pointer&quot; To Spin The Wheel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kPY-9I-bUQ">
-                                <rect key="frame" x="30" y="639" width="964" height="21"/>
+                                <rect key="frame" x="30" y="636.5" width="964" height="23.5"/>
                                 <fontDescription key="fontDescription" name="FuturaPT-Book" family="Futura PT" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="yY6-nJ-pdU">
-                                <rect key="frame" x="729.5" y="170" width="130" height="94"/>
+                                <rect key="frame" x="729.5" y="210" width="130" height="94"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMB-Pe-bqZ" userLabel="My Reward">
                                         <rect key="frame" x="0.0" y="0.0" width="130" height="42"/>
@@ -4336,7 +4334,6 @@ Your Registered Mobile Number 99XXXXXX32</string>
                             <constraint firstItem="yY6-nJ-pdU" firstAttribute="trailing" secondItem="u6V-st-uim" secondAttribute="trailing" id="ELe-AK-Jwx"/>
                             <constraint firstItem="Z4V-BR-8Vn" firstAttribute="top" secondItem="PCN-FC-KUj" secondAttribute="top" id="FN6-9B-iW6"/>
                             <constraint firstItem="7lc-12-S1b" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="yvg-TA-PaO" secondAttribute="bottom" constant="20" id="H9Z-72-jdB"/>
-                            <constraint firstItem="u6V-st-uim" firstAttribute="firstBaseline" secondItem="yuT-nf-NSU" secondAttribute="firstBaseline" id="JPR-vD-2AE"/>
                             <constraint firstItem="75Y-Jn-lv5" firstAttribute="leading" secondItem="Yk4-xw-PSB" secondAttribute="leading" id="JXW-uM-m1K"/>
                             <constraint firstItem="4Il-cf-5A1" firstAttribute="leading" secondItem="7lc-12-S1b" secondAttribute="leading" constant="20" id="Miw-fs-KK5"/>
                             <constraint firstItem="75Y-Jn-lv5" firstAttribute="trailing" secondItem="Yk4-xw-PSB" secondAttribute="trailing" id="Nvb-tV-IG6"/>
@@ -4346,6 +4343,7 @@ Your Registered Mobile Number 99XXXXXX32</string>
                             <constraint firstItem="6am-Er-cQQ" firstAttribute="trailing" secondItem="7lc-12-S1b" secondAttribute="trailing" constant="-16" id="Twq-mm-O15"/>
                             <constraint firstItem="7lc-12-S1b" firstAttribute="trailing" secondItem="Z4V-BR-8Vn" secondAttribute="trailing" id="WVe-Sx-Icf"/>
                             <constraint firstItem="kPY-9I-bUQ" firstAttribute="leading" secondItem="7lc-12-S1b" secondAttribute="leading" constant="30" id="Y1p-D7-DUr"/>
+                            <constraint firstItem="u6V-st-uim" firstAttribute="top" secondItem="7lc-12-S1b" secondAttribute="top" constant="60" id="YqY-c4-VAM"/>
                             <constraint firstItem="6am-Er-cQQ" firstAttribute="leading" secondItem="yvg-TA-PaO" secondAttribute="trailing" constant="102" id="Z5E-dJ-glK"/>
                             <constraint firstItem="Yk4-xw-PSB" firstAttribute="top" secondItem="yuT-nf-NSU" secondAttribute="bottom" constant="20" id="b8v-6z-ETF"/>
                             <constraint firstItem="yuT-nf-NSU" firstAttribute="top" secondItem="7lc-12-S1b" secondAttribute="top" constant="17" id="biM-iS-JDt"/>
@@ -4362,7 +4360,7 @@ Your Registered Mobile Number 99XXXXXX32</string>
                             <constraint firstItem="7lc-12-S1b" firstAttribute="trailing" secondItem="6am-Er-cQQ" secondAttribute="trailing" constant="16" id="rsB-dJ-cl9"/>
                             <constraint firstItem="Yk4-xw-PSB" firstAttribute="leading" secondItem="7lc-12-S1b" secondAttribute="leading" constant="18" id="s0e-GN-0Fz"/>
                             <constraint firstItem="7lc-12-S1b" firstAttribute="trailing" secondItem="kPY-9I-bUQ" secondAttribute="trailing" constant="30" id="tBA-dt-y1v"/>
-                            <constraint firstItem="yY6-nJ-pdU" firstAttribute="top" secondItem="7lc-12-S1b" secondAttribute="top" constant="170" id="u0i-4e-Tg1"/>
+                            <constraint firstItem="yY6-nJ-pdU" firstAttribute="top" secondItem="7lc-12-S1b" secondAttribute="top" constant="210" id="u0i-4e-Tg1"/>
                             <constraint firstItem="u6V-st-uim" firstAttribute="centerX" secondItem="PCN-FC-KUj" secondAttribute="centerX" constant="-20" id="uba-6G-Zb9"/>
                             <constraint firstItem="ooy-Bc-8PH" firstAttribute="centerX" secondItem="jTt-pq-ge1" secondAttribute="centerX" id="z3v-eN-iWa"/>
                             <constraint firstItem="yvg-TA-PaO" firstAttribute="centerX" secondItem="Yk4-xw-PSB" secondAttribute="centerX" id="zio-ld-kxJ"/>
@@ -4429,7 +4427,7 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bannerPlaceHolder" translatesAutoresizingMaskIntoConstraints="NO" id="9QJ-M5-QiD">
-                                <rect key="frame" x="124.5" y="17" width="735" height="139"/>
+                                <rect key="frame" x="124.5" y="60" width="735" height="139"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="735" id="1cx-h1-dxJ"/>
                                     <constraint firstAttribute="height" constant="139" id="bdY-d1-3iL"/>
@@ -4446,7 +4444,7 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" tag="111" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KGy-pK-eJT">
-                                        <rect key="frame" x="937" y="38" width="30" height="29"/>
+                                        <rect key="frame" x="937" y="37.5" width="30" height="30"/>
                                         <fontDescription key="fontDescription" name="FuturaPT-Book" family="Futura PT" pointSize="14"/>
                                         <state key="normal">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -4456,10 +4454,10 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RuM-TV-tjH">
-                                        <rect key="frame" x="0.0" y="157" width="1024" height="611"/>
+                                        <rect key="frame" x="0.0" y="157.5" width="1024" height="610.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Fc-jS-aMO" userLabel="SpinWheel">
-                                                <rect key="frame" x="0.0" y="0.0" width="1024" height="611"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="1024" height="610.5"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gtu-lA-Qc0" userLabel="SelectColorOptions">
                                                         <rect key="frame" x="0.0" y="30" width="1024" height="779"/>
@@ -4717,17 +4715,17 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                                 </constraints>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="50P-nK-qal">
-                                                <rect key="frame" x="512" y="611" width="0.0" height="0.0"/>
+                                                <rect key="frame" x="512" y="610.5" width="0.0" height="0.0"/>
                                                 <subviews>
                                                     <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greenrichLight" translatesAutoresizingMaskIntoConstraints="NO" id="ugx-jQ-BSI">
-                                                        <rect key="frame" x="0.0" y="-17" width="31.5" height="51"/>
+                                                        <rect key="frame" x="0.0" y="-16.5" width="31.5" height="51"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="31.5" id="Lns-qN-yzS"/>
                                                             <constraint firstAttribute="height" constant="51" id="ajt-2m-4j6"/>
                                                         </constraints>
                                                     </imageView>
                                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6MN-RJ-is0">
-                                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="16.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="17.5"/>
                                                         <string key="text">Information about recycling cardboard materials. Lorem ipsum dolor sit amet. Information about recycling cardboard materials. Lorem ipsum dolor sit amet.</string>
                                                         <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="14"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -4736,7 +4734,7 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                                 </subviews>
                                             </stackView>
                                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ceu-3Y-HKE">
-                                                <rect key="frame" x="0.0" y="611" width="1024" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="610.5" width="1024" height="0.0"/>
                                                 <subviews>
                                                     <button opaque="NO" tag="222" contentMode="scaleAspectFit" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Fk-xu-hwU">
                                                         <rect key="frame" x="5" y="-70" width="180" height="50"/>
@@ -5141,13 +5139,13 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                 </constraints>
                             </view>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright ® 2021 Enrich. All Rights Reserved." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47W-jQ-LOz">
-                                <rect key="frame" x="367.5" y="726.5" width="289" height="16.5"/>
+                                <rect key="frame" x="387.5" y="725" width="249" height="18"/>
                                 <fontDescription key="fontDescription" name="FuturaPT-Book" family="Futura PT" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Have &lt;X&gt; Spins. Click On The &quot;Pointer&quot; To Spin The Wheel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YuO-Q2-5I1">
-                                <rect key="frame" x="30" y="639" width="964" height="21"/>
+                                <rect key="frame" x="30" y="636.5" width="964" height="23.5"/>
                                 <fontDescription key="fontDescription" name="FuturaPT-Book" family="Futura PT" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -5174,7 +5172,7 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pks-p7-lRd">
-                                <rect key="frame" x="729.5" y="170" width="130" height="94"/>
+                                <rect key="frame" x="729.5" y="210" width="130" height="94"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQt-1t-sYA" userLabel="My Reward">
                                         <rect key="frame" x="0.0" y="0.0" width="130" height="42"/>
@@ -5295,14 +5293,14 @@ Your Registered Mobile Number 99XXXXXX32</string>
                             <constraint firstAttribute="bottom" secondItem="0Co-46-6ES" secondAttribute="bottom" id="aoC-HU-a7s"/>
                             <constraint firstItem="dSI-I7-bk5" firstAttribute="top" secondItem="GRW-Jl-R7z" secondAttribute="top" id="b3F-IY-cQb"/>
                             <constraint firstItem="Xj6-iM-YaL" firstAttribute="leading" secondItem="0Co-46-6ES" secondAttribute="leading" id="bD4-1Y-9EO"/>
+                            <constraint firstItem="9QJ-M5-QiD" firstAttribute="top" secondItem="0Co-46-6ES" secondAttribute="top" constant="60" id="cF5-Eg-ICr"/>
                             <constraint firstItem="0Co-46-6ES" firstAttribute="bottom" secondItem="p6F-n9-fMv" secondAttribute="bottom" constant="25" id="cf5-am-hPB"/>
-                            <constraint firstItem="9QJ-M5-QiD" firstAttribute="firstBaseline" secondItem="GRW-Jl-R7z" secondAttribute="firstBaseline" id="dZ7-uk-TCJ"/>
                             <constraint firstAttribute="leading" secondItem="0Co-46-6ES" secondAttribute="leading" id="eCx-KD-icO"/>
                             <constraint firstItem="Jsw-xo-wjx" firstAttribute="leading" secondItem="0Co-46-6ES" secondAttribute="leading" constant="10" id="ehh-wM-BaA"/>
                             <constraint firstItem="Jsw-xo-wjx" firstAttribute="centerX" secondItem="Xj6-iM-YaL" secondAttribute="centerX" id="hPR-JN-Msf"/>
                             <constraint firstItem="Xj6-iM-YaL" firstAttribute="top" secondItem="GRW-Jl-R7z" secondAttribute="bottom" constant="30" id="hPb-Fj-qew"/>
                             <constraint firstItem="0Co-46-6ES" firstAttribute="bottom" secondItem="wOT-FE-sQH" secondAttribute="bottom" constant="25" id="i2y-Zx-qXL"/>
-                            <constraint firstItem="pks-p7-lRd" firstAttribute="top" secondItem="0Co-46-6ES" secondAttribute="top" constant="170" id="iC6-bS-roR"/>
+                            <constraint firstItem="pks-p7-lRd" firstAttribute="top" secondItem="0Co-46-6ES" secondAttribute="top" constant="210" id="iC6-bS-roR"/>
                             <constraint firstItem="0Co-46-6ES" firstAttribute="bottom" secondItem="47W-jQ-LOz" secondAttribute="bottom" constant="25" id="l2e-eG-FR2"/>
                             <constraint firstItem="47W-jQ-LOz" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Xj6-iM-YaL" secondAttribute="bottom" constant="50" id="lR3-BB-des"/>
                             <constraint firstItem="LUP-Ud-f29" firstAttribute="leading" secondItem="0Co-46-6ES" secondAttribute="leading" id="ncu-tZ-RpD"/>
@@ -5382,7 +5380,7 @@ Your Registered Mobile Number 99XXXXXX32</string>
             <size key="intrinsicContentSize" width="193.5" height="193.5"/>
         </designable>
         <designable name="Hzd-ch-7vc">
-            <size key="intrinsicContentSize" width="54" height="26"/>
+            <size key="intrinsicContentSize" width="47.5" height="28.5"/>
         </designable>
         <designable name="kIi-Nw-ZdD"/>
         <designable name="nG9-cb-Cyi"/>
@@ -5456,8 +5454,5 @@ Your Registered Mobile Number 99XXXXXX32</string>
         <image name="whiteBoxBG" width="575" height="437"/>
         <image name="winBigSeason" width="130" height="42"/>
         <image name="yellow-stripe" width="752" height="56"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>

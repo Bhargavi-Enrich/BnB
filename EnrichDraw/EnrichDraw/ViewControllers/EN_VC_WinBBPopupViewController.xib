@@ -92,7 +92,7 @@
                             </constraints>
                         </imageView>
                     </subviews>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="b4d-Jm-ald" secondAttribute="trailing" id="68U-jU-cAQ"/>
                         <constraint firstItem="EDP-7A-fJp" firstAttribute="top" secondItem="b4d-Jm-ald" secondAttribute="bottom" constant="16" id="8OK-Zh-VKU"/>

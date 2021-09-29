@@ -214,19 +214,19 @@ class EN_VC_SpinWheel: UIViewController {
     let iPad12Height:CGFloat = 600
     
     let iPad11Width:CGFloat = 440
-    let iPad11Height:CGFloat = 440
+    let iPad11Height:CGFloat = 440//Checked
     
     let iPadProWidth:CGFloat = 380
-    let iPadProHeight:CGFloat = 380
+    let iPadProHeight:CGFloat = 380  //Checked
     
     let iPadMiniWidth:CGFloat = 380
-    let iPadMiniHeight:CGFloat = 380
+    let iPadMiniHeight:CGFloat = 380  //Checked
     
-    let iPadAirWidth:CGFloat = 340
-    let iPadAirHeight:CGFloat = 340
+    let iPadAirWidth:CGFloat = 400
+    let iPadAirHeight:CGFloat = 400  //Checked
     
-    let iPadWidth:CGFloat = 320
-    let iPadHeight:CGFloat = 320
+    let iPadWidth:CGFloat = 400
+    let iPadHeight:CGFloat = 400 //Checked
     
     let appd:AppDelegate = UIApplication.shared.delegate as! AppDelegate
     
