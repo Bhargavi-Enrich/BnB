@@ -94,7 +94,7 @@ public class CarnivalWheelSlice: FortuneWheelSliceProtocol {
     public var campaignRewardId: Int = 0
     
     public var fontColor: UIColor {
-        return UIColor.white
+        return UIColor.black
     }
     
     public var offsetFromExterior:CGFloat {
