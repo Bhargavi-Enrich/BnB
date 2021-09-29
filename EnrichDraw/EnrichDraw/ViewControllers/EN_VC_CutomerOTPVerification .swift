@@ -68,9 +68,10 @@ class EN_VC_CutomerOTPVerification : UIViewController,UITextFieldDelegate {
         if isTrial {
             callCustomerInfo()
         }
+        
         txtFieldOTP.attributedPlaceholder = NSAttributedString(string: "ENTER OTP",
-                                                                        attributes: [NSAttributedString.Key.foregroundColor: UIColor(rgb: 0x373737)])
-
+                                                                                attributes: [NSAttributedString.Key.foregroundColor: UIColor(rgb: 0x373737)])
+        
     }
     
     override func didReceiveMemoryWarning() {

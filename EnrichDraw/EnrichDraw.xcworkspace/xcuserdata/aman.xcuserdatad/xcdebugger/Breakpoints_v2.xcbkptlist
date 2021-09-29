@@ -78,8 +78,8 @@
             filePath = "EnrichDraw/ViewControllers/EN_VC_SpinWheel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1290"
-            endingLineNumber = "1290"
+            startingLineNumber = "1289"
+            endingLineNumber = "1289"
             landmarkName = "showCongratsMessagePopUp(winningPrice:numberOfSpin:tipMessage:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -94,8 +94,8 @@
             filePath = "EnrichDraw/ViewControllers/EN_VC_SpinWheel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1393"
-            endingLineNumber = "1393"
+            startingLineNumber = "1392"
+            endingLineNumber = "1392"
             landmarkName = "unhideColorOptionsWhenSpinIsRotating()"
             landmarkType = "7">
          </BreakpointContent>
