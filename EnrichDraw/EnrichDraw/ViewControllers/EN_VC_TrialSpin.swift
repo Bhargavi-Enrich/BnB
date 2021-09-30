@@ -347,7 +347,7 @@ class EN_VC_TrialSpin: UIViewController {
     
     func updateSpinLeft(leftSpins:Int)  {
         self.lblNumberOfSpinYouHave.isHidden = leftSpins <= 0
-        self.lblNumberOfSpinYouHave.text =  "You Have \(leftSpins) Spins. Click On The Pointer To Spin The Wheel"
+        self.lblNumberOfSpinYouHave.text =  "You Have \(leftSpins) Spins. Click On The \"Pointer\" To Stop The Wheel!"
     }
     
     @IBAction func actionBtnContinue(_ sender: Any) {

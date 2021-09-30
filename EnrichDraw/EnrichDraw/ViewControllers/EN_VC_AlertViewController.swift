@@ -38,10 +38,10 @@ class EN_VC_AlertViewController: UIViewController {
         self.alertViewSmall.layer.cornerRadius = 20
         self.alertViewSmall.backgroundColor = UIColor.white
         
-        self.spinLeftStackView.isHidden = true
+        self.spinLeftStackView.isHidden =  self.appDelegate.totalEligibleSpinCountsAgainstAllInvoices <= 0
         
         let normalText = "You have "
-        let boldText = self.spinLeftText
+        let boldText = "\(self.appDelegate.totalEligibleSpinCountsAgainstAllInvoices)" + " more spins "
         let normalTextEnd = " left"
         let attributedString = NSMutableAttributedString(string:normalText)
         let attributedStringEnd = NSMutableAttributedString(string:normalTextEnd)
@@ -50,6 +50,8 @@ class EN_VC_AlertViewController: UIViewController {
         attributedString.append(boldString)
         attributedString.append(attributedStringEnd)
         self.spinLeftLabel.attributedText = attributedString
+        
+      
         
         self.btnReadyForNextSpin.setBackgroundImage(UIImage(named: "spinAgain-button"), for: .normal)
         self.btnReadyForNextSpin.setTitle("SPIN AGAIN  >", for: .normal)
@@ -79,6 +81,45 @@ class EN_VC_AlertViewController: UIViewController {
         self.btnReadyForNextSpin.setTitle(btnTitle, for: UIControl.State.normal)
         //self.lblTipsMessage.text = tipMessage
         self.btnReadyForNextSpin.setBackgroundImage(UIImage(named: btnBackgoundImage), for: UIControl.State.normal)
+        
+        
+        if btnTitle.containsIgnoreCase("SPIN AGAIN  >")  {
+            self.btnReadyForNextSpin.setTitleColor(UIColor.black, for: . normal)
+        lblTipsMessage.text = "They have been added to your Enrich Wallet."
+        }
+        
+        else
+        {
+            self.btnReadyForNextSpin.setTitleColor(UIColor.white, for: . normal)
+            self.btnReadyForNextSpin.setBackgroundImage(UIImage(named: "enableButton"), for: UIControl.State.normal)
+            
+
+        }
+        
+        
+//        if btnTitle == "Show All Rewards"
+//        {
+//            self.lblCongratulations.text = "Uh-oh!"
+//            self.lblPrizeWonMessage.text = "You have 0 spins left."
+//            self.spinLeftLabel.text = String (format: "Spend Rs. %@ or more to spin the wheel.",campaignDetails.threshold ?? "")
+//
+//        }
+//        else
+//        {
+//            if btnTitle.containsIgnoreCase("SPIN AGAIN  >")  {
+//                lblTipsMessage.text = "They have been added to your Enrich Wallet."
+//
+//        }
+//        }
+//        if winningMessage?.string == "You have 0 spins left." {
+//            self.spinLeftLabel.text = String (format: "Spend Rs. %@ or more to spin the wheel.",campaignDetails.threshold ?? "")
+//        }
+        
+    
+        
+        self.btnReadyForNextSpin.setTitle(btnTitle, for: UIControl.State.normal)
+        
+        
         
         self.playSound(strSoundName:"chimes.wav" , numberOfLoops: 0)
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {

@@ -1291,7 +1291,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.19;
+				MARKETING_VERSION = 1.3;
 				OTHER_SWIFT_FLAGS = "-DSTAGE -D COCOAPODS";
 				PRODUCT_BUNDLE_IDENTIFIER = com.EnrichSalon.GreenRichSpinWheel;
 				PRODUCT_NAME = Greenrich;
@@ -1478,7 +1478,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.19;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.EnrichSalon.GreenRichSpinWheel;
 				PRODUCT_NAME = Greenrich;
 				PROVISIONING_PROFILE_SPECIFIER = EnrichSpinWheelGreenRich_InHouse;
@@ -1504,7 +1504,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.19;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.EnrichSalon.GreenRichSpinWheel;
 				PRODUCT_NAME = Greenrich;
 				PROVISIONING_PROFILE = "";

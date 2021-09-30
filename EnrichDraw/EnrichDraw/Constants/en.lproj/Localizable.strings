@@ -73,7 +73,7 @@
 "kl_ErrorNoTrials" = "You have already availed all the trials.";
 
 "kl_WonMsg1" = "You have won ";
-"kl_WonMsg2" = " on your ";
+"kl_WonMsg2" = "";
 
 "kl_WonMsg3" = "trial ride.";
 
@@ -82,18 +82,18 @@
 "kl_WonMsg3-cards" = "trial card.";
 "kl_WonMsg3-casino" = "trial slot machine.";
 
-"kl_WonMsgSpin" = "reward ride.";
+"kl_WonMsgSpin" = "";
 "kl_WonMsgSpin-scratchCard" = "scratch card.";
 "kl_WonMsgSpin-dice" = "dice.";
 "kl_WonMsgSpin-cards" = "card.";
 "kl_WonMsgSpin-casino" = "slot machine.";
 
-"kl_WonMsgPts" = " Points";
+"kl_WonMsgPts" = " Reward Points.";
 "kl_WonMsgTotal" = "a total ";
 "kl_ErrorContactAdmin" = "Please contact to admin for rewards. All rewards are availed.";
 "kl_ErrorExhausted" = "All rewards exhausted for this invoice.";
 
-"kl_ReadyForNextSpin" = "Ready for the next ride";
+"kl_ReadyForNextSpin" = "SPIN AGAIN  >"; //"Ready for the next ride";
 
 "kl_RedeemMsg" = " Greenrich reward points which you can redeem at any Enrich Salon on services or products!";
 

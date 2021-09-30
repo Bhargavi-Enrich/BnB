@@ -46,8 +46,8 @@
             filePath = "EnrichDraw/ViewControllers/EN_VC_RewardSpin.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "482"
-            endingLineNumber = "482"
+            startingLineNumber = "483"
+            endingLineNumber = "483"
             landmarkName = "nameOfColor(tag:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -62,10 +62,10 @@
             filePath = "EnrichDraw/ViewControllers/EN_VC_RewardSpin.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "893"
-            endingLineNumber = "893"
-            landmarkName = "configureData(model:)"
-            landmarkType = "7">
+            startingLineNumber = "894"
+            endingLineNumber = "894"
+            landmarkName = "EN_VC_RewardSpin"
+            landmarkType = "21">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -160,8 +160,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "607"
             endingLineNumber = "607"
-            landmarkName = "finalFilteredRecords(model:)"
-            landmarkType = "7">
+            landmarkName = "EN_VC_CutomerOTPVerification"
+            landmarkType = "21">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -192,7 +192,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "288"
             endingLineNumber = "288"
-            landmarkName = "hideColorSection()"
+            landmarkName = "showColorSection()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

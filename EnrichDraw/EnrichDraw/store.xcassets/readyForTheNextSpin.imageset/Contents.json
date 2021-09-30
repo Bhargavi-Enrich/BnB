@@ -1,18 +1,18 @@
 {
   "images" : [
     {
+      "filename" : "Rectangle 14641.png",
       "idiom" : "ipad",
-      "filename" : "CTA pink.png",
       "scale" : "1x"
     },
     {
+      "filename" : "Rectangle 14641@2x.png",
       "idiom" : "ipad",
-      "filename" : "CTA pink@2x.png",
       "scale" : "2x"
     }
   ],
   "info" : {
-    "version" : 1,
-    "author" : "xcode"
+    "author" : "xcode",
+    "version" : 1
   }
 }
