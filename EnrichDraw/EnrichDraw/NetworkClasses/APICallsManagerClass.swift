@@ -380,7 +380,7 @@ class APICallsManagerClass: NSObject
         #elseif RELEASE
         print("RELEASE")
         // BaseUrl = "https://prod.enrichsalon.co.in/rest/V1/"
-        BaseUrl = "https://enrichbeauty.com/rest/V1/"
+        BaseUrl = "https://www.enrichbeauty.com/rest/V1/"
         
         #endif
         
@@ -402,7 +402,7 @@ class APICallsManagerClass: NSObject
         
         #elseif PRODUCTION
         //BaseUrl = "http://beautyandbling.enrichsalon.com:8080/enrich" // This is now Live
-        BaseUrl = "https://enrichbeauty.com" // This is now Live
+        BaseUrl = "https://www.enrichbeauty.com" // This is now Live
         
         #endif
         var finalEndpoint = ""

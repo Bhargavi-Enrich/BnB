@@ -210,6 +210,10 @@ class EN_VC_AdminAuthentication: UIViewController,UITextFieldDelegate {
                     self.showAlert(alertTitle: "ServerError", alertMessage: msg)
                 }
                 else{
+                    if let msg = errorMsg
+                    {
+                        print("ErrorMessage: \(msg)")
+                    }
                     self.showAlert(alertTitle: "Alert!", alertMessage: "Invalid user name and password.")
                 }
             }else
