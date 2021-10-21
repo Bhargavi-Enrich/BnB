@@ -342,7 +342,7 @@ extension EN_VC_AdminAuthentication
                     UserDefaultUtility.shared.saveModelObjectToSharedPreference(data: encodedData!, strKey: UserDefaultKeys.modelRunningCampaingSelected)
 
                     let spinWheelController = EN_VC_LandingScreen.instantiate(fromAppStoryboard: .Main)
-                  spinWheelController.objModelRunningCampaignList = repos
+                    spinWheelController.objModelRunningCampaignList = repos
                     spinWheelController.storeDetails = self.storeDetails
                     spinWheelController.campaignDetails = self.campaignDetails
                     self.navigationController?.pushViewController(spinWheelController, animated: false)

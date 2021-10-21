@@ -48,8 +48,8 @@ public enum Style {
             case .darkRed: return TTUtils.uiColor(from:0xF2574C)
             case .lightRed: return TTUtils.uiColor(from:0xFF928A)
             
-            case .darkYellow: return TTUtils.uiColor(from:0xEF8B38)
-            case .lightYellow: return TTUtils.uiColor(from:0xF8CC46)
+            case .darkYellow: return TTUtils.uiColor(from:0xF8CC46)
+            case .lightYellow: return TTUtils.uiColor(from:0xB6281C)
             
             case .darkGreen: return TTUtils.uiColor(from:0x9FDB61)
             case .lightGreen: return TTUtils.uiColor(from:0xD9FFAC)
@@ -93,9 +93,7 @@ public class CarnivalWheelSlice: FortuneWheelSliceProtocol {
     public var rewardCount: Int = 0
     public var campaignRewardId: Int = 0
     
-    public var fontColor: UIColor {
-        return UIColor.white
-    }
+    public var fontColor:UIColor = .black
     
     public var offsetFromExterior:CGFloat {
         return 10.0
@@ -106,8 +104,8 @@ public class CarnivalWheelSlice: FortuneWheelSliceProtocol {
         case .darkRed: return TTUtils.uiColor(from:0xF2574C)
         case .lightRed: return TTUtils.uiColor(from:0xFF928A)
             
-        case .darkYellow: return TTUtils.uiColor(from:0xEF8B38)
-        case .lightYellow: return TTUtils.uiColor(from:0xF8CC46)
+        case .darkYellow: return TTUtils.uiColor(from:0xF8CC46)
+        case .lightYellow: return TTUtils.uiColor(from:0xB6281C)
             
         case .darkGreen: return TTUtils.uiColor(from:0x9FDB61)
         case .lightGreen: return TTUtils.uiColor(from:0xD9FFAC)
