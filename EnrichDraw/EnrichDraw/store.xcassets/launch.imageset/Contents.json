@@ -2,18 +2,13 @@
   "images" : [
     {
       "filename" : "1st.png",
-      "idiom" : "universal",
+      "idiom" : "ipad",
       "scale" : "1x"
     },
     {
       "filename" : "1st@2x.png",
-      "idiom" : "universal",
+      "idiom" : "ipad",
       "scale" : "2x"
-    },
-    {
-      "filename" : "1st@3x.png",
-      "idiom" : "universal",
-      "scale" : "3x"
     }
   ],
   "info" : {

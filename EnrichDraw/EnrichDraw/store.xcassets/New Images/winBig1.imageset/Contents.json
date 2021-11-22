@@ -1,8 +1,14 @@
 {
   "images" : [
     {
-      "filename" : "Group 15122.pdf",
-      "idiom" : "universal"
+      "filename" : "Group 15777.png",
+      "idiom" : "ipad",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "Group 15777@2x.png",
+      "idiom" : "ipad",
+      "scale" : "2x"
     }
   ],
   "info" : {

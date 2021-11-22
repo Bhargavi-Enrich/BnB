@@ -16,7 +16,7 @@ class EN_Service_GetStoreDetails {
         
         var urlEndpoint = APICallsManagerClass.shared.createUrl(endPoint: ConstantAPINames.getStoreDetails)
         urlEndpoint = String(format:"%@%@?is_custom=true",urlEndpoint,email)
-        print("getStoreDetails : \(urlEndpoint)")
+        //print("getStoreDetails : \(urlEndpoint)")
         APICallsManagerClass.shared.getAPICall(urlString: urlEndpoint) { (errorCode, errorMsg, dictData) in
             callback(errorCode, errorMsg, dictData)
         }

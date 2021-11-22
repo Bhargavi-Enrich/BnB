@@ -1,8 +1,14 @@
 {
   "images" : [
     {
-      "filename" : "WHEEL_POINTER_DOWN.png",
-      "idiom" : "ipad"
+      "filename" : "WheelPointer_544-1.png",
+      "idiom" : "ipad",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "WheelPointer_544.png",
+      "idiom" : "ipad",
+      "scale" : "2x"
     }
   ],
   "info" : {

@@ -1065,16 +1065,27 @@ class EN_VC_SpinWheel: UIViewController {
         //    self.setScratchCardViewBackgroundColors(lightColor: lightColor,darkColor : darkColor , userSelectedIndex: userSelectedIndex)
         
         spinningWheel.slices.enumerated().forEach { (pair) in
-            let slice = pair.element as! CarnivalWheelSlice
-            let offset = pair.offset
-            switch offset % 4 {
-            case 0: slice.style = darkColor
-            case 1: slice.style = lightColor
-            case 2: slice.style = darkColor
-            case 3: slice.style = lightColor
-            default: slice.style = darkColor
-            }
-        }
+                    let slice = pair.element as! CarnivalWheelSlice
+                    let offset = pair.offset
+                    switch offset % 4 {
+                    case 0:
+                        slice.style = darkColor
+                        slice.fontColor = .white
+                   
+                    case 1: slice.style = lightColor
+                        slice.fontColor = .white
+
+                    case 2: slice.style = darkColor
+                        slice.fontColor = .white
+
+                    case 3: slice.style = lightColor
+                        slice.fontColor = .white
+
+                    default: slice.style = darkColor
+                        slice.fontColor = .white
+
+                    }
+                }
     }
     
     func setScratchCardViewBackgroundColors(lightColor: Style,darkColor : Style , userSelectedIndex: Int){

@@ -30,7 +30,7 @@ class LocalJSONStore<T> where T : Codable {
             let data = try JSONEncoder().encode(object)
             try data.write(to: fileURL)
         } catch let e {
-            print("ERROR: \(e)")
+            //print("ERROR: \(e)")
         }
     }
     
@@ -43,7 +43,7 @@ class LocalJSONStore<T> where T : Codable {
             let jsonDecoder = JSONDecoder()
             return try jsonDecoder.decode(T.self, from: data)
         } catch let e {
-            print("ERROR: \(e)")
+            //print("ERROR: \(e)")
             return nil
         }
     }

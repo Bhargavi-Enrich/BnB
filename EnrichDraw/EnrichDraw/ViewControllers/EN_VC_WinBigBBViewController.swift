@@ -9,7 +9,7 @@ import UIKit
 
 class EN_VC_WinBigBBViewController: UIViewController {
 
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var imgBackgroundImageView: UIImageView!
     @IBOutlet weak var lblCopyRight: UILabel!
     @IBOutlet private weak var imgEnrichLogo: UIImageView!
 
@@ -26,39 +26,46 @@ class EN_VC_WinBigBBViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.lblCopyRight.text = self.getCopyRight()
-        self.imageView.isUserInteractionEnabled = true
+        self.imgBackgroundImageView.isUserInteractionEnabled = true
         self.imgEnrichLogo.isUserInteractionEnabled = true
 
-                let tapGestureImage = UITapGestureRecognizer(target: self, action: #selector(self.tapImage))
-                self.imageView.addGestureRecognizer(tapGestureImage)
+        let tapGestureImage = UITapGestureRecognizer(target: self, action: #selector(self.tapImage))
+        self.imgBackgroundImageView.addGestureRecognizer(tapGestureImage)
        
         let tapGestureLogo = UITapGestureRecognizer(target: self, action: #selector(self.tapLogo))
         self.imgEnrichLogo.addGestureRecognizer(tapGestureLogo)
 
-        
-        if let logoDetails = self.campaignDetails.campaign_win_bnb_big_image, let urlObj = logoDetails.url {
-            DispatchQueue.global().async { [weak self] in
-                if let data = try? Data(contentsOf: URL(string: urlObj)!) {
-                    if let image = UIImage(data: data) {
-                        DispatchQueue.main.async {
-                            self?.imageView.image = image
-                        }
-                    }
-                }
-            }
-        }
-        
-        
+        self.setBackgroundImage()
         
     }
     
-        
-    @objc func tapImage(){
-            openRewardSpinScreen()
+    func setBackgroundImage(){
+        if let logoDetails = self.campaignDetails.campaign_win_bnb_big_image, let urlObj = logoDetails.url {
+            self.downloadImage(from: URL(string: urlObj)!)
         }
+    }
+    
+    func downloadImage(from url: URL) {
+        self.getData(from: url) { data, response, error in
+            guard let data = data, error == nil else { return }
+            DispatchQueue.main.async() { [weak self] in
+                self?.imgBackgroundImageView.image = UIImage(data: data)
+            }
+        }
+    }
+    
+    func getData(from url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
+        URLSession.shared.dataTask(with: url, completionHandler: completion).resume()
+    }
+    
+    @objc func tapImage(){
+        openRewardSpinScreen()
+    }
+    
     @objc func tapLogo(){
         self.navigationController?.popViewController(animated: true)
-        }
+    }
+    
     func openRewardSpinScreen() {
         let spinWheelController = EN_VC_RewardSpin.instantiate(fromAppStoryboard: .Main)
         spinWheelController.customerDetails = self.customerDetails

@@ -1,15 +1,18 @@
 {
   "images" : [
     {
-      "filename" : "Group 15123.pdf",
-      "idiom" : "universal"
+      "filename" : "BG.png",
+      "idiom" : "ipad",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "BG@2x.png",
+      "idiom" : "ipad",
+      "scale" : "2x"
     }
   ],
   "info" : {
     "author" : "xcode",
     "version" : 1
-  },
-  "properties" : {
-    "preserves-vector-representation" : true
   }
 }

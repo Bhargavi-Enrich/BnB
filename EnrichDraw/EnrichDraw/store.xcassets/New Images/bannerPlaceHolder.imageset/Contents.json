@@ -1,12 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "d_10x.pdf",
+      "filename" : "10X_D.pdf",
       "idiom" : "universal"
     }
   ],
   "info" : {
     "author" : "xcode",
     "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
   }
 }

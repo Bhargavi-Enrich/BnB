@@ -58,7 +58,7 @@ class APICallsManagerClass: NSObject
         
         session = self.setConfiguration()
         
-        print("URL-\(url)")
+        //print("URL-\(url)")
         
         session?.dataTask(with: request! as URLRequest, completionHandler: { data, response, error -> Void in
             
@@ -67,7 +67,7 @@ class APICallsManagerClass: NSObject
                     do {
                         if let json = try JSONSerialization.jsonObject(with: data) as? Dictionary<String, AnyObject> {
                             DispatchQueue.main.async {
-                                print(json)
+                                //print(json)
                                 callback(ReturnErrorCode.Success.rawValue, nil, json)
                                 
                             }
@@ -119,7 +119,7 @@ class APICallsManagerClass: NSObject
         
         request = URLRequest(url: URL(string: urlString)!)
         request?.httpMethod = "POST"
-        print("POST URL : \(request?.url?.description ?? "")")
+        //print("POST URL : \(request?.url?.description ?? "")")
         
         if isHeader
         {
@@ -135,8 +135,8 @@ class APICallsManagerClass: NSObject
         
         session = self.setConfiguration()
         let str = String(decoding: (request?.httpBody)!, as: UTF8.self)
-        print("httpBody : \(str)")
-        print("headers : \(request?.allHTTPHeaderFields ?? [:])")
+        //print("httpBody : \(str)")
+        //print("headers : \(request?.allHTTPHeaderFields ?? [:])")
         
         session?.dataTask(with: request! as URLRequest, completionHandler: { data, response, error -> Void in
             
@@ -148,7 +148,7 @@ class APICallsManagerClass: NSObject
                     do {
                         let json = try JSONSerialization.jsonObject(with: data) as! Dictionary<String, AnyObject>
                         DispatchQueue.main.async {
-                            print("Response : \(json)")
+                            //print("Response : \(json)")
                             callback(ReturnErrorCode.Success.rawValue, nil, json)
                         }
                         
@@ -227,7 +227,7 @@ class APICallsManagerClass: NSObject
                     do {
                         let json = try JSONSerialization.jsonObject(with: data) as! Dictionary<String, AnyObject>
                         DispatchQueue.main.async {
-                            print("Response : \(json)")
+                            //print("Response : \(json)")
                             callback(ReturnErrorCode.Success.rawValue, nil, json)
                         }
                         
@@ -519,7 +519,7 @@ extension APICallsManagerClass
                 //{"message":"Token generated successfully","success":true,"data":{"access_token":"dh9gjd18ic7vyfckrg1s0uayysusnc4r"}}
                 
                 if let dictObj = dictData, let status = dictObj["success"] as? Bool, status == true, let dataObj = dictObj["data"] as? [String : String] {
-                    print("dataObj : \(dataObj)")
+                    //print("dataObj : \(dataObj)")
                     //userDetails["access_token"] = dataObj["access_token"]
                     
                     userDetails.access_token = dataObj["access_token"]
