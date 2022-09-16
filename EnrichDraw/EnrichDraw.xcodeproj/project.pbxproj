@@ -25,6 +25,7 @@
 		07D6C2D826FB4AC70048A3C0 /* FuturaPTLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 07D6C2D126FB4AC70048A3C0 /* FuturaPTLight.otf */; };
 		07D6C2D926FB4AC70048A3C0 /* FuturaPTHeavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 07D6C2D226FB4AC70048A3C0 /* FuturaPTHeavy.otf */; };
 		07D6C2DA26FB4AC70048A3C0 /* FuturaPTMedium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 07D6C2D326FB4AC70048A3C0 /* FuturaPTMedium.otf */; };
+		0C62487728C87A5600179DA8 /* Credentials.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0C62487628C87A5600179DA8 /* Credentials.rtf */; };
 		140D2F8522BCBD6A00F61CC6 /* ConstantStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140D2F8422BCBD6A00F61CC6 /* ConstantStrings.swift */; };
 		1410B89224D96CD400205A2F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1410B89124D96CD400205A2F /* WebKit.framework */; };
 		141C1447214F733400BE8CE4 /* CampaignDetails.json in Resources */ = {isa = PBXBuildFile; fileRef = 141C1445214F733400BE8CE4 /* CampaignDetails.json */; };
@@ -210,6 +211,7 @@
 		07D6C2D126FB4AC70048A3C0 /* FuturaPTLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FuturaPTLight.otf; sourceTree = "<group>"; };
 		07D6C2D226FB4AC70048A3C0 /* FuturaPTHeavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FuturaPTHeavy.otf; sourceTree = "<group>"; };
 		07D6C2D326FB4AC70048A3C0 /* FuturaPTMedium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FuturaPTMedium.otf; sourceTree = "<group>"; };
+		0C62487628C87A5600179DA8 /* Credentials.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credentials.rtf; sourceTree = "<group>"; };
 		140D2F8422BCBD6A00F61CC6 /* ConstantStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantStrings.swift; sourceTree = "<group>"; };
 		1410B89124D96CD400205A2F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		141C1445214F733400BE8CE4 /* CampaignDetails.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CampaignDetails.json; sourceTree = "<group>"; };
@@ -743,6 +745,7 @@
 				677BC62121413324008D4718 /* ErrorCodeHandlerClass.swift */,
 				677BC61D21413309008D4718 /* APICallsManagerClass.swift */,
 				677BC61E2141330A008D4718 /* NetworkRechability.swift */,
+				0C62487628C87A5600179DA8 /* Credentials.rtf */,
 			);
 			path = NetworkClasses;
 			sourceTree = "<group>";
@@ -928,6 +931,7 @@
 				14AE687C212D6CD5004E2338 /* error.aac in Resources */,
 				B7672C282332B06400354157 /* slot.mp3 in Resources */,
 				14AE687D212D6CD5004E2338 /* victory.aac in Resources */,
+				0C62487728C87A5600179DA8 /* Credentials.rtf in Resources */,
 				14AFB51E215A6120006284F5 /* animationsteps2.m4v in Resources */,
 				F852AE2A251B542400446F04 /* Montserrat-Light.ttf in Resources */,
 				F88282D425149585007338C6 /* RecycleItemCell.xib in Resources */,
@@ -1284,18 +1288,18 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3B26WTCHRP;
+				DEVELOPMENT_TEAM = 6J3323TT3U;
 				INFOPLIST_FILE = EnrichDraw/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.4;
+				MARKETING_VERSION = 1.5;
 				OTHER_SWIFT_FLAGS = "-DSTAGE -D COCOAPODS";
-				PRODUCT_BUNDLE_IDENTIFIER = com.EnrichSalon.GreenRichSpinWheel;
+				PRODUCT_BUNDLE_IDENTIFIER = com.EnrichSalon.SpinWheelStage;
 				PRODUCT_NAME = "Beauty&Bling";
-				PROVISIONING_PROFILE_SPECIFIER = EnrichSpinWheelGreenRich_InHouse;
+				PROVISIONING_PROFILE_SPECIFIER = SpinWheelStage_AppStore;
 				SWIFT_OBJC_BRIDGING_HEADER = "EnrichDraw/Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -1478,7 +1482,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.4;
+				MARKETING_VERSION = 1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.EnrichSalon.GreenRichSpinWheel;
 				PRODUCT_NAME = "Beauty&Bling";
 				PROVISIONING_PROFILE_SPECIFIER = EnrichSpinWheelGreenRich_InHouse;
@@ -1504,7 +1508,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.4;
+				MARKETING_VERSION = 1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.EnrichSalon.GreenRichSpinWheel;
 				PRODUCT_NAME = "Beauty&Bling";
 				PROVISIONING_PROFILE = "";

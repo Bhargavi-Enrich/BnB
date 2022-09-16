@@ -376,7 +376,7 @@ class APICallsManagerClass: NSObject
         BaseUrl =  "https://dev.enrichbeauty.com/rest/V1/"
         #elseif STAGE
         print("STAGE")
-        BaseUrl =  "https://stage.enrichbeauty.com/rest/V1/"
+        BaseUrl =  "https://preprod.enrichbeauty.com/rest/V1/"
         #elseif RELEASE
         print("RELEASE")
         // BaseUrl = "https://prod.enrichsalon.co.in/rest/V1/"
@@ -398,7 +398,7 @@ class APICallsManagerClass: NSObject
         
         #elseif STAGING
         // BaseUrl = "http://104.211.216.153:8080/enrich" // This in Now Public
-        BaseUrl = "https://stage.enrichbeauty.com" // This in Now Public
+        BaseUrl = "https://preprod.enrichbeauty.com" // This in Now Public
         
         #elseif PRODUCTION
         //BaseUrl = "http://beautyandbling.enrichsalon.com:8080/enrich" // This is now Live

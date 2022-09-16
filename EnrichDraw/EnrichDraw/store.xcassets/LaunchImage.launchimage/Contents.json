@@ -2,7 +2,7 @@
   "images" : [
     {
       "extent" : "full-screen",
-      "filename" : "1st.png",
+      "filename" : "LaunchImage.png",
       "idiom" : "ipad",
       "minimum-system-version" : "7.0",
       "orientation" : "landscape",
@@ -10,7 +10,7 @@
     },
     {
       "extent" : "full-screen",
-      "filename" : "1st@2x.png",
+      "filename" : "LaunchImage@2x.png",
       "idiom" : "ipad",
       "minimum-system-version" : "7.0",
       "orientation" : "landscape",
