@@ -38,7 +38,7 @@ class EN_VC_CutomerAuthenticate: UIViewController,UITextFieldDelegate {
         self.initialSetUp()
         
         txtFieldMobileNumber.attributedPlaceholder = NSAttributedString(string: "MOBILE NUMBER",
-                                                                                attributes: [NSAttributedString.Key.foregroundColor: UIColor(rgb: 0x373737)])
+                                                                        attributes: [NSAttributedString.Key.foregroundColor: UIColor.black.withAlphaComponent(0.4)])
     }
     
     override func didReceiveMemoryWarning() {
@@ -62,7 +62,7 @@ class EN_VC_CutomerAuthenticate: UIViewController,UITextFieldDelegate {
                 if let data = try? Data(contentsOf: URL(string: urlObj)!) {
                     if let image = UIImage(data: data) {
                         DispatchQueue.main.async {
-                            self?.imgbackground.image = image
+                            //self?.imgbackground.image = image
                         }
                     }
                 }
@@ -82,7 +82,7 @@ class EN_VC_CutomerAuthenticate: UIViewController,UITextFieldDelegate {
         }
         
       //  if isTrial {
-            lblInfoMessage.text = "Sign In Using Mobile Number"
+            lblInfoMessage.text = "SIGN-IN USING MOBILE NUMBER"
             txtFieldInvoiceNumber.isHidden = true
 //        }
 //        else {

@@ -24,9 +24,6 @@
         <array key="FuturaPTMedium.otf">
             <string>FuturaPT-Medium</string>
         </array>
-        <array key="Montserrat-Light.ttf">
-            <string>Montserrat-Light</string>
-        </array>
         <array key="Montserrat-Regular.ttf">
             <string>Montserrat-Regular</string>
         </array>
@@ -47,6 +44,23 @@
         </array>
     </customFonts>
     <scenes>
+        <!--Navigation ControllerAdminAuthenitication-->
+        <scene sceneID="eSC-gL-HSg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="CNc-Mj-PkQ" userLabel="Navigation ControllerAdminAuthenitication" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NoF-sm-ueO">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="nwr-Vp-dc2" kind="relationship" relationship="rootViewController" id="A8e-sW-gkp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Rv-WZ-Qzi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="111" y="8"/>
+        </scene>
         <!--EN_VC_AdminAuthentication-->
         <scene sceneID="OP2-3h-9Tr">
             <objects>
@@ -59,10 +73,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whiteBoxBG" translatesAutoresizingMaskIntoConstraints="NO" id="DfZ-hi-8Sq">
-                                <rect key="frame" x="224.5" y="165.5" width="575" height="437"/>
+                                <rect key="frame" x="197" y="156" width="630" height="456"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="437" id="EnU-X5-py3"/>
-                                    <constraint firstAttribute="width" constant="575" id="Jda-gJ-iLi"/>
+                                    <constraint firstAttribute="height" constant="456" id="EnU-X5-py3"/>
+                                    <constraint firstAttribute="width" constant="630" id="Jda-gJ-iLi"/>
                                 </constraints>
                             </imageView>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="VSp-KA-ajr">
@@ -73,13 +87,13 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="gMo-Ao-WOG" userLabel="Stack View Parent">
-                                <rect key="frame" x="224.5" y="205.5" width="575" height="357"/>
+                                <rect key="frame" x="197" y="205.5" width="630" height="357"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-10" translatesAutoresizingMaskIntoConstraints="NO" id="0WJ-GO-seB" userLabel="Stack View 1">
-                                        <rect key="frame" x="0.0" y="0.0" width="575" height="104"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="630" height="104"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOGIN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ew1-cI-2lr">
-                                                <rect key="frame" x="0.0" y="0.0" width="575" height="57"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="630" height="57"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="57" id="h05-9f-cas"/>
                                                 </constraints>
@@ -88,7 +102,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SIGN-IN USING STORE ID" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HxQ-pU-a2A">
-                                                <rect key="frame" x="0.0" y="47" width="575" height="57"/>
+                                                <rect key="frame" x="0.0" y="47" width="630" height="57"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="57" id="AX7-jL-eCB"/>
                                                 </constraints>
@@ -99,10 +113,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="UWG-Je-RY1" userLabel="Stack View 2">
-                                        <rect key="frame" x="76" y="124" width="423" height="146"/>
+                                        <rect key="frame" x="76" y="124" width="478" height="146"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="STORE ID" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9p6-qB-uVD">
-                                                <rect key="frame" x="0.0" y="0.0" width="423" height="67"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="478" height="67"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="67" id="IFY-GA-5mD"/>
@@ -114,7 +128,7 @@
                                                 </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="PASSWORD" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HpB-EM-hOF">
-                                                <rect key="frame" x="0.0" y="79" width="423" height="67"/>
+                                                <rect key="frame" x="0.0" y="79" width="478" height="67"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="67" id="6Y9-rc-XyQ"/>
@@ -133,7 +147,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MlL-Pu-dbY">
-                                        <rect key="frame" x="76" y="290" width="423" height="67"/>
+                                        <rect key="frame" x="76" y="290" width="478" height="67"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="67" id="Ggn-A4-INO"/>
                                         </constraints>
@@ -152,10 +166,10 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vqy-7p-tEJ">
-                                <rect key="frame" x="387.5" y="720" width="249" height="18"/>
+                                <rect key="frame" x="387" y="720" width="250.5" height="18"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright ® 2021 Enrich. All Rights Reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xuw-90-ZOm">
-                                        <rect key="frame" x="0.0" y="0.0" width="249" height="18"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright ® 2022 Enrich. All Rights Reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xuw-90-ZOm">
+                                        <rect key="frame" x="0.0" y="0.0" width="250.5" height="18"/>
                                         <fontDescription key="fontDescription" name="FuturaPT-Book" family="Futura PT" pointSize="14"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -213,17 +227,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="landingBackground" translatesAutoresizingMaskIntoConstraints="NO" id="4Fz-nP-PUv">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_userLogin" translatesAutoresizingMaskIntoConstraints="NO" id="4Fz-nP-PUv">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whiteBoxBG" translatesAutoresizingMaskIntoConstraints="NO" id="v7b-qm-DIl">
-                                <rect key="frame" x="224.5" y="249.5" width="575" height="378"/>
+                                <rect key="frame" x="197" y="156" width="630" height="456"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="575" id="52m-N0-lcK"/>
-                                    <constraint firstAttribute="height" constant="378" id="ytq-xy-IDD"/>
+                                    <constraint firstAttribute="width" constant="630" id="52m-N0-lcK"/>
+                                    <constraint firstAttribute="height" constant="456" id="ytq-xy-IDD"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="B&amp;BLogo" translatesAutoresizingMaskIntoConstraints="NO" id="cJd-gJ-OEQ">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="B&amp;BLogo" translatesAutoresizingMaskIntoConstraints="NO" id="cJd-gJ-OEQ">
                                 <rect key="frame" x="17" y="37" width="87" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="87" id="Wc6-38-cxu"/>
@@ -231,10 +245,10 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="HQa-bI-AtA">
-                                <rect key="frame" x="382" y="728" width="260" height="15"/>
+                                <rect key="frame" x="377" y="728" width="270.5" height="15"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright ® 2020 enrich All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K4s-Pk-v5n">
-                                        <rect key="frame" x="0.0" y="0.0" width="260" height="15"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright © 2022 Enrich. All Rights Reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K4s-Pk-v5n">
+                                        <rect key="frame" x="0.0" y="0.0" width="270.5" height="15"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="12"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -253,9 +267,9 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="ndM-vW-uiV" userLabel="Stack View top">
-                                <rect key="frame" x="362.5" y="30" width="299" height="206"/>
+                                <rect key="frame" x="512" y="30" width="0.0" height="0.0"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greenrichLogoDate" translatesAutoresizingMaskIntoConstraints="NO" id="lDY-4L-FGe">
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greenrichLogoDate" translatesAutoresizingMaskIntoConstraints="NO" id="lDY-4L-FGe">
                                         <rect key="frame" x="0.0" y="0.0" width="299" height="206"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="206" id="MFr-3w-VBp"/>
@@ -264,8 +278,8 @@
                                     </imageView>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="09N-RU-WfH" userLabel="Stack View Beauty And Bling">
-                                <rect key="frame" x="412" y="242.5" width="200" height="48"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="09N-RU-WfH" userLabel="Stack View Beauty And Bling">
+                                <rect key="frame" x="412" y="214" width="200" height="48"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spin The Wheel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zaw-eo-kug">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="30.5"/>
@@ -285,33 +299,33 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="vB4-rg-mrm" userLabel="Stack View Welcome">
-                                <rect key="frame" x="56" y="309.5" width="912" height="258"/>
+                                <rect key="frame" x="56" y="281" width="912" height="206"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="mzB-cf-m9V" userLabel="Stack View Welcome">
-                                        <rect key="frame" x="265" y="0.0" width="382" height="84"/>
+                                        <rect key="frame" x="265" y="0.0" width="382" height="70"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s5I-g1-pk0">
-                                                <rect key="frame" x="0.0" y="0.0" width="382" height="51.5"/>
-                                                <fontDescription key="fontDescription" name="FuturaPT-Demi" family="Futura PT" pointSize="40"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s5I-g1-pk0">
+                                                <rect key="frame" x="0.0" y="0.0" width="382" height="46.5"/>
+                                                <fontDescription key="fontDescription" name="FuturaPT-Medium" family="Futura PT" pointSize="36"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign In Using Mobile Number" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jS8-Me-8mp">
-                                                <rect key="frame" x="0.0" y="51.5" width="382" height="32.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SIGN-IN USING MOBILE NUMBER" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jS8-Me-8mp">
+                                                <rect key="frame" x="0.0" y="46.5" width="382" height="23.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="382" id="9gP-N9-oPM"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="FuturaPT-Book" family="Futura PT" pointSize="25"/>
+                                                <fontDescription key="fontDescription" name="FuturaPT-Book" family="Futura PT" pointSize="18"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Mzl-0w-1Y3">
-                                        <rect key="frame" x="240.5" y="104" width="431" height="67"/>
+                                        <rect key="frame" x="309" y="90" width="294" height="48"/>
                                         <subviews>
                                             <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter invoice number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lsc-PS-7OG">
-                                                <rect key="frame" x="0.0" y="0.0" width="431" height="67"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="294" height="67"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="67" id="Apn-ma-rBS"/>
                                                 </constraints>
@@ -327,11 +341,12 @@
                                                 </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="MOBILE NUMBER" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vlV-L4-cWw">
-                                                <rect key="frame" x="0.0" y="0.0" width="431" height="67"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="294" height="48"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="67" id="TIa-7e-Ytl"/>
+                                                    <constraint firstAttribute="width" constant="294" id="1xl-4F-AkI"/>
+                                                    <constraint firstAttribute="height" constant="48" id="TIa-7e-Ytl"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="FuturaPT-Demi" family="Futura PT" pointSize="14"/>
+                                                <fontDescription key="fontDescription" name="FuturaPT-Demi" family="Futura PT" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
@@ -345,12 +360,19 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S8V-H3-po7">
-                                        <rect key="frame" x="240.5" y="191" width="431" height="67"/>
+                                        <rect key="frame" x="309" y="158" width="294" height="48"/>
+                                        <color key="backgroundColor" red="0.90980392160000001" green="0.1333333333" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="67" id="EeH-BQ-nMy"/>
+                                            <constraint firstAttribute="height" constant="48" id="EeH-BQ-nMy"/>
+                                            <constraint firstAttribute="width" constant="294" id="pAh-dV-wqd"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="FuturaPT-Medium" family="Futura PT" pointSize="16"/>
-                                        <state key="normal" title="NEXT" backgroundImage="enableButton"/>
+                                        <fontDescription key="fontDescription" name="FuturaPT-Demi" family="Futura PT" pointSize="16"/>
+                                        <state key="normal" title="LOGIN"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="VCornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="clickToNext:" destination="rFn-Rd-xD8" eventType="touchUpInside" id="Ynu-UK-trf"/>
                                             <action selector="clickToSignIn:" destination="nwr-Vp-dc2" eventType="touchUpInside" id="utu-OM-rnx"/>
@@ -367,7 +389,7 @@
                                 <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="14"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d35-az-ShX">
+                            <button hidden="YES" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d35-az-ShX">
                                 <rect key="frame" x="977" y="37" width="27" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="27" id="OpY-Sf-LV2"/>
@@ -378,7 +400,7 @@
                                     <action selector="actionBtnPlace:" destination="rFn-Rd-xD8" eventType="touchUpInside" id="FGY-ww-mii"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y8M-vk-bhg">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y8M-vk-bhg">
                                 <rect key="frame" x="17" y="37" width="100" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="Xu2-cv-eck"/>
@@ -387,7 +409,7 @@
                                     <action selector="actionBtnBack:" destination="rFn-Rd-xD8" eventType="touchUpInside" id="qet-Ky-ea5"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QRV-Qg-iom">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QRV-Qg-iom">
                                 <rect key="frame" x="852" y="31" width="117" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="37" id="3UG-PT-odG"/>
@@ -409,28 +431,25 @@
                             <constraint firstItem="C3P-W3-27G" firstAttribute="trailing" secondItem="d35-az-ShX" secondAttribute="trailing" constant="20" id="7Wl-37-QM6"/>
                             <constraint firstItem="4Fz-nP-PUv" firstAttribute="bottom" secondItem="3Ip-xT-bPu" secondAttribute="bottom" id="7xx-hg-pKI"/>
                             <constraint firstItem="d35-az-ShX" firstAttribute="top" secondItem="C3P-W3-27G" secondAttribute="top" constant="17" id="9HZ-v2-Gfg"/>
-                            <constraint firstItem="S8V-H3-po7" firstAttribute="width" secondItem="v7b-qm-DIl" secondAttribute="width" multiplier="0.75" id="BrT-B7-1sN"/>
                             <constraint firstItem="Y8M-vk-bhg" firstAttribute="top" secondItem="C3P-W3-27G" secondAttribute="top" constant="17" id="CSH-6K-8Jf"/>
                             <constraint firstItem="C3P-W3-27G" firstAttribute="trailing" secondItem="vB4-rg-mrm" secondAttribute="trailing" constant="56" id="CyX-SK-rh5"/>
                             <constraint firstItem="HQa-bI-AtA" firstAttribute="centerX" secondItem="3Ip-xT-bPu" secondAttribute="centerX" id="Fcc-RO-bxS"/>
-                            <constraint firstItem="vB4-rg-mrm" firstAttribute="centerX" secondItem="v7b-qm-DIl" secondAttribute="centerX" id="Hvv-HV-tjI"/>
+                            <constraint firstItem="vB4-rg-mrm" firstAttribute="centerX" secondItem="3Ip-xT-bPu" secondAttribute="centerX" id="Jsr-HS-kw9"/>
                             <constraint firstItem="Y8M-vk-bhg" firstAttribute="height" secondItem="cJd-gJ-OEQ" secondAttribute="height" id="Kwi-vm-TFQ"/>
-                            <constraint firstItem="vB4-rg-mrm" firstAttribute="centerY" secondItem="v7b-qm-DIl" secondAttribute="centerY" id="LsJ-ob-Jn8"/>
-                            <constraint firstItem="v7b-qm-DIl" firstAttribute="centerX" secondItem="3Ip-xT-bPu" secondAttribute="centerX" id="M3u-fA-Vby"/>
                             <constraint firstItem="09N-RU-WfH" firstAttribute="centerX" secondItem="3Ip-xT-bPu" secondAttribute="centerX" id="NTV-yu-VTM"/>
                             <constraint firstItem="C3P-W3-27G" firstAttribute="bottom" secondItem="HQa-bI-AtA" secondAttribute="bottom" constant="25" id="NYg-cH-LVz"/>
                             <constraint firstItem="ndM-vW-uiV" firstAttribute="centerX" secondItem="3Ip-xT-bPu" secondAttribute="centerX" id="Oe3-xk-YLz"/>
+                            <constraint firstItem="vB4-rg-mrm" firstAttribute="centerY" secondItem="3Ip-xT-bPu" secondAttribute="centerY" id="Psi-i9-Hyg"/>
                             <constraint firstItem="ehK-d7-p8u" firstAttribute="top" secondItem="C3P-W3-27G" secondAttribute="top" constant="17" id="Pyd-ws-Hh5"/>
-                            <constraint firstItem="vB4-rg-mrm" firstAttribute="top" secondItem="09N-RU-WfH" secondAttribute="bottom" constant="19" id="Pyr-t9-pdd"/>
                             <constraint firstItem="ndM-vW-uiV" firstAttribute="top" secondItem="C3P-W3-27G" secondAttribute="top" constant="10" id="Qnl-c5-L5e"/>
                             <constraint firstItem="Y8M-vk-bhg" firstAttribute="centerY" secondItem="cJd-gJ-OEQ" secondAttribute="centerY" id="R4U-iy-IE8"/>
                             <constraint firstItem="vB4-rg-mrm" firstAttribute="leading" secondItem="C3P-W3-27G" secondAttribute="leading" constant="56" id="Ztx-H4-820"/>
-                            <constraint firstItem="Mzl-0w-1Y3" firstAttribute="width" secondItem="v7b-qm-DIl" secondAttribute="width" multiplier="0.75" id="eJa-Ti-hL6"/>
+                            <constraint firstItem="v7b-qm-DIl" firstAttribute="centerY" secondItem="3Ip-xT-bPu" secondAttribute="centerY" id="dmN-oE-kzm"/>
                             <constraint firstItem="d35-az-ShX" firstAttribute="leading" secondItem="ehK-d7-p8u" secondAttribute="trailing" constant="5" id="eRT-Av-h8O"/>
+                            <constraint firstItem="v7b-qm-DIl" firstAttribute="centerX" secondItem="3Ip-xT-bPu" secondAttribute="centerX" id="fPL-ab-14k"/>
                             <constraint firstItem="cJd-gJ-OEQ" firstAttribute="top" secondItem="C3P-W3-27G" secondAttribute="top" constant="17" id="jWo-bw-gKR"/>
                             <constraint firstItem="4Fz-nP-PUv" firstAttribute="top" secondItem="3Ip-xT-bPu" secondAttribute="top" id="kq9-fS-6db"/>
                             <constraint firstItem="cJd-gJ-OEQ" firstAttribute="leading" secondItem="C3P-W3-27G" secondAttribute="leading" constant="17" id="n5v-ev-S5Z"/>
-                            <constraint firstItem="v7b-qm-DIl" firstAttribute="centerY" secondItem="3Ip-xT-bPu" secondAttribute="centerY" constant="54.5" id="pwd-bn-6IH"/>
                             <constraint firstItem="C3P-W3-27G" firstAttribute="bottom" secondItem="iQv-wa-agA" secondAttribute="bottom" constant="30" id="s36-Q5-14f"/>
                             <constraint firstItem="4Fz-nP-PUv" firstAttribute="leading" secondItem="C3P-W3-27G" secondAttribute="leading" id="sZx-7q-6dx"/>
                             <constraint firstItem="iQv-wa-agA" firstAttribute="trailing" secondItem="d35-az-ShX" secondAttribute="trailing" id="vNd-PG-5qd"/>
@@ -452,23 +471,6 @@
             </objects>
             <point key="canvasLocation" x="1429" y="-670"/>
         </scene>
-        <!--Navigation ControllerAdminAuthenitication-->
-        <scene sceneID="eSC-gL-HSg">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="CNc-Mj-PkQ" userLabel="Navigation ControllerAdminAuthenitication" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NoF-sm-ueO">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="nwr-Vp-dc2" kind="relationship" relationship="rootViewController" id="A8e-sW-gkp"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7Rv-WZ-Qzi" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="111" y="8"/>
-        </scene>
         <!--EN_VC_CutomerOTPVerification-->
         <scene sceneID="bLN-kx-ZsZ">
             <objects>
@@ -477,25 +479,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="landingBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Hkn-JG-tzX">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_userLogin" translatesAutoresizingMaskIntoConstraints="NO" id="Hkn-JG-tzX">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whiteBoxBG" translatesAutoresizingMaskIntoConstraints="NO" id="8En-mU-Uek">
-                                <rect key="frame" x="224.5" y="249.5" width="575" height="437"/>
+                                <rect key="frame" x="197" y="156" width="630" height="456"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="437" id="287-M0-pKm"/>
-                                    <constraint firstAttribute="width" constant="575" id="caV-IN-hb7"/>
+                                    <constraint firstAttribute="height" constant="456" id="287-M0-pKm"/>
+                                    <constraint firstAttribute="width" constant="630" id="caV-IN-hb7"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="B&amp;BLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Fut-JT-nIF">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="B&amp;BLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Fut-JT-nIF">
                                 <rect key="frame" x="17" y="37" width="87" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="87" id="Rp1-cc-LVW"/>
                                     <constraint firstAttribute="height" constant="36" id="ws4-yF-ShZ"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright ® 2021 Enrich. All Rights Reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ke2-np-6fC">
-                                <rect key="frame" x="387.5" y="725" width="249" height="18"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright © 2022 Enrich. All Rights Reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ke2-np-6fC">
+                                <rect key="frame" x="387" y="725" width="250.5" height="18"/>
                                 <fontDescription key="fontDescription" name="FuturaPT-Book" family="Futura PT" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -507,9 +509,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="O3d-gB-3qh" userLabel="Stack View top">
-                                <rect key="frame" x="362.5" y="30" width="299" height="206"/>
+                                <rect key="frame" x="512" y="30" width="0.0" height="206"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greenrichLogoDate" translatesAutoresizingMaskIntoConstraints="NO" id="Czi-WA-8Q4">
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greenrichLogoDate" translatesAutoresizingMaskIntoConstraints="NO" id="Czi-WA-8Q4">
                                         <rect key="frame" x="0.0" y="0.0" width="299" height="206"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="206" id="CIN-Gg-xMg"/>
@@ -522,7 +524,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="0hl-Zc-WPD" userLabel="Stack View Beauty And Bling">
-                                <rect key="frame" x="412" y="230" width="200" height="48"/>
+                                <rect key="frame" x="412" y="177.5" width="200" height="48"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spin The Wheel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7AW-8f-h8v">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="30.5"/>
@@ -541,62 +543,61 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9aJ-Qe-nF0">
-                                <rect key="frame" x="224.5" y="297" width="575" height="342"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="9aJ-Qe-nF0">
+                                <rect key="frame" x="197" y="244.5" width="630" height="279"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Sss-nS-SZW" userLabel="Stack View Thank you">
-                                        <rect key="frame" x="63" y="0.0" width="449" height="223"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Sss-nS-SZW" userLabel="Stack View Thank you">
+                                        <rect key="frame" x="130" y="0.0" width="370" height="93"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter OTP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VHZ-nu-xOW">
-                                                <rect key="frame" x="0.0" y="0.0" width="449" height="51.5"/>
-                                                <fontDescription key="fontDescription" name="FuturaPT-Demi" family="Futura PT" pointSize="40"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ENTER OTP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VHZ-nu-xOW">
+                                                <rect key="frame" x="0.0" y="0.0" width="370" height="46.5"/>
+                                                <fontDescription key="fontDescription" name="FuturaPT-Medium" family="Futura PT" pointSize="36"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6N-ik-mK1">
-                                                <rect key="frame" x="0.0" y="71.5" width="449" height="64.5"/>
-                                                <string key="text">Please Enter OTP That We Sent On
-Your Registered Mobile Number 99XXXXXX32</string>
-                                                <fontDescription key="fontDescription" name="FuturaPT-Book" family="Futura PT" pointSize="25"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLEASE ENTER OTP THAT WE SENT ON YOUR REGISTERED MOBILE NUMBER 99XXXXXX32" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F6N-ik-mK1">
+                                                <rect key="frame" x="0.0" y="46.5" width="370" height="46.5"/>
+                                                <fontDescription key="fontDescription" name="FuturaPT-Book" family="Futura PT" pointSize="18"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fLJ-Ht-1Q6">
-                                                <rect key="frame" x="0.0" y="156" width="449" height="67"/>
-                                                <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ENTER OTP" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HRd-uE-Tka">
-                                                        <rect key="frame" x="0.0" y="0.0" width="449" height="67"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="67" id="UCc-c2-Bk3"/>
-                                                        </constraints>
-                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <fontDescription key="fontDescription" name="FuturaPT-Demi" family="Futura PT" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                        <userDefinedRuntimeAttributes>
-                                                            <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
-                                                                <integer key="value" value="4"/>
-                                                            </userDefinedRuntimeAttribute>
-                                                        </userDefinedRuntimeAttributes>
-                                                    </textField>
-                                                </subviews>
-                                            </stackView>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZs-B1-DDy">
-                                        <rect key="frame" x="60" y="233" width="455" height="67"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="67" id="ho8-8v-DQP"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="FuturaPT-Medium" family="Futura PT" pointSize="16"/>
-                                        <state key="normal" title="CONFIRM" backgroundImage="enableButton"/>
-                                        <connections>
-                                            <action selector="clickToConfirm:" destination="wcQ-hc-e0P" eventType="touchUpInside" id="sRw-ud-ir2"/>
-                                            <action selector="clickToSignIn:" destination="nwr-Vp-dc2" eventType="touchUpInside" id="LS5-0j-thm"/>
-                                        </connections>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="fLJ-Ht-1Q6">
+                                        <rect key="frame" x="168" y="113" width="294" height="116"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ENTER OTP" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HRd-uE-Tka">
+                                                <rect key="frame" x="0.0" y="0.0" width="294" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="294" id="Gue-oI-NlQ"/>
+                                                    <constraint firstAttribute="height" constant="48" id="UCc-c2-Bk3"/>
+                                                </constraints>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="FuturaPT-Demi" family="Futura PT" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="maxLength">
+                                                        <integer key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZs-B1-DDy">
+                                                <rect key="frame" x="0.0" y="68" width="294" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="ho8-8v-DQP"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="FuturaPT-Medium" family="Futura PT" pointSize="16"/>
+                                                <state key="normal" title="CONFIRM" backgroundImage="enableButton"/>
+                                                <connections>
+                                                    <action selector="clickToConfirm:" destination="wcQ-hc-e0P" eventType="touchUpInside" id="sRw-ud-ir2"/>
+                                                    <action selector="clickToSignIn:" destination="nwr-Vp-dc2" eventType="touchUpInside" id="LS5-0j-thm"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HyZ-Ue-0WQ">
-                                        <rect key="frame" x="238" y="310" width="99" height="32"/>
-                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                        <rect key="frame" x="279" y="249" width="72" height="30"/>
+                                        <fontDescription key="fontDescription" name="FuturaPT-Demi" family="Futura PT" pointSize="14"/>
                                         <state key="normal" title="Resend OTP">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -606,11 +607,11 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="JZs-B1-DDy" secondAttribute="trailing" constant="60" id="eeR-if-8hP"/>
-                                    <constraint firstItem="JZs-B1-DDy" firstAttribute="leading" secondItem="9aJ-Qe-nF0" secondAttribute="leading" constant="60" id="nos-ql-fWY"/>
+                                    <constraint firstItem="Sss-nS-SZW" firstAttribute="leading" secondItem="9aJ-Qe-nF0" secondAttribute="leading" constant="130" id="QX2-cf-s2t"/>
+                                    <constraint firstAttribute="trailing" secondItem="Sss-nS-SZW" secondAttribute="trailing" constant="130" id="QqC-4I-WFB"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3dA-wA-BaP">
+                            <button hidden="YES" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3dA-wA-BaP">
                                 <rect key="frame" x="977" y="37" width="27" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="27" id="2bj-cv-7RN"/>
@@ -621,7 +622,7 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                     <action selector="actionBtnPlace:" destination="wcQ-hc-e0P" eventType="touchUpInside" id="ngq-dt-NeN"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIf-71-beZ">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIf-71-beZ">
                                 <rect key="frame" x="854" y="34.5" width="113" height="30"/>
                                 <fontDescription key="fontDescription" name="FuturaPT-Book" family="Futura PT" pointSize="14"/>
                                 <state key="normal" title="Churchgate,Mumbai">
@@ -632,13 +633,13 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2dc-56-t2C">
-                                <rect key="frame" x="462.5" y="636" width="99" height="2"/>
+                                <rect key="frame" x="476" y="521.5" width="72" height="1"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="2" id="oHu-Tm-ZD9"/>
+                                    <constraint firstAttribute="height" constant="1" id="oHu-Tm-ZD9"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sv8-Df-heG">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sv8-Df-heG">
                                 <rect key="frame" x="17" y="35" width="100" height="40"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -661,7 +662,7 @@ Your Registered Mobile Number 99XXXXXX32</string>
                             <constraint firstItem="Fut-JT-nIF" firstAttribute="leading" secondItem="zpy-S9-WkN" secondAttribute="leading" constant="17" id="BT8-a4-JQo"/>
                             <constraint firstItem="9aJ-Qe-nF0" firstAttribute="leading" secondItem="8En-mU-Uek" secondAttribute="leading" id="DbZ-x6-s0S"/>
                             <constraint firstItem="Hkn-JG-tzX" firstAttribute="bottom" secondItem="lG7-C8-Bps" secondAttribute="bottom" id="Faf-EB-cVw"/>
-                            <constraint firstItem="8En-mU-Uek" firstAttribute="centerY" secondItem="lG7-C8-Bps" secondAttribute="centerY" constant="84" id="H4H-AW-Ijy"/>
+                            <constraint firstItem="8En-mU-Uek" firstAttribute="centerY" secondItem="lG7-C8-Bps" secondAttribute="centerY" id="H4H-AW-Ijy"/>
                             <constraint firstItem="0hl-Zc-WPD" firstAttribute="centerX" secondItem="lG7-C8-Bps" secondAttribute="centerX" id="IKJ-hC-kGM"/>
                             <constraint firstItem="O3d-gB-3qh" firstAttribute="top" secondItem="zpy-S9-WkN" secondAttribute="top" constant="10" id="Jd0-FA-Hsp"/>
                             <constraint firstItem="sv8-Df-heG" firstAttribute="leading" secondItem="zpy-S9-WkN" secondAttribute="leading" constant="17" id="Jng-j8-SNH"/>
@@ -898,86 +899,10 @@ Your Registered Mobile Number 99XXXXXX32</string>
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greenRichCardBoard" translatesAutoresizingMaskIntoConstraints="NO" id="UBI-Cg-MME">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_T&amp;C" translatesAutoresizingMaskIntoConstraints="NO" id="UBI-Cg-MME">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="EMa-4X-phg">
-                                <rect key="frame" x="17" y="37" width="87" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="87" id="r6M-ZH-ots"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="store" translatesAutoresizingMaskIntoConstraints="NO" id="cTw-Gn-GdX">
-                                <rect key="frame" x="977" y="37" width="27" height="25"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="25" id="1CO-iv-rxg"/>
-                                    <constraint firstAttribute="width" constant="27" id="hWh-TB-nYy"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright ® 2019 Enrich, All Rights Reserved. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mgn-Ck-qdz">
-                                <rect key="frame" x="378" y="728" width="268" height="15"/>
-                                <fontDescription key="fontDescription" name="Montserrat-Light" family="Montserrat" pointSize="12"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KPMG ® Process Advisors and Evaluators for this contest " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iKc-DD-KqL">
-                                <rect key="frame" x="558" y="725.5" width="446" height="20"/>
-                                <fontDescription key="fontDescription" name="Quicksand-Light" family="Quicksand" pointSize="17"/>
-                                <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms and Conditions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nim-bA-JOG">
-                                <rect key="frame" x="90" y="223" width="238.5" height="36"/>
-                                <fontDescription key="fontDescription" name="FuturaPT-Medium" family="Futura PT" pointSize="28"/>
-                                <color key="textColor" red="0.62352941176470589" green="0.10980392156862745" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <wkWebView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WTv-VP-eIi">
-                                <rect key="frame" x="95" y="284" width="849" height="337"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <wkWebViewConfiguration key="configuration">
-                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
-                                </wkWebViewConfiguration>
-                            </wkWebView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x3n-Cc-kUp">
-                                <rect key="frame" x="110" y="641" width="203" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="203" id="wNg-J5-rQj"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="FuturaPT-Medium" family="Futura PT" pointSize="14"/>
-                                <state key="normal" title="DISAGREE" backgroundImage="disagreeButton">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="actionDisagree:" destination="9w4-Zw-tIC" eventType="touchUpInside" id="6D6-mk-FDv"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bJ-IC-69w">
-                                <rect key="frame" x="323" y="641" width="203" height="57"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="203" id="aUZ-aD-Eqd"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="FuturaPT-Medium" family="Futura PT" pointSize="14"/>
-                                <state key="normal" title="AGREE &amp; CONTINUE" backgroundImage="enableButton">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="actionAgreeAndContinue:" destination="9w4-Zw-tIC" eventType="touchUpInside" id="5dV-7m-xGH"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bef-oB-3ay">
-                                <rect key="frame" x="849" y="34.5" width="120" height="30"/>
-                                <fontDescription key="fontDescription" name="FuturaPT-Book" family="Futura PT" pointSize="14"/>
-                                <state key="normal" title="Churchgate, Mumbai ">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="actionBtnPlace:" destination="9w4-Zw-tIC" eventType="touchUpInside" id="E6o-Xy-PKC"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uvS-3g-5uT">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uvS-3g-5uT">
                                 <rect key="frame" x="17" y="37" width="87" height="36"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -988,10 +913,97 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                     <action selector="actionBtnBack:" destination="9w4-Zw-tIC" eventType="touchUpInside" id="TwV-uy-6uG"/>
                                 </connections>
                             </button>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="EMa-4X-phg">
+                                <rect key="frame" x="17" y="37" width="87" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="87" id="r6M-ZH-ots"/>
+                                </constraints>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="store" translatesAutoresizingMaskIntoConstraints="NO" id="cTw-Gn-GdX">
+                                <rect key="frame" x="977" y="37" width="27" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="1CO-iv-rxg"/>
+                                    <constraint firstAttribute="width" constant="27" id="hWh-TB-nYy"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KPMG ® Process Advisors and Evaluators for this contest " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iKc-DD-KqL">
+                                <rect key="frame" x="558" y="724" width="446" height="20"/>
+                                <fontDescription key="fontDescription" name="Quicksand-Light" family="Quicksand" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TERMS &amp; CONDITIONS:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nim-bA-JOG">
+                                <rect key="frame" x="90" y="160" width="249.5" height="32.5"/>
+                                <fontDescription key="fontDescription" name="FuturaPT-Medium" family="Futura PT" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <wkWebView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WTv-VP-eIi">
+                                <rect key="frame" x="95" y="217.5" width="849" height="314.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x3n-Cc-kUp">
+                                <rect key="frame" x="95" y="552" width="225" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="i03-19-cS8"/>
+                                    <constraint firstAttribute="width" constant="225" id="wNg-J5-rQj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="FuturaPT-Bold" family="Futura PT" pointSize="16"/>
+                                <state key="normal" title="BACK">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="VCornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="VBorderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="VBorderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="actionDisagree:" destination="9w4-Zw-tIC" eventType="touchUpInside" id="6D6-mk-FDv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bJ-IC-69w">
+                                <rect key="frame" x="330" y="552" width="203" height="53"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="203" id="aUZ-aD-Eqd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="FuturaPT-Bold" family="Futura PT" pointSize="16"/>
+                                <state key="normal" title="AGREE &amp; ACCEPT">
+                                    <color key="titleColor" red="0.90980392156862744" green="0.13333333333333333" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="VCornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="actionAgreeAndContinue:" destination="9w4-Zw-tIC" eventType="touchUpInside" id="5dV-7m-xGH"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bef-oB-3ay">
+                                <rect key="frame" x="849" y="34.5" width="120" height="30"/>
+                                <fontDescription key="fontDescription" name="FuturaPT-Book" family="Futura PT" pointSize="14"/>
+                                <state key="normal" title="Churchgate, Mumbai ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionBtnPlace:" destination="9w4-Zw-tIC" eventType="touchUpInside" id="E6o-Xy-PKC"/>
+                                </connections>
+                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="pah-MI-uZ4">
-                                <rect key="frame" x="362.5" y="30" width="299" height="230"/>
+                                <rect key="frame" x="362.5" y="30" width="299" height="163.5"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greenrichLogoDate" translatesAutoresizingMaskIntoConstraints="NO" id="80B-wx-stI">
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greenrichLogoDate" translatesAutoresizingMaskIntoConstraints="NO" id="80B-wx-stI">
                                         <rect key="frame" x="0.0" y="0.0" width="299" height="206"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="206" id="aW8-8b-NLy"/>
@@ -999,17 +1011,24 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spin The Wheel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZv-9s-pOk">
-                                        <rect key="frame" x="0.0" y="211" width="299" height="19"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="299" height="163.5"/>
                                         <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="16"/>
                                         <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright © 2022 Enrich. All Rights Reserved." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mgn-Ck-qdz">
+                                <rect key="frame" x="387" y="725" width="250.5" height="18"/>
+                                <fontDescription key="fontDescription" name="FuturaPT-Book" family="Futura PT" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SHq-iI-Q0q"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Nim-bA-JOG" firstAttribute="top" secondItem="XeY-to-pQS" secondAttribute="top" constant="160" id="1Pm-Zg-6Ud"/>
                             <constraint firstItem="SHq-iI-Q0q" firstAttribute="trailing" secondItem="WTv-VP-eIi" secondAttribute="trailing" constant="80" id="2E1-oB-8OA"/>
                             <constraint firstItem="cTw-Gn-GdX" firstAttribute="leading" secondItem="bef-oB-3ay" secondAttribute="trailing" constant="8" id="3ds-qV-fjF"/>
                             <constraint firstItem="UBI-Cg-MME" firstAttribute="top" secondItem="XeY-to-pQS" secondAttribute="top" id="4EU-Cj-ugv"/>
@@ -1018,7 +1037,7 @@ Your Registered Mobile Number 99XXXXXX32</string>
                             <constraint firstItem="uvS-3g-5uT" firstAttribute="leading" secondItem="SHq-iI-Q0q" secondAttribute="leading" constant="17" id="7zf-oS-1W4"/>
                             <constraint firstItem="pah-MI-uZ4" firstAttribute="centerX" secondItem="XeY-to-pQS" secondAttribute="centerX" id="Abl-DH-Bss"/>
                             <constraint firstItem="EMa-4X-phg" firstAttribute="leading" secondItem="SHq-iI-Q0q" secondAttribute="leading" constant="17" id="Cta-1f-W4x"/>
-                            <constraint firstItem="mgn-Ck-qdz" firstAttribute="top" secondItem="2bJ-IC-69w" secondAttribute="bottom" constant="30" id="DK8-Ec-Nxc"/>
+                            <constraint firstItem="mgn-Ck-qdz" firstAttribute="top" secondItem="2bJ-IC-69w" secondAttribute="bottom" constant="120" id="DK8-Ec-Nxc"/>
                             <constraint firstItem="Nim-bA-JOG" firstAttribute="leading" secondItem="SHq-iI-Q0q" secondAttribute="leading" constant="90" id="Epf-6j-uiL"/>
                             <constraint firstItem="UBI-Cg-MME" firstAttribute="bottom" secondItem="SHq-iI-Q0q" secondAttribute="bottom" id="FUL-05-0Qc"/>
                             <constraint firstItem="x3n-Cc-kUp" firstAttribute="top" secondItem="WTv-VP-eIi" secondAttribute="bottom" constant="20" id="IPd-tK-Skg"/>
@@ -1037,7 +1056,7 @@ Your Registered Mobile Number 99XXXXXX32</string>
                             <constraint firstItem="x3n-Cc-kUp" firstAttribute="height" secondItem="2bJ-IC-69w" secondAttribute="height" constant="3" id="hCV-rh-YIs"/>
                             <constraint firstItem="WTv-VP-eIi" firstAttribute="leading" secondItem="SHq-iI-Q0q" secondAttribute="leading" constant="95" id="i7B-cH-ElE"/>
                             <constraint firstItem="EMa-4X-phg" firstAttribute="top" secondItem="SHq-iI-Q0q" secondAttribute="top" constant="17" id="iJP-mA-6rH"/>
-                            <constraint firstItem="x3n-Cc-kUp" firstAttribute="leading" secondItem="SHq-iI-Q0q" secondAttribute="leading" constant="110" id="jZV-hm-Rlm"/>
+                            <constraint firstItem="x3n-Cc-kUp" firstAttribute="leading" secondItem="SHq-iI-Q0q" secondAttribute="leading" constant="95" id="jZV-hm-Rlm"/>
                             <constraint firstItem="UBI-Cg-MME" firstAttribute="leading" secondItem="SHq-iI-Q0q" secondAttribute="leading" id="rqC-Zg-K9k"/>
                             <constraint firstItem="cTw-Gn-GdX" firstAttribute="top" secondItem="SHq-iI-Q0q" secondAttribute="top" constant="17" id="sHu-zf-aFP"/>
                         </constraints>
@@ -2093,15 +2112,15 @@ Your Registered Mobile Number 99XXXXXX32</string>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="landingBackground" translatesAutoresizingMaskIntoConstraints="NO" id="QmI-8g-knP">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="B&amp;BLogo" translatesAutoresizingMaskIntoConstraints="NO" id="KO0-M2-rKm">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="B&amp;BLogo" translatesAutoresizingMaskIntoConstraints="NO" id="KO0-M2-rKm">
                                 <rect key="frame" x="17" y="37" width="87" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="87" id="iAg-Dy-Yxf"/>
                                     <constraint firstAttribute="height" constant="36" id="rX8-fM-ckz"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6u9-l2-zkr">
-                                <rect key="frame" x="302" y="461" width="420" height="0.0"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6u9-l2-zkr">
+                                <rect key="frame" x="302" y="481" width="420" height="0.0"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="420" id="DF2-Zo-eiS"/>
                                 </constraints>
@@ -2109,7 +2128,7 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                 <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bannerPlaceHolder" translatesAutoresizingMaskIntoConstraints="NO" id="bup-qe-rTn">
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="bannerPlaceHolder" translatesAutoresizingMaskIntoConstraints="NO" id="bup-qe-rTn">
                                 <rect key="frame" x="144.5" y="243.5" width="735" height="139"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="735" id="fsT-HQ-kEN"/>
@@ -2117,10 +2136,10 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="TJE-dJ-aku" userLabel="Stack View 1">
-                                <rect key="frame" x="387.5" y="725" width="249" height="18"/>
+                                <rect key="frame" x="387" y="725" width="250.5" height="18"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright ® 2021 Enrich. All Rights Reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfQ-8f-2xZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="249" height="18"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright ® 2022 Enrich. All Rights Reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfQ-8f-2xZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="250.5" height="18"/>
                                         <fontDescription key="fontDescription" name="FuturaPT-Book" family="Futura PT" pointSize="14"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -2131,26 +2150,44 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="a1M-aW-rxx" userLabel="Stack View 2">
-                                <rect key="frame" x="282" y="420" width="460" height="131"/>
+                                <rect key="frame" x="275" y="522" width="474" height="56"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jPa-OD-goR">
-                                        <rect key="frame" x="0.0" y="0.0" width="218" height="131"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="FuturaPT-Demi" family="Futura PT" pointSize="32"/>
-                                        <state key="normal" title="Spin To Play" backgroundImage="spinToPlay">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="225" height="56"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="Chh-ZX-NbH"/>
+                                            <constraint firstAttribute="width" constant="225" id="o4Q-nn-C3t"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="FuturaPT-Bold" family="Futura PT" pointSize="16"/>
+                                        <state key="normal" title="SPIN TO PLAY">
+                                            <color key="titleColor" red="0.90980392160000001" green="0.1333333333" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="VCornerRadius">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="actionRewardSpin:" destination="r5f-4T-qax" eventType="touchUpInside" id="VWs-CP-DwU"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RrZ-he-Wpu">
-                                        <rect key="frame" x="242" y="0.0" width="218" height="131"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="FuturaPT-Demi" family="Futura PT" pointSize="32"/>
-                                        <state key="normal" title="Trial Spin" backgroundImage="spinToPlay">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <rect key="frame" x="249" y="0.0" width="225" height="56"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="225" id="Dvs-Dr-ILq"/>
+                                            <constraint firstAttribute="height" constant="56" id="O0u-2y-a7e"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="FuturaPT-Bold" family="Futura PT" pointSize="16"/>
+                                        <state key="normal" title="TRIAL SPIN">
+                                            <color key="titleColor" red="0.90980392156862744" green="0.13333333333333333" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="VCornerRadius">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="actionTrialSpin:" destination="r5f-4T-qax" eventType="touchUpInside" id="58w-Vo-zJx"/>
                                         </connections>
@@ -2171,13 +2208,13 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                     </label>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oct - Dec 2018" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BDc-hl-soh">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Oct - Dec 2018" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BDc-hl-soh">
                                 <rect key="frame" x="464" y="243.5" width="96" height="16.5"/>
                                 <fontDescription key="fontDescription" name="Quicksand-Light" family="Quicksand" pointSize="14"/>
                                 <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spin The Wheel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fsF-us-1i7">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Spin The Wheel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fsF-us-1i7">
                                 <rect key="frame" x="420.5" y="183" width="183" height="30.5"/>
                                 <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="26"/>
                                 <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2200,8 +2237,8 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                     <action selector="actionBtnPlace:" destination="r5f-4T-qax" eventType="touchUpInside" id="0Jj-b9-13O"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="e0H-Ga-X6T" userLabel="Stack View 4">
-                                <rect key="frame" x="512" y="471" width="0.0" height="0.0"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="e0H-Ga-X6T" userLabel="Stack View 4">
+                                <rect key="frame" x="512" y="491" width="0.0" height="0.0"/>
                                 <subviews>
                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spin the wheel and get a chance to instantly win 600 to 2500 service reward points! " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="17f-ds-yRd">
                                         <rect key="frame" x="4" y="0.0" width="480" height="0.0"/>
@@ -2217,7 +2254,7 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                         <rect key="frame" x="0.0" y="0.0" width="488" height="26"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last three rides &amp; Service reward points won across all Enrich salons" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nFc-Vc-4x4">
-                                                <rect key="frame" x="6" y="4.5" width="476" height="17.5"/>
+                                                <rect key="frame" x="6" y="4" width="476" height="17.5"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2239,8 +2276,8 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                     </view>
                                 </subviews>
                             </stackView>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4uw-g5-MVV" userLabel="View Count parent">
-                                <rect key="frame" x="25" y="621" width="147" height="88"/>
+                            <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4uw-g5-MVV" userLabel="View Count parent">
+                                <rect key="frame" x="25" y="641" width="147" height="88"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UmT-2f-MSa" userLabel="View 1">
                                         <rect key="frame" x="0.0" y="0.0" width="147" height="88"/>
@@ -2303,8 +2340,8 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sJl-UO-YbK">
-                                <rect key="frame" x="852" y="621" width="157.5" height="88"/>
+                            <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sJl-UO-YbK">
+                                <rect key="frame" x="852" y="641" width="157.5" height="88"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0mN-Rv-BPF">
                                         <rect key="frame" x="0.0" y="0.0" width="157.5" height="88"/>
@@ -2350,8 +2387,8 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="weq-pw-s4Z" userLabel="Stack View 5">
-                                <rect key="frame" x="179.5" y="621" width="665" height="88"/>
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="weq-pw-s4Z" userLabel="Stack View 5">
+                                <rect key="frame" x="179.5" y="641" width="665" height="88"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Btc-8l-4b2">
                                         <rect key="frame" x="0.0" y="0.0" width="125" height="88"/>
@@ -2534,18 +2571,22 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                     </view>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Iw-OY-4OX">
-                                <rect key="frame" x="20" y="634" width="984" height="75"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Iw-OY-4OX">
+                                <rect key="frame" x="100" y="670" width="824" height="40"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yellow-stripe" translatesAutoresizingMaskIntoConstraints="NO" id="0U2-1o-zVn">
-                                        <rect key="frame" x="0.0" y="0.0" width="984" height="75"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="824" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="Ec5-Jo-9IR"/>
+                                            <constraint firstAttribute="width" constant="822" id="lIw-XN-jlL"/>
+                                        </constraints>
                                     </imageView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="vmn-w7-aft"/>
+                                    <constraint firstAttribute="height" constant="40" id="vmn-w7-aft"/>
                                 </constraints>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greenrichLogoDate" translatesAutoresizingMaskIntoConstraints="NO" id="cwb-AE-bGr">
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greenrichLogoDate" translatesAutoresizingMaskIntoConstraints="NO" id="cwb-AE-bGr">
                                 <rect key="frame" x="362.5" y="30" width="299" height="206"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="206" id="GKL-iv-Y89"/>
@@ -2602,12 +2643,12 @@ Your Registered Mobile Number 99XXXXXX32</string>
                                     <constraint firstAttribute="height" constant="75" id="VvE-YT-Rna"/>
                                 </constraints>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nG9-cb-Cyi" customClass="MarqueeLabel" customModule="MarqueeLabel">
-                                <rect key="frame" x="30" y="638" width="964" height="75"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nG9-cb-Cyi" customClass="MarqueeLabel" customModule="MarqueeLabel">
+                                <rect key="frame" x="100" y="670" width="824" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="oGn-bc-Z51"/>
+                                    <constraint firstAttribute="height" constant="40" id="oGn-bc-Z51"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="FuturaPT-Medium" family="Futura PT" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="FuturaPT-Medium" family="Futura PT" pointSize="16"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
@@ -2620,24 +2661,21 @@ Your Registered Mobile Number 99XXXXXX32</string>
                         <constraints>
                             <constraint firstItem="QmI-8g-knP" firstAttribute="bottom" secondItem="p3e-St-UvU" secondAttribute="bottom" id="0jq-xU-ySh"/>
                             <constraint firstItem="a1M-aW-rxx" firstAttribute="centerX" secondItem="p3e-St-UvU" secondAttribute="centerX" id="1Cn-hU-r10"/>
-                            <constraint firstItem="a1M-aW-rxx" firstAttribute="centerX" secondItem="p3e-St-UvU" secondAttribute="centerX" id="2Ql-Dh-bi7"/>
                             <constraint firstItem="fsF-us-1i7" firstAttribute="centerX" secondItem="p3e-St-UvU" secondAttribute="centerX" id="9Dx-3J-hMW"/>
                             <constraint firstItem="e0H-Ga-X6T" firstAttribute="centerX" secondItem="p3e-St-UvU" secondAttribute="centerX" id="Adk-qT-agP"/>
                             <constraint firstItem="bW6-FU-I0B" firstAttribute="bottom" secondItem="TJE-dJ-aku" secondAttribute="bottom" constant="25" id="Cmn-cu-HtK"/>
                             <constraint firstItem="4uw-g5-MVV" firstAttribute="centerY" secondItem="weq-pw-s4Z" secondAttribute="centerY" id="FhZ-fq-qg7"/>
                             <constraint firstItem="KO0-M2-rKm" firstAttribute="leading" secondItem="bW6-FU-I0B" secondAttribute="leading" constant="17" id="Fp5-qQ-a5M"/>
                             <constraint firstItem="KO0-M2-rKm" firstAttribute="top" secondItem="bW6-FU-I0B" secondAttribute="top" constant="17" id="HJI-jO-UmK"/>
-                            <constraint firstItem="ul1-ad-7wP" firstAttribute="top" secondItem="nG9-cb-Cyi" secondAttribute="bottom" constant="5" id="Hfe-jg-82W"/>
-                            <constraint firstItem="a1M-aW-rxx" firstAttribute="centerY" secondItem="p3e-St-UvU" secondAttribute="centerY" multiplier="0.9" constant="139.89999999999998" id="K6H-Vs-Oj3"/>
-                            <constraint firstItem="a1M-aW-rxx" firstAttribute="top" secondItem="BDc-hl-soh" secondAttribute="bottom" constant="160" id="LaH-oc-5i4"/>
+                            <constraint firstItem="ul1-ad-7wP" firstAttribute="top" secondItem="nG9-cb-Cyi" secondAttribute="bottom" constant="7" id="Hfe-jg-82W"/>
                             <constraint firstItem="bup-qe-rTn" firstAttribute="top" secondItem="BDc-hl-soh" secondAttribute="top" id="Mxa-63-TKy"/>
                             <constraint firstItem="bW6-FU-I0B" firstAttribute="bottom" secondItem="ul1-ad-7wP" secondAttribute="bottom" constant="30" id="PJj-SB-Opd"/>
                             <constraint firstItem="90Q-jZ-Tof" firstAttribute="top" secondItem="bW6-FU-I0B" secondAttribute="top" constant="17" id="SGf-EV-1tm"/>
-                            <constraint firstItem="bW6-FU-I0B" firstAttribute="trailing" secondItem="nG9-cb-Cyi" secondAttribute="trailing" constant="30" id="SSv-A3-qkS"/>
+                            <constraint firstItem="bW6-FU-I0B" firstAttribute="trailing" secondItem="nG9-cb-Cyi" secondAttribute="trailing" constant="100" id="SSv-A3-qkS"/>
                             <constraint firstItem="bW6-FU-I0B" firstAttribute="trailing" secondItem="0A9-hz-bPz" secondAttribute="trailing" constant="30" id="Sf5-xI-WIK"/>
                             <constraint firstItem="BDc-hl-soh" firstAttribute="centerX" secondItem="p3e-St-UvU" secondAttribute="centerX" id="Snr-kW-dp1"/>
                             <constraint firstItem="weq-pw-s4Z" firstAttribute="centerX" secondItem="p3e-St-UvU" secondAttribute="centerX" id="Tiu-fs-sS4"/>
-                            <constraint firstItem="bW6-FU-I0B" firstAttribute="trailing" secondItem="8Iw-OY-4OX" secondAttribute="trailing" constant="20" id="UdI-NH-JWr"/>
+                            <constraint firstItem="bW6-FU-I0B" firstAttribute="trailing" secondItem="8Iw-OY-4OX" secondAttribute="trailing" constant="100" id="UdI-NH-JWr"/>
                             <constraint firstItem="e0H-Ga-X6T" firstAttribute="top" secondItem="6u9-l2-zkr" secondAttribute="bottom" constant="10" id="VDl-X2-IFy"/>
                             <constraint firstItem="ul1-ad-7wP" firstAttribute="top" secondItem="0A9-hz-bPz" secondAttribute="bottom" constant="5" id="VhJ-BT-YMR"/>
                             <constraint firstItem="sJl-UO-YbK" firstAttribute="centerY" secondItem="weq-pw-s4Z" secondAttribute="centerY" id="XcQ-yr-YGK"/>
@@ -2646,7 +2684,7 @@ Your Registered Mobile Number 99XXXXXX32</string>
                             <constraint firstItem="cwb-AE-bGr" firstAttribute="top" secondItem="bW6-FU-I0B" secondAttribute="top" constant="10" id="cIs-dk-aZP"/>
                             <constraint firstItem="0A9-hz-bPz" firstAttribute="leading" secondItem="bW6-FU-I0B" secondAttribute="leading" constant="30" id="dsv-XP-2Qq"/>
                             <constraint firstItem="uVz-Wk-3Xe" firstAttribute="centerY" secondItem="weq-pw-s4Z" secondAttribute="centerY" id="eFm-g8-UBZ"/>
-                            <constraint firstItem="nG9-cb-Cyi" firstAttribute="leading" secondItem="bW6-FU-I0B" secondAttribute="leading" constant="30" id="g00-EN-ebK"/>
+                            <constraint firstItem="nG9-cb-Cyi" firstAttribute="leading" secondItem="bW6-FU-I0B" secondAttribute="leading" constant="100" id="g00-EN-ebK"/>
                             <constraint firstItem="x6c-r5-NP6" firstAttribute="centerY" secondItem="90Q-jZ-Tof" secondAttribute="centerY" id="gL1-k4-TTe"/>
                             <constraint firstItem="bW6-FU-I0B" firstAttribute="trailing" secondItem="90Q-jZ-Tof" secondAttribute="trailing" constant="20" id="gQx-dY-wEF"/>
                             <constraint firstItem="sJl-UO-YbK" firstAttribute="leading" secondItem="weq-pw-s4Z" secondAttribute="trailing" constant="7.5" id="j3m-wI-kWI"/>
@@ -2657,9 +2695,9 @@ Your Registered Mobile Number 99XXXXXX32</string>
                             <constraint firstItem="cwb-AE-bGr" firstAttribute="centerX" secondItem="p3e-St-UvU" secondAttribute="centerX" id="oLo-nu-aQL"/>
                             <constraint firstItem="ul1-ad-7wP" firstAttribute="trailing" secondItem="90Q-jZ-Tof" secondAttribute="trailing" id="qEf-BU-xGR"/>
                             <constraint firstItem="weq-pw-s4Z" firstAttribute="top" secondItem="e0H-Ga-X6T" secondAttribute="bottom" constant="150" id="qPx-uM-Uns"/>
-                            <constraint firstItem="8Iw-OY-4OX" firstAttribute="leading" secondItem="bW6-FU-I0B" secondAttribute="leading" constant="20" id="rVG-Kf-cys"/>
+                            <constraint firstItem="8Iw-OY-4OX" firstAttribute="leading" secondItem="bW6-FU-I0B" secondAttribute="leading" constant="100" id="rVG-Kf-cys"/>
                             <constraint firstItem="QmI-8g-knP" firstAttribute="top" secondItem="p3e-St-UvU" secondAttribute="top" id="sEZ-37-TAp"/>
-                            <constraint firstItem="6u9-l2-zkr" firstAttribute="top" secondItem="a1M-aW-rxx" secondAttribute="bottom" constant="-90" id="ska-FS-fKY"/>
+                            <constraint firstItem="bW6-FU-I0B" firstAttribute="bottom" secondItem="a1M-aW-rxx" secondAttribute="bottom" constant="190" id="ska-FS-fKY"/>
                             <constraint firstItem="ul1-ad-7wP" firstAttribute="top" secondItem="8Iw-OY-4OX" secondAttribute="bottom" constant="9" id="y6g-F2-7ng"/>
                             <constraint firstItem="QmI-8g-knP" firstAttribute="leading" secondItem="bW6-FU-I0B" secondAttribute="leading" id="zON-E1-GSx"/>
                             <constraint firstItem="TJE-dJ-aku" firstAttribute="centerX" secondItem="p3e-St-UvU" secondAttribute="centerX" id="zwb-xM-icY"/>
@@ -5420,12 +5458,13 @@ Your Registered Mobile Number 99XXXXXX32</string>
         <image name="StartBackground" width="544" height="544"/>
         <image name="agreeAndContinue" width="233" height="86"/>
         <image name="bannerPlaceHolder" width="735" height="139"/>
+        <image name="bg_T&amp;C" width="1024" height="769"/>
         <image name="bg_login" width="1024" height="768.5"/>
+        <image name="bg_userLogin" width="1024" height="769"/>
         <image name="bitmap" width="32" height="32"/>
         <image name="black-Cross" width="13" height="13"/>
         <image name="continueRewardScreen" width="130" height="42"/>
         <image name="cupImg" width="150" height="88.5"/>
-        <image name="disagreeButton" width="203" height="56"/>
         <image name="enableButton" width="363" height="57"/>
         <image name="greenPlant" width="32" height="52"/>
         <image name="greenPlantGray" width="38" height="60"/>
@@ -5436,7 +5475,7 @@ Your Registered Mobile Number 99XXXXXX32</string>
         <image name="greenrichSpinBorder" width="2060" height="2080"/>
         <image name="img0" width="49" height="68"/>
         <image name="knowMoreBackgroundUpdated" width="1024" height="768"/>
-        <image name="landingBackground" width="1024" height="768"/>
+        <image name="landingBackground" width="1024" height="769"/>
         <image name="logo" width="87" height="36"/>
         <image name="myRewards" width="130" height="42"/>
         <image name="myRewardsKnowMore" width="180" height="50"/>
@@ -5449,11 +5488,10 @@ Your Registered Mobile Number 99XXXXXX32</string>
         <image name="roundRectangle" width="180" height="50"/>
         <image name="royalbluewheel" width="208.5" height="208.5"/>
         <image name="spinScreenBackgound" width="1024" height="768"/>
-        <image name="spinToPlay" width="218" height="131"/>
         <image name="store" width="27" height="25"/>
         <image name="storeGray" width="20" height="20"/>
-        <image name="whiteBoxBG" width="559" height="387"/>
+        <image name="whiteBoxBG" width="630" height="456"/>
         <image name="winBigSeason" width="130" height="42"/>
-        <image name="yellow-stripe" width="752" height="56"/>
+        <image name="yellow-stripe" width="822" height="40"/>
     </resources>
 </document>

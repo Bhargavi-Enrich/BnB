@@ -70,7 +70,7 @@ class EN_VC_CutomerOTPVerification : UIViewController,UITextFieldDelegate {
         }
         
         txtFieldOTP.attributedPlaceholder = NSAttributedString(string: "ENTER OTP",
-                                                                                attributes: [NSAttributedString.Key.foregroundColor: UIColor(rgb: 0x373737)])
+                                                               attributes: [NSAttributedString.Key.foregroundColor: UIColor.black.withAlphaComponent(0.4)])
         
     }
     
@@ -94,7 +94,7 @@ class EN_VC_CutomerOTPVerification : UIViewController,UITextFieldDelegate {
                 if let data = try? Data(contentsOf: URL(string: urlObj)!) {
                     if let image = UIImage(data: data) {
                         DispatchQueue.main.async {
-                            self?.imgbackground.image = image
+                            //self?.imgbackground.image = image
                         }
                     }
                 }
@@ -121,12 +121,12 @@ class EN_VC_CutomerOTPVerification : UIViewController,UITextFieldDelegate {
         self.setLayerToTextField(txtFieldOTP)
 //        self.setArrowToTextField(txtFieldOTP)
         
-        let textContent = "Please Enter OTP That We Sent On \n Your Registered Mobile Number " + self.userEnterMobileNumber!
+        let textContent = "PLEASE ENTER OTP THAT WE SENT ON YOUR REGISTERED MOBILE NUMBER " + self.userEnterMobileNumber!
         let textString = NSMutableAttributedString(string: textContent, attributes: [
-            NSAttributedString.Key.font: UIFont(name: FontName.FuturaPTBook, size:25)
+            NSAttributedString.Key.font: UIFont(name: FontName.FuturaPTBook, size:18)
             ])
-        textString.setColorForText(textForAttribute: self.userEnterMobileNumber!, withColor: UIColor.black, withFont: UIFont(name: FontName.FuturaPTDemi, size:25)!)
-        self.lblDescription.textColor = UIColor.darkGray
+        textString.setColorForText(textForAttribute: self.userEnterMobileNumber!, withColor: UIColor.black, withFont: UIFont(name: FontName.FuturaPTBook, size:18)!)
+        self.lblDescription.textColor = UIColor.black
         self.lblDescription.attributedText  = textString
     }
     

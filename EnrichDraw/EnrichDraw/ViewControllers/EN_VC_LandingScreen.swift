@@ -121,7 +121,7 @@ class EN_VC_LandingScreen: UIViewController
                     if let data = try? Data(contentsOf: URL(string: urlObj)!) {
                         if let image = UIImage(data: data) {
                             DispatchQueue.main.async {
-                                self?.imgbackground.image = image
+                                //self?.imgbackground.image = image
                             }
                         }
                     }
