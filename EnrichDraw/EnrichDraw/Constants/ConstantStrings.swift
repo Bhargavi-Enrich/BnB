@@ -63,4 +63,5 @@ enum FontName {
     static let FuturaPTBook = "FuturaPT-Book"
     static let FuturaPTDemi = "FuturaPT-Demi"
     static let FuturaPTMedium = "FuturaPT-Medium"
+    static let FuturaPTHeavy = "FuturaPT-Heavy"
 }

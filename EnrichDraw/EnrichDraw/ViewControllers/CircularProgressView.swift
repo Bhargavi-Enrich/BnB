@@ -12,7 +12,7 @@ import Foundation
 class CircularProgressView: UIView {
     
     // First create two layer properties
-    private var circleLayer = CAShapeLayer()
+    public var circleLayer = CAShapeLayer()
     private var progressLayer = CAShapeLayer()
         
     override init(frame: CGRect) {

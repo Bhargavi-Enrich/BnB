@@ -60,15 +60,25 @@ class EN_VC_RewardWinnings: UIViewController, UICollectionViewDelegate, UICollec
     override func viewDidLoad() {
             super.viewDidLoad()
             
-            self.yourTotalWinningsLabel.text = "Your Total Winnings"
+            self.yourTotalWinningsLabel.text = "YOUR WINNINGS"
             
            
             self.dropShadowView.backgroundColor = UIColor(rgb: 0x707070).withAlphaComponent(0.50)
-            self.spinAgainButton.setBackgroundImage(UIImage(named: "enableButton"), for: .normal)
+            //self.spinAgainButton.setBackgroundImage(UIImage(named: "enableButton"), for: .normal)
             if(self.totalSpinLeftString > 0){
-                self.numberOfLeftSpinLabel.text = "You have \(self.totalSpinLeftString) more spins left"
+                let normalText = "You have "
+                let boldText = "\(self.totalSpinLeftString) MORE SPINS "
+                let normalTextEnd = "left"
+                let attributedString = NSMutableAttributedString(string:normalText)
+                let attributedStringEnd = NSMutableAttributedString(string:normalTextEnd)
+                let attrs = [NSAttributedString.Key.font : UIFont(name: FontName.FuturaPTHeavy, size: 16)]
+                let boldString = NSMutableAttributedString(string: boldText, attributes:attrs)
+                attributedString.append(boldString)
+                attributedString.append(attributedStringEnd)
+                self.numberOfLeftSpinLabel.attributedText = attributedString
+                //self.numberOfLeftSpinLabel.text = "You have \(self.totalSpinLeftString) MORE SPINS left"
                 
-                self.spinAgainButton.setTitle("SPIN AGAIN  >", for: .normal)
+                self.spinAgainButton.setTitle("NEXT SPIN  >", for: .normal)
             }else{
                 self.numberOfLeftSpinLabel.text = "All your Reward Points have been added to your Enrich Wallet"
                 
@@ -85,11 +95,11 @@ class EN_VC_RewardWinnings: UIViewController, UICollectionViewDelegate, UICollec
     
     func setTotalRewardPOintsValue(totalRewardsCount: Double){
         let normalText = "You have won a total of "
-        let boldText = "\(totalRewardsCount)"
-        let normalTextEnd = " Reward Points that can be redeemed against beauty services and products"
+        let boldText = "\(totalRewardsCount) Reward Points "
+        let normalTextEnd = "that can be redeemed against beauty services and products"
         let attributedString = NSMutableAttributedString(string:normalText)
         let attributedStringEnd = NSMutableAttributedString(string:normalTextEnd)
-        let attrs = [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 15)]
+        let attrs = [NSAttributedString.Key.font : UIFont(name: FontName.FuturaPTHeavy, size: 16)]
         let boldString = NSMutableAttributedString(string: boldText, attributes:attrs)
         attributedString.append(boldString)
         attributedString.append(attributedStringEnd)

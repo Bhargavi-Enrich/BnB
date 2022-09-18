@@ -44,7 +44,18 @@ class EN_VC_CollectionViewCell: UICollectionViewCell {
             self.startSpinView.isHidden = false
             self.midSpinView.isHidden = true
             self.completedSpinView.isHidden = true
-            self.startSpinLabel.text = "You Have 1\n More Spin Left"
+            
+            let normalText = "You have\n"
+            let boldText = "1 MORE SPIN\n"
+            let normalTextEnd = "left"
+            let attributedString = NSMutableAttributedString(string:normalText)
+            let attributedStringEnd = NSMutableAttributedString(string:normalTextEnd)
+            let attrs = [NSAttributedString.Key.font : UIFont(name: FontName.FuturaPTHeavy, size: 16)]
+            let boldString = NSMutableAttributedString(string: boldText, attributes:attrs)
+            attributedString.append(boldString)
+            attributedString.append(attributedStringEnd)
+            self.startSpinLabel.attributedText = attributedString
+            //self.startSpinLabel.text = "You have 1\n MORE SPIN left"
             
         }
         else if (model.cellType == TypeOfCell.gold){
@@ -57,7 +68,7 @@ class EN_VC_CollectionViewCell: UICollectionViewCell {
             self.percentageOfTreatedPatient = Int(model.amountWon)!
             self.setProgresValue(model.circularProgress)
             self.progressCurrentValueLabel.text = String(percentageOfTreatedPatient)
-            self.numberOfSpinLabel.text = "\(spinNumber.ordinal) Spin"
+            self.numberOfSpinLabel.text = "\(spinNumber.ordinal) SPIN"
         }
         else if (model.cellType == TypeOfCell.blue) {
             
@@ -69,7 +80,7 @@ class EN_VC_CollectionViewCell: UICollectionViewCell {
             self.percentageOfTreatedPatient = Int(model.amountWon)!
             self.setProgresValue(model.circularProgress)
             self.midProgressCurrentValueLabel.text = String(percentageOfTreatedPatient)
-            self.midNumberOfSpinLabel.text = "\(spinNumber.ordinal) Spin"
+            self.midNumberOfSpinLabel.text = "\(spinNumber.ordinal) SPIN"
         }
         
         
@@ -126,9 +137,11 @@ class EN_VC_CollectionViewCell: UICollectionViewCell {
     func setProgresValue(_ value:Float){
         self.progressCurrentValueLabel.text = String(percentageOfTreatedPatient)
         self.progressView.createCircularPath(value: Double(percentageOfTreatedPatient))
+        self.progressView.circleLayer.strokeColor = UIColor(red: 232.0/255.0, green: 34.0/255.0, blue: 46.0/255.0, alpha: 1.0).cgColor
         self.progressView.progressAnimation(0.1, value)
         
         self.midSpinProgressView.createCircularPath(value: Double(percentageOfTreatedPatient))
+        self.midSpinProgressView.circleLayer.strokeColor = UIColor(red: 255.0/255.0, green: 225.0/255.0, blue: 33.0/255.0, alpha: 1.0).cgColor
         self.midSpinProgressView.progressAnimation(0.1, value)
     }
     
