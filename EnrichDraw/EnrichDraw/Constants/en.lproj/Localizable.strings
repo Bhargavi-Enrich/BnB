@@ -93,7 +93,7 @@
 "kl_ErrorContactAdmin" = "Please contact to admin for rewards. All rewards are availed.";
 "kl_ErrorExhausted" = "All rewards exhausted for this invoice.";
 
-"kl_ReadyForNextSpin" = "SPIN AGAIN  >"; //"Ready for the next ride";
+"kl_ReadyForNextSpin" = "NEXT SPIN  >"; //"Ready for the next ride";
 
 "kl_RedeemMsg" = " Greenrich reward points which you can redeem at any Enrich Salon on services or products!";
 

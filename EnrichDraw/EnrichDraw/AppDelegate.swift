@@ -33,6 +33,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
             self.gListOfImages = data
         }
         downloadImagesVideos()
+        
+//        for family in UIFont.familyNames {
+//            print("family:", family)
+//            for font in UIFont.fontNames(forFamilyName: family) {
+//                print("font:", font)
+//            }
+//        }
+        
         return true
     }
     

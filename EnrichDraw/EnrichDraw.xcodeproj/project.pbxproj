@@ -25,6 +25,8 @@
 		07D6C2D826FB4AC70048A3C0 /* FuturaPTLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 07D6C2D126FB4AC70048A3C0 /* FuturaPTLight.otf */; };
 		07D6C2D926FB4AC70048A3C0 /* FuturaPTHeavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 07D6C2D226FB4AC70048A3C0 /* FuturaPTHeavy.otf */; };
 		07D6C2DA26FB4AC70048A3C0 /* FuturaPTMedium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 07D6C2D326FB4AC70048A3C0 /* FuturaPTMedium.otf */; };
+		0C1B101B28D878BE00658224 /* BodoniModa_28pt-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0C1B101928D878BE00658224 /* BodoniModa_28pt-Bold.ttf */; };
+		0C1B101C28D878BE00658224 /* Goldbrick.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0C1B101A28D878BE00658224 /* Goldbrick.otf */; };
 		0C62487728C87A5600179DA8 /* Credentials.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0C62487628C87A5600179DA8 /* Credentials.rtf */; };
 		140D2F8522BCBD6A00F61CC6 /* ConstantStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140D2F8422BCBD6A00F61CC6 /* ConstantStrings.swift */; };
 		1410B89224D96CD400205A2F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1410B89124D96CD400205A2F /* WebKit.framework */; };
@@ -211,6 +213,8 @@
 		07D6C2D126FB4AC70048A3C0 /* FuturaPTLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FuturaPTLight.otf; sourceTree = "<group>"; };
 		07D6C2D226FB4AC70048A3C0 /* FuturaPTHeavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FuturaPTHeavy.otf; sourceTree = "<group>"; };
 		07D6C2D326FB4AC70048A3C0 /* FuturaPTMedium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FuturaPTMedium.otf; sourceTree = "<group>"; };
+		0C1B101928D878BE00658224 /* BodoniModa_28pt-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BodoniModa_28pt-Bold.ttf"; sourceTree = "<group>"; };
+		0C1B101A28D878BE00658224 /* Goldbrick.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Goldbrick.otf; sourceTree = "<group>"; };
 		0C62487628C87A5600179DA8 /* Credentials.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credentials.rtf; sourceTree = "<group>"; };
 		140D2F8422BCBD6A00F61CC6 /* ConstantStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantStrings.swift; sourceTree = "<group>"; };
 		1410B89124D96CD400205A2F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
@@ -717,6 +721,8 @@
 				F852AE22251B542400446F04 /* Montserrat-SemiBoldItalic.ttf */,
 				F852AE14251B542200446F04 /* Montserrat-Thin.ttf */,
 				F852AE15251B542200446F04 /* Montserrat-ThinItalic.ttf */,
+				0C1B101928D878BE00658224 /* BodoniModa_28pt-Bold.ttf */,
+				0C1B101A28D878BE00658224 /* Goldbrick.otf */,
 			);
 			path = CustomFonts;
 			sourceTree = "<group>";
@@ -938,6 +944,7 @@
 				07D6C2D826FB4AC70048A3C0 /* FuturaPTLight.otf in Resources */,
 				F852AE2F251B542400446F04 /* Montserrat-ExtraBoldItalic.ttf in Resources */,
 				18F33AC92133EE6400F6F7CD /* Phosphate.ttc in Resources */,
+				0C1B101C28D878BE00658224 /* Goldbrick.otf in Resources */,
 				B79F94BB2337560C00F01515 /* RouletteWheel2.mp3 in Resources */,
 				B794AD322328F61D003AC402 /* gif3.gif in Resources */,
 				1841732E229668AF00FFDA48 /* CampaignTableViewCell.xib in Resources */,
@@ -957,6 +964,7 @@
 				18A71013212D0E5E001AECE7 /* LaunchScreen.storyboard in Resources */,
 				0748556D26FCC64900749DD1 /* EN_VC_WinBBPopupViewController.xib in Resources */,
 				07D6C2D426FB4AC70048A3C0 /* FuturaPTDemi.otf in Resources */,
+				0C1B101B28D878BE00658224 /* BodoniModa_28pt-Bold.ttf in Resources */,
 				07D6C2D626FB4AC70048A3C0 /* FuturaPTBold.otf in Resources */,
 				B74DBCF32337E596001E618B /* RollDice.mp3 in Resources */,
 				14AFB51C215A5627006284F5 /* animationsteps1.m4v in Resources */,

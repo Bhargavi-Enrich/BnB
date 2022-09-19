@@ -29,32 +29,31 @@ class EN_VC_AlertViewController: UIViewController {
     var bombSoundEffect: AVAudioPlayer?
     var gifWithImageView: UIImageView?
     
-    let spinLeftText = "3 more spins"
+    let spinLeftText = "3 MORE SPINS"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
         self.alertViewSmall.layer.cornerRadius = 20
-        self.alertViewSmall.backgroundColor = UIColor.white
+        //self.alertViewSmall.backgroundColor = UIColor.white
         
         self.spinLeftStackView.isHidden =  self.appDelegate.totalEligibleSpinCountsAgainstAllInvoices <= 0
         
         let normalText = "You have "
-        let boldText = "\(self.appDelegate.totalEligibleSpinCountsAgainstAllInvoices)" + " more spins "
-        let normalTextEnd = " left"
+        let boldText = "\(self.appDelegate.totalEligibleSpinCountsAgainstAllInvoices)" + " MORE SPINS "
+        let normalTextEnd = "left"
         let attributedString = NSMutableAttributedString(string:normalText)
         let attributedStringEnd = NSMutableAttributedString(string:normalTextEnd)
-        let attrs = [NSAttributedString.Key.font : UIFont.init(name: FontName.FuturaPTMedium, size: 18)]
+        let attrs = [NSAttributedString.Key.font : UIFont.init(name: FontName.FuturaPTHeavy, size: 16)]
         let boldString = NSMutableAttributedString(string: boldText, attributes:attrs)
         attributedString.append(boldString)
         attributedString.append(attributedStringEnd)
         self.spinLeftLabel.attributedText = attributedString
         
-      
         
-        self.btnReadyForNextSpin.setBackgroundImage(UIImage(named: "spinAgain-button"), for: .normal)
-        self.btnReadyForNextSpin.setTitle("SPIN AGAIN  >", for: .normal)
+        //self.btnReadyForNextSpin.setBackgroundImage(UIImage(named: "spinAgain-button"), for: .normal)
+        //self.btnReadyForNextSpin.setTitle("SPIN AGAIN  >", for: .normal)
         //self.btnReadyForNextSpin.setBackgroundImage(UIImage(named: "enableButton"), for: .normal)
         //self.btnReadyForNextSpin.setTitle("CLOSE  >", for: .normal)
         
@@ -72,7 +71,7 @@ class EN_VC_AlertViewController: UIViewController {
     }
     
     //MARK:- Set Alert Values
-    func setAlertValues(congratsMessage:String = "Woohoo!",imageTrophy:String = "greenPlant",winningMessage:NSMutableAttributedString?, btnTitle : String = "kl_ReadyForNextSpin".localized, btnBackgoundImage : String = "readyForTheNextSpin", tipMessage: String)
+    func setAlertValues(congratsMessage:String = "WOOHOO!",imageTrophy:String = "greenPlant",winningMessage:NSMutableAttributedString?, btnTitle : String = "kl_ReadyForNextSpin".localized, btnBackgoundImage : String = "readyForTheNextSpin", tipMessage: String)
     {
         
         self.imageTrophy.image = UIImage(named: imageTrophy)
@@ -80,19 +79,18 @@ class EN_VC_AlertViewController: UIViewController {
         self.lblPrizeWonMessage.text = winningMessage?.string
         self.btnReadyForNextSpin.setTitle(btnTitle, for: UIControl.State.normal)
         //self.lblTipsMessage.text = tipMessage
-        self.btnReadyForNextSpin.setBackgroundImage(UIImage(named: btnBackgoundImage), for: UIControl.State.normal)
+        //self.btnReadyForNextSpin.setBackgroundImage(UIImage(named: btnBackgoundImage), for: UIControl.State.normal)
         
         
-        if btnTitle.containsIgnoreCase("SPIN AGAIN  >")  {
-            self.btnReadyForNextSpin.setTitleColor(UIColor.black, for: . normal)
-        lblTipsMessage.text = "They have been added to your Enrich Wallet."
+        if btnTitle.containsIgnoreCase("NEXT SPIN  >")  {
+            self.btnReadyForNextSpin.setTitleColor(UIColor(red: 232.0/255.0, green: 34.0/255.0, blue: 46.0/255.0, alpha: 1.0), for: . normal)
+            lblTipsMessage.text = "They have been added to your ENRICH WALLET"
         }
         
         else
         {
             self.btnReadyForNextSpin.setTitleColor(UIColor.white, for: . normal)
             self.btnReadyForNextSpin.setBackgroundImage(UIImage(named: "enableButton"), for: UIControl.State.normal)
-            
 
         }
         
