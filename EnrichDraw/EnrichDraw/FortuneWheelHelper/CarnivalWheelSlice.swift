@@ -43,6 +43,9 @@ public enum Style {
     case greenrichDark
     case greenrichLight
     
+    case red22
+    case white22
+    
     public var backgroundColor: UIColor {
         switch self {
             case .darkRed: return TTUtils.uiColor(from:0xF2574C)
@@ -77,6 +80,9 @@ public enum Style {
             
             case .greenrichDark: return TTUtils.uiColor(from:0x517030)
             case .greenrichLight: return TTUtils.uiColor(from:0x709c41)
+            
+            case .red22: return UIColor.red
+            case .white22: return UIColor.white
 
         }
     }
@@ -135,6 +141,10 @@ public class CarnivalWheelSlice: FortuneWheelSliceProtocol {
 
         case .greenrichDark: return TTUtils.uiColor(from:0x517030)
         case .greenrichLight: return TTUtils.uiColor(from:0x709c41)
+            
+        case .red22: return UIColor.red
+        case .white22: return UIColor.white
+
         }
     }
     
@@ -173,6 +183,10 @@ public class CarnivalWheelSlice: FortuneWheelSliceProtocol {
       
         case .greenrichDark: return UIFont(name: fontName, size: fontsize)!
         case .greenrichLight: return UIFont(name: fontName, size: fontsize)!
+            
+        case .red22: return UIFont(name: fontName, size: fontsize)!
+        case .white22: return UIFont(name: fontName, size: fontsize)!
+
         }
     }
     

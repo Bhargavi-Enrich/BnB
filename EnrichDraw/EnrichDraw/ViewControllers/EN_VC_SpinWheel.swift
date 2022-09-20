@@ -1055,8 +1055,8 @@ class EN_VC_SpinWheel: UIViewController {
         self.imgDiceShow.image = UIImage(named: self.returnDiceColorImage(spinNumber: userSelectedIndex))
         
         //SPIN WHEEL BACKGROUND
-        darkColor = .darkYellow
-        lightColor = .lightYellow
+        darkColor = .red22
+        lightColor = .white22
         
         self.spinWheel.image = UIImage(named: "royalbluewheel")
         //        self.btnSpin.setTitleColor(darkColor.backgroundColor, for: UIControlState.normal)
@@ -1121,14 +1121,14 @@ class EN_VC_SpinWheel: UIViewController {
     //MARK:- **** UPDATE POINTS ON SERVER : Spin Wheel Action ****
     @IBAction func rotateButton(_ sender: Any) {
         
-        if(self.btnSpin.titleLabel?.text == "Spin It") // Spin Wheel
+        if(self.btnSpin.titleLabel?.text == "START") // Spin Wheel
         {
             
             if(isTrialOrRewardSpin) {// Trial Spin
                 self.adminSeletedSliceToStop = (self.randomNumber(MIN: 0, MAX: self.spinningWheel.slices.count))
                 
                 self.hideColorOptionsWhenSpinIsRotating()
-                self.btnSpin.setTitle("Stop", for: UIControl.State.normal)
+                self.btnSpin.setTitle("STOP", for: UIControl.State.normal)
                 self.btnSpinTitle = self.btnSpin.currentTitle!
                 spinningWheel.startAnimating()
                 startTimer()
@@ -1143,7 +1143,7 @@ class EN_VC_SpinWheel: UIViewController {
                     self.adminSeletedSliceToStop = self.getRewardsIndextoStop(rewards_id: reward_id)
                     
                     self.hideColorOptionsWhenSpinIsRotating()
-                    self.btnSpin.setTitle("Stop", for: UIControl.State.normal)
+                    self.btnSpin.setTitle("STOP", for: UIControl.State.normal)
                     self.btnSpinTitle = self.btnSpin.currentTitle!
                     self.spinningWheel.startAnimating()
                     self.startTimer()
@@ -1166,7 +1166,7 @@ class EN_VC_SpinWheel: UIViewController {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.0) {
                 self.bombSoundEffect?.fadeOut()
                 self.spinningWheel.startAnimating(fininshIndex: (self.adminSeletedSliceToStop)) { (finished) in
-                    self.btnSpin.setTitle("Spin It", for: UIControl.State.normal)
+                    self.btnSpin.setTitle("START", for: UIControl.State.normal)
                     self.btnSpinTitle = self.btnSpin.currentTitle!
                     print("Status: \(finished)")
                     if self.spinningWheel.slices.count > self.adminSeletedSliceToStop
@@ -1705,7 +1705,7 @@ extension EN_VC_SpinWheel {
         self.isShowAmount = false
         self.btnTimer.isHidden = false
         self.viewCasinoCities.isHidden = false
-        btnStop.setTitle("Spin It", for: .normal)
+        btnStop.setTitle("START", for: .normal)
         self.viewCasino.isHidden = false
         var strFinal = self.spinningWheel.slices [self.adminSeletedSliceToStop].rewardValue
         print("strFinal : \(strFinal)")
@@ -1725,7 +1725,7 @@ extension EN_VC_SpinWheel {
             
             startTimer()
             self.viewCasinoCities.isHidden = true
-            btnStop.setTitle("Stop", for: .normal)
+            btnStop.setTitle("STOP", for: .normal)
             btnStop.isEnabled = true
             
             j1 = Int(getRandonNumber(range: 0...9))
@@ -1759,7 +1759,7 @@ extension EN_VC_SpinWheel {
         }else if !isStopCol && !isStopCol1 && !isStopCol2 && !isStopCol3 && !isStopCol4 && !isStopCol5 {
             
             btnStop.isEnabled = false
-            btnStop.setTitle("Spin It", for: .normal)
+            btnStop.setTitle("START", for: .normal)
             DispatchQueue.main.asyncAfter(deadline: .now() + getRandonNumber(range: 0.1...0.2), execute: {
                 self.isStopCol = true
                 _ = self.checkUptoZero()
