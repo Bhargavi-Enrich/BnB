@@ -15,7 +15,7 @@ struct StoreDetails {
     var participationCount : Int = 0
     var storeId : Int = 0
     var storeName : String?
-    var totalRewardsRolled : String = ""
+    var totalRewardsRolled : Int = 0
     var no_of_spin_availed: Int = 0
 }
 
@@ -161,11 +161,11 @@ class EN_VC_LandingScreen: UIViewController
             let people_participated = dictData["people_participated"] as? Int
             let store_id = dictData["store_id"] as? Int
             let base_salon_name = dictData["base_salon_name"] as? String
-            let total_reward = dictData["total_reward"] as? Double
+            let total_reward = dictData["total_reward"] as? Int
             let no_of_spin_availed = dictData["no_of_spin_availed"] as? Int
 
 
-            self.storeDetails = StoreDetails.init(participationCount: people_participated ?? 0, storeId: store_id ?? 0, storeName: base_salon_name?.capitalized, totalRewardsRolled: total_reward?.withCommas() ?? 0.0.withCommas(), no_of_spin_availed: no_of_spin_availed ?? 0 )
+            self.storeDetails = StoreDetails.init(participationCount: people_participated ?? 0, storeId: store_id ?? 0, storeName: base_salon_name?.capitalized, totalRewardsRolled: total_reward ?? 0, no_of_spin_availed: no_of_spin_availed ?? 0 )
         }
         if let entityID = self.campaignDetails.entity_id, !entityID.isEmpty {
     
@@ -345,8 +345,7 @@ class EN_VC_LandingScreen: UIViewController
                         self.viewTotalRewardsRolled.isHidden = true
                         DispatchQueue.main.async {
 //                            self.lblSpinCount.text = self.getSixDigitData(amountWon: String(format:"%d",self.storeDetails.participationCount))
-                            self.lblSpinCount.text = self.getSixDigitData(amountWon: String(format:"%d",self.storeDetails.no_of_spin_availed)) + " " + self.lblNoOfSpins.text!
-
+                            self.lblSpinCount.text = "kl_NoOfSpins".localized  + self.storeDetails.no_of_spin_availed.withCommas()
                         }
                     })
                     
@@ -358,7 +357,7 @@ class EN_VC_LandingScreen: UIViewController
                     UIView.transition(with: self.viewTotalRewardsRolled, duration: 1.0, options: transitionOptions, animations: {
                         self.viewTotalRewardsRolled.isHidden = true
                          DispatchQueue.main.async {
-                            self.lblTotalRewardsRolled.text = self.storeDetails.totalRewardsRolled + " " + self.lblRewardsRolled.text!
+                             self.lblTotalRewardsRolled.text = "kl_TotalRewardsRolled".localized + self.storeDetails.totalRewardsRolled.withCommas() 
                         }
                     })
                     
@@ -797,7 +796,7 @@ extension EN_VC_LandingScreen
                         participationCount: (dataDataObj["people_participated"] as? Int)!,
                         storeId: Int(userDetailsObj.salon_id ?? "0") ?? 0,
                         storeName: (userDetailsObj.base_salon_name ?? "My Salon"),
-                        totalRewardsRolled: (dataDataObj["total_reward"] as? Double)!.withCommas(),
+                        totalRewardsRolled: (dataDataObj["total_reward"] as? Int)!,
                         no_of_spin_availed: ((dataDataObj["no_of_spin_availed"] as? Int)!) )
                     
                     

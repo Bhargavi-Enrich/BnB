@@ -545,3 +545,13 @@ extension UIApplication {
     }
 }
 
+extension Int {
+    func withCommas() -> String {
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .decimal
+        numberFormatter.groupingSize = 3
+        numberFormatter.secondaryGroupingSize = 2
+        numberFormatter.groupingSeparator = ","
+        return numberFormatter.string(from: NSNumber(value:self))!
+    }
+}

@@ -152,9 +152,9 @@ class EN_VC_TrialSpin: UIViewController {
     
     func changeLastFiveSpinData()
     {
-        self.lblSpinCount.text = self.getSixDigitData(amountWon: String(format:"%d",appd.no_of_spin_availed)) + " " + "kl_NoOfSpins".localized
+        self.lblSpinCount.text = "kl_NoOfSpins".localized + appd.no_of_spin_availed.withCommas()
         
-        self.lblTotalRewardsRolled.text = appd.totalRewardsRolled + " " + "kl_TotalRewardsRolled".localized
+        self.lblTotalRewardsRolled.text = "kl_TotalRewardsRolled".localized + appd.totalRewardsRolled.withCommas()
         
         self.changeLabelsOnFiveSpin()
     }
@@ -281,8 +281,7 @@ class EN_VC_TrialSpin: UIViewController {
         self.btnWinBigThisSeason.setTitle("WIN BIG\nTHIS SEASON", for: .normal)
         self.btnWinBigThisSeason.titleLabel!.lineBreakMode = NSLineBreakMode.byWordWrapping
         self.btnWinBigThisSeason.titleLabel!.numberOfLines = 0
-        self.btnWinBigThisSeason.contentHorizontalAlignment = .center
-        self.btnWinBigThisSeason.contentVerticalAlignment = .center
+        self.btnWinBigThisSeason.titleLabel?.textAlignment = .center
     }
     
     func titleForGame() {

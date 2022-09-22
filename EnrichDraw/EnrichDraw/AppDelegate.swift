@@ -16,9 +16,9 @@ import Crashlytics
 class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate {
     
     var arrLastFiveSpinDetails = [CustomerSpin]()
-        var no_of_spin_availed = 0
     var totalEligibleSpinCountsAgainstAllInvoices = 0
-        var totalRewardsRolled = "0"
+    var totalRewardsRolled = 0
+    var no_of_spin_availed = 0
     var window: UIWindow?
     var avBackgroundMusic: AVAudioPlayer?
 //    var gListOfImages : [ModelAzureData] = []
