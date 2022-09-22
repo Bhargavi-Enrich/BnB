@@ -16,6 +16,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EN_VC_WinBigBBViewController" customModule="Beauty_Bling" customModuleProvider="target">
             <connections>
+                <outlet property="btnBack" destination="hc5-bQ-0Ul" id="6Hj-r4-Bec"/>
                 <outlet property="imageView" destination="ipp-9O-yIS" id="Zof-1W-edX"/>
                 <outlet property="imgEnrichLogo" destination="mSh-vy-39J" id="5q4-4m-dOg"/>
                 <outlet property="lblCopyRight" destination="wZt-8g-nYc" id="JU9-j3-fT9"/>
@@ -27,6 +28,14 @@
             <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mSh-vy-39J">
+                    <rect key="frame" x="0.0" y="20" width="210" height="110"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="210" id="9V8-gH-hSD"/>
+                        <constraint firstAttribute="height" constant="110" id="hxb-t5-cOo"/>
+                    </constraints>
+                </imageView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_rewards" translatesAutoresizingMaskIntoConstraints="NO" id="ipp-9O-yIS">
                     <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                 </imageView>
@@ -36,22 +45,26 @@
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="B&amp;BLogo" translatesAutoresizingMaskIntoConstraints="NO" id="mSh-vy-39J">
-                    <rect key="frame" x="17" y="37" width="87" height="36"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hc5-bQ-0Ul">
+                    <rect key="frame" x="0.0" y="20" width="210" height="110"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="87" id="9V8-gH-hSD"/>
-                        <constraint firstAttribute="height" constant="36" id="hxb-t5-cOo"/>
+                        <constraint firstAttribute="height" constant="110" id="ilO-ak-Gks"/>
+                        <constraint firstAttribute="width" constant="210" id="kw0-3i-gDb"/>
                     </constraints>
-                </imageView>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain"/>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="mSh-vy-39J" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="17" id="FpH-n5-y25"/>
+                <constraint firstItem="hc5-bQ-0Ul" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="MOH-BR-KBg"/>
                 <constraint firstItem="wZt-8g-nYc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Nad-wS-b9T"/>
+                <constraint firstItem="mSh-vy-39J" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="SKU-7X-VZA"/>
                 <constraint firstItem="ipp-9O-yIS" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="WKh-oG-Fgu"/>
                 <constraint firstItem="ipp-9O-yIS" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="eDV-3d-FhR"/>
-                <constraint firstItem="mSh-vy-39J" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="17" id="gab-XJ-7jj"/>
+                <constraint firstItem="hc5-bQ-0Ul" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="eb0-gd-Qfz"/>
+                <constraint firstItem="mSh-vy-39J" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="izd-aA-OmX"/>
                 <constraint firstItem="ipp-9O-yIS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="sam-HK-a94"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="wZt-8g-nYc" secondAttribute="bottom" constant="25" id="xQg-ze-elS"/>
                 <constraint firstItem="ipp-9O-yIS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="zn9-nB-Et3"/>
@@ -60,8 +73,7 @@
         </view>
     </objects>
     <resources>
-        <image name="B&amp;BLogo" width="87" height="36"/>
-        <image name="bg_rewards" width="1024" height="769"/>
+        <image name="bg_rewards" width="1024" height="768"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

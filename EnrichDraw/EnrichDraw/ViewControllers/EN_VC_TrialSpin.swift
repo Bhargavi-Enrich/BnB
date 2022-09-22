@@ -88,6 +88,8 @@ class EN_VC_TrialSpin: UIViewController {
     @IBOutlet weak var lblAnimation: MarqueeLabel!
     let labelSpace = "      "
 
+    @IBOutlet weak var btnWinBigThisSeason: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         hideColorSection()
@@ -275,6 +277,12 @@ class EN_VC_TrialSpin: UIViewController {
         openSelectedGame(selectedGame: .spinWheel)
         
         hideAllColorButtons()
+        
+        self.btnWinBigThisSeason.setTitle("WIN BIG\nTHIS SEASON", for: .normal)
+        self.btnWinBigThisSeason.titleLabel!.lineBreakMode = NSLineBreakMode.byWordWrapping
+        self.btnWinBigThisSeason.titleLabel!.numberOfLines = 0
+        self.btnWinBigThisSeason.contentHorizontalAlignment = .center
+        self.btnWinBigThisSeason.contentVerticalAlignment = .center
     }
     
     func titleForGame() {

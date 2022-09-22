@@ -102,7 +102,10 @@ class EN_VC_RewardSpin: UIViewController {
         
         let appd:AppDelegate = UIApplication.shared.delegate as! AppDelegate
     
-    @IBOutlet weak var lblAnimation: MarqueeLabel!
+    //@IBOutlet weak var lblAnimation: MarqueeLabel!
+    @IBOutlet weak var lblAnimation: UILabel!
+    
+    @IBOutlet weak var btnWinBigThisSeason: UIButton!
 
 
     var remainingLocalRideCount = 0
@@ -175,8 +178,8 @@ class EN_VC_RewardSpin: UIViewController {
                 
                 if (!self.lblSpinCount.text!.isEmpty || !self.lblPoints1.text!.isEmpty || !self.lblPoints2.text!.isEmpty || !self.lblPoints3.text!.isEmpty || !self.lblPoints4.text!.isEmpty || !self.lblPoints5.text!.isEmpty || !self.lblTotalRewardsRolled.text!.isEmpty){
                     
-                    self.lblAnimation.speed = .duration(10.0)
-                    self.lblAnimation.type = .continuous
+                    //self.lblAnimation.speed = .duration(10.0)
+                    //self.lblAnimation.type = .left
                     
                     let text1 = self.lblSpinCount.text! + self.labelSpace + self.lblPoints1.text!
                     let text2 = self.labelSpace + self.lblPoints2.text! + self.labelSpace
@@ -424,7 +427,7 @@ class EN_VC_RewardSpin: UIViewController {
     }
         
     @IBAction func actionBtnPlace(_ sender: Any) {
-       // popupAction()
+       popupAction()
     }
     
     @IBAction func actionBtnContinue(_ sender: Any) {
@@ -786,6 +789,12 @@ extension EN_VC_RewardSpin
             self.collectionSpin.reloadData()
             
             self.openSelectedGame(selectedGame: .spinWheel)
+            
+            self.btnWinBigThisSeason.setTitle("WIN BIG\nTHIS SEASON", for: .normal)
+            self.btnWinBigThisSeason.titleLabel!.lineBreakMode = NSLineBreakMode.byWordWrapping
+            self.btnWinBigThisSeason.titleLabel!.numberOfLines = 0
+            self.btnWinBigThisSeason.contentHorizontalAlignment = .center
+            self.btnWinBigThisSeason.contentVerticalAlignment = .center
         }
         
         

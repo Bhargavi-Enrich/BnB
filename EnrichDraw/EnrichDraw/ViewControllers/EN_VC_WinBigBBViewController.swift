@@ -12,6 +12,7 @@ class EN_VC_WinBigBBViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var lblCopyRight: UILabel!
     @IBOutlet private weak var imgEnrichLogo: UIImageView!
+    @IBOutlet private weak var btnBack: UIButton!
 
     var customerDetails = CustomerDetails()
     var storeDetails = StoreDetails()
@@ -48,7 +49,7 @@ class EN_VC_WinBigBBViewController: UIViewController {
             }
         }
         
-        
+        self.btnBack.addTarget(self, action: #selector(self.tapLogo), for: .touchUpInside)
         
     }
     

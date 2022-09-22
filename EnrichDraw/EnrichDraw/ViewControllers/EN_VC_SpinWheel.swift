@@ -350,8 +350,8 @@ class EN_VC_SpinWheel: UIViewController {
         self.spinwheelImageWidthCons.constant = width
         self.spinwheelImageHeightCons.constant = height
         
-        self.spinwheelBorderWidthCons.constant = width + 4
-        self.spinwheelBorderHeightCons.constant = height + 4
+        self.spinwheelBorderWidthCons.constant = width + 50
+        self.spinwheelBorderHeightCons.constant = height + 50
         
         self.updateViewConstraints()
         

@@ -90,7 +90,7 @@ public enum Style {
 public class CarnivalWheelSlice: FortuneWheelSliceProtocol {
 
     let fontsize : CGFloat = 16
-    let fontName : String = "Montserrat-semibold"
+    let fontName : String = "FuturaPT-Bold"
     public var rewardName: String
     public var degree: CGFloat = 0.0
     // New Added
@@ -100,7 +100,7 @@ public class CarnivalWheelSlice: FortuneWheelSliceProtocol {
     public var campaignRewardId: Int = 0
     
     public var fontColor: UIColor {
-        return UIColor.white
+        return UIColor.black
     }
     
     public var offsetFromExterior:CGFloat {
@@ -142,7 +142,7 @@ public class CarnivalWheelSlice: FortuneWheelSliceProtocol {
         case .greenrichDark: return TTUtils.uiColor(from:0x517030)
         case .greenrichLight: return TTUtils.uiColor(from:0x709c41)
             
-        case .red22: return UIColor.red
+        case .red22: return UIColor(red: 232/255, green: 39/255, blue: 33/255, alpha: 1.0)
         case .white22: return UIColor.white
 
         }
