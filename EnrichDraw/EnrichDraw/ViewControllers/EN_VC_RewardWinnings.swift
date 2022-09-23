@@ -53,7 +53,7 @@ class EN_VC_RewardWinnings: UIViewController, UICollectionViewDelegate, UICollec
     var totalSpinLeftString = 0
     var totalNumberOfSpins = 0
     
-    private var totalRewardsCount : Double = 0.0
+    private var totalRewardsCount : Int = 0
     var arrCustomer = [TotalWonRewardSpin]()
 
     
@@ -93,7 +93,7 @@ class EN_VC_RewardWinnings: UIViewController, UICollectionViewDelegate, UICollec
             
         }
     
-    func setTotalRewardPOintsValue(totalRewardsCount: Double){
+    func setTotalRewardPOintsValue(totalRewardsCount: Int){
         let normalText = "You have won a total of "
         let boldText = "\(totalRewardsCount) Reward Points "
         let normalTextEnd = "that can be redeemed against beauty services and products"
@@ -109,6 +109,7 @@ class EN_VC_RewardWinnings: UIViewController, UICollectionViewDelegate, UICollec
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        self.collectionView.flashScrollIndicators()
         getTotalRewards()
     }
     
@@ -212,7 +213,7 @@ extension EN_VC_RewardWinnings {
     func setData(dict : Dictionary<String, Any>?)
     {
         self.arrCustomer.removeAll()
-        self.totalRewardsCount = 0.0
+        self.totalRewardsCount = 0
         var numberAlreadyAvailedSpinCount: Int = 0
         // Customer spin data
         if let dictData = dict, let dataDataObj = dictData["data"] as? [String : Any] {
@@ -225,7 +226,7 @@ extension EN_VC_RewardWinnings {
                         {
                             if(value.isNumber)
                             {
-                                self.totalRewardsCount = self.totalRewardsCount + Double(value)! //Old code
+                                self.totalRewardsCount = self.totalRewardsCount + Int(value)! //Old code
                                 
                                 numberAlreadyAvailedSpinCount =  numberAlreadyAvailedSpinCount + 1
                             }
