@@ -100,6 +100,12 @@ public class CarnivalWheelSlice: FortuneWheelSliceProtocol {
     public var campaignRewardId: Int = 0
     
     public var fontColor: UIColor {
+        if self.style == .red22 {
+            return UIColor.white
+        }
+        else if self.style == .white22 {
+            return UIColor.black
+        }
         return UIColor.black
     }
     
