@@ -138,12 +138,12 @@ open class FortuneWheelLayer: CALayer  {
         
         //// Set title attributes
         let textStyle = NSMutableParagraphStyle()
-        textStyle.firstLineHeadIndent = 10
-        textStyle.headIndent = 10
-        textStyle.tailIndent = -25
+        textStyle.firstLineHeadIndent = 0
+        textStyle.headIndent = 0
+        textStyle.tailIndent = -10
 
-        textStyle.alignment = .right
-//        textStyle.baseWritingDirection = .leftToRight
+        textStyle.alignment = .left
+        textStyle.baseWritingDirection = .leftToRight
         var textFontAttributes = slice.textAttributes
         textFontAttributes[.paragraphStyle] = textStyle
         

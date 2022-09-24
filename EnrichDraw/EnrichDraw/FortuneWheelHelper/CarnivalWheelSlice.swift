@@ -89,8 +89,8 @@ public enum Style {
 }
 public class CarnivalWheelSlice: FortuneWheelSliceProtocol {
 
-    let fontsize : CGFloat = 16
-    let fontName : String = "FuturaPT-Bold"
+    let fontsize : CGFloat = 28
+    let fontName : String = FontName.BodoniModa28ptBold
     public var rewardName: String
     public var degree: CGFloat = 0.0
     // New Added

@@ -61,8 +61,8 @@ extension FortuneWheelSliceProtocol {
     
     public var textAttributes:[NSAttributedString.Key: Any] {
         let textStyle = NSMutableParagraphStyle()
-        textStyle.alignment = .right
-//        textStyle.baseWritingDirection = .leftToRight
+        textStyle.alignment = .left
+        textStyle.baseWritingDirection = .leftToRight
     let deafultAttributes:[NSAttributedString.Key: Any] =
                 [.font: self.font,
                  .foregroundColor: self.fontColor,
