@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,6 +18,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EN_VC_WinBigBBViewController" customModule="Beauty_Bling" customModuleProvider="target">
             <connections>
                 <outlet property="btnBack" destination="hc5-bQ-0Ul" id="6Hj-r4-Bec"/>
+                <outlet property="btnContinue" destination="fNt-Iu-hEb" id="ne1-pv-w2q"/>
                 <outlet property="imageView" destination="ipp-9O-yIS" id="Zof-1W-edX"/>
                 <outlet property="imgEnrichLogo" destination="mSh-vy-39J" id="5q4-4m-dOg"/>
                 <outlet property="lblCopyRight" destination="wZt-8g-nYc" id="JU9-j3-fT9"/>
@@ -39,6 +41,29 @@
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_rewards" translatesAutoresizingMaskIntoConstraints="NO" id="ipp-9O-yIS">
                     <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                 </imageView>
+                <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNt-Iu-hEb">
+                    <rect key="frame" x="404" y="661" width="216" height="57"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="216" id="Az2-od-VkX"/>
+                        <constraint firstAttribute="height" constant="57" id="hxi-rt-RFi"/>
+                    </constraints>
+                    <color key="tintColor" red="0.90980392160000001" green="0.1333333333" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="arrow.left" catalog="system" title="CONTINUE  ">
+                        <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="21" scale="default" weight="medium"/>
+                        <fontDescription key="titleFontDescription" name="FuturaPT-Bold" family="Futura PT" pointSize="16"/>
+                        <color key="baseForegroundColor" red="0.90980392156862744" green="0.13333333333333333" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                    </buttonConfiguration>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="VCornerRadius">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="btnContinueClicked:" destination="-1" eventType="touchUpInside" id="VvR-jM-wjp"/>
+                    </connections>
+                </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright © 2022 Enrich. All Rights Reserved." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZt-8g-nYc">
                     <rect key="frame" x="387" y="725" width="250.5" height="18"/>
                     <fontDescription key="fontDescription" name="FuturaPT-Book" family="Futura PT" pointSize="14"/>
@@ -51,29 +76,34 @@
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hc5-bQ-0Ul">
-                    <rect key="frame" x="0.0" y="20" width="210" height="110"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hc5-bQ-0Ul">
+                    <rect key="frame" x="20" y="20" width="210" height="70"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="110" id="ilO-ak-Gks"/>
+                        <constraint firstAttribute="height" constant="70" id="ilO-ak-Gks"/>
                         <constraint firstAttribute="width" constant="210" id="kw0-3i-gDb"/>
                     </constraints>
-                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain"/>
+                    <buttonConfiguration key="configuration" style="plain" title="    ">
+                        <imageReference key="image" image="arrow.left" catalog="system" symbolScale="large"/>
+                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Tia-4m-efk" secondAttribute="trailing" constant="25" id="13P-zl-RoP"/>
+                <constraint firstItem="wZt-8g-nYc" firstAttribute="top" secondItem="fNt-Iu-hEb" secondAttribute="bottom" constant="7" id="15e-If-Ivn"/>
                 <constraint firstItem="hc5-bQ-0Ul" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="MOH-BR-KBg"/>
                 <constraint firstItem="wZt-8g-nYc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Nad-wS-b9T"/>
                 <constraint firstItem="mSh-vy-39J" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="SKU-7X-VZA"/>
                 <constraint firstItem="ipp-9O-yIS" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="WKh-oG-Fgu"/>
                 <constraint firstItem="ipp-9O-yIS" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="eDV-3d-FhR"/>
-                <constraint firstItem="hc5-bQ-0Ul" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="eb0-gd-Qfz"/>
                 <constraint firstItem="mSh-vy-39J" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="izd-aA-OmX"/>
                 <constraint firstItem="ipp-9O-yIS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="sam-HK-a94"/>
+                <constraint firstItem="fNt-Iu-hEb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="wbH-Ge-o52"/>
+                <constraint firstItem="hc5-bQ-0Ul" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="wyw-JJ-IBE"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="wZt-8g-nYc" secondAttribute="bottom" constant="25" id="xQg-ze-elS"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Tia-4m-efk" secondAttribute="bottom" constant="25" id="zbh-YL-hhU"/>
                 <constraint firstItem="ipp-9O-yIS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="zn9-nB-Et3"/>
@@ -82,6 +112,7 @@
         </view>
     </objects>
     <resources>
+        <image name="arrow.left" catalog="system" width="128" height="98"/>
         <image name="bg_rewards" width="1024" height="768"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

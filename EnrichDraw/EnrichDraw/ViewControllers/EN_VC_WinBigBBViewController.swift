@@ -13,6 +13,8 @@ class EN_VC_WinBigBBViewController: UIViewController {
     @IBOutlet weak var lblCopyRight: UILabel!
     @IBOutlet private weak var imgEnrichLogo: UIImageView!
     @IBOutlet private weak var btnBack: UIButton!
+    @IBOutlet weak var btnContinue: UIButton!
+
 
     var customerDetails = CustomerDetails()
     var storeDetails = StoreDetails()
@@ -30,8 +32,8 @@ class EN_VC_WinBigBBViewController: UIViewController {
         self.imageView.isUserInteractionEnabled = true
         self.imgEnrichLogo.isUserInteractionEnabled = true
 
-                let tapGestureImage = UITapGestureRecognizer(target: self, action: #selector(self.tapImage))
-                self.imageView.addGestureRecognizer(tapGestureImage)
+//        let tapGestureImage = UITapGestureRecognizer(target: self, action: #selector(self.tapImage))
+//        self.imageView.addGestureRecognizer(tapGestureImage)
        
         let tapGestureLogo = UITapGestureRecognizer(target: self, action: #selector(self.tapLogo))
         self.imgEnrichLogo.addGestureRecognizer(tapGestureLogo)
@@ -49,10 +51,15 @@ class EN_VC_WinBigBBViewController: UIViewController {
             }
         }
         
+        self.btnContinue.titleLabel?.font = UIFont(name: FontName.FuturaPTBold, size: 16.0)
+        
         self.btnBack.addTarget(self, action: #selector(self.tapLogo), for: .touchUpInside)
         
     }
     
+    @IBAction func btnContinueClicked(_ sender: UIButton) {
+        openRewardSpinScreen()
+    }
         
     @objc func tapImage(){
             openRewardSpinScreen()
