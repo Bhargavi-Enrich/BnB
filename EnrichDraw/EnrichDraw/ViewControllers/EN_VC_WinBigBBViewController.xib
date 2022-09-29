@@ -50,7 +50,7 @@
                     </constraints>
                     <color key="tintColor" red="0.90980392160000001" green="0.1333333333" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" image="arrow.left" catalog="system" title="CONTINUE  ">
+                    <buttonConfiguration key="configuration" style="plain" image="arrow.right" catalog="system" title="CONTINUE  ">
                         <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="21" scale="default" weight="medium"/>
                         <fontDescription key="titleFontDescription" name="FuturaPT-Bold" family="Futura PT" pointSize="16"/>
                         <color key="baseForegroundColor" red="0.90980392156862744" green="0.13333333333333333" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
@@ -113,6 +113,7 @@
     </objects>
     <resources>
         <image name="arrow.left" catalog="system" width="128" height="98"/>
+        <image name="arrow.right" catalog="system" width="128" height="98"/>
         <image name="bg_rewards" width="1024" height="768"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
