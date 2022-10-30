@@ -31,6 +31,8 @@ class EN_VC_AlertViewController: UIViewController {
     
     let spinLeftText = "3 MORE SPINS"
     
+    @IBOutlet weak var congratesConstraintWidth: NSLayoutConstraint!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -71,16 +73,20 @@ class EN_VC_AlertViewController: UIViewController {
     }
     
     //MARK:- Set Alert Values
-    func setAlertValues(congratsMessage:String = "WOOHOO!",imageTrophy:String = "greenPlant",winningMessage:NSMutableAttributedString?, btnTitle : String = "kl_ReadyForNextSpin".localized, btnBackgoundImage : String = "readyForTheNextSpin", tipMessage: String)
+    func setAlertValues(congratsMessage:String = "WOOHOO!",imageTrophy:String = "greenPlant",winningMessage:NSMutableAttributedString?, surpriseGiftName : String , btnTitle : String = "kl_ReadyForNextSpin".localized, btnBackgoundImage : String = "readyForTheNextSpin", tipMessage: String)
     {
         
         self.imageTrophy.image = UIImage(named: imageTrophy)
         self.lblCongratulations.text = congratsMessage
-        self.lblPrizeWonMessage.text = winningMessage?.string
+        self.congratesConstraintWidth.constant = surpriseGiftName.isEmpty ? 250 : 450
+        self.lblPrizeWonMessage.text = (winningMessage?.string ?? "") +  (surpriseGiftName.isEmpty ? "" : ("\n \(surpriseGiftName)"))
+        self.lblPrizeWonMessage.backgroundColor = .yellow
         self.btnReadyForNextSpin.setTitle(btnTitle, for: UIControl.State.normal)
         //self.lblTipsMessage.text = tipMessage
         //self.btnReadyForNextSpin.setBackgroundImage(UIImage(named: btnBackgoundImage), for: UIControl.State.normal)
         
+        
+        print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>", surpriseGiftName)
         
         if btnTitle.containsIgnoreCase("NEXT SPIN  >")  {
             self.btnReadyForNextSpin.setTitleColor(UIColor(red: 232.0/255.0, green: 34.0/255.0, blue: 46.0/255.0, alpha: 1.0), for: . normal)

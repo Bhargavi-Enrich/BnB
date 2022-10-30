@@ -69,6 +69,7 @@ struct Model_campaign_offers: Codable {
     var validity:String?
     var offer_used:String?
     var count:String?
+    var agift:String?
     
     var tip:String?
     var trial_display_name:String?

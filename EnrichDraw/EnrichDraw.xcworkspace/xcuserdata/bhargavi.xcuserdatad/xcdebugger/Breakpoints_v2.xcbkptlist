@@ -7,16 +7,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "31657953-9157-4ABF-AFDE-AC29B96DECAC"
+            uuid = "AEDE94AE-0E76-49A5-A24D-9B2C6383C0F7"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "EnrichDraw/ViewControllers/EN_VC_SpinWheel.swift"
+            filePath = "EnrichDraw/ViewControllers/EN_VC_CutomerOTPVerification .swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1143"
-            endingLineNumber = "1143"
-            landmarkName = "rotateButton(_:)"
+            startingLineNumber = "321"
+            endingLineNumber = "321"
+            landmarkName = "callCustomerInfo()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -77,7 +77,7 @@ class EN_VC_CollectionViewCell: UICollectionViewCell {
             self.midSpinView.isHidden = false
             self.completedSpinView.isHidden = true
             //self.progressCurrentValueLabel.text = model.amountWon
-            self.percentageOfTreatedPatient = Int(model.amountWon)!
+            self.percentageOfTreatedPatient = Int(model.amountWon) ?? 0
             self.setProgresValue(model.circularProgress)
             self.midProgressCurrentValueLabel.text = String(percentageOfTreatedPatient)
             self.midNumberOfSpinLabel.text = "\(spinNumber.ordinal) SPIN"
