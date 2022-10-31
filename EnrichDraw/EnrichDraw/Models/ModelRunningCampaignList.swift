@@ -70,9 +70,19 @@ struct Model_campaign_offers: Codable {
     var offer_used:String?
     var count:String?
     var agift:String?
+    var assured_gift_details:[assured_gift_details]?
+    var agift_name:String?
     
     var tip:String?
     var trial_display_name:String?
     var trial_reward_points:Int?
     var trial_validity:Int?
+}
+
+struct assured_gift_details: Codable {
+    var id:String?
+    var name:String?
+    var description:String?
+    var from_date:String?
+    var to_date:String?
 }

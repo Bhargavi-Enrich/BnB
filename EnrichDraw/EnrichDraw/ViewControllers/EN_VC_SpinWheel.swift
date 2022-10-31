@@ -655,7 +655,7 @@ class EN_VC_SpinWheel: UIViewController {
                     if loopCountFinal > 0 {
                         for _ in 0..<loopCountFinal {
                             let finalReward = "\(element.value ?? "0")".replacingOccurrences(of: "₹", with: "")
-                            array.append(CarnivalWheelSlice.init(rewardName: String(format: " %@", finalReward), rewardValue: finalReward, rewardType: element.offer_type!, rewardCount: loop_count, campaignRewardId: Int(element.campaign_reward_id ?? "0") ?? 0, surpriseGiftName: element.agift ?? ""))
+                            array.append(CarnivalWheelSlice.init(rewardName: String(format: " %@", finalReward), rewardValue: finalReward, rewardType: element.offer_type!, rewardCount: loop_count, campaignRewardId: Int(element.campaign_reward_id ?? "0") ?? 0, surpriseGiftName: element.agift_name ?? ""))
                         }
                     }
                 }
@@ -801,6 +801,7 @@ class EN_VC_SpinWheel: UIViewController {
         let params : [String: Any] = [
             "customerId" : self.customerDetails.customerId ?? "",
             "campaignId" :self.campaignDetails.entity_id ?? "",
+            "salonId" : self.storeDetails.storeId ,
             "is_custom" : true
         ]
         HUD.show(.labeledProgress(title: "", subtitle: "Please wait."), onView: obj.view)
@@ -901,7 +902,7 @@ class EN_VC_SpinWheel: UIViewController {
                     let offerName = element.trial_display_name ?? "Offer"
                     //                    slices.append(CarnivalWheelSlice.init(rewardName: String(format: "  %@", offerName.maxLength(length: 25)), rewardValue:finalReward , rewardType: element.offer_type!, rewardCount: Int(element.count!) ?? 0, campaignRewardId: Int(element.campaign_reward_id!) ?? 0))
                     //
-                    slices.append(CarnivalWheelSlice.init(rewardName: String(format: "  %@", offerName.maxLength(length: 25)), rewardValue: "\(element.trial_reward_points ?? 0)", rewardType: element.offer_type!, rewardCount: Int(element.count!) ?? 0, campaignRewardId: Int(element.campaign_reward_id!) ?? 0, surpriseGiftName: element.agift ?? ""))
+                    slices.append(CarnivalWheelSlice.init(rewardName: String(format: "  %@", offerName.maxLength(length: 25)), rewardValue: "\(element.trial_reward_points ?? 0)", rewardType: element.offer_type!, rewardCount: Int(element.count!) ?? 0, campaignRewardId: Int(element.campaign_reward_id!) ?? 0, surpriseGiftName: element.agift_name ?? ""))
                     
                     //                    }
                 }
@@ -961,7 +962,7 @@ class EN_VC_SpinWheel: UIViewController {
                     let offerName = element.offer_name ?? "Offer"
                     
                     // slices.append(CarnivalWheelSlice.init(rewardName: String(format: "  %@", offerName.maxLength(length: 25)), rewardValue:finalReward , rewardType: element.offer_type!, rewardCount: Int(element.count!) ?? 0, campaignRewardId: Int(element.campaign_reward_id!) ?? 0))
-                    slices.append(CarnivalWheelSlice.init(rewardName: String(format: "  %@", offerName.maxLength(length: 25)), rewardValue:element.value ?? "" , rewardType: element.offer_type!, rewardCount: Int(element.count!) ?? 0, campaignRewardId: Int(element.campaign_reward_id!) ?? 0, surpriseGiftName: element.agift ?? ""))
+                    slices.append(CarnivalWheelSlice.init(rewardName: String(format: "  %@", offerName.maxLength(length: 25)), rewardValue:element.value ?? "" , rewardType: element.offer_type!, rewardCount: Int(element.count!) ?? 0, campaignRewardId: Int(element.campaign_reward_id!) ?? 0, surpriseGiftName: element.agift_name ?? ""))
                     
                     
                     //                    }
@@ -1246,6 +1247,9 @@ class EN_VC_SpinWheel: UIViewController {
                 // self.appDelegate.stopBackgroundMusic()
                 // self.playMusicWhenSpinStops()
                 //Once the label is completely invisible, set the text and fade it back in
+                
+                let surprise = surpriseGiftName.isEmpty ? "" : "\(surpriseGiftName) and "
+                
                 if(self.isTimerActive == false)
                 {
                     let strErrorMsg = (self.isScratchCard ==  .spinWheel) ? "Please stop the wheel within 60 seconds." : "Please stop the slot game within 60 seconds."
@@ -1268,14 +1272,14 @@ class EN_VC_SpinWheel: UIViewController {
                         
                         if(winningPrice.isNumber)
                         {
-                            let textString = self.returnAttributedStringForAlertPopUp(textContext: String(format: "%@%@%@%@%@","kl_WonMsg1".localized ,winningPrice,"kl_WonMsgPts".relatedStrings(self.isScratchCard) ,"kl_WonMsg2".localized, strMsgWon ), winningPrice: winningPrice)
-                            alertViewController.setAlertValues(congratsMessage: "Woohoo!", imageTrophy:"greenPlant", winningMessage: textString, surpriseGiftName: surpriseGiftName, btnTitle: btnTitle, tipMessage: tipMessage)
+                            let textString = self.returnAttributedStringForAlertPopUp(textContext: String(format: "%@%@%@%@%@%@","kl_WonMsg1".localized ,surprise,winningPrice,"kl_WonMsgPts".relatedStrings(self.isScratchCard) ,"kl_WonMsg2".localized, strMsgWon ), winningPrice: winningPrice)
+                            alertViewController.setAlertValues(congratsMessage: "Woohoo!", imageTrophy:"greenPlant", winningMessage: textString, surpriseGiftName: surprise, btnTitle: btnTitle, tipMessage: tipMessage)
                             
                         }
                         else
                         {
-                            let textString = self.returnAttributedStringForAlertPopUp(textContext: String(format: "%@%@%@%@","kl_WonMsg1".localized ,winningPrice ,"kl_WonMsg2".localized,strMsgWon), winningPrice: winningPrice)
-                            alertViewController.setAlertValues(congratsMessage: "Woohoo!", imageTrophy:"greenPlant", winningMessage: textString, surpriseGiftName: surpriseGiftName, btnTitle: btnTitle, tipMessage: tipMessage)
+                            let textString = self.returnAttributedStringForAlertPopUp(textContext: String(format: "%@%@%@%@%@","kl_WonMsg1".localized ,surprise,winningPrice ,"kl_WonMsg2".localized,strMsgWon), winningPrice: winningPrice)
+                            alertViewController.setAlertValues(congratsMessage: "Woohoo!", imageTrophy:"greenPlant", winningMessage: textString, surpriseGiftName: surprise, btnTitle: btnTitle, tipMessage: tipMessage)
                             
                         }
                     }
@@ -1299,21 +1303,21 @@ class EN_VC_SpinWheel: UIViewController {
                             
                             if(winningPrice.isNumber)
                             {
-                                let textString = self.returnAttributedStringForAlertPopUp(textContext: String(format: "%@%@%@%@%@","kl_WonMsg1".localized ,winningPrice,"kl_WonMsgPts".relatedStrings(self.isScratchCard)  ,"kl_WonMsg2".localized,strMsgWon), winningPrice: winningPrice)
+                                let textString = self.returnAttributedStringForAlertPopUp(textContext: String(format: "%@%@%@%@%@%@","kl_WonMsg1".localized ,surprise,winningPrice,"kl_WonMsgPts".relatedStrings(self.isScratchCard)  ,"kl_WonMsg2".localized,strMsgWon), winningPrice: winningPrice)
                                 
-                                alertViewController.setAlertValues(congratsMessage: "Woohoo!", imageTrophy:"greenPlant", winningMessage: textString ,surpriseGiftName: surpriseGiftName, btnTitle: btnTitle, tipMessage: tipMessage)
+                                alertViewController.setAlertValues(congratsMessage: "Woohoo!", imageTrophy:"greenPlant", winningMessage: textString ,surpriseGiftName: surprise, btnTitle: btnTitle, tipMessage: tipMessage)
                             }
                             else
                             {
-                                let textString = self.returnAttributedStringForAlertPopUp(textContext: String(format: "%@%@%@%@","kl_WonMsg1".localized ,winningPrice ,"kl_WonMsg2".localized,strMsgWon), winningPrice: winningPrice)
-                                alertViewController.setAlertValues(congratsMessage: "Woohoo!", imageTrophy:"greenPlant", winningMessage: textString , surpriseGiftName: surpriseGiftName, btnTitle: btnTitle, tipMessage: tipMessage)
+                                let textString = self.returnAttributedStringForAlertPopUp(textContext: String(format: "%@%@%@%@%@","kl_WonMsg1".localized ,surprise,winningPrice,"kl_WonMsg2".localized,strMsgWon), winningPrice: winningPrice)
+                                alertViewController.setAlertValues(congratsMessage: "Woohoo!", imageTrophy:"greenPlant", winningMessage: textString , surpriseGiftName: surprise, btnTitle: btnTitle, tipMessage: tipMessage)
                                 
                             }
                         }
                         else
                         {
                             let textString = self.returnAttributedStringForAlertPopUp(textContext: String(format: "kl_ErrorContactAdmin".localized ,winningPrice,numberOfSpin ), winningPrice: winningPrice)
-                            alertViewController.setAlertValues(congratsMessage: "Sorry!", imageTrophy:"greenPlant", winningMessage: textString, surpriseGiftName: surpriseGiftName, tipMessage: tipMessage)
+                            alertViewController.setAlertValues(congratsMessage: "Sorry!", imageTrophy:"greenPlant", winningMessage: textString, surpriseGiftName: "", tipMessage: tipMessage)
                             
                         }
                 }

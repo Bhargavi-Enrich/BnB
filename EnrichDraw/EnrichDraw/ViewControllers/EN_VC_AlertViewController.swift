@@ -79,8 +79,7 @@ class EN_VC_AlertViewController: UIViewController {
         self.imageTrophy.image = UIImage(named: imageTrophy)
         self.lblCongratulations.text = congratsMessage
         self.congratesConstraintWidth.constant = surpriseGiftName.isEmpty ? 250 : 450
-        self.lblPrizeWonMessage.text = (winningMessage?.string ?? "") +  (surpriseGiftName.isEmpty ? "" : ("\n \(surpriseGiftName)"))
-        self.lblPrizeWonMessage.backgroundColor = .yellow
+        self.lblPrizeWonMessage.text = winningMessage?.string.uppercased()
         self.btnReadyForNextSpin.setTitle(btnTitle, for: UIControl.State.normal)
         //self.lblTipsMessage.text = tipMessage
         //self.btnReadyForNextSpin.setBackgroundImage(UIImage(named: btnBackgoundImage), for: UIControl.State.normal)
