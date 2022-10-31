@@ -48,12 +48,12 @@
                         <constraint firstAttribute="width" constant="216" id="Az2-od-VkX"/>
                         <constraint firstAttribute="height" constant="57" id="hxi-rt-RFi"/>
                     </constraints>
-                    <color key="tintColor" red="0.90980392160000001" green="0.1333333333" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="tintColor" red="0.098039215690000001" green="0.20000000000000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" image="arrow.right" catalog="system" title="CONTINUE  ">
                         <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="21" scale="default" weight="medium"/>
                         <fontDescription key="titleFontDescription" name="FuturaPT-Bold" family="Futura PT" pointSize="16"/>
-                        <color key="baseForegroundColor" red="0.90980392156862744" green="0.13333333333333333" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="baseForegroundColor" red="0.098039215690000001" green="0.20000000000000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                     </buttonConfiguration>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="VCornerRadius">

@@ -64,7 +64,6 @@ class EN_VC_RewardWinnings: UIViewController, UICollectionViewDelegate, UICollec
             
            
             self.dropShadowView.backgroundColor = UIColor(rgb: 0x707070).withAlphaComponent(0.50)
-            //self.spinAgainButton.setBackgroundImage(UIImage(named: "enableButton"), for: .normal)
             if(self.totalSpinLeftString > 0){
                 let normalText = "You have "
                 let boldText = "\(self.totalSpinLeftString) MORE SPINS "

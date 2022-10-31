@@ -151,11 +151,17 @@
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MlL-Pu-dbY">
                                         <rect key="frame" x="76" y="290" width="478" height="67"/>
+                                        <color key="backgroundColor" red="0.098039215686274508" green="0.20000000000000001" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="67" id="Ggn-A4-INO"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="FuturaPT-Demi" family="Futura PT" pointSize="16"/>
-                                        <state key="normal" title="LOGIN" backgroundImage="enableButton"/>
+                                        <state key="normal" title="LOGIN"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="VCornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="clickToSignIn:" destination="nwr-Vp-dc2" eventType="touchUpInside" id="xP1-fE-CkM"/>
                                         </connections>
@@ -364,7 +370,7 @@
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S8V-H3-po7">
                                         <rect key="frame" x="309" y="158" width="294" height="48"/>
-                                        <color key="backgroundColor" red="0.90980392160000001" green="0.1333333333" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.098039215690000001" green="0.20000000000000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="48" id="EeH-BQ-nMy"/>
                                             <constraint firstAttribute="width" constant="294" id="pAh-dV-wqd"/>
@@ -589,11 +595,17 @@
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZs-B1-DDy">
                                                 <rect key="frame" x="0.0" y="68" width="294" height="48"/>
+                                                <color key="backgroundColor" red="0.098039215690000001" green="0.20000000000000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="48" id="ho8-8v-DQP"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="FuturaPT-Medium" family="Futura PT" pointSize="16"/>
-                                                <state key="normal" title="CONFIRM" backgroundImage="enableButton"/>
+                                                <state key="normal" title="CONFIRM"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="VCornerRadius">
+                                                        <real key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="clickToConfirm:" destination="wcQ-hc-e0P" eventType="touchUpInside" id="sRw-ud-ir2"/>
                                                     <action selector="clickToSignIn:" destination="nwr-Vp-dc2" eventType="touchUpInside" id="LS5-0j-thm"/>
@@ -891,7 +903,7 @@
                                                     <constraint firstAttribute="height" constant="100" id="ag4-2D-dGM"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Goldbrick-Regular" family="Goldbrick" pointSize="92"/>
-                                                <color key="textColor" red="0.74509803921568629" green="0.11764705882352941" blue="0.1764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" red="0.098039215690000001" green="0.20000000000000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOU HAVE WON 2500 REWARD POINTS" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vhU-pB-9ll">
@@ -955,8 +967,9 @@
                                                     <constraint firstAttribute="height" constant="56" id="PlV-c4-368"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="FuturaPT-Bold" family="Futura PT" pointSize="16"/>
+                                                <color key="tintColor" red="0.098039215690000001" green="0.20000000000000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <state key="normal" title="NEXT SPIN  &gt;">
-                                                    <color key="titleColor" red="0.90980392160000001" green="0.1333333333" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleColor" red="0.098039215690000001" green="0.20000000000000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -966,7 +979,7 @@
                                                         <real key="value" value="2"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="VBorderColor">
-                                                        <color key="value" red="0.90980392160000001" green="0.1333333333" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="value" red="0.098039215690000001" green="0.20000000000000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="VCornerRadius">
                                                         <real key="value" value="12"/>
@@ -1131,7 +1144,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="FuturaPT-Bold" family="Futura PT" pointSize="16"/>
                                 <state key="normal" title="AGREE &amp; ACCEPT">
-                                    <color key="titleColor" red="0.90980392156862744" green="0.13333333333333333" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.098039215690000001" green="0.20000000000000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="VCornerRadius">
@@ -2063,7 +2076,7 @@
                                     </tableView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3tr-Tr-XVc">
                                         <rect key="frame" x="437" y="230" width="150" height="50"/>
-                                        <color key="backgroundColor" red="0.90980392160000001" green="0.1333333333" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.098039215690000001" green="0.20000000000000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="Xz7-2h-LOX"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="hUi-BE-Jko"/>
@@ -2322,7 +2335,7 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" name="FuturaPT-Bold" family="Futura PT" pointSize="16"/>
                                         <state key="normal" title="SPIN TO PLAY">
-                                            <color key="titleColor" red="0.90980392160000001" green="0.1333333333" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" red="0.098039215690000001" green="0.20000000000000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="VCornerRadius">
@@ -2342,7 +2355,7 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" name="FuturaPT-Bold" family="Futura PT" pointSize="16"/>
                                         <state key="normal" title="TRIAL SPIN">
-                                            <color key="titleColor" red="0.90980392156862744" green="0.13333333333333333" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" red="0.098039215690000001" green="0.20000000000000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="VCornerRadius">
@@ -4521,7 +4534,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="FuturaPT-Bold" family="Futura PT" pointSize="16"/>
                                 <state key="normal" title="MY REWARDS">
-                                    <color key="titleColor" red="0.90980392156862744" green="0.13333333333333333" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.098039215690000001" green="0.20000000000000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="VCornerRadius">
@@ -4553,7 +4566,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="FuturaPT-Bold" family="Futura PT" pointSize="16"/>
                                 <state key="normal" title="WIN BIG THIS SEASON">
-                                    <color key="titleColor" red="0.90980392160000001" green="0.1333333333" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.098039215690000001" green="0.20000000000000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="VCornerRadius">
@@ -5545,7 +5558,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="FuturaPT-Bold" family="Futura PT" pointSize="16"/>
                                 <state key="normal" title="MY REWARDS">
-                                    <color key="titleColor" red="0.90980392160000001" green="0.1333333333" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.098039215690000001" green="0.20000000000000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="VCornerRadius">
@@ -5565,7 +5578,7 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="FuturaPT-Bold" family="Futura PT" pointSize="16"/>
                                 <state key="normal" title="WIN BIG THIS SEASON">
-                                    <color key="titleColor" red="0.90980392160000001" green="0.1333333333" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.098039215690000001" green="0.20000000000000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="VCornerRadius">
@@ -5760,8 +5773,8 @@
         <image name="banner_WinUpTo15X" width="492" height="137"/>
         <image name="bg_MyRewards" width="817" height="556"/>
         <image name="bg_T&amp;C" width="1024" height="768"/>
-        <image name="bg_landingScreen" width="1024" height="769"/>
-        <image name="bg_salonLogin" width="1024" height="769"/>
+        <image name="bg_landingScreen" width="1024" height="768"/>
+        <image name="bg_salonLogin" width="1024" height="768"/>
         <image name="bg_spinWheelBorder" width="538" height="538"/>
         <image name="bg_spinWheelGame" width="1024" height="768"/>
         <image name="bg_userLogin" width="1024" height="768"/>
@@ -5771,7 +5784,6 @@
         <image name="black-Cross" width="13" height="13"/>
         <image name="btn_spin" width="125" height="149"/>
         <image name="cupImg" width="150" height="88.5"/>
-        <image name="enableButton" width="363" height="57"/>
         <image name="greenPlant" width="32" height="52"/>
         <image name="greenPlantGray" width="38" height="60"/>
         <image name="greenRichCardBoard" width="1024" height="768"/>

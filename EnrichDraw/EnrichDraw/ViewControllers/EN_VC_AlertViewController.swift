@@ -89,14 +89,14 @@ class EN_VC_AlertViewController: UIViewController {
         print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>", surpriseGiftName)
         
         if btnTitle.containsIgnoreCase("NEXT SPIN  >")  {
-            self.btnReadyForNextSpin.setTitleColor(UIColor(red: 232.0/255.0, green: 34.0/255.0, blue: 46.0/255.0, alpha: 1.0), for: . normal)
+            //self.btnReadyForNextSpin.setTitleColor(UIColor(red: 232.0/255.0, green: 34.0/255.0, blue: 46.0/255.0, alpha: 1.0), for: . normal)
             lblTipsMessage.text = "They have been added to your ENRICH WALLET"
         }
         
         else
         {
-            self.btnReadyForNextSpin.setTitleColor(UIColor.white, for: . normal)
-            self.btnReadyForNextSpin.setBackgroundImage(UIImage(named: "enableButton"), for: UIControl.State.normal)
+            //self.btnReadyForNextSpin.setTitleColor(UIColor.white, for: . normal)
+            //self.btnReadyForNextSpin.setBackgroundImage(UIImage(named: "enableButton"), for: UIControl.State.normal)
 
         }
         
