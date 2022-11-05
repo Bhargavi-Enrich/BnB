@@ -64,6 +64,7 @@ class EN_VC_LandingScreen: UIViewController
     
     @IBOutlet private weak var animatedUIView: UIStackView!
     @IBOutlet private weak var viewForAllSpins: UIStackView!
+    @IBOutlet private weak var lblVersion : UILabel!
 
     private var bombSoundEffect: AVAudioPlayer?
     private var arrLastFiveSpinDetails = [CustomerSpin]()
@@ -226,6 +227,11 @@ class EN_VC_LandingScreen: UIViewController
         }) { (isTrue) in
             self.lblSpinCursor.alpha = 1
         }
+        
+        let versionNumber = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as! String
+        let buildNumber = Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as! String
+        
+        self.lblVersion.text = "Version: \(versionNumber) (\(buildNumber))"
     }
     
     func getSixDigitData(amountWon : String) -> String

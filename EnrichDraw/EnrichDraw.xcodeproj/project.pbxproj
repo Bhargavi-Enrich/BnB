@@ -28,6 +28,8 @@
 		0C1B101B28D878BE00658224 /* BodoniModa_28pt-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0C1B101928D878BE00658224 /* BodoniModa_28pt-Bold.ttf */; };
 		0C1B101C28D878BE00658224 /* Goldbrick.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0C1B101A28D878BE00658224 /* Goldbrick.otf */; };
 		0C62487728C87A5600179DA8 /* Credentials.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0C62487628C87A5600179DA8 /* Credentials.rtf */; };
+		0CA0D9C42913A88400D6BAD6 /* SurpriseGiftCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA0D9C22913A88400D6BAD6 /* SurpriseGiftCell.swift */; };
+		0CA0D9C52913A88400D6BAD6 /* SurpriseGiftCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CA0D9C32913A88400D6BAD6 /* SurpriseGiftCell.xib */; };
 		140D2F8522BCBD6A00F61CC6 /* ConstantStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140D2F8422BCBD6A00F61CC6 /* ConstantStrings.swift */; };
 		1410B89224D96CD400205A2F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1410B89124D96CD400205A2F /* WebKit.framework */; };
 		141C1447214F733400BE8CE4 /* CampaignDetails.json in Resources */ = {isa = PBXBuildFile; fileRef = 141C1445214F733400BE8CE4 /* CampaignDetails.json */; };
@@ -216,6 +218,8 @@
 		0C1B101928D878BE00658224 /* BodoniModa_28pt-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BodoniModa_28pt-Bold.ttf"; sourceTree = "<group>"; };
 		0C1B101A28D878BE00658224 /* Goldbrick.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Goldbrick.otf; sourceTree = "<group>"; };
 		0C62487628C87A5600179DA8 /* Credentials.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credentials.rtf; sourceTree = "<group>"; };
+		0CA0D9C22913A88400D6BAD6 /* SurpriseGiftCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurpriseGiftCell.swift; sourceTree = "<group>"; };
+		0CA0D9C32913A88400D6BAD6 /* SurpriseGiftCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SurpriseGiftCell.xib; sourceTree = "<group>"; };
 		140D2F8422BCBD6A00F61CC6 /* ConstantStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantStrings.swift; sourceTree = "<group>"; };
 		1410B89124D96CD400205A2F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		141C1445214F733400BE8CE4 /* CampaignDetails.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CampaignDetails.json; sourceTree = "<group>"; };
@@ -525,6 +529,8 @@
 				F88282D225149585007338C6 /* RecycleItemCell.xib */,
 				F87BDFEA252DE95E003D2B5B /* MyOrderCell.swift */,
 				F87BDFEB252DE95E003D2B5B /* MyOrderCell.xib */,
+				0CA0D9C22913A88400D6BAD6 /* SurpriseGiftCell.swift */,
+				0CA0D9C32913A88400D6BAD6 /* SurpriseGiftCell.xib */,
 			);
 			name = Views;
 			path = EnrichDraw/Views;
@@ -996,6 +1002,7 @@
 				B709DF202332A37B00CC677E /* magicBox.mp3 in Resources */,
 				0748556C26FCC64900749DD1 /* EN_VC_WinBigBBViewController.xib in Resources */,
 				F89D759725245A0300DA1562 /* chimes.wav in Resources */,
+				0CA0D9C52913A88400D6BAD6 /* SurpriseGiftCell.xib in Resources */,
 				F87BDFED252DE95E003D2B5B /* MyOrderCell.xib in Resources */,
 				F852AE2C251B542400446F04 /* Montserrat-Black.ttf in Resources */,
 				14AE687E212D6CD5004E2338 /* woosh.aac in Resources */,
@@ -1145,6 +1152,7 @@
 				187276F02138569800686046 /* EN_VC_RewardSpin.swift in Sources */,
 				1488014022C3518300D74CDC /* CustomPopUpUserData.swift in Sources */,
 				14B0D15B213FA333003809F8 /* EN_VC_AlertViewController.swift in Sources */,
+				0CA0D9C42913A88400D6BAD6 /* SurpriseGiftCell.swift in Sources */,
 				F88282D325149585007338C6 /* RecycleItemCell.swift in Sources */,
 				18D222312142684A0070A991 /* EN_Service_AdminLogin.swift in Sources */,
 				0748556826FCC64900749DD1 /* EN_VC_RewardWinnings.swift in Sources */,
@@ -1303,7 +1311,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.5;
+				MARKETING_VERSION = 2.0;
 				OTHER_SWIFT_FLAGS = "-DSTAGE -D COCOAPODS";
 				PRODUCT_BUNDLE_IDENTIFIER = com.EnrichSalon.SpinWheelStage;
 				PRODUCT_NAME = BnB_Stage;
@@ -1490,7 +1498,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.5;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.EnrichSalon.GreenRichSpinWheel;
 				PRODUCT_NAME = "Beauty&Bling";
 				PROVISIONING_PROFILE_SPECIFIER = EnrichSpinWheelGreenRich_InHouse;
@@ -1516,7 +1524,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.5;
+				MARKETING_VERSION = 2.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.EnrichSalon.SpinWheelProd;
 				PRODUCT_NAME = "Beauty&Bling";

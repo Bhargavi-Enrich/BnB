@@ -29,7 +29,7 @@ public protocol FortuneWheelSliceProtocol {
     var rewardType:String { get }
     var rewardCount:Int { get }
     var campaignRewardId:Int { get }
-    var surpriseGiftName:String { get }
+    var surpriseGifts:[assured_gift_details] { get }
 
     
     

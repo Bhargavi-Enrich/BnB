@@ -21,6 +21,8 @@ class EN_VC_AlertViewController: UIViewController {
     @IBOutlet weak var spinLeftStackView: UIStackView!
     @IBOutlet weak var spinLeftLabel: UILabel!
     @IBOutlet weak var btnClosed: UIButton!
+    @IBOutlet weak var lblCollectionViewSpacer: UILabel!
+    @IBOutlet weak var collectionView: UICollectionView!
     
     var parentObj : UIViewController?
     var isTrialOrRewardSpin:Bool = false
@@ -31,7 +33,8 @@ class EN_VC_AlertViewController: UIViewController {
     
     let spinLeftText = "3 MORE SPINS"
     
-    @IBOutlet weak var congratesConstraintWidth: NSLayoutConstraint!
+    @IBOutlet weak var collectionViewConstraintWidth: NSLayoutConstraint!
+    var listOfGifts: [assured_gift_details] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,6 +62,15 @@ class EN_VC_AlertViewController: UIViewController {
         //self.btnReadyForNextSpin.setBackgroundImage(UIImage(named: "enableButton"), for: .normal)
         //self.btnReadyForNextSpin.setTitle("CLOSE  >", for: .normal)
         
+        self.lblCollectionViewSpacer.isHidden = false
+        self.collectionView.isHidden = false
+        self.collectionView.dataSource = self
+        self.collectionView.delegate = self
+        self.collectionView.register(UINib(nibName: "SurpriseGiftCell", bundle: nil), forCellWithReuseIdentifier: "SurpriseGiftCell")
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.collectionView.flashScrollIndicators()
     }
     
     
@@ -73,19 +85,15 @@ class EN_VC_AlertViewController: UIViewController {
     }
     
     //MARK:- Set Alert Values
-    func setAlertValues(congratsMessage:String = "WOOHOO!",imageTrophy:String = "greenPlant",winningMessage:NSMutableAttributedString?, surpriseGiftName : String , btnTitle : String = "kl_ReadyForNextSpin".localized, btnBackgoundImage : String = "readyForTheNextSpin", tipMessage: String)
+    func setAlertValues(congratsMessage:String = "WOOHOO!",imageTrophy:String = "greenPlant",winningMessage:NSMutableAttributedString?, surpriseGifts : [assured_gift_details] , btnTitle : String = "kl_ReadyForNextSpin".localized, btnBackgoundImage : String = "readyForTheNextSpin", tipMessage: String)
     {
         
         self.imageTrophy.image = UIImage(named: imageTrophy)
         self.lblCongratulations.text = congratsMessage
-        self.congratesConstraintWidth.constant = surpriseGiftName.isEmpty ? 250 : 450
-        self.lblPrizeWonMessage.text = winningMessage?.string.uppercased()
+        self.lblPrizeWonMessage.attributedText = winningMessage?.uppercased()
         self.btnReadyForNextSpin.setTitle(btnTitle, for: UIControl.State.normal)
         //self.lblTipsMessage.text = tipMessage
         //self.btnReadyForNextSpin.setBackgroundImage(UIImage(named: btnBackgoundImage), for: UIControl.State.normal)
-        
-        
-        print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>", surpriseGiftName)
         
         if btnTitle.containsIgnoreCase("NEXT SPIN  >")  {
             //self.btnReadyForNextSpin.setTitleColor(UIColor(red: 232.0/255.0, green: 34.0/255.0, blue: 46.0/255.0, alpha: 1.0), for: . normal)
@@ -131,6 +139,28 @@ class EN_VC_AlertViewController: UIViewController {
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.5) {
             self.removeGIF()
         }
+        
+        self.listOfGifts = surpriseGifts
+        switch self.listOfGifts.count {
+        case 0:
+            self.lblCollectionViewSpacer.isHidden = true
+            self.collectionView.isHidden = true
+            break
+
+        case 1:
+            collectionViewConstraintWidth.constant = 206.0
+            break
+
+        case 2:
+            collectionViewConstraintWidth.constant = 424.0
+            break
+
+        default:
+            collectionViewConstraintWidth.constant = 550.0
+            break
+        }
+        self.collectionView.reloadData()
+        
     }
     
     
@@ -247,5 +277,28 @@ extension EN_VC_AlertViewController {
             gifWithImageView = nil
             gifView.isHidden = true
         }
+    }
+}
+
+
+extension EN_VC_AlertViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    private func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return self.listOfGifts.count
+    }
+    
+    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SurpriseGiftCell", for: indexPath) as! SurpriseGiftCell
+        
+        cell.configureCell(gift_details: self.listOfGifts[indexPath.row])
+        
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 206, height: 60)
     }
 }

@@ -39,6 +39,10 @@ class EN_VC_CutomerAuthenticate: UIViewController,UITextFieldDelegate {
         
         txtFieldMobileNumber.attributedPlaceholder = NSAttributedString(string: "MOBILE NUMBER",
                                                                         attributes: [NSAttributedString.Key.foregroundColor: UIColor.black.withAlphaComponent(0.4)])
+        #if targetEnvironment(simulator)
+            txtFieldMobileNumber.text = "8866481841"
+        #endif
+        
     }
     
     override func didReceiveMemoryWarning() {

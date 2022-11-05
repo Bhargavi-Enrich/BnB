@@ -69,20 +69,45 @@ struct Model_campaign_offers: Codable {
     var validity:String?
     var offer_used:String?
     var count:String?
-    var agift:String?
-    var assured_gift_details:[assured_gift_details]?
+    var agift: String?
     var agift_name:String?
+    var surprise_gift_details:[assured_gift_details]?
     
     var tip:String?
     var trial_display_name:String?
     var trial_reward_points:Int?
     var trial_validity:Int?
+    
+    enum CodingKeys: String, CodingKey {
+        case campaign_reward_id = "campaign_reward_id"
+        case offer_type = "offer_type"
+        case offer_name = "offer_name"
+        case value = "value"
+        case weightage = "weightage"
+        case offer_used = "offer_used"
+        case count = "count"
+        case agift = "agift"
+        case agift_name = "agift_name"
+        case surprise_gift_details = "assured_gift_details"
+        case tip = "tip"
+        case trial_display_name = "trial_display_name"
+        case trial_validity = "trial_validity"
+        case trial_reward_points = "trial_reward_points"
+    }
 }
 
-struct assured_gift_details: Codable {
+public struct assured_gift_details: Codable {
     var id:String?
     var name:String?
     var description:String?
     var from_date:String?
     var to_date:String?
+    
+    enum CodingKeys: String, CodingKey {
+        case id = "id"
+        case name = "name"
+        case description = "description"
+        case from_date = "from_date"
+        case to_date = "to_date"
+    }
 }

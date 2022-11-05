@@ -40,6 +40,11 @@ class EN_VC_AdminAuthentication: UIViewController,UITextFieldDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.resetView()
+        #if targetEnvironment(simulator)
+            txtFieldStoreID.text = "superadmin"
+            txtFieldPassword.text = "Welcome@34" //"Keeri@123"
+        #endif
+        
     }
     
     override func didReceiveMemoryWarning() {

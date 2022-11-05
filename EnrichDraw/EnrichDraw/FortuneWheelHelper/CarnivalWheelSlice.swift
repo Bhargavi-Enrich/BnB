@@ -98,7 +98,7 @@ public class CarnivalWheelSlice: FortuneWheelSliceProtocol {
     public var rewardType: String
     public var rewardCount: Int = 0
     public var campaignRewardId: Int = 0
-    public var surpriseGiftName: String
+    public var surpriseGifts: [assured_gift_details] = []
     
     public var fontColor: UIColor {
         if self.style == .red22 {
@@ -205,17 +205,17 @@ public class CarnivalWheelSlice: FortuneWheelSliceProtocol {
     
     public var style:Style = .darkRed
 
-    public init(rewardName:String,rewardValue:String,rewardType:String,rewardCount:Int = 0,campaignRewardId:Int = 0, surpriseGiftName:String = "") {
+    public init(rewardName:String,rewardValue:String,rewardType:String,rewardCount:Int = 0,campaignRewardId:Int = 0, surpriseGifts:[assured_gift_details]=[]) {
         self.rewardName = rewardName
         self.rewardValue = rewardValue
         self.rewardType = rewardType
         self.rewardCount = rewardCount
         self.campaignRewardId = campaignRewardId
-        self.surpriseGiftName = surpriseGiftName
+        self.surpriseGifts = surpriseGifts
     }
     
-    public convenience init(rewardName:String,rewardValue:String,rewardType:String,rewardCount:Int = 0,campaignRewardId:Int = 0, surpriseGiftName:String = "", degree:CGFloat) {
-        self.init(rewardName:rewardName,rewardValue:rewardValue,rewardType:rewardType,rewardCount:rewardCount,campaignRewardId:campaignRewardId, surpriseGiftName:surpriseGiftName)
+    public convenience init(rewardName:String,rewardValue:String,rewardType:String,rewardCount:Int = 0,campaignRewardId:Int = 0, degree:CGFloat) {
+        self.init(rewardName:rewardName,rewardValue:rewardValue,rewardType:rewardType,rewardCount:rewardCount,campaignRewardId:campaignRewardId)
         self.degree = degree
     }
     

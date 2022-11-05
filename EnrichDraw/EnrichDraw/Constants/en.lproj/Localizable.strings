@@ -88,7 +88,7 @@
 "kl_WonMsgSpin-cards" = "card.";
 "kl_WonMsgSpin-casino" = "slot machine.";
 
-"kl_WonMsgPts" = " Reward Points.";
+"kl_WonMsgPts" = " Reward Points";
 "kl_WonMsgTotal" = "a total ";
 "kl_ErrorContactAdmin" = "Please contact to admin for rewards. All rewards are availed.";
 "kl_ErrorExhausted" = "All rewards exhausted for this invoice.";
