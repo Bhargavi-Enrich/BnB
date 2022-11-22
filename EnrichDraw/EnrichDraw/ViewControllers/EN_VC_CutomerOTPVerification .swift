@@ -184,7 +184,7 @@ class EN_VC_CutomerOTPVerification : UIViewController,UITextFieldDelegate {
             Timer.scheduledTimer(withTimeInterval: 20, repeats: false) {
                 [weak self]timer in
                 self?.btnResentOTP.isEnabled = true
-                self?.btnResentOTP.setTitleColor(UIColor(red: 250/255, green: 24/255, blue: 100/255, alpha: 1.0), for: .normal)
+                self?.btnResentOTP.setTitleColor(UIColor(red: 227/255, green: 47/255, blue: 161/255, alpha: 1.0), for: .normal)
             }
 
         HUD.show(.labeledProgress(title: "", subtitle: "Please wait."), onView: self.view)

@@ -1334,7 +1334,7 @@ class EN_VC_SpinWheel: UIViewController {
         let textString = NSMutableAttributedString.init(string: textContext)
         textString.setColorForText(textForAttribute: textContext, withColor: .black, withFont: UIFont(name: FontName.FuturaPTDemi, size: 23)!)
         let range = textString.mutableString.range(of: "won \(winningPrice)")
-        textString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor(red:255.0/255.0, green:212.0/255.0, blue:26.0/255.0, alpha:1) , range: range)
+        textString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor(red:227.0/255.0, green:47.0/255.0, blue:161.0/255.0, alpha:1) , range: range)
         return textString
     }
     

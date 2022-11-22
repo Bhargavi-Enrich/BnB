@@ -137,11 +137,11 @@ class EN_VC_CollectionViewCell: UICollectionViewCell {
     func setProgresValue(_ value:Float){
         self.progressCurrentValueLabel.text = String(percentageOfTreatedPatient)
         self.progressView.createCircularPath(value: Double(percentageOfTreatedPatient))
-        self.progressView.circleLayer.strokeColor = UIColor(red: 232.0/255.0, green: 34.0/255.0, blue: 46.0/255.0, alpha: 1.0).cgColor
+        self.progressView.circleLayer.strokeColor = UIColor.black.cgColor //UIColor(red: 232.0/255.0, green: 34.0/255.0, blue: 46.0/255.0, alpha: 1.0).cgColor
         self.progressView.progressAnimation(0.1, value)
         
         self.midSpinProgressView.createCircularPath(value: Double(percentageOfTreatedPatient))
-        self.midSpinProgressView.circleLayer.strokeColor = UIColor(red: 255.0/255.0, green: 225.0/255.0, blue: 33.0/255.0, alpha: 1.0).cgColor
+        self.midSpinProgressView.circleLayer.strokeColor = UIColor(red: 227.0/255.0, green: 47.0/255.0, blue: 161.0/255.0, alpha: 1.0).cgColor
         self.midSpinProgressView.progressAnimation(0.1, value)
     }
     

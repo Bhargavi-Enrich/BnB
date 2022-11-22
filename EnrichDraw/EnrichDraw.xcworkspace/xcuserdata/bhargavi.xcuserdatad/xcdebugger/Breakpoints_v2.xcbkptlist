@@ -24,7 +24,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "32110F5D-315E-42B4-8526-A42D217B5497"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EnrichDraw/ViewControllers/EN_VC_SpinWheel.swift"
@@ -40,7 +40,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "D22191F8-1331-42BD-92B4-98C8EA628181"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "EnrichDraw/ViewControllers/EN_VC_CutomerOTPVerification .swift"
@@ -112,7 +112,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "588"
             endingLineNumber = "588"
-            landmarkName = "getOrdersData(pageNo:accessToken:)"
+            landmarkName = "configureData(model:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

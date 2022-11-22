@@ -43,17 +43,17 @@
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNt-Iu-hEb">
                     <rect key="frame" x="404" y="661" width="216" height="57"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" red="0.89019607840000003" green="0.1843137255" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="216" id="Az2-od-VkX"/>
                         <constraint firstAttribute="height" constant="57" id="hxi-rt-RFi"/>
                     </constraints>
-                    <color key="tintColor" red="0.098039215690000001" green="0.20000000000000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" image="arrow.right" catalog="system" title="CONTINUE  ">
                         <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="21" scale="default" weight="medium"/>
                         <fontDescription key="titleFontDescription" name="FuturaPT-Bold" family="Futura PT" pointSize="16"/>
-                        <color key="baseForegroundColor" red="0.098039215690000001" green="0.20000000000000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </buttonConfiguration>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="number" keyPath="VCornerRadius">

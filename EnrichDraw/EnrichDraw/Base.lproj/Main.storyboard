@@ -152,7 +152,7 @@
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MlL-Pu-dbY">
                                         <rect key="frame" x="76" y="290" width="478" height="67"/>
-                                        <color key="backgroundColor" red="0.098039215686274508" green="0.20000000000000001" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.8901960784313725" green="0.18431372549019609" blue="0.63137254901960782" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="67" id="Ggn-A4-INO"/>
                                         </constraints>
@@ -237,7 +237,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_userLogin" translatesAutoresizingMaskIntoConstraints="NO" id="4Fz-nP-PUv">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_T&amp;C" translatesAutoresizingMaskIntoConstraints="NO" id="4Fz-nP-PUv">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whiteBoxBG" translatesAutoresizingMaskIntoConstraints="NO" id="v7b-qm-DIl">
@@ -371,13 +371,15 @@
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S8V-H3-po7">
                                         <rect key="frame" x="309" y="158" width="294" height="48"/>
-                                        <color key="backgroundColor" red="0.098039215690000001" green="0.20000000000000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.89019607840000003" green="0.1843137255" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="48" id="EeH-BQ-nMy"/>
                                             <constraint firstAttribute="width" constant="294" id="pAh-dV-wqd"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="FuturaPT-Demi" family="Futura PT" pointSize="16"/>
-                                        <state key="normal" title="LOGIN"/>
+                                        <state key="normal" title="LOGIN">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="VCornerRadius">
                                                 <real key="value" value="10"/>
@@ -492,7 +494,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_userLogin" translatesAutoresizingMaskIntoConstraints="NO" id="Hkn-JG-tzX">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_T&amp;C" translatesAutoresizingMaskIntoConstraints="NO" id="Hkn-JG-tzX">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whiteBoxBG" translatesAutoresizingMaskIntoConstraints="NO" id="8En-mU-Uek">
@@ -596,7 +598,7 @@
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZs-B1-DDy">
                                                 <rect key="frame" x="0.0" y="68" width="294" height="48"/>
-                                                <color key="backgroundColor" red="0.098039215690000001" green="0.20000000000000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.89019607840000003" green="0.1843137255" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="48" id="ho8-8v-DQP"/>
                                                 </constraints>
@@ -618,7 +620,7 @@
                                         <rect key="frame" x="279" y="249" width="72" height="30"/>
                                         <fontDescription key="fontDescription" name="FuturaPT-Demi" family="Futura PT" pointSize="14"/>
                                         <state key="normal" title="Resend OTP">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleColor" red="0.89019607840000003" green="0.1843137255" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="actionResendOTP:" destination="wcQ-hc-e0P" eventType="touchUpInside" id="7bj-nA-bY6"/>
@@ -653,7 +655,7 @@
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2dc-56-t2C">
                                 <rect key="frame" x="476" y="521.5" width="72" height="1"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.89019607840000003" green="0.1843137255" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="oHu-Tm-ZD9"/>
                                 </constraints>
@@ -961,7 +963,7 @@
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="meL-7p-fDn">
                                                         <rect key="frame" x="20" y="19.5" width="560" height="1"/>
-                                                        <color key="backgroundColor" red="0.87058823529999996" green="0.70196078429999997" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="backgroundColor" red="0.89019607840000003" green="0.1843137255" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="1" id="EsL-kq-6xO"/>
                                                             <constraint firstAttribute="width" constant="560" id="M8B-li-Tgl"/>
@@ -997,9 +999,9 @@
                                                     <constraint firstAttribute="height" constant="56" id="PlV-c4-368"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="FuturaPT-Bold" family="Futura PT" pointSize="16"/>
-                                                <color key="tintColor" red="0.098039215690000001" green="0.20000000000000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="tintColor" red="0.89019607840000003" green="0.1843137255" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
                                                 <state key="normal" title="NEXT SPIN  &gt;">
-                                                    <color key="titleColor" red="0.098039215690000001" green="0.20000000000000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleColor" red="0.89019607840000003" green="0.1843137255" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -1009,10 +1011,10 @@
                                                         <real key="value" value="2"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="VBorderColor">
-                                                        <color key="value" red="0.098039215690000001" green="0.20000000000000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="value" red="0.89019607840000003" green="0.1843137255" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="VCornerRadius">
-                                                        <real key="value" value="12"/>
+                                                        <real key="value" value="10"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
@@ -1145,23 +1147,24 @@
                             </wkWebView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x3n-Cc-kUp">
                                 <rect key="frame" x="95" y="552" width="225" height="56"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="i03-19-cS8"/>
                                     <constraint firstAttribute="width" constant="225" id="wNg-J5-rQj"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="FuturaPT-Bold" family="Futura PT" pointSize="16"/>
                                 <state key="normal" title="BACK">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" red="0.89019607840000003" green="0.1843137255" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="VCornerRadius">
-                                        <real key="value" value="12"/>
+                                        <real key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="VBorderWidth">
-                                        <real key="value" value="1"/>
+                                        <real key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="VBorderColor">
-                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="value" red="0.89019607840000003" green="0.1843137255" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -1170,17 +1173,17 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bJ-IC-69w">
                                 <rect key="frame" x="330" y="552" width="203" height="53"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.89019607840000003" green="0.1843137255" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="203" id="aUZ-aD-Eqd"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="FuturaPT-Bold" family="Futura PT" pointSize="16"/>
                                 <state key="normal" title="AGREE &amp; ACCEPT">
-                                    <color key="titleColor" red="0.098039215690000001" green="0.20000000000000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="VCornerRadius">
-                                        <real key="value" value="12"/>
+                                        <real key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -2193,7 +2196,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright ® 2021 Enrich. All Rights Reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBP-n9-f5S">
-                                <rect key="frame" x="387.5" y="729" width="249" height="18"/>
+                                <rect key="frame" x="367.5" y="730" width="289" height="16.5"/>
                                 <fontDescription key="fontDescription" name="FuturaPT-Book" family="Futura PT" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -2251,7 +2254,7 @@
                                 </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Customer Orders" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eiZ-xA-Bc6">
-                                <rect key="frame" x="418.5" y="222" width="187.5" height="30.5"/>
+                                <rect key="frame" x="419.5" y="224.5" width="185" height="28"/>
                                 <fontDescription key="fontDescription" name="Delius-Regular" family="Delius" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -2369,14 +2372,14 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jPa-OD-goR">
                                         <rect key="frame" x="0.0" y="0.0" width="225" height="56"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" red="0.89019607840000003" green="0.1843137255" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="56" id="Chh-ZX-NbH"/>
                                             <constraint firstAttribute="width" constant="225" id="o4Q-nn-C3t"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="FuturaPT-Bold" family="Futura PT" pointSize="16"/>
                                         <state key="normal" title="SPIN TO PLAY">
-                                            <color key="titleColor" red="0.098039215690000001" green="0.20000000000000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="VCornerRadius">
@@ -2389,14 +2392,14 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RrZ-he-Wpu">
                                         <rect key="frame" x="249" y="0.0" width="225" height="56"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" red="0.89019607840000003" green="0.1843137255" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="225" id="Dvs-Dr-ILq"/>
                                             <constraint firstAttribute="height" constant="56" id="O0u-2y-a7e"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="FuturaPT-Bold" family="Futura PT" pointSize="16"/>
                                         <state key="normal" title="TRIAL SPIN">
-                                            <color key="titleColor" red="0.098039215690000001" green="0.20000000000000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="VCornerRadius">
@@ -2786,15 +2789,15 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Iw-OY-4OX">
-                                <rect key="frame" x="100" y="670" width="824" height="40"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Iw-OY-4OX">
+                                <rect key="frame" x="100" y="665" width="824" height="50"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yellow-stripe" translatesAutoresizingMaskIntoConstraints="NO" id="0U2-1o-zVn">
-                                        <rect key="frame" x="0.0" y="0.0" width="824" height="40"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="824" height="50"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="vmn-w7-aft"/>
+                                    <constraint firstAttribute="height" constant="50" id="vmn-w7-aft"/>
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="C1D-hg-Er5">
@@ -2863,9 +2866,9 @@
                                 </constraints>
                             </stackView>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nG9-cb-Cyi" customClass="MarqueeLabel" customModule="MarqueeLabel">
-                                <rect key="frame" x="100" y="670" width="824" height="40"/>
+                                <rect key="frame" x="100" y="660" width="824" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="oGn-bc-Z51"/>
+                                    <constraint firstAttribute="height" constant="50" id="oGn-bc-Z51"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="FuturaPT-Medium" family="Futura PT" pointSize="16"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2927,7 +2930,7 @@
                             <constraint firstItem="bW6-FU-I0B" firstAttribute="trailing" secondItem="eM0-n5-0Sb" secondAttribute="trailing" constant="25" id="sw2-KW-uqK"/>
                             <constraint firstItem="C1D-hg-Er5" firstAttribute="leading" secondItem="bW6-FU-I0B" secondAttribute="leading" constant="120" id="xFD-ZB-hHK"/>
                             <constraint firstItem="TJE-dJ-aku" firstAttribute="top" secondItem="C1D-hg-Er5" secondAttribute="bottom" constant="15" id="y6Z-bL-Y3M"/>
-                            <constraint firstItem="ul1-ad-7wP" firstAttribute="top" secondItem="8Iw-OY-4OX" secondAttribute="bottom" constant="10" id="y6g-F2-7ng"/>
+                            <constraint firstItem="TJE-dJ-aku" firstAttribute="top" secondItem="8Iw-OY-4OX" secondAttribute="bottom" constant="10" id="y6g-F2-7ng"/>
                             <constraint firstItem="QmI-8g-knP" firstAttribute="leading" secondItem="bW6-FU-I0B" secondAttribute="leading" id="zON-E1-GSx"/>
                             <constraint firstItem="TJE-dJ-aku" firstAttribute="centerX" secondItem="p3e-St-UvU" secondAttribute="centerX" id="zwb-xM-icY"/>
                         </constraints>
@@ -4055,14 +4058,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_spinWheelGame" translatesAutoresizingMaskIntoConstraints="NO" id="Z4V-BR-8Vn">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_salonLogin" translatesAutoresizingMaskIntoConstraints="NO" id="Z4V-BR-8Vn">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner_WinUpTo15X" translatesAutoresizingMaskIntoConstraints="NO" id="u6V-st-uim">
-                                <rect key="frame" x="266" y="80" width="492" height="137"/>
+                                <rect key="frame" x="313.5" y="50" width="397" height="108"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="137" id="Bmx-Zl-w0b"/>
-                                    <constraint firstAttribute="width" constant="492" id="aD2-zX-p5j"/>
+                                    <constraint firstAttribute="height" constant="108" id="Bmx-Zl-w0b"/>
+                                    <constraint firstAttribute="width" constant="397" id="aD2-zX-p5j"/>
                                 </constraints>
                             </imageView>
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="B&amp;BLogo" translatesAutoresizingMaskIntoConstraints="NO" id="yuT-nf-NSU">
@@ -4495,14 +4498,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Il-cf-5A1">
-                                <rect key="frame" x="100" y="660" width="824" height="40"/>
+                                <rect key="frame" x="100" y="655" width="824" height="50"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yellow-stripe" translatesAutoresizingMaskIntoConstraints="NO" id="Uaj-c2-mIS">
-                                        <rect key="frame" x="0.0" y="0.0" width="824" height="40"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="824" height="50"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="URd-7r-6rK"/>
+                                    <constraint firstAttribute="height" constant="50" id="URd-7r-6rK"/>
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="O97-co-nOt">
@@ -4571,14 +4574,14 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMB-Pe-bqZ" userLabel="My Reward">
                                 <rect key="frame" x="105" y="552.5" width="183" height="57"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.89019607840000003" green="0.1843137255" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="57" id="IEl-K5-ZkO"/>
                                     <constraint firstAttribute="width" constant="183" id="kb7-2m-eQz"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="FuturaPT-Bold" family="Futura PT" pointSize="16"/>
                                 <state key="normal" title="MY REWARDS">
-                                    <color key="titleColor" red="0.098039215690000001" green="0.20000000000000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="VCornerRadius">
@@ -4590,9 +4593,9 @@
                                 </connections>
                             </button>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hzd-ch-7vc" customClass="MarqueeLabel" customModule="MarqueeLabel">
-                                <rect key="frame" x="120" y="660" width="784" height="40"/>
+                                <rect key="frame" x="120" y="660" width="784" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="QO9-W7-9Lb"/>
+                                    <constraint firstAttribute="height" constant="50" id="QO9-W7-9Lb"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="FuturaPT-Medium" family="Futura PT" pointSize="16"/>
                                 <nil key="textColor"/>
@@ -4603,14 +4606,14 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="15n-HA-qPF" userLabel="My Big Season">
                                 <rect key="frame" x="736" y="552.5" width="183" height="57"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.89019607840000003" green="0.1843137255" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="183" id="Cal-gD-fCz"/>
                                     <constraint firstAttribute="height" constant="57" id="kFn-ab-hZM"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="FuturaPT-Bold" family="Futura PT" pointSize="16"/>
                                 <state key="normal" title="WIN BIG THIS SEASON">
-                                    <color key="titleColor" red="0.098039215690000001" green="0.20000000000000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="VCornerRadius">
@@ -4666,16 +4669,16 @@
                             <constraint firstItem="kPY-9I-bUQ" firstAttribute="top" secondItem="TMB-Pe-bqZ" secondAttribute="bottom" constant="15" id="TxM-og-ka9"/>
                             <constraint firstItem="7lc-12-S1b" firstAttribute="bottom" secondItem="MHX-iH-xEQ" secondAttribute="bottom" constant="25" id="Wvs-cX-m3n"/>
                             <constraint firstItem="kPY-9I-bUQ" firstAttribute="leading" secondItem="7lc-12-S1b" secondAttribute="leading" constant="30" id="Y1p-D7-DUr"/>
-                            <constraint firstItem="u6V-st-uim" firstAttribute="top" secondItem="7lc-12-S1b" secondAttribute="top" constant="60" id="YqY-c4-VAM"/>
+                            <constraint firstItem="u6V-st-uim" firstAttribute="top" secondItem="7lc-12-S1b" secondAttribute="top" constant="30" id="YqY-c4-VAM"/>
                             <constraint firstItem="6am-Er-cQQ" firstAttribute="leading" secondItem="yvg-TA-PaO" secondAttribute="trailing" constant="102" id="Z5E-dJ-glK"/>
                             <constraint firstItem="ooy-Bc-8PH" firstAttribute="top" secondItem="NQo-lI-BMo" secondAttribute="bottom" constant="30" id="ZlD-nr-66u"/>
                             <constraint firstItem="xFv-up-LBM" firstAttribute="leading" secondItem="7lc-12-S1b" secondAttribute="leading" id="aAh-SM-kYK"/>
                             <constraint firstItem="Yk4-xw-PSB" firstAttribute="top" secondItem="yuT-nf-NSU" secondAttribute="bottom" constant="20" id="b8v-6z-ETF"/>
                             <constraint firstItem="yuT-nf-NSU" firstAttribute="top" secondItem="7lc-12-S1b" secondAttribute="top" constant="17" id="biM-iS-JDt"/>
-                            <constraint firstItem="ooy-Bc-8PH" firstAttribute="top" secondItem="Hzd-ch-7vc" secondAttribute="bottom" constant="30" id="fVo-2c-TUc"/>
+                            <constraint firstItem="ooy-Bc-8PH" firstAttribute="top" secondItem="Hzd-ch-7vc" secondAttribute="bottom" constant="20" id="fVo-2c-TUc"/>
                             <constraint firstItem="7lc-12-S1b" firstAttribute="trailing" secondItem="Hzd-ch-7vc" secondAttribute="trailing" constant="120" id="gCf-jl-w26"/>
                             <constraint firstItem="7lc-12-S1b" firstAttribute="trailing" secondItem="4Il-cf-5A1" secondAttribute="trailing" constant="100" id="gSb-SA-BFG"/>
-                            <constraint firstItem="ooy-Bc-8PH" firstAttribute="top" secondItem="4Il-cf-5A1" secondAttribute="bottom" constant="30" id="gWh-Ya-H5z"/>
+                            <constraint firstItem="ooy-Bc-8PH" firstAttribute="top" secondItem="4Il-cf-5A1" secondAttribute="bottom" constant="25" id="gWh-Ya-H5z"/>
                             <constraint firstItem="yuT-nf-NSU" firstAttribute="leading" secondItem="7lc-12-S1b" secondAttribute="leading" constant="17" id="gs9-po-9Cc"/>
                             <constraint firstItem="u6V-st-uim" firstAttribute="centerX" secondItem="PCN-FC-KUj" secondAttribute="centerX" id="jMO-xM-BF2"/>
                             <constraint firstItem="75Y-Jn-lv5" firstAttribute="top" secondItem="qZ6-XU-BNw" secondAttribute="top" constant="-7" id="mvC-Cd-ojp"/>
@@ -4747,14 +4750,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_spinWheelGame" translatesAutoresizingMaskIntoConstraints="NO" id="LUP-Ud-f29">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_salonLogin" translatesAutoresizingMaskIntoConstraints="NO" id="LUP-Ud-f29">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner_WinUpTo15X" translatesAutoresizingMaskIntoConstraints="NO" id="9QJ-M5-QiD">
-                                <rect key="frame" x="266.5" y="80" width="491" height="137"/>
+                                <rect key="frame" x="313.5" y="50" width="397" height="108"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="491" id="1cx-h1-dxJ"/>
-                                    <constraint firstAttribute="height" constant="137" id="bdY-d1-3iL"/>
+                                    <constraint firstAttribute="width" constant="397" id="1cx-h1-dxJ"/>
+                                    <constraint firstAttribute="height" constant="108" id="bdY-d1-3iL"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lFQ-G4-jCG">
@@ -5511,14 +5514,14 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p6F-n9-fMv">
-                                <rect key="frame" x="100" y="660" width="824" height="40"/>
+                                <rect key="frame" x="100" y="655" width="824" height="50"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yellow-stripe" translatesAutoresizingMaskIntoConstraints="NO" id="AA3-bu-LK6">
-                                        <rect key="frame" x="0.0" y="0.0" width="824" height="40"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="824" height="50"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="1gQ-ZT-Frv"/>
+                                    <constraint firstAttribute="height" constant="50" id="1gQ-ZT-Frv"/>
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="VOk-lS-wVR">
@@ -5581,10 +5584,10 @@
                                     <constraint firstAttribute="height" constant="75" id="IYU-Er-CDV"/>
                                 </constraints>
                             </stackView>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kIi-Nw-ZdD" customClass="MarqueeLabel" customModule="MarqueeLabel">
-                                <rect key="frame" x="120" y="660" width="784" height="40"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kIi-Nw-ZdD" customClass="MarqueeLabel" customModule="MarqueeLabel">
+                                <rect key="frame" x="120" y="660" width="784" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="u8P-CA-v1S"/>
+                                    <constraint firstAttribute="height" constant="50" id="u8P-CA-v1S"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="FuturaPT-Medium" family="Futura PT" pointSize="16"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -5595,14 +5598,14 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQt-1t-sYA" userLabel="My Reward">
                                 <rect key="frame" x="105" y="552.5" width="183" height="57"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.89019607840000003" green="0.1843137255" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="57" id="BFL-xi-3WG"/>
                                     <constraint firstAttribute="width" constant="183" id="dcH-QU-2BM"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="FuturaPT-Bold" family="Futura PT" pointSize="16"/>
                                 <state key="normal" title="MY REWARDS">
-                                    <color key="titleColor" red="0.098039215690000001" green="0.20000000000000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="VCornerRadius">
@@ -5615,14 +5618,14 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GgC-BL-I2u" userLabel="My Big Season">
                                 <rect key="frame" x="736" y="552.5" width="183" height="57"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.89019607840000003" green="0.1843137255" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="183" id="CAp-iF-Xwl"/>
                                     <constraint firstAttribute="height" constant="57" id="jvx-oM-ydg"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="FuturaPT-Bold" family="Futura PT" pointSize="16"/>
                                 <state key="normal" title="WIN BIG THIS SEASON">
-                                    <color key="titleColor" red="0.098039215690000001" green="0.20000000000000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="VCornerRadius">
@@ -5686,8 +5689,8 @@
                             <constraint firstAttribute="top" secondItem="ZGZ-Xd-BTy" secondAttribute="top" id="aep-Cd-FsZ"/>
                             <constraint firstAttribute="bottom" secondItem="0Co-46-6ES" secondAttribute="bottom" id="aoC-HU-a7s"/>
                             <constraint firstItem="Xj6-iM-YaL" firstAttribute="leading" secondItem="0Co-46-6ES" secondAttribute="leading" id="bD4-1Y-9EO"/>
-                            <constraint firstItem="9QJ-M5-QiD" firstAttribute="top" secondItem="0Co-46-6ES" secondAttribute="top" constant="60" id="cF5-Eg-ICr"/>
-                            <constraint firstItem="47W-jQ-LOz" firstAttribute="top" secondItem="p6F-n9-fMv" secondAttribute="bottom" constant="25" id="cf5-am-hPB"/>
+                            <constraint firstItem="9QJ-M5-QiD" firstAttribute="top" secondItem="0Co-46-6ES" secondAttribute="top" constant="30" id="cF5-Eg-ICr"/>
+                            <constraint firstItem="47W-jQ-LOz" firstAttribute="top" secondItem="p6F-n9-fMv" secondAttribute="bottom" constant="20" id="cf5-am-hPB"/>
                             <constraint firstItem="mQt-1t-sYA" firstAttribute="leading" secondItem="0Co-46-6ES" secondAttribute="leading" constant="105" id="cmQ-rx-7ED"/>
                             <constraint firstItem="0Co-46-6ES" firstAttribute="trailing" secondItem="mOk-Hf-CMX" secondAttribute="trailing" constant="25" id="dpW-Co-Dnb"/>
                             <constraint firstAttribute="leading" secondItem="0Co-46-6ES" secondAttribute="leading" id="eCx-KD-icO"/>
@@ -5696,7 +5699,7 @@
                             <constraint firstItem="Xj6-iM-YaL" firstAttribute="top" secondItem="GRW-Jl-R7z" secondAttribute="bottom" constant="30" id="hPb-Fj-qew"/>
                             <constraint firstItem="0Co-46-6ES" firstAttribute="bottom" secondItem="wOT-FE-sQH" secondAttribute="bottom" constant="25" id="i2y-Zx-qXL"/>
                             <constraint firstItem="0Co-46-6ES" firstAttribute="bottom" secondItem="mOk-Hf-CMX" secondAttribute="bottom" constant="25" id="jOi-sf-jBy"/>
-                            <constraint firstItem="47W-jQ-LOz" firstAttribute="top" secondItem="kIi-Nw-ZdD" secondAttribute="bottom" constant="25" id="kID-SO-G2E"/>
+                            <constraint firstItem="47W-jQ-LOz" firstAttribute="top" secondItem="kIi-Nw-ZdD" secondAttribute="bottom" constant="15" id="kID-SO-G2E"/>
                             <constraint firstItem="47W-jQ-LOz" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Xj6-iM-YaL" secondAttribute="bottom" constant="50" id="lR3-BB-des"/>
                             <constraint firstItem="LUP-Ud-f29" firstAttribute="leading" secondItem="0Co-46-6ES" secondAttribute="leading" id="ncu-tZ-RpD"/>
                             <constraint firstItem="lFQ-G4-jCG" firstAttribute="bottom" secondItem="0Co-46-6ES" secondAttribute="bottom" id="x7k-RE-goQ"/>
@@ -5776,7 +5779,9 @@
         <designable name="Hzd-ch-7vc">
             <size key="intrinsicContentSize" width="35" height="21"/>
         </designable>
-        <designable name="kIi-Nw-ZdD"/>
+        <designable name="kIi-Nw-ZdD">
+            <size key="intrinsicContentSize" width="32" height="21"/>
+        </designable>
         <designable name="nG9-cb-Cyi"/>
     </designables>
     <resources>
@@ -5812,16 +5817,14 @@
         <image name="SpinColorUnSelected8" width="50" height="50"/>
         <image name="SpinColorUnSelected9" width="50" height="50"/>
         <image name="agreeAndContinue" width="233" height="86"/>
-        <image name="arrow.left" catalog="system" width="128" height="98"/>
+        <image name="arrow.left" catalog="system" width="32" height="32"/>
         <image name="bannerPlaceHolder" width="735" height="139"/>
-        <image name="banner_WinUpTo15X" width="492" height="137"/>
-        <image name="bg_MyRewards" width="817" height="556"/>
+        <image name="banner_WinUpTo15X" width="397" height="108"/>
+        <image name="bg_MyRewards" width="817" height="551"/>
         <image name="bg_T&amp;C" width="1024" height="768"/>
         <image name="bg_landingScreen" width="1024" height="768"/>
         <image name="bg_salonLogin" width="1024" height="768"/>
         <image name="bg_spinWheelBorder" width="538" height="538"/>
-        <image name="bg_spinWheelGame" width="1024" height="768"/>
-        <image name="bg_userLogin" width="1024" height="768"/>
         <image name="bg_winBigThisSeason" width="845" height="290"/>
         <image name="bg_yourWinnings" width="857" height="564"/>
         <image name="bitmap" width="32" height="32"/>
@@ -5847,8 +5850,8 @@
         <image name="roundRectangle" width="180" height="50"/>
         <image name="store" width="27" height="25"/>
         <image name="storeGray" width="20" height="20"/>
-        <image name="whiteBoxBG" width="630" height="456"/>
-        <image name="yellow-stripe" width="822" height="40"/>
+        <image name="whiteBoxBG" width="624" height="452"/>
+        <image name="yellow-stripe" width="832" height="50"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
